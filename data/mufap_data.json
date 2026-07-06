@@ -621,7 +621,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 36.2
+    "screener_score": 36.3
   },
   {
     "sector": "Open-End Funds",
@@ -777,7 +777,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.7
+    "screener_score": 32.6
   },
   {
     "sector": "Open-End Funds",
@@ -1128,7 +1128,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 34.7
+    "screener_score": 34.6
   },
   {
     "sector": "Open-End Funds",
@@ -1908,7 +1908,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.0
+    "screener_score": 37.9
   },
   {
     "sector": "Open-End Funds",
@@ -1947,7 +1947,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.2
+    "screener_score": 29.1
   },
   {
     "sector": "Open-End Funds",
@@ -3390,7 +3390,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.4
+    "screener_score": 78.6
   },
   {
     "sector": "Open-End Funds",
@@ -3897,7 +3897,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.8
+    "screener_score": 73.9
   },
   {
     "sector": "Open-End Funds",
@@ -4482,7 +4482,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.0
+    "screener_score": 39.9
   },
   {
     "sector": "Open-End Funds",
@@ -6861,7 +6861,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.4
+    "screener_score": 74.6
   },
   {
     "sector": "Open-End Funds",
@@ -7017,7 +7017,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.0
+    "screener_score": 78.1
   },
   {
     "sector": "Open-End Funds",
@@ -7212,7 +7212,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 68.8
+    "screener_score": 68.9
   },
   {
     "sector": "Open-End Funds",
@@ -7602,7 +7602,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.5
+    "screener_score": 46.6
   },
   {
     "sector": "Open-End Funds",
@@ -7875,7 +7875,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.0
+    "screener_score": 39.1
   },
   {
     "sector": "Open-End Funds",
@@ -10839,7 +10839,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.7
+    "screener_score": 74.9
   },
   {
     "sector": "Open-End Funds",
@@ -11995,8 +11995,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "May 21, 2026",
-    "offer": "101.6901",
-    "repurchase": "101.6901",
+    "offer": "101.6882",
+    "repurchase": "101.6882",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -12034,14 +12034,14 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jun 04, 2026",
-    "offer": "100.9826",
-    "repurchase": "100.9826",
+    "offer": "101.0174",
+    "repurchase": "101.0174",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.00",
-    "ter_ytd": "1.29",
+    "management_fee": "0.01",
+    "ter_ytd": "1.06",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -13328,7 +13328,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.90",
+    "ter_ytd": "1.89",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -13477,14 +13477,14 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Aug 12, 2024",
-    "offer": "130.6958",
-    "repurchase": "126.3372",
+    "offer": "130.7031",
+    "repurchase": "126.3443",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.00",
-    "ter_ytd": "3.04",
+    "ter_ytd": "2.95",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -13516,8 +13516,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Sep 17, 2025",
-    "offer": "111.7922",
-    "repurchase": "108.0640",
+    "offer": "111.8254",
+    "repurchase": "108.0961",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -13594,14 +13594,14 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jan 19, 2026",
-    "offer": "108.9805",
-    "repurchase": "105.3460",
+    "offer": "108.9859",
+    "repurchase": "105.3513",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.01",
-    "ter_ytd": "0.30",
+    "ter_ytd": "0.29",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -15722,20 +15722,20 @@
     "fund_name": "NIT Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 03, 2026",
-    "nav": "29.4535",
+    "validity_date": "Jul 04, 2026",
+    "nav": "29.4619",
     "returns": {
-      "mtd": "11.53",
-      "ytd": "11.53",
-      "1d": "12.52",
-      "15d": "11.37",
+      "mtd": "11.26",
+      "ytd": "11.26",
+      "1d": "10.40",
+      "15d": "11.38",
       "30d": "11.12",
-      "90d": "10.52",
-      "180d": "10.08",
+      "90d": "10.53",
+      "180d": "10.09",
       "270d": "10.29",
       "365d": "10.28",
-      "2y": "13.28",
-      "3y": "18.12"
+      "2y": "13.26",
+      "3y": "18.11"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
@@ -16151,20 +16151,20 @@
     "fund_name": "NIT Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 03, 2026",
-    "nav": "30.2050",
+    "validity_date": "Jul 04, 2026",
+    "nav": "30.2132",
     "returns": {
-      "mtd": "27.41",
-      "ytd": "27.41",
-      "1d": "45.00",
-      "15d": "18.47",
-      "30d": "17.75",
+      "mtd": "23.04",
+      "ytd": "23.04",
+      "1d": "9.89",
+      "15d": "18.33",
+      "30d": "17.72",
       "90d": "13.51",
-      "180d": "9.33",
-      "270d": "10.69",
-      "365d": "10.46",
-      "2y": "14.68",
-      "3y": "18.43"
+      "180d": "9.22",
+      "270d": "10.68",
+      "365d": "10.43",
+      "2y": "14.67",
+      "3y": "18.38"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
@@ -16182,7 +16182,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.7
+    "screener_score": 41.5
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16416,7 +16416,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 80.5
+    "screener_score": 80.6
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16455,7 +16455,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.2
+    "screener_score": 79.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16658,19 +16658,19 @@
     "fund_name": "NIT Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 03, 2026",
-    "nav": "36.0084",
+    "validity_date": "Jul 04, 2026",
+    "nav": "36.0080",
     "returns": {
       "mtd": "2.77",
       "ytd": "2.77",
-      "1d": "0.56",
-      "15d": "2.06",
-      "30d": "7.95",
+      "1d": "N/A",
+      "15d": "3.45",
+      "30d": "7.24",
       "90d": "20.44",
-      "180d": "3.19",
-      "270d": "9.76",
-      "365d": "38.58",
-      "2y": "113.83",
+      "180d": "1.39",
+      "270d": "11.15",
+      "365d": "37.31",
+      "2y": "113.60",
       "3y": "N/A"
     },
     "amc": "National Investment Trust Limited",
@@ -16689,7 +16689,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.3
+    "screener_score": 77.5
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17360,25 +17360,25 @@
     "fund_name": "NIT Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 04, 2026",
-    "nav": "26.0458",
+    "validity_date": "Jul 05, 2026",
+    "nav": "26.0526",
     "returns": {
-      "mtd": "9.78",
-      "ytd": "9.78",
+      "mtd": "9.74",
+      "ytd": "9.74",
       "1d": "9.53",
-      "15d": "9.77",
+      "15d": "9.74",
       "30d": "9.76",
-      "90d": "9.64",
+      "90d": "9.65",
       "180d": "9.52",
       "270d": "10.45",
-      "365d": "10.05",
-      "2y": "12.09",
-      "3y": "16.91"
+      "365d": "10.08",
+      "2y": "12.08",
+      "3y": "16.90"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
-    "offer": "26.0458",
-    "repurchase": "26.0458",
+    "offer": "26.0526",
+    "repurchase": "26.0526",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -17391,7 +17391,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.6
+    "screener_score": 29.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18023,25 +18023,25 @@
     "fund_name": "NIT Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 03, 2026",
-    "nav": "26.2583",
+    "validity_date": "Jul 04, 2026",
+    "nav": "26.2733",
     "returns": {
-      "mtd": "10.39",
-      "ytd": "10.39",
-      "1d": "10.44",
-      "15d": "10.68",
-      "30d": "10.58",
-      "90d": "9.64",
-      "180d": "9.65",
-      "270d": "10.30",
-      "365d": "10.09",
+      "mtd": "13.01",
+      "ytd": "13.01",
+      "1d": "20.84",
+      "15d": "11.45",
+      "30d": "10.94",
+      "90d": "9.77",
+      "180d": "9.72",
+      "270d": "10.34",
+      "365d": "10.12",
       "2y": "12.71",
       "3y": "17.82"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
-    "offer": "26.0458",
-    "repurchase": "26.0458",
+    "offer": "26.0526",
+    "repurchase": "26.0526",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -18054,7 +18054,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.7
+    "screener_score": 32.8
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18249,7 +18249,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 77.1
+    "screener_score": 77.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18764,25 +18764,25 @@
     "fund_name": "NIT Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 03, 2026",
-    "nav": "34.4190",
+    "validity_date": "Jul 04, 2026",
+    "nav": "34.4184",
     "returns": {
       "mtd": "2.13",
       "ytd": "2.13",
-      "1d": "0.64",
-      "15d": "1.67",
-      "30d": "7.55",
+      "1d": "N/A",
+      "15d": "3.01",
+      "30d": "6.74",
       "90d": "18.88",
-      "180d": "3.95",
-      "270d": "5.99",
-      "365d": "34.16",
-      "2y": "102.81",
+      "180d": "2.76",
+      "270d": "8.85",
+      "365d": "33.73",
+      "2y": "102.53",
       "3y": "N/A"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
-    "offer": "26.0458",
-    "repurchase": "26.0458",
+    "offer": "26.0526",
+    "repurchase": "26.0526",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -18795,7 +18795,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 72.8
+    "screener_score": 72.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -19419,7 +19419,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.0
+    "screener_score": 32.2
   },
   {
     "sector": "Employer Pension Funds",
@@ -19739,25 +19739,25 @@
     "fund_name": "NIT KP Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 03, 2026",
-    "nav": "139.7728",
+    "validity_date": "Jul 04, 2026",
+    "nav": "139.8121",
     "returns": {
-      "mtd": "12.00",
-      "ytd": "12.00",
-      "1d": "13.03",
-      "15d": "10.50",
-      "30d": "10.46",
+      "mtd": "11.57",
+      "ytd": "11.57",
+      "1d": "10.26",
+      "15d": "10.49",
+      "30d": "10.47",
       "90d": "10.19",
       "180d": "9.97",
       "270d": "10.36",
-      "365d": "10.39",
-      "2y": "13.04",
+      "365d": "10.38",
+      "2y": "13.02",
       "3y": "N/A"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Dec 14, 2023",
-    "offer": "139.8121",
-    "repurchase": "139.8121",
+    "offer": "139.8514",
+    "repurchase": "139.8514",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19770,7 +19770,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.6
+    "screener_score": 31.3
   },
   {
     "sector": "Employer Pension Funds",
@@ -20004,7 +20004,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.0
+    "screener_score": 24.9
   },
   {
     "sector": "Employer Pension Funds",
@@ -20029,8 +20029,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Dec 20, 2023",
-    "offer": "135.4301",
-    "repurchase": "135.4301",
+    "offer": "135.4686",
+    "repurchase": "135.4686",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20199,7 +20199,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.0
+    "screener_score": 24.9
   },
   {
     "sector": "Employer Pension Funds",
@@ -20419,8 +20419,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Dec 16, 2025",
-    "offer": "104.8575",
-    "repurchase": "104.8575",
+    "offer": "104.8922",
+    "repurchase": "104.8922",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20675,25 +20675,25 @@
     "fund_name": "NIT KP Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 03, 2026",
-    "nav": "135.6689",
+    "validity_date": "Jul 04, 2026",
+    "nav": "135.7073",
     "returns": {
-      "mtd": "10.20",
-      "ytd": "10.20",
-      "1d": "10.29",
-      "15d": "13.17",
-      "30d": "11.56",
-      "90d": "10.24",
-      "180d": "9.71",
-      "270d": "10.18",
-      "365d": "9.70",
-      "2y": "11.35",
+      "mtd": "10.23",
+      "ytd": "10.23",
+      "1d": "10.33",
+      "15d": "13.19",
+      "30d": "11.58",
+      "90d": "10.25",
+      "180d": "9.72",
+      "270d": "10.19",
+      "365d": "9.71",
+      "2y": "11.34",
       "3y": "N/A"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Dec 14, 2023",
-    "offer": "135.7073",
-    "repurchase": "135.7073",
+    "offer": "135.7456",
+    "repurchase": "135.7456",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20706,7 +20706,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.6
+    "screener_score": 19.7
   },
   {
     "sector": "Employer Pension Funds",

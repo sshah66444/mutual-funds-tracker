@@ -7,7 +7,7 @@
       "direction": "+",
       "change": "0.90",
       "percent": "7.73%",
-      "volume": "66,751,148"
+      "volume": "66,770,551"
     },
     {
       "symbol": "LOTCHEM",
@@ -16,7 +16,7 @@
       "direction": "+",
       "change": "1.18",
       "percent": "4.02%",
-      "volume": "42,068,400"
+      "volume": "42,069,179"
     },
     {
       "symbol": "TPLRF1",
@@ -25,7 +25,7 @@
       "direction": "-",
       "change": "-0.09",
       "percent": "-0.85%",
-      "volume": "36,201,661"
+      "volume": "36,545,201"
     },
     {
       "symbol": "CNERGY",
@@ -34,7 +34,7 @@
       "direction": "+",
       "change": "0.18",
       "percent": "2.16%",
-      "volume": "28,843,920"
+      "volume": "28,865,720"
     },
     {
       "symbol": "BOP",
@@ -43,7 +43,7 @@
       "direction": "+",
       "change": "0.28",
       "percent": "0.76%",
-      "volume": "28,028,817"
+      "volume": "28,228,777"
     },
     {
       "symbol": "GCIL",
@@ -52,7 +52,7 @@
       "direction": "+",
       "change": "0.84",
       "percent": "2.17%",
-      "volume": "27,930,251"
+      "volume": "27,957,329"
     },
     {
       "symbol": "SPSL",
@@ -61,7 +61,7 @@
       "direction": "-",
       "change": "-0.01",
       "percent": "-0.05%",
-      "volume": "26,194,462"
+      "volume": "26,304,562"
     },
     {
       "symbol": "PAEL",
@@ -70,7 +70,7 @@
       "direction": "+",
       "change": "1.33",
       "percent": "2.93%",
-      "volume": "22,289,323"
+      "volume": "22,354,525"
     },
     {
       "symbol": "MLCF",
@@ -79,7 +79,7 @@
       "direction": "+",
       "change": "2.34",
       "percent": "2.18%",
-      "volume": "19,822,848"
+      "volume": "19,843,892"
     },
     {
       "symbol": "TPL",
@@ -88,7 +88,7 @@
       "direction": "+",
       "change": "0.36",
       "percent": "2.14%",
-      "volume": "18,762,083"
+      "volume": "18,767,081"
     }
   ],
   "gainers": [
@@ -126,7 +126,7 @@
       "direction": "+",
       "change": "1.65",
       "percent": "10.02%",
-      "volume": "1,369,572"
+      "volume": "1,383,572"
     },
     {
       "symbol": "CLVL",
@@ -144,7 +144,7 @@
       "direction": "+",
       "change": "4.08",
       "percent": "10.01%",
-      "volume": "60,515"
+      "volume": "60,915"
     },
     {
       "symbol": "ARUJ",
@@ -171,7 +171,7 @@
       "direction": "+",
       "change": "1.79",
       "percent": "10.01%",
-      "volume": "140,436"
+      "volume": "140,611"
     },
     {
       "symbol": "SGPL",
@@ -180,7 +180,7 @@
       "direction": "+",
       "change": "10.67",
       "percent": "10.00%",
-      "volume": "1,001,295"
+      "volume": "1,005,295"
     }
   ],
   "losers": [
@@ -200,7 +200,7 @@
       "direction": "-",
       "change": "-2.40",
       "percent": "-9.99%",
-      "volume": "14,233,139"
+      "volume": "14,248,984"
     },
     {
       "symbol": "TSMF",
@@ -209,7 +209,7 @@
       "direction": "-",
       "change": "-1.97",
       "percent": "-9.84%",
-      "volume": "556,036"
+      "volume": "567,736"
     },
     {
       "symbol": "GEMPAPL",
@@ -236,7 +236,7 @@
       "direction": "-",
       "change": "-1.17",
       "percent": "-7.32%",
-      "volume": "190,652"
+      "volume": "190,662"
     },
     {
       "symbol": "DWTM",
@@ -254,7 +254,7 @@
       "direction": "-",
       "change": "-11.49",
       "percent": "-7.06%",
-      "volume": "686,394"
+      "volume": "686,395"
     },
     {
       "symbol": "REDCO",
@@ -263,7 +263,7 @@
       "direction": "-",
       "change": "-2.24",
       "percent": "-6.38%",
-      "volume": "34,359"
+      "volume": "34,369"
     },
     {
       "symbol": "SANSM",

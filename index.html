@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Mutual Funds Tracker & Portfolio Optimizer</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for Portfolio Allocation and Performance visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon"><i class="fa-solid fa-chart-line-up"></i></div>
+                <div class="brand-name">
+                    <h2>PakFund</h2>
+                    <span>Smart Investor</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" data-tab="overview" id="btn-overview">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>Market Overview</span>
+                </button>
+                <button class="nav-item" data-tab="directory" id="btn-directory">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>Fund Directory</span>
+                </button>
+                <button class="nav-item" data-tab="compare" id="btn-compare">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Compare Funds</span>
+                </button>
+                <button class="nav-item" data-tab="portfolio" id="btn-portfolio">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Portfolio Builder</span>
+                </button>
+                <button class="nav-item" data-tab="calculator" id="btn-calculator">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span>Growth Calculator</span>
+                </button>
+                <button class="nav-item" data-tab="guide" id="btn-guide">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Investor Guide</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="data-status">
+                    <i class="fa-solid fa-rotate"></i>
+                    <div>
+                        <p>Data Source: MUFAP</p>
+                        <span id="data-update-date">Loading date...</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="header-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="global-search" placeholder="Search across 500+ funds (e.g. Meezan, NBP, Al-Ameen)...">
+                </div>
+                <div class="quick-stats">
+                    <div class="status-badge shariah">
+                        <i class="fa-solid fa-mosque"></i> <span id="islamic-funds-count">0</span> Shariah Funds
+                    </div>
+                    <div class="status-badge total">
+                        <i class="fa-solid fa-cubes"></i> <span id="total-funds-count">0</span> Total Funds
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <!-- ================= OVERVIEW TAB ================= -->
+                <section id="tab-overview" class="tab-pane active">
+                    <div class="welcome-banner">
+                        <div class="banner-text">
+                            <h1>Invest Smart in Pakistan's Mutual Funds</h1>
+                            <p>Track Net Asset Values (NAVs), analyze historical performance, compare different risk profiles, and design your optimal asset allocation model portfolio using verified data directly from MUFAP.</p>
+                        </div>
+                        <div class="banner-badge">
+                            <i class="fa-solid fa-circle-check"></i> Live Data Feed
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="card-icon blue"><i class="fa-solid fa-building-columns"></i></div>
+                            <div class="card-info">
+                                <h3>Asset Management Companies</h3>
+                                <p class="metric-value" id="amc-count">0</p>
+                                <span class="metric-sub">Registered with SECP & MUFAP</span>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="card-icon green"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                            <div class="card-info">
+                                <h3>Top Fund Category (YTD)</h3>
+                                <p class="metric-value" id="top-category">Equity</p>
+                                <span class="metric-sub">Maximum return yield index</span>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="card-icon gold"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="card-info">
+                                <h3>Low Risk (Money Market)</h3>
+                                <p class="metric-value" id="low-risk-avg-return">--%</p>
+                                <span class="metric-sub">Average Annualized Yield</span>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="card-icon cyan"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="card-info">
+                                <h3>KSE-100 Benchmark Index</h3>
+                                <p class="metric-value" id="kse100-price" style="font-size:1.15rem; font-weight:700;">--</p>
+                                <span class="metric-sub" id="kse100-change" style="font-size:0.75rem;">--</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlight sections -->
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-fire-flame-curved"></i> Top Performing Funds (YTD Performance)</h2>
+                    </div>
+
+                    <div class="top-funds-slider">
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-chart-line"></i> Top Equity Funds (High Risk)</h3>
+                            <div class="top-funds-list" id="top-equity-list">
+                                <!-- JS Populated -->
+                            </div>
+                        </div>
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-money-bill-transfer"></i> Top Income Funds (Medium Risk)</h3>
+                            <div class="top-funds-list" id="top-income-list">
+                                <!-- JS Populated -->
+                            </div>
+                        </div>
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-vault"></i> Top Money Market (Low Risk)</h3>
+                            <div class="top-funds-list" id="top-mm-list">
+                                <!-- JS Populated -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PSX Daily Highlights Movers -->
+                    <div class="section-title" style="margin-top: 40px;">
+                        <h2><i class="fa-solid fa-gauge-high"></i> Pakistan Stock Exchange (PSX) Daily Movers</h2>
+                    </div>
+
+                    <div class="psx-movers-grid">
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-fire"></i> Top Active Stocks</h3>
+                            <div class="psx-movers-list" id="psx-active-list">
+                                <!-- JS Populated -->
+                            </div>
+                        </div>
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-circle-chevron-up" style="color:var(--accent-green);"></i> Top Gainers</h3>
+                            <div class="psx-movers-list" id="psx-gainers-list">
+                                <!-- JS Populated -->
+                            </div>
+                        </div>
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-circle-chevron-down" style="color:var(--accent-red);"></i> Top Losers</h3>
+                            <div class="psx-movers-list" id="psx-losers-list">
+                                <!-- JS Populated -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ================= DIRECTORY TAB ================= -->
+                <section id="tab-directory" class="tab-pane">
+                    <div class="filter-wrapper">
+                        <div class="filter-row">
+                            <div class="filter-group">
+                                <label for="filter-amc">Asset Management Company (AMC)</label>
+                                <select id="filter-amc">
+                                    <option value="all">All Companies</option>
+                                    <!-- Dynamic -->
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="filter-category">Asset Category</label>
+                                <select id="filter-category">
+                                    <option value="all">All Categories</option>
+                                    <option value="Stock">Stock (Equity)</option>
+                                    <option value="Income">Income / Debt</option>
+                                    <option value="Money Market">Money Market</option>
+                                    <option value="Pension">Pension Funds (VPS)</option>
+                                    <option value="Assets">Assets (Balanced / Allocation)</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="filter-risk">Risk Profile</label>
+                                <select id="filter-risk">
+                                    <option value="all">All Risk Levels</option>
+                                    <option value="Low">Low Risk (Capital Preservation)</option>
+                                    <option value="Medium">Medium Risk (Steady Growth)</option>
+                                    <option value="High">High Risk (Capital Appreciation)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter-row flex-row">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="filter-shariah">
+                                <span class="checkmark"></span>
+                                <i class="fa-solid fa-mosque"></i> Show Shariah Compliant (Islamic) Funds Only
+                            </label>
+                            <button class="reset-filters" id="btn-reset-filters"><i class="fa-solid fa-arrow-rotate-left"></i> Reset Filters</button>
+                        </div>
+                    </div>
+
+                    <div class="directory-container">
+                        <div class="results-meta">
+                            <p>Showing <span id="filtered-count">0</span> funds</p>
+                            <div class="sort-group">
+                                <label for="sort-select">Sort By:</label>
+                                <select id="sort-select">
+                                    <option value="score_desc">Highest Screener Score</option>
+                                    <option value="returns_ytd_desc">Highest Return (YTD)</option>
+                                    <option value="returns_365d_desc">Highest Return (1 Year)</option>
+                                    <option value="returns_3y_desc">Highest Return (3 Year)</option>
+                                    <option value="ter_asc">Lowest Fees (TER YTD)</option>
+                                    <option value="ter_desc">Highest Fees (TER YTD)</option>
+                                    <option value="name_asc">Fund Name (A-Z)</option>
+                                    <option value="nav_desc">NAV Price (High to Low)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="funds-table-container">
+                            <table class="funds-table">
+                                <thead>
+                                    <tr>
+                                        <th>Score</th>
+                                        <th>Fund Name</th>
+                                        <th>Category</th>
+                                        <th>Risk</th>
+                                        <th>Rating</th>
+                                        <th>NAV (Rs.)</th>
+                                        <th>TER YTD</th>
+                                        <th>YTD Return</th>
+                                        <th>1-Year Return</th>
+                                        <th>3-Year Return</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="directory-tbody">
+                                    <!-- Populated by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="table-legend-note" style="font-size: 0.72rem; color: var(--text-muted); margin-top: 12px; font-style: italic; line-height: 1.4;">*Note: TER values marked with an asterisk (*) are estimates calculated using category averages because the fund's daily expense counter was reset to 0.00% by the Asset Management Company (AMC) at the start of the new fiscal year (July 1st).</p>
+                    </div>
+                </section>
+
+                <!-- ================= COMPARE TAB ================= -->
+                <section id="tab-compare" class="tab-pane">
+                    <div class="panel-header-desc">
+                        <h2>Side-by-Side Fund Comparison</h2>
+                        <p>Select up to 3 funds from the catalog to run a side-by-side comparison of ratings, pricing, loads, and short/long-term trailing returns.</p>
+                    </div>
+
+                    <div class="compare-selectors-row">
+                        <div class="selector-box">
+                            <label>Select Fund 1</label>
+                            <select id="compare-select-1" class="compare-select">
+                                <option value="">-- Choose a Fund --</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <label>Select Fund 2</label>
+                            <select id="compare-select-2" class="compare-select">
+                                <option value="">-- Choose a Fund --</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <label>Select Fund 3</label>
+                            <select id="compare-select-3" class="compare-select">
+                                <option value="">-- Choose a Fund --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="compare-workspace" class="compare-grid">
+                        <!-- JS renders comparison table here -->
+                        <div class="no-selection-placeholder">
+                            <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                            <p>Please select at least two funds above to start comparing.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ================= PORTFOLIO BUILDER TAB ================= -->
+                <section id="tab-portfolio" class="tab-pane">
+                    <div class="panel-header-desc">
+                        <h2>Interactive Portfolio Allocator</h2>
+                        <p>Combine multiple asset categories (e.g. low-risk Cash, medium-risk Income, high-risk Equity) to build a mock portfolio. Adjust allocation weight percentages to evaluate simulated historical portfolio yields.</p>
+                    </div>
+
+                    <div class="portfolio-workspace">
+                        <div class="portfolio-left">
+                            <div class="glass-card">
+                                <h3>Add Funds to Portfolio</h3>
+                                <div class="add-fund-search-box">
+                                    <select id="portfolio-fund-select">
+                                        <option value="">-- Select a Fund to Add --</option>
+                                    </select>
+                                    <button class="btn-primary" id="btn-add-to-portfolio"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+
+                                <div class="portfolio-list" id="portfolio-items-list">
+                                    <!-- Added funds will appear here with sliders -->
+                                    <div class="empty-portfolio-note">
+                                        <i class="fa-solid fa-wallet"></i>
+                                        <p>No funds added. Select a fund from the dropdown above to construct your asset portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-right">
+                            <div class="glass-card sticky-card">
+                                <h3>Portfolio Analytics</h3>
+                                <div class="allocation-total-bar">
+                                    <span>Total Allocation:</span>
+                                    <span id="portfolio-alloc-total" class="allocation-value warning">0%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div id="portfolio-progress-fill" class="progress-bar-fill" style="width: 0%"></div>
+                                </div>
+                                
+                                <div class="chart-container" style="position: relative; height:200px; width:100%; margin: 20px 0;">
+                                    <canvas id="portfolio-pie-chart"></canvas>
+                                </div>
+
+                                <div class="portfolio-metrics">
+                                    <div class="p-metric">
+                                        <span class="p-label">Weighted YTD Return:</span>
+                                        <span id="portfolio-weighted-ytd" class="p-value">--%</span>
+                                    </div>
+                                    <div class="p-metric">
+                                        <span class="p-label">Weighted 1-Yr Return:</span>
+                                        <span id="portfolio-weighted-1y" class="p-value">--%</span>
+                                    </div>
+                                    <div class="p-metric">
+                                        <span class="p-label">Overall Risk Category:</span>
+                                        <span id="portfolio-risk-profile" class="p-value">--</span>
+                                    </div>
+                                </div>
+
+                                <div class="simulation-box">
+                                    <h4>Simulated Scenario</h4>
+                                    <div class="sim-row">
+                                        <label for="portfolio-sim-amount">Initial Sum (Rs.):</label>
+                                        <input type="number" id="portfolio-sim-amount" value="100000" step="50000">
+                                    </div>
+                                    <div class="sim-result">
+                                        <p>Projected Value in 1 Year (YTD rate):</p>
+                                        <h3 id="portfolio-sim-result">Rs. --</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ================= GROWTH CALCULATOR TAB ================= -->
+                <section id="tab-calculator" class="tab-pane">
+                    <div class="calculator-container">
+                        <div class="calc-inputs glass-card">
+                            <h2>Investment Growth Simulator</h2>
+                            <p>Calculate compound interest yields and compare potential growth models across fund risk classes.</p>
+                            
+                            <div class="calc-group">
+                                <label for="calc-fund">Select Benchmark Fund</label>
+                                <select id="calc-fund">
+                                    <!-- Populated -->
+                                </select>
+                            </div>
+
+                            <div class="calc-group">
+                                <label for="calc-initial">Initial Investment (PKR)</label>
+                                <input type="number" id="calc-initial" value="100000" min="5000">
+                            </div>
+
+                            <div class="calc-group">
+                                <label for="calc-monthly">Monthly Contribution (PKR)</label>
+                                <input type="number" id="calc-monthly" value="10000" min="0">
+                            </div>
+
+                            <div class="calc-group">
+                                <label for="calc-years">Investment Duration (Years)</label>
+                                <input type="range" id="calc-years" min="1" max="15" value="5" step="1">
+                                <div class="range-value"><span id="calc-years-display">5</span> Years</div>
+                            </div>
+
+                            <div class="calc-group">
+                                <label for="calc-expected-return">Expected Annual Return (%)</label>
+                                <input type="number" id="calc-expected-return" value="12" step="0.5">
+                                <span class="helper-text">*Prefilled with selected fund's 1-year yield rate. You can manually adjust it.</span>
+                            </div>
+
+                            <button class="btn-primary w-100" id="btn-run-calc"><i class="fa-solid fa-wand-magic-sparkles"></i> Calculate Projections</button>
+                        </div>
+
+                        <div class="calc-results glass-card">
+                            <h3>Growth Projections Summary</h3>
+                            <div class="results-highlight-row">
+                                <div class="hl-box">
+                                    <span>Total Investment</span>
+                                    <h4 id="calc-total-invested">Rs. 0</h4>
+                                </div>
+                                <div class="hl-box highlight">
+                                    <span>Estimated Future Value</span>
+                                    <h4 id="calc-future-value">Rs. 0</h4>
+                                </div>
+                                <div class="hl-box green">
+                                    <span>Total Profit Earned</span>
+                                    <h4 id="calc-profit-earned">Rs. 0</h4>
+                                </div>
+                            </div>
+
+                            <div class="chart-container" style="position: relative; height:320px; width:100%; margin-top:20px;">
+                                <canvas id="calc-growth-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ================= INVESTOR GUIDE TAB ================= -->
+                <section id="tab-guide" class="tab-pane">
+                    <div class="guide-container glass-card">
+                        <div class="guide-nav">
+                            <button class="guide-nav-item active" data-guide-section="basics">Mutual Funds Basics</button>
+                            <button class="guide-nav-item" data-guide-section="taxation">Taxation & Zakat</button>
+                            <button class="guide-nav-item" data-guide-section="how-to-start">How to Start Investing</button>
+                            <button class="guide-nav-item" data-guide-section="terminology">Glossary & Terms</button>
+                        </div>
+
+                        <div class="guide-content">
+                            <!-- Section Basics -->
+                            <div id="guide-sec-basics" class="guide-section active">
+                                <h2>Introduction to Mutual Funds in Pakistan</h2>
+                                <p>A mutual fund is an investment vehicle that pools money from multiple investors to buy a diversified portfolio of stocks, bonds, or other securities. In Pakistan, mutual funds are heavily regulated by the <strong>Securities and Exchange Commission of Pakistan (SECP)</strong>, offering retail investors access to professional asset management.</p>
+                                
+                                <h3>Why Invest in Mutual Funds?</h3>
+                                <ul>
+                                    <li><strong>Professional Management:</strong> Qualified portfolio managers make investment decisions based on rigorous research.</li>
+                                    <li><strong>Diversification:</strong> Instantly spread risk across dozens of companies or government securities, which is difficult with small capital on the stock exchange.</li>
+                                    <li><strong>Liquidity:</strong> Open-end mutual funds can be bought or redeemed (sold back to the fund) on any business day. The AMC is bound to purchase them at the prevailing NAV.</li>
+                                    <li><strong>Accessibility:</strong> You can start investing with as little as Rs. 500 or Rs. 5,000 depending on the AMC.</li>
+                                </ul>
+
+                                <h3>Core Asset Categories</h3>
+                                <div class="category-cards-grid">
+                                    <div class="cat-card">
+                                        <div class="badge-risk low">Low Risk</div>
+                                        <h4>Money Market Funds</h4>
+                                        <p>Invest in short-term government securities (T-bills) and high-rated bank deposits. Capital protection is high, with stable annualized returns.</p>
+                                    </div>
+                                    <div class="cat-card">
+                                        <div class="badge-risk medium">Medium Risk</div>
+                                        <h4>Income / Debt Funds</h4>
+                                        <p>Invest in government bonds (PIBs), corporate bonds (TFCs), and bank deposits. Yields are typically higher than money markets but carry credit and interest rate risk.</p>
+                                    </div>
+                                    <div class="cat-card">
+                                        <div class="badge-risk high">High Risk</div>
+                                        <h4>Equity Funds</h4>
+                                        <p>Invest directly in the Pakistan Stock Exchange (PSX). Offers the highest long-term growth potential but is subject to daily stock market volatility.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section Taxation -->
+                            <div id="guide-sec-taxation" class="guide-section">
+                                <h2>Taxation, Withholding Tax, and Zakat Rules</h2>
+                                <p>Tax rules play a major role in your net returns. In Pakistan, tax rates differ significantly depending on your tax filer status (Active Taxpayer List - ATL) and the type of fund.</p>
+                                
+                                <h3>1. Capital Gains Tax (CGT)</h3>
+                                <p>When you redeem (sell) mutual fund units, the profit is subject to CGT. Under current rules:</p>
+                                <table class="guide-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Filer Status</th>
+                                            <th>Equity Funds (Stock market)</th>
+                                            <th>Money Market & Income Funds</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Active Filer (ATL)</strong></td>
+                                            <td>15% on Capital Gains</td>
+                                            <td>15% on Dividend Income</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Non-Filer</strong></td>
+                                            <td>30% on Capital Gains</td>
+                                            <td>30% on Dividend Income</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h3>2. Zakat Deduction</h3>
+                                <p>Zakat is deducted at source at the rate of <strong>2.5%</strong> of the redemption/face value of the investment on the 1st of Ramadan, unless you submit a Zakat Exemption Form.</p>
+                                <div class="tip-box">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <p><strong>Exemption Tip:</strong> If you wish to manage and pay Zakat yourself, you must submit a notarized <strong>CZ-50 affidavit (Zakat Exemption Form)</strong> to your AMC prior to the start of Ramadan.</p>
+                                </div>
+
+                                <h3>3. Front-End and Back-End Loads</h3>
+                                <p>Many funds charge a sales commission:</p>
+                                <ul>
+                                    <li><strong>Front-End Load:</strong> Deducted from your investment amount when you buy units (typically ranges from 1% to 2% for Equity, and 0% for Money Market).</li>
+                                    <li><strong>Back-End Load:</strong> Deducted when you redeem your units (mostly 0% now, but some plans have early exit penalties).</li>
+                                </ul>
+                            </div>
+
+                            <!-- Section How to Start -->
+                            <div id="guide-sec-how-to-start" class="guide-section">
+                                <h2>How to Start Investing in Pakistan</h2>
+                                <p>Beginning your investment journey is straightforward. You can open an account directly with individual Asset Management Companies (AMCs) or use consolidated financial platforms.</p>
+                                
+                                <h3>Required Documents</h3>
+                                <ol>
+                                    <li>Computerized National Identity Card (CNIC / NICOP)</li>
+                                    <li>Proof of Income / Profession (Salary slip, employment letter, or business letterhead)</li>
+                                    <li>IBAN (International Bank Account Number) for direct payouts and redemptions</li>
+                                    <li>Active Email Address and Mobile Number</li>
+                                </ol>
+
+                                <h3>Step-by-Step Account Opening Process</h3>
+                                <div class="steps-timeline">
+                                    <div class="timeline-step">
+                                        <div class="step-num">1</div>
+                                        <div class="step-content">
+                                            <h4>Select an AMC or Consolidated Platform</h4>
+                                            <p>You can sign up directly with major AMCs (e.g. Meezan Funds, NBP Funds, UBL Funds, MCB-AH) online or use mobile apps like <strong>FinPocket</strong> or AMC apps (iSave, Meezan Funds app) which consolidate multiple funds.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-step">
+                                        <div class="step-num">2</div>
+                                        <div class="step-content">
+                                            <h4>Complete e-KYC (Digital Registration)</h4>
+                                            <p>Fill out the online application, upload photos of your CNIC and proof of income, and record a short video selfie for biometrics validation.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-step">
+                                        <div class="step-num">3</div>
+                                        <div class="step-content">
+                                            <h4>Fund your Account</h4>
+                                            <p>Transfer funds from your bank account via IBFT (Internet Banking) using the AMC's designated collection bank accounts. Enter the transaction reference on their app.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-step">
+                                        <div class="step-num">4</div>
+                                        <div class="step-content">
+                                            <h4>Purchase Units</h4>
+                                            <p>Once your balance is updated, select the specific fund you want to invest in (e.g. Meezan Islamic Income Fund) and execute a purchase order. Units will be allocated to you based on that day's closing NAV.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section Terminology -->
+                            <div id="guide-sec-terminology" class="guide-section">
+                                <h2>Key Investment Terms Explained</h2>
+                                <dl class="glossary-list">
+                                    <dt>Net Asset Value (NAV)</dt>
+                                    <dd>The market value of one unit of a mutual fund. It is calculated at the end of each business day by dividing the total net value of the fund's assets by the number of outstanding units.</dd>
+
+                                    <dt>Asset Management Company (AMC)</dt>
+                                    <dd>A financial company registered with SECP that manages mutual funds and portfolios on behalf of institutional and retail investors.</dd>
+
+                                    <dt>Cumulative Return</dt>
+                                    <dd>The overall percentage gain or loss generated by an investment over a specific period, without annualizing the results.</dd>
+
+                                    <dt>Annualized Return</dt>
+                                    <dd>The geometric mean of return rate computed on an annual basis, allowing comparison of funds that have been open for different lengths of time.</dd>
+
+                                    <dt>Expense Ratio</dt>
+                                    <dd>The annual fee charged by the fund to cover management costs, administrative fees, and trustee expenses, expressed as a percentage of the fund's average assets.</dd>
+
+                                    <dt>Trustee</dt>
+                                    <dd>An independent third-party custodian (commonly the Central Depository Company of Pakistan - CDC) that legally holds the assets of the mutual fund to protect the interests of unit holders.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Fund Details Modal -->
+    <div id="fund-details-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal" id="btn-close-modal">&times;</span>
+            <div class="modal-header-info">
+                <h2 id="modal-fund-name">Fund Name</h2>
+                <div class="modal-sub">
+                    <span id="modal-fund-amc" class="modal-amc">AMC Name</span>
+                    <span id="modal-fund-shariah" class="badge-shariah-tag">Shariah</span>
+                </div>
+            </div>
+            <div class="modal-grid-layout">
+                <div class="modal-info-column">
+                    <div class="info-row"><strong>Category:</strong> <span id="modal-category"></span></div>
+                    <div class="info-row"><strong>Risk Level:</strong> <span id="modal-risk"></span></div>
+                    <div class="info-row"><strong>SECP Rating:</strong> <span id="modal-rating"></span></div>
+                    <div class="info-row"><strong>Current NAV:</strong> <span id="modal-nav"></span></div>
+                    <div class="info-row"><strong>Validity Date:</strong> <span id="modal-date"></span></div>
+                    <div class="info-row"><strong>Inception Date:</strong> <span id="modal-inception"></span></div>
+                    <div class="info-row"><strong>Management Fee (MF):</strong> <span id="modal-m-fee"></span></div>
+                    <div class="info-row"><strong>Total Expense Ratio (TER YTD):</strong> <span id="modal-ter-ytd"></span></div>
+                    <div class="info-row"><strong>Loads (F / B / C):</strong> <span id="modal-loads"></span></div>
+                    <div class="info-row"><strong>Trustee Custodian:</strong> <span id="modal-trustee"></span></div>
+                    <div class="info-row"><strong>Screener Score:</strong> <span id="modal-score" style="color:var(--accent-cyan); font-weight:700;"></span></div>
+                    <button class="btn-primary w-100" id="modal-btn-add-portfolio" style="margin-top: 20px;"><i class="fa-solid fa-plus"></i> Add to Portfolio</button>
+                </div>
+                <div class="modal-chart-column">
+                    <h3>5-Year Growth Performance (Rs. 100 Growth)</h3>
+                    <div class="modal-chart-container">
+                        <canvas id="modal-performance-chart"></canvas>
+                    </div>
+                    <p class="chart-note">*Years 4 & 5 projected using the fund's 3-year annualized yield rate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main javascript file -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1029 @@
+// Global State
+let fundsData = [];
+let uniqueAMCs = [];
+let portfolioItems = []; // List of { fund_name, weight }
+let portfolioChartInstance = null;
+let growthChartInstance = null;
+
+// Initialize App
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+    setupTabNavigation();
+    setupGuideNavigation();
+    setupEventHandlers();
+});
+
+// Load JSON Data
+async function loadData() {
+    try {
+        const response = await fetch('./data/mufap_data.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        fundsData = await response.json();
+        
+        // Load PSX Index details
+        try {
+            const psxResponse = await fetch('./data/psx_index.json');
+            if (psxResponse.ok) {
+                const psxData = await psxResponse.json();
+                updateKSE100Card(psxData);
+            }
+        } catch (psxErr) {
+            console.warn("Could not load KSE-100 index data:", psxErr);
+        }
+        
+        // Load PSX Performers
+        try {
+            const perfResponse = await fetch('./data/psx_performers.json');
+            if (perfResponse.ok) {
+                const perfData = await perfResponse.json();
+                renderPSXMovers(perfData);
+            }
+        } catch (perfErr) {
+            console.warn("Could not load PSX performers data:", perfErr);
+        }
+        
+        // Extract unique AMCs
+        const amcs = [...new Set(fundsData.map(f => f.amc))].filter(amc => amc && amc !== 'Unknown').sort();
+        uniqueAMCs = amcs;
+        
+        // Populate DOM components
+        updateGlobalStats();
+        populateAMCDropdown();
+        populateSelectors();
+        renderOverviewHighlights();
+        renderDirectoryTable();
+        
+        // Trigger initial calculator draw
+        calculateGrowth();
+        
+    } catch (error) {
+        console.error("Error loading data:", error);
+        document.getElementById('data-update-date').innerText = "Error loading data";
+    }
+}
+
+// Setup navigation between sidebar tabs
+function setupTabNavigation() {
+    const navItems = document.querySelectorAll('.nav-item');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const targetTab = item.getAttribute('data-tab');
+            
+            navItems.forEach(n => n.classList.remove('active'));
+            tabPanes.forEach(t => t.classList.remove('active'));
+            
+            item.classList.add('active');
+            document.getElementById(`tab-${targetTab}`).classList.add('active');
+            
+            // Re-render chart instances if resizing is needed
+            if (targetTab === 'portfolio' && portfolioItems.length > 0) {
+                updatePortfolioChart();
+            }
+        });
+    });
+}
+
+// Setup navigation inside the Investor Guide
+function setupGuideNavigation() {
+    const guideNavItems = document.querySelectorAll('.guide-nav-item');
+    const guideSections = document.querySelectorAll('.guide-section');
+    
+    guideNavItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const targetSec = item.getAttribute('data-guide-section');
+            
+            guideNavItems.forEach(n => n.classList.remove('active'));
+            guideSections.forEach(s => s.classList.remove('active'));
+            
+            item.classList.add('active');
+            document.getElementById(`guide-sec-${targetSec}`).classList.add('active');
+        });
+    });
+}
+
+// Setup Event Handlers
+function setupEventHandlers() {
+    // Directory Filters
+    document.getElementById('filter-amc').addEventListener('change', renderDirectoryTable);
+    document.getElementById('filter-category').addEventListener('change', renderDirectoryTable);
+    document.getElementById('filter-risk').addEventListener('change', renderDirectoryTable);
+    document.getElementById('filter-shariah').addEventListener('change', renderDirectoryTable);
+    document.getElementById('global-search').addEventListener('input', renderDirectoryTable);
+    document.getElementById('sort-select').addEventListener('change', renderDirectoryTable);
+    
+    document.getElementById('btn-reset-filters').addEventListener('click', () => {
+        document.getElementById('filter-amc').value = 'all';
+        document.getElementById('filter-category').value = 'all';
+        document.getElementById('filter-risk').value = 'all';
+        document.getElementById('filter-shariah').checked = false;
+        document.getElementById('global-search').value = '';
+        document.getElementById('sort-select').value = 'score_desc';
+        renderDirectoryTable();
+    });
+
+    // Comparison select triggers
+    document.getElementById('compare-select-1').addEventListener('change', updateComparisonWorkspace);
+    document.getElementById('compare-select-2').addEventListener('change', updateComparisonWorkspace);
+    document.getElementById('compare-select-3').addEventListener('change', updateComparisonWorkspace);
+
+    // Portfolio Add Fund Trigger
+    document.getElementById('btn-add-to-portfolio').addEventListener('click', addFundToPortfolio);
+    document.getElementById('portfolio-sim-amount').addEventListener('input', updatePortfolioAnalytics);
+
+    // Growth Calculator triggers
+    document.getElementById('calc-fund').addEventListener('change', prefillExpectedReturn);
+    document.getElementById('calc-years').addEventListener('input', (e) => {
+        document.getElementById('calc-years-display').innerText = e.target.value;
+        calculateGrowth();
+    });
+    document.getElementById('btn-run-calc').addEventListener('click', calculateGrowth);
+
+    // Modal Close handlers
+    document.getElementById('btn-close-modal').addEventListener('click', () => {
+        document.getElementById('fund-details-modal').style.display = 'none';
+    });
+    window.addEventListener('click', (e) => {
+        const modal = document.getElementById('fund-details-modal');
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
+
+// Parse value helper for maths
+function parseFloatReturn(str) {
+    if (!str || str === 'N/A') return null;
+    let cleaned = str.replace(/%|,/g, '').trim();
+    if (cleaned.startsWith('(') && cleaned.endsWith(')')) {
+        cleaned = '-' + cleaned.slice(1, -1);
+    }
+    const val = parseFloat(cleaned);
+    return isNaN(val) ? null : val;
+}
+
+// Update Global counts and dates
+function updateGlobalStats() {
+    const totalFunds = fundsData.length;
+    const shariahFunds = fundsData.filter(f => f.is_shariah).length;
+    
+    document.getElementById('total-funds-count').innerText = totalFunds.toLocaleString();
+    document.getElementById('islamic-funds-count').innerText = shariahFunds.toLocaleString();
+    document.getElementById('amc-count').innerText = uniqueAMCs.length;
+
+    // Get date from first few entries
+    if (fundsData.length > 0) {
+        document.getElementById('data-update-date').innerText = fundsData[0].validity_date;
+    }
+
+    // Average money market yield
+    const mmFunds = fundsData.filter(f => f.category.toLowerCase().includes('money market') && parseFloatReturn(f.returns.ytd) !== null);
+    if (mmFunds.length > 0) {
+        const avg = mmFunds.reduce((sum, f) => sum + parseFloatReturn(f.returns.ytd), 0) / mmFunds.length;
+        document.getElementById('low-risk-avg-return').innerText = avg.toFixed(2) + '%';
+    }
+}
+
+// Populate dropdown filters
+function populateAMCDropdown() {
+    const select = document.getElementById('filter-amc');
+    uniqueAMCs.forEach(amc => {
+        const option = document.createElement('option');
+        option.value = amc;
+        option.textContent = amc;
+        select.appendChild(option);
+    });
+}
+
+// Populate selectors in Portfolio and Comparison tabs
+function populateSelectors() {
+    const compare1 = document.getElementById('compare-select-1');
+    const compare2 = document.getElementById('compare-select-2');
+    const compare3 = document.getElementById('compare-select-3');
+    const portfolioSelect = document.getElementById('portfolio-fund-select');
+    const calcSelect = document.getElementById('calc-fund');
+    
+    // Sort funds by name for selection list
+    const sortedFunds = [...fundsData].sort((a, b) => a.fund_name.localeCompare(b.fund_name));
+
+    sortedFunds.forEach(fund => {
+        const nameText = `${fund.fund_name} (NAV: Rs. ${fund.nav})`;
+        
+        // Compare select lists
+        const opt1 = new Option(nameText, fund.fund_name);
+        const opt2 = new Option(nameText, fund.fund_name);
+        const opt3 = new Option(nameText, fund.fund_name);
+        compare1.add(opt1);
+        compare2.add(opt2);
+        compare3.add(opt3);
+
+        // Portfolio allocator dropdown
+        portfolioSelect.add(new Option(fund.fund_name, fund.fund_name));
+
+        // Growth Calculator select list
+        calcSelect.add(new Option(nameText, fund.fund_name));
+    });
+    
+    // Prefill calculator select with first element
+    if (sortedFunds.length > 0) {
+        prefillExpectedReturn();
+    }
+}
+
+// Highlights panel on overview
+function renderOverviewHighlights() {
+    const getTopFunds = (keywordCategory, elementId) => {
+        const listEl = document.getElementById(elementId);
+        listEl.innerHTML = '';
+        
+        // Filter by keyword and ensure positive numeric return
+        const funds = fundsData.filter(f => {
+            const cat = f.category.toLowerCase();
+            const name = f.fund_name.toLowerCase();
+            return cat.includes(keywordCategory) && parseFloatReturn(f.returns.ytd) !== null && f.major_category !== 'Pension';
+        });
+
+        // Sort by YTD return descending
+        funds.sort((a, b) => parseFloatReturn(b.returns.ytd) - parseFloatReturn(a.returns.ytd));
+
+        // Display top 3
+        funds.slice(0, 3).forEach((f, idx) => {
+            const card = document.createElement('div');
+            card.className = 'mini-fund-card';
+            card.onclick = () => {
+                // Navigate to directory with this fund searched
+                document.getElementById('global-search').value = f.fund_name;
+                document.getElementById('btn-directory').click();
+                renderDirectoryTable();
+            };
+
+            const ytd = parseFloatReturn(f.returns.ytd);
+            
+            card.innerHTML = `
+                <div class="m-fund-info">
+                    <div class="m-fund-name">${f.fund_name}</div>
+                    <div class="m-fund-meta">
+                        <span>${f.amc.replace(' Limited', '').replace(' Company', '')}</span>
+                        ${f.is_shariah ? '<span class="shariah-badge"><i class="fa-solid fa-mosque"></i> Islamic</span>' : ''}
+                    </div>
+                </div>
+                <div class="m-fund-yield">
+                    <div class="m-yield-val ${ytd < 0 ? 'negative' : ''}">${ytd.toFixed(2)}%</div>
+                    <div class="m-yield-label">YTD Return</div>
+                </div>
+            `;
+            listEl.appendChild(card);
+        });
+    };
+
+    getTopFunds('equity', 'top-equity-list');
+    getTopFunds('income', 'top-income-list');
+    getTopFunds('money market', 'top-mm-list');
+}
+
+// Render Directory Table Grid
+function renderDirectoryTable() {
+    const amcFilter = document.getElementById('filter-amc').value;
+    const catFilter = document.getElementById('filter-category').value;
+    const riskFilter = document.getElementById('filter-risk').value;
+    const shariahFilter = document.getElementById('filter-shariah').checked;
+    const searchQuery = document.getElementById('global-search').value.toLowerCase().trim();
+    const sortVal = document.getElementById('sort-select').value;
+    
+    const tbody = document.getElementById('directory-tbody');
+    tbody.innerHTML = '';
+
+    // Filter Logic
+    let filtered = fundsData.filter(fund => {
+        // AMC
+        if (amcFilter !== 'all' && fund.amc !== amcFilter) return false;
+        
+        // Category grouping
+        if (catFilter !== 'all') {
+            if (fund.major_category !== catFilter) return false;
+        }
+
+        // Risk Level
+        if (riskFilter !== 'all' && fund.risk_level !== riskFilter) return false;
+
+        // Shariah
+        if (shariahFilter && !fund.is_shariah) return false;
+
+        // Search Query
+        if (searchQuery) {
+            const matchesName = fund.fund_name.toLowerCase().includes(searchQuery);
+            const matchesAMC = fund.amc.toLowerCase().includes(searchQuery);
+            const matchesCat = fund.category.toLowerCase().includes(searchQuery);
+            if (!matchesName && !matchesAMC && !matchesCat) return false;
+        }
+
+        return true;
+    });
+
+    // Sort Logic
+    filtered.sort((a, b) => {
+        if (sortVal === 'name_asc') {
+            return a.fund_name.localeCompare(b.fund_name);
+        }
+        
+        let valA, valB;
+        if (sortVal === 'score_desc') {
+            valA = parseFloat(a.screener_score) || 0;
+            valB = parseFloat(b.screener_score) || 0;
+        } else if (sortVal === 'returns_ytd_desc') {
+            valA = parseFloatReturn(a.returns.ytd) ?? -9999;
+            valB = parseFloatReturn(b.returns.ytd) ?? -9999;
+        } else if (sortVal === 'returns_365d_desc') {
+            valA = parseFloatReturn(a.returns['365d']) ?? -9999;
+            valB = parseFloatReturn(b.returns['365d']) ?? -9999;
+        } else if (sortVal === 'returns_3y_desc') {
+            valA = parseFloatReturn(a.returns['3y']) ?? -9999;
+            valB = parseFloatReturn(b.returns['3y']) ?? -9999;
+        } else if (sortVal === 'nav_desc') {
+            valA = parseFloat(a.nav.replace(/,/g, '')) ?? 0;
+            valB = parseFloat(b.nav.replace(/,/g, '')) ?? 0;
+        } else if (sortVal === 'ter_asc') {
+            valA = parseFloat(a.ter_ytd) || 9999;
+            valB = parseFloat(b.ter_ytd) || 9999;
+            return valA - valB; // Ascending: lowest to highest
+        } else if (sortVal === 'ter_desc') {
+            valA = parseFloat(a.ter_ytd) || -9999;
+            valB = parseFloat(b.ter_ytd) || -9999;
+            return valB - valA; // Descending: highest to lowest
+        }
+        return valB - valA;
+    });
+
+    document.getElementById('filtered-count').innerText = filtered.length;
+
+    if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="11" style="text-align:center; padding: 40px; color: var(--text-muted);">No funds matched your current filters. Clear filters and try searching something else.</td></tr>`;
+        return;
+    }
+
+    // Render Paginated rows (show top 50 for performance, scroll loads remaining)
+    filtered.slice(0, 80).forEach(fund => {
+        const tr = document.createElement('tr');
+        
+        const ytd = parseFloatReturn(fund.returns.ytd);
+        const y365 = parseFloatReturn(fund.returns['365d']);
+        const y3y = parseFloatReturn(fund.returns['3y']);
+
+        const ytdClass = ytd === null ? 'na' : (ytd < 0 ? 'negative' : '');
+        const y365Class = y365 === null ? 'na' : (y365 < 0 ? 'negative' : '');
+        const y3yClass = y3y === null ? 'na' : (y3y < 0 ? 'negative' : '');
+
+        tr.innerHTML = `
+            <td><span style="font-weight:700; color:var(--accent-cyan); font-size:1.05rem;">${fund.screener_score}</span></td>
+            <td>
+                <div class="fund-td-name" style="cursor:pointer; text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);" onclick="showFundDetails('${fund.fund_name.replace(/'/g, "\\'")}')">${fund.fund_name}</div>
+                <div class="fund-td-amc">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
+            </td>
+            <td><span style="font-size:0.8rem; color:var(--text-secondary);">${fund.category}</span></td>
+            <td><span class="badge-risk ${fund.risk_level.toLowerCase()}">${fund.risk_level}</span></td>
+            <td><span style="font-size:0.82rem; font-weight:600; color:var(--accent-gold);">${fund.rating}</span></td>
+            <td style="font-weight:600;">Rs. ${parseFloat(fund.nav).toLocaleString()}</td>
+            <td style="font-weight:600; color:var(--text-secondary);">${fund.ter_ytd === 'N/A' ? 'N/A' : fund.ter_ytd + '%'}${fund.is_ter_estimated ? '*' : ''}</td>
+            <td><span class="return-val ${ytdClass}">${ytd !== null ? ytd.toFixed(2) + '%' : 'N/A'}</span></td>
+            <td><span class="return-val ${y365Class}">${y365 !== null ? y365.toFixed(2) + '%' : 'N/A'}</span></td>
+            <td><span class="return-val ${y3yClass}">${y3y !== null ? y3y.toFixed(2) + '%' : 'N/A'}</span></td>
+            <td>
+                <div style="display:flex; gap:6px;">
+                    <button class="btn-icon" title="Add to Compare" onclick="triggerCompareAddition('${fund.fund_name}')">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </button>
+                    <button class="btn-icon" title="Add to Portfolio" onclick="triggerPortfolioAddition('${fund.fund_name}')">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+// Trigger comparison select filling from directory list
+window.triggerCompareAddition = function(fundName) {
+    const sel1 = document.getElementById('compare-select-1');
+    const sel2 = document.getElementById('compare-select-2');
+    const sel3 = document.getElementById('compare-select-3');
+
+    if (!sel1.value) {
+        sel1.value = fundName;
+    } else if (!sel2.value) {
+        sel2.value = fundName;
+    } else {
+        sel3.value = fundName;
+    }
+    
+    // Switch to compare tab
+    document.getElementById('btn-compare').click();
+    updateComparisonWorkspace();
+};
+
+// Trigger portfolio addition from directory list
+window.triggerPortfolioAddition = function(fundName) {
+    document.getElementById('portfolio-fund-select').value = fundName;
+    document.getElementById('btn-portfolio').click();
+    addFundToPortfolio();
+};
+
+// ==========================================================================
+// COMPARE LOGIC
+// ==========================================================================
+function updateComparisonWorkspace() {
+    const f1 = document.getElementById('compare-select-1').value;
+    const f2 = document.getElementById('compare-select-2').value;
+    const f3 = document.getElementById('compare-select-3').value;
+    
+    const workspace = document.getElementById('compare-workspace');
+    
+    // Get objects
+    const selectedFunds = [f1, f2, f3]
+        .filter(name => name !== "")
+        .map(name => fundsData.find(fund => fund.fund_name === name));
+        
+    if (selectedFunds.length === 0) {
+        workspace.innerHTML = `
+            <div class="no-selection-placeholder">
+                <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                <p>Please select at least two funds above to start comparing.</p>
+            </div>
+        `;
+        return;
+    }
+
+    // Build comparison grid
+    let headersHTML = `<th>Performance Metrics</th>`;
+    let sectorHTML = `<td><strong>Sector</strong></td>`;
+    let amcHTML = `<td><strong>AMC</strong></td>`;
+    let categoryHTML = `<td><strong>Category</strong></td>`;
+    let riskHTML = `<td><strong>Risk Profile</strong></td>`;
+    let ratingHTML = `<td><strong>Rating</strong></td>`;
+    let scoreHTML = `<td><strong>Screener Score</strong></td>`;
+    let navHTML = `<td><strong>NAV Unit Price</strong></td>`;
+    let inceptionHTML = `<td><strong>Inception Date</strong></td>`;
+    let loadHTML = `<td><strong>Loads (Front/Back/Contingent)</strong></td>`;
+    let terHTML = `<td><strong>Expense Ratio (TER YTD)</strong></td>`;
+    let mfHTML = `<td><strong>Management Fee (MF)</strong></td>`;
+    let trusteeHTML = `<td><strong>Trustee</strong></td>`;
+    
+    // Returns rows
+    let r1dHTML = `<td><strong>1 Day Return</strong></td>`;
+    let r30dHTML = `<td><strong>30 Days Return</strong></td>`;
+    let rYtdHTML = `<td><strong>YTD Return</strong></td>`;
+    let r1yHTML = `<td><strong>365 Days (1 Yr)</strong></td>`;
+    let r2yHTML = `<td><strong>2 Years Return</strong></td>`;
+    let r3yHTML = `<td><strong>3 Years Return</strong></td>`;
+
+    selectedFunds.forEach(fund => {
+        headersHTML += `<th class="compare-col-header">${fund.fund_name}</th>`;
+        sectorHTML += `<td class="compare-val">${fund.sector}</td>`;
+        amcHTML += `<td class="compare-val">${fund.amc}</td>`;
+        categoryHTML += `<td class="compare-val">${fund.category}</td>`;
+        riskHTML += `<td class="compare-val"><span class="badge-risk ${fund.risk_level.toLowerCase()}">${fund.risk_level}</span></td>`;
+        ratingHTML += `<td class="compare-val" style="color:var(--accent-gold); font-weight:700;">${fund.rating}</td>`;
+        scoreHTML += `<td class="compare-val highlight" style="color:var(--accent-cyan); font-weight:800;">${fund.screener_score}/100</td>`;
+        navHTML += `<td class="compare-val highlight" style="font-weight:700;">Rs. ${fund.nav}</td>`;
+        inceptionHTML += `<td class="compare-val">${fund.inception_date}</td>`;
+        loadHTML += `<td class="compare-val">${fund.front_end_load}% / ${fund.back_end_load}% / ${fund.contingent_load}%</td>`;
+        terHTML += `<td class="compare-val">${fund.ter_ytd === 'N/A' ? 'N/A' : fund.ter_ytd + '%'}${fund.is_ter_estimated ? '*' : ''}</td>`;
+        mfHTML += `<td class="compare-val">${fund.management_fee === 'N/A' ? 'N/A' : fund.management_fee + '%'}</td>`;
+        trusteeHTML += `<td class="compare-val">${fund.trustee}</td>`;
+
+        const renderReturnValCell = (valStr) => {
+            const valNum = parseFloatReturn(valStr);
+            if (valNum === null) return `<td class="compare-val" style="color:var(--text-muted);">N/A</td>`;
+            const colorClass = valNum < 0 ? 'color: var(--accent-red);' : 'color: var(--accent-green); font-weight:700;';
+            return `<td class="compare-val highlight" style="${colorClass}">${valNum.toFixed(2)}%</td>`;
+        };
+
+        r1dHTML += renderReturnValCell(fund.returns['1d']);
+        r30dHTML += renderReturnValCell(fund.returns['30d']);
+        rYtdHTML += renderReturnValCell(fund.returns.ytd);
+        r1yHTML += renderReturnValCell(fund.returns['365d']);
+        r2yHTML += renderReturnValCell(fund.returns['2y']);
+        r3yHTML += renderReturnValCell(fund.returns['3y']);
+    });
+
+    workspace.innerHTML = `
+        <table class="compare-table">
+            <thead>
+                <tr>${headersHTML}</tr>
+            </thead>
+            <tbody>
+                <tr>${amcHTML}</tr>
+                <tr>${categoryHTML}</tr>
+                <tr>${riskHTML}</tr>
+                <tr>${ratingHTML}</tr>
+                <tr>${scoreHTML}</tr>
+                <tr>${navHTML}</tr>
+                <tr>${inceptionHTML}</tr>
+                <tr>${loadHTML}</tr>
+                <tr>${terHTML}</tr>
+                <tr>${mfHTML}</tr>
+                <tr>${trusteeHTML}</tr>
+                <tr>${sectorHTML}</tr>
+                <tr style="border-top: 2px solid var(--border-color);"><td colspan="${selectedFunds.length + 1}" style="font-weight:700; padding:10px 20px; font-size:0.75rem; text-transform:uppercase; color:var(--text-secondary);">Returns & Historical Yields</td></tr>
+                <tr>${r1dHTML}</tr>
+                <tr>${r30dHTML}</tr>
+                <tr>${rYtdHTML}</tr>
+                <tr>${r1yHTML}</tr>
+                <tr>${r2yHTML}</tr>
+                <tr>${r3yHTML}</tr>
+            </tbody>
+        </table>
+    `;
+}
+
+// ==========================================================================
+// PORTFOLIO BUILDER LOGIC
+// ==========================================================================
+function addFundToPortfolio() {
+    const select = document.getElementById('portfolio-fund-select');
+    const fundName = select.value;
+    if (!fundName) return;
+
+    // Check if already exists
+    if (portfolioItems.some(item => item.fund_name === fundName)) {
+        alert("This fund is already added to your allocation portfolio.");
+        return;
+    }
+
+    portfolioItems.push({
+        fund_name: fundName,
+        weight: 0
+    });
+
+    // Auto balance weights if we have space or set remaining to 100
+    redistributePortfolioWeights();
+    renderPortfolioList();
+    updatePortfolioAnalytics();
+}
+
+function redistributePortfolioWeights() {
+    const count = portfolioItems.length;
+    if (count === 0) return;
+    const baseWeight = Math.floor(100 / count);
+    let total = 0;
+    
+    portfolioItems.forEach((item, idx) => {
+        if (idx === count - 1) {
+            item.weight = 100 - total; // Remaining balance to equal exactly 100
+        } else {
+            item.weight = baseWeight;
+            total += baseWeight;
+        }
+    });
+}
+
+function deletePortfolioItem(idx) {
+    portfolioItems.splice(idx, 1);
+    redistributePortfolioWeights();
+    renderPortfolioList();
+    updatePortfolioAnalytics();
+}
+
+function renderPortfolioList() {
+    const listContainer = document.getElementById('portfolio-items-list');
+    listContainer.innerHTML = '';
+    
+    if (portfolioItems.length === 0) {
+        listContainer.innerHTML = `
+            <div class="empty-portfolio-note">
+                <i class="fa-solid fa-wallet"></i>
+                <p>No funds added. Select a fund from the dropdown above to construct your asset portfolio.</p>
+            </div>
+        `;
+        return;
+    }
+
+    portfolioItems.forEach((item, idx) => {
+        const fundObj = fundsData.find(f => f.fund_name === item.fund_name);
+        const div = document.createElement('div');
+        div.className = 'portfolio-item';
+        div.innerHTML = `
+            <div class="p-item-header">
+                <div class="p-item-title">
+                    <span class="p-item-name">${item.fund_name}</span>
+                    <div class="p-item-cat">${fundObj.category} | Risk: ${fundObj.risk_level}</div>
+                </div>
+                <button class="p-item-delete" onclick="deletePortfolioItem(${idx})"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="p-item-control">
+                <input type="range" class="p-item-slider" min="0" max="100" value="${item.weight}" oninput="updateItemWeight(${idx}, this.value)">
+                <span class="p-item-weight-display">${item.weight}%</span>
+            </div>
+        `;
+        listContainer.appendChild(div);
+    });
+}
+
+window.updateItemWeight = function(idx, val) {
+    portfolioItems[idx].weight = parseInt(val);
+    
+    // Update display labels directly for speed
+    const displays = document.querySelectorAll('.p-item-weight-display');
+    if (displays[idx]) {
+        displays[idx].innerText = val + '%';
+    }
+    
+    updatePortfolioAnalytics();
+};
+
+function updatePortfolioAnalytics() {
+    let totalAlloc = 0;
+    let weightedYTD = 0;
+    let weighted1Y = 0;
+    let highRiskWeight = 0;
+    let lowRiskWeight = 0;
+    let medRiskWeight = 0;
+
+    portfolioItems.forEach(item => {
+        totalAlloc += item.weight;
+        const fundObj = fundsData.find(f => f.fund_name === item.fund_name);
+        
+        const ytd = parseFloatReturn(fundObj.returns.ytd) ?? 0;
+        const y1y = parseFloatReturn(fundObj.returns['365d']) ?? 0;
+
+        weightedYTD += ytd * (item.weight / 100);
+        weighted1Y += y1y * (item.weight / 100);
+
+        if (fundObj.risk_level === 'High') highRiskWeight += item.weight;
+        else if (fundObj.risk_level === 'Low') lowRiskWeight += item.weight;
+        else medRiskWeight += item.weight;
+    });
+
+    const allocBar = document.getElementById('portfolio-alloc-total');
+    allocBar.innerText = totalAlloc + '%';
+    
+    const progressFill = document.getElementById('portfolio-progress-fill');
+    progressFill.style.width = Math.min(totalAlloc, 100) + '%';
+
+    if (totalAlloc === 100) {
+        allocBar.className = "allocation-value valid";
+        progressFill.style.backgroundColor = "var(--accent-green)";
+    } else {
+        allocBar.className = "allocation-value warning";
+        progressFill.style.backgroundColor = "var(--accent-cyan)";
+    }
+
+    // Display Weighted Returns
+    if (portfolioItems.length > 0) {
+        document.getElementById('portfolio-weighted-ytd').innerText = weightedYTD.toFixed(2) + '%';
+        document.getElementById('portfolio-weighted-1y').innerText = weighted1Y.toFixed(2) + '%';
+        
+        // Overall Risk class determine
+        let riskClass = "Medium";
+        if (highRiskWeight > 50) riskClass = "High (Aggressive)";
+        else if (lowRiskWeight > 60) riskClass = "Low (Conservative)";
+        else riskClass = "Medium (Moderate)";
+        
+        document.getElementById('portfolio-risk-profile').innerText = riskClass;
+
+        // Run scenario projection
+        const principal = parseFloat(document.getElementById('portfolio-sim-amount').value) || 0;
+        const simYield = weightedYTD / 100;
+        const projectedValue = principal * (1 + simYield);
+        
+        document.getElementById('portfolio-sim-result').innerText = "Rs. " + Math.round(projectedValue).toLocaleString();
+    } else {
+        document.getElementById('portfolio-weighted-ytd').innerText = "--%";
+        document.getElementById('portfolio-weighted-1y').innerText = "--%";
+        document.getElementById('portfolio-risk-profile').innerText = "--";
+        document.getElementById('portfolio-sim-result').innerText = "Rs. --";
+    }
+
+    updatePortfolioChart();
+}
+
+function updatePortfolioChart() {
+    const ctx = document.getElementById('portfolio-pie-chart').getContext('2d');
+    
+    // Destroy existing instance if it exists
+    if (portfolioChartInstance) {
+        portfolioChartInstance.destroy();
+    }
+
+    if (portfolioItems.length === 0) return;
+
+    const labels = portfolioItems.map(item => {
+        // Truncate name
+        return item.fund_name.length > 20 ? item.fund_name.substring(0, 20) + '...' : item.fund_name;
+    });
+    const data = portfolioItems.map(item => item.weight);
+    
+    const colors = [
+        'rgba(6, 182, 212, 0.7)',
+        'rgba(16, 185, 129, 0.7)',
+        'rgba(245, 158, 11, 0.7)',
+        'rgba(139, 92, 246, 0.7)',
+        'rgba(59, 130, 246, 0.7)',
+        'rgba(239, 68, 68, 0.7)'
+    ];
+
+    portfolioChartInstance = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: data,
+                backgroundColor: colors.slice(0, portfolioItems.length),
+                borderColor: '#10141f',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#9ca3af',
+                        font: { size: 9, family: 'Inter' }
+                    }
+                }
+            }
+        }
+    });
+}
+
+// ==========================================================================
+// CALC GROWTH SIMULATOR LOGIC
+// ==========================================================================
+function prefillExpectedReturn() {
+    const fundName = document.getElementById('calc-fund').value;
+    const fundObj = fundsData.find(f => f.fund_name === fundName);
+    if (fundObj) {
+        // Prefill expected return using 365d yield if numeric, fallback to YTD
+        let expected = parseFloatReturn(fundObj.returns['365d']) || parseFloatReturn(fundObj.returns.ytd) || 12.0;
+        if (expected <= 0) expected = 12.0;
+        document.getElementById('calc-expected-return').value = expected.toFixed(1);
+    }
+}
+
+function calculateGrowth() {
+    const initial = parseFloat(document.getElementById('calc-initial').value) || 0;
+    const monthly = parseFloat(document.getElementById('calc-monthly').value) || 0;
+    const years = parseInt(document.getElementById('calc-years').value) || 5;
+    const annualReturn = parseFloat(document.getElementById('calc-expected-return').value) || 0;
+
+    const months = years * 12;
+    const r = (annualReturn / 100) / 12; // Monthly rate
+
+    let totalContribution = initial;
+    let balance = initial;
+    
+    // Datasets for chart
+    let contributionsArr = [initial];
+    let futureValuesArr = [initial];
+    let labelsArr = ['Start'];
+
+    for (let month = 1; month <= months; month++) {
+        balance = balance * (1 + r) + monthly;
+        totalContribution += monthly;
+        
+        // Push annually
+        if (month % 12 === 0) {
+            labelsArr.push('Yr ' + (month / 12));
+            contributionsArr.push(totalContribution);
+            futureValuesArr.push(Math.round(balance));
+        }
+    }
+
+    // Display summary numbers
+    document.getElementById('calc-total-invested').innerText = "Rs. " + Math.round(totalContribution).toLocaleString();
+    document.getElementById('calc-future-value').innerText = "Rs. " + Math.round(balance).toLocaleString();
+    document.getElementById('calc-profit-earned').innerText = "Rs. " + Math.round(balance - totalContribution).toLocaleString();
+
+    // Render Chart
+    const ctx = document.getElementById('calc-growth-chart').getContext('2d');
+    if (growthChartInstance) {
+        growthChartInstance.destroy();
+    }
+
+    growthChartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labelsArr,
+            datasets: [
+                {
+                    label: 'Invested Capital',
+                    data: contributionsArr,
+                    borderColor: 'rgba(156, 163, 175, 0.8)',
+                    backgroundColor: 'rgba(156, 163, 175, 0.1)',
+                    fill: true,
+                    tension: 0.2
+                },
+                {
+                    label: 'Projected Portfolio Value',
+                    data: futureValuesArr,
+                    borderColor: 'rgba(6, 182, 212, 1)',
+                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
+                    fill: true,
+                    tension: 0.2
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: { color: '#9ca3af', font: { family: 'Inter' } }
+                }
+            },
+            scales: {
+                x: {
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                    ticks: { color: '#9ca3af', font: { family: 'Inter' } }
+                },
+                y: {
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                    ticks: {
+                        color: '#9ca3af',
+                        font: { family: 'Inter' },
+                        callback: function(value) {
+                            return 'Rs. ' + (value >= 1e5 ? (value / 1e5).toFixed(1) + ' Lac' : value.toLocaleString());
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+
+let modalChartInstance = null;
+
+window.showFundDetails = function(fundName) {
+    const fund = fundsData.find(f => f.fund_name === fundName);
+    if (!fund) return;
+
+    // Fill textual details
+    document.getElementById('modal-fund-name').innerText = fund.fund_name;
+    document.getElementById('modal-fund-amc').innerText = fund.amc;
+    
+    const shariahEl = document.getElementById('modal-fund-shariah');
+    if (fund.is_shariah) {
+        shariahEl.style.display = 'inline-flex';
+    } else {
+        shariahEl.style.display = 'none';
+    }
+
+    document.getElementById('modal-category').innerText = fund.category;
+    document.getElementById('modal-risk').innerHTML = `<span class="badge-risk ${fund.risk_level.toLowerCase()}">${fund.risk_level}</span>`;
+    document.getElementById('modal-rating').innerText = fund.rating;
+    document.getElementById('modal-nav').innerText = `Rs. ${fund.nav}`;
+    document.getElementById('modal-date').innerText = fund.validity_date;
+    document.getElementById('modal-inception').innerText = fund.inception_date;
+    document.getElementById('modal-m-fee').innerText = fund.management_fee === 'N/A' ? 'N/A' : fund.management_fee + '%';
+    document.getElementById('modal-ter-ytd').innerHTML = fund.ter_ytd === 'N/A' ? 'N/A' : (fund.ter_ytd + '%' + (fund.is_ter_estimated ? ' <span style="font-size:0.75rem; color:var(--text-muted); font-style:italic;">(Estimated due to AMC reset)</span>' : ''));
+    document.getElementById('modal-loads').innerText = `Front: ${fund.front_end_load}% / Back: ${fund.back_end_load}% / Contingent: ${fund.contingent_load}%`;
+    document.getElementById('modal-trustee').innerText = fund.trustee;
+    document.getElementById('modal-score').innerText = `${fund.screener_score} / 100`;
+
+    // Setup add-to-portfolio button click in modal
+    const addBtn = document.getElementById('modal-btn-add-portfolio');
+    addBtn.onclick = () => {
+        triggerPortfolioAddition(fund.fund_name);
+        document.getElementById('fund-details-modal').style.display = 'none';
+    };
+
+    // Show modal
+    document.getElementById('fund-details-modal').style.display = 'block';
+
+    // 5-Year Growth calculations
+    // Base amount is Rs. 100
+    const base = 100;
+    
+    // Trailing returns check
+    const r1 = parseFloatReturn(fund.returns['365d']);
+    const r2 = parseFloatReturn(fund.returns['2y']);
+    const r3 = parseFloatReturn(fund.returns['3y']);
+
+    // Determine CAGR for missing periods (default 10%)
+    let cagr = 0.10;
+    if (r3 !== null && r3 > 0) cagr = r3 / 100;
+    else if (r2 !== null && r2 > 0) cagr = r2 / 100;
+    else if (r1 !== null && r1 > 0) cagr = r1 / 100;
+
+    // Calculate Y0 to Y5 growth values
+    const y0 = base;
+    const y1 = r1 !== null ? base * (1 + r1/100) : base * (1 + cagr);
+    const y2 = r2 !== null ? base * Math.pow(1 + r2/100, 2) : base * Math.pow(1 + cagr, 2);
+    const y3 = r3 !== null ? base * Math.pow(1 + r3/100, 3) : base * Math.pow(1 + cagr, 3);
+    const y4 = base * Math.pow(1 + cagr, 4);
+    const y5 = base * Math.pow(1 + cagr, 5);
+
+    const chartData = [
+        Math.round(y0),
+        Math.round(y1),
+        Math.round(y2),
+        Math.round(y3),
+        Math.round(y4),
+        Math.round(y5)
+    ];
+
+    // Render Growth Chart
+    const ctx = document.getElementById('modal-performance-chart').getContext('2d');
+    if (modalChartInstance) {
+        modalChartInstance.destroy();
+    }
+
+    modalChartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['2021', '2022', '2023', '2024', '2025 (Proj)', '2026 (Proj)'],
+            datasets: [{
+                label: 'Asset Value (Rs.)',
+                data: chartData,
+                borderColor: 'rgba(6, 182, 212, 1)',
+                backgroundColor: 'rgba(6, 182, 212, 0.12)',
+                fill: true,
+                tension: 0.3,
+                borderWidth: 3,
+                pointBackgroundColor: 'rgba(6, 182, 212, 1)',
+                pointRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                x: {
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                    ticks: { color: '#9ca3af', font: { family: 'Inter', size: 10 } }
+                },
+                y: {
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                    ticks: {
+                        color: '#9ca3af',
+                        font: { family: 'Inter', size: 10 },
+                        callback: function(value) { return 'Rs. ' + value; }
+                    }
+                }
+            }
+        }
+    });
+};
+
+function updateKSE100Card(psxData) {
+    if (!psxData) return;
+    const priceEl = document.getElementById('kse100-price');
+    const changeEl = document.getElementById('kse100-change');
+    if (priceEl && changeEl) {
+        priceEl.innerText = psxData.price;
+        const color = psxData.direction === '+' ? 'var(--accent-green)' : 'var(--accent-red)';
+        const arrow = psxData.direction === '+' ? '<i class="fa-solid fa-arrow-trend-up"></i>' : '<i class="fa-solid fa-arrow-trend-down"></i>';
+        changeEl.innerHTML = `<span style="color:${color}; font-weight:700;">${arrow} ${psxData.direction}${psxData.change_points} (${psxData.change_percent})</span> <span style="color:var(--text-muted); font-size:0.68rem; margin-left:6px;">As of ${psxData.as_of}</span>`;
+    }
+}
+
+function renderPSXMovers(perfData) {
+    if (!perfData) return;
+    
+    const categories = ['active', 'gainers', 'losers'];
+    categories.forEach(cat => {
+        const listEl = document.getElementById(`psx-${cat}-list`);
+        if (!listEl) return;
+        
+        listEl.innerHTML = '';
+        const items = perfData[cat] || [];
+        
+        if (items.length === 0) {
+            listEl.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem; font-style:italic; padding: 10px 0;">No active trading data available</p>';
+            return;
+        }
+        
+        items.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'mini-fund-card';
+            card.style.cursor = 'default';
+            
+            const isPos = item.direction === '+';
+            const isNeg = item.direction === '-';
+            const color = isPos ? 'var(--accent-green)' : (isNeg ? 'var(--accent-red)' : 'var(--text-muted)');
+            const sign = isPos ? '+' : '';
+            
+            card.innerHTML = `
+                <div class="m-fund-info" style="max-width: 65%;">
+                    <h4 style="margin:0 0 2px 0; font-size:0.85rem; font-weight:700; color:var(--text-primary);">${item.symbol}</h4>
+                    <span style="font-size:0.7rem; color:var(--text-muted); display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${item.name}">${item.name}</span>
+                </div>
+                <div class="m-fund-stats" style="text-align:right;">
+                    <div style="font-weight:700; font-size:0.85rem; color:var(--text-primary);">Rs. ${item.price}</div>
+                    <div style="font-size:0.7rem; font-weight:700; color:${color};">${sign}${item.change} (${item.percent})</div>
+                    ${cat === 'active' ? `<div style="font-size:0.6rem; color:var(--text-muted); margin-top:2px;">Vol: ${parseFloat(item.volume.replace(/,/g, '')).toLocaleString()}</div>` : ''}
+                </div>
+            `;
+            listEl.appendChild(card);
+        });
+    });
+}

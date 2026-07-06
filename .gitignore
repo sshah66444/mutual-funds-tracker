@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.system_generated/
+scratch/
+venv/
+.env

@@ -448,6 +448,7 @@
                             <button class="guide-nav-item" data-guide-section="taxation">Taxation & Zakat</button>
                             <button class="guide-nav-item" data-guide-section="how-to-start">How to Start Investing</button>
                             <button class="guide-nav-item" data-guide-section="terminology">Glossary & Terms</button>
+                            <button class="guide-nav-item" data-guide-section="screener">Screener Score</button>
                         </div>
 
                         <div class="guide-content">
@@ -596,6 +597,37 @@
                                     <dt>Trustee</dt>
                                     <dd>An independent third-party custodian (commonly the Central Depository Company of Pakistan - CDC) that legally holds the assets of the mutual fund to protect the interests of unit holders.</dd>
                                 </dl>
+                            </div>
+
+                            <!-- Section Screener Score -->
+                            <div id="guide-sec-screener" class="guide-section">
+                                <h2>Screener Score Calculation Methodology</h2>
+                                <p>To help you compare 500+ funds, our system calculates a custom <strong>Screener Score (out of 100)</strong> based on a weighted multi-factor quantitative ranking model. Instead of looking purely at returns, this score balances returns, entry loads, and fund quality ratings:</p>
+                                
+                                <div class="score-breakdown-box" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px;">
+                                    <h3 style="margin-top:0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px; font-size: 0.95rem;">Weighted Scoring Breakdown:</h3>
+                                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                                        <li style="margin-bottom: 12px; display: flex; justify-content: space-between; font-size: 0.85rem;">
+                                            <span><strong>1-Year Return Yield (365d)</strong></span>
+                                            <span style="color: var(--accent-cyan); font-weight:700;">55% Weight</span>
+                                        </li>
+                                        <li style="margin-bottom: 12px; display: flex; justify-content: space-between; font-size: 0.85rem;">
+                                            <span><strong>3-Year Historical Yield</strong></span>
+                                            <span style="color: var(--accent-cyan); font-weight:700;">25% Weight</span>
+                                        </li>
+                                        <li style="margin-bottom: 12px; display: flex; justify-content: space-between; font-size: 0.85rem;">
+                                            <span><strong>Low Sales Commission (Front/Back-End Load)</strong></span>
+                                            <span style="color: var(--accent-cyan); font-weight:700;">15% Weight</span>
+                                        </li>
+                                        <li style="margin-bottom: 0; display: flex; justify-content: space-between; font-size: 0.85rem;">
+                                            <span><strong>SECP/MUFAP Quality Rating (AMQC)</strong></span>
+                                            <span style="color: var(--accent-cyan); font-weight:700;">5% Weight</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <h3>How the Scoring Works:</h3>
+                                <p>For each factor, the system calculates the fund's <strong>percentile rank</strong> compared to all other active funds. For example, if a fund's 1-year return is in the top 10% of all funds, it gets a high score for that factor. By factoring in sales loads and SECP ratings, the score prevents high-performance but high-fee/unrated funds from dominating the lists.</p>
                             </div>
                         </div>
                     </div>

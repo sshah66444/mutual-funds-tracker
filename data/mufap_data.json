@@ -22,8 +22,8 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Jul 31, 2010",
-    "offer": "10.3746",
-    "repurchase": "10.2851",
+    "offer": "10.3770",
+    "repurchase": "10.2875",
     "front_end_load": "1",
     "back_end_load": "2",
     "contingent_load": "1",
@@ -36,7 +36,7 @@
     "major_category": "Money Market",
     "total_load": 4.0,
     "is_ter_estimated": false,
-    "screener_score": 40.4
+    "screener_score": 40.3
   },
   {
     "sector": "Open-End Funds",
@@ -61,14 +61,14 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Nov 15, 2023",
-    "offer": "10.2753",
-    "repurchase": "10.0423",
+    "offer": "10.2774",
+    "repurchase": "10.0444",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.25",
-    "ter_ytd": "1.59",
+    "ter_ytd": "1.60",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
@@ -114,7 +114,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.0
+    "screener_score": 42.9
   },
   {
     "sector": "Open-End Funds",
@@ -153,7 +153,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.6
+    "screener_score": 40.5
   },
   {
     "sector": "Open-End Funds",
@@ -192,7 +192,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.9
+    "screener_score": 41.8
   },
   {
     "sector": "Open-End Funds",
@@ -231,7 +231,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.7
+    "screener_score": 40.5
   },
   {
     "sector": "Open-End Funds",
@@ -270,7 +270,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.9
+    "screener_score": 28.0
   },
   {
     "sector": "Open-End Funds",
@@ -309,7 +309,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 38.6
+    "screener_score": 38.3
   },
   {
     "sector": "Open-End Funds",
@@ -348,7 +348,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.3
+    "screener_score": 41.2
   },
   {
     "sector": "Open-End Funds",
@@ -356,25 +356,25 @@
     "fund_name": "Askari Cash Fund",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 08, 2026",
-    "nav": "104.0597",
+    "validity_date": "Jul 09, 2026",
+    "nav": "104.0872",
     "returns": {
       "mtd": "9.67",
       "ytd": "9.67",
-      "1d": "9.67",
-      "15d": "5.15",
+      "1d": "9.64",
+      "15d": "5.80",
       "30d": "118.74",
-      "90d": "46.33",
-      "180d": "28.09",
+      "90d": "46.34",
+      "180d": "28.10",
       "270d": "22.01",
       "365d": "19.07",
-      "2y": "17.76",
-      "3y": "21.86"
+      "2y": "17.75",
+      "3y": "21.85"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Sep 30, 2009",
-    "offer": "104.0597",
-    "repurchase": "104.0597",
+    "offer": "104.0872",
+    "repurchase": "104.0872",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -387,7 +387,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.3
+    "screener_score": 57.1
   },
   {
     "sector": "Open-End Funds",
@@ -426,7 +426,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.8
+    "screener_score": 44.7
   },
   {
     "sector": "Open-End Funds",
@@ -465,7 +465,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.6
+    "screener_score": 46.4
   },
   {
     "sector": "Open-End Funds",
@@ -543,7 +543,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.7
+    "screener_score": 33.5
   },
   {
     "sector": "Open-End Funds",
@@ -621,7 +621,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 35.0
+    "screener_score": 35.1
   },
   {
     "sector": "Open-End Funds",
@@ -660,7 +660,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 47.5
+    "screener_score": 47.3
   },
   {
     "sector": "Open-End Funds",
@@ -668,38 +668,38 @@
     "fund_name": "Lakson Money Market Fund",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jun 29, 2026",
-    "nav": "113.1709",
+    "validity_date": "Jul 08, 2026",
+    "nav": "103.0492",
     "returns": {
-      "mtd": "10.50",
-      "ytd": "10.10",
-      "1d": "11.94",
-      "15d": "10.68",
-      "30d": "10.50",
-      "90d": "9.96",
-      "180d": "9.69",
-      "270d": "9.98",
-      "365d": "10.08",
-      "2y": "13.37",
-      "3y": "18.44"
+      "mtd": "10.12",
+      "ytd": "10.12",
+      "1d": "10.40",
+      "15d": "N/A",
+      "30d": "133.87",
+      "90d": "51.72",
+      "180d": "31.05",
+      "270d": "24.60",
+      "365d": "21.18",
+      "2y": "19.60",
+      "3y": "23.49"
     },
     "amc": "Lakson Investments Limited",
     "inception_date": "Nov 13, 2009",
-    "offer": "114.4724",
-    "repurchase": "113.1709",
+    "offer": "104.2343",
+    "repurchase": "103.0492",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.00",
-    "ter_ytd": "0.96",
+    "management_fee": "0.65",
+    "ter_ytd": "0.01",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.8
+    "screener_score": 59.3
   },
   {
     "sector": "Open-End Funds",
@@ -738,7 +738,46 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.8
+    "screener_score": 38.7
+  },
+  {
+    "sector": "Open-End Funds",
+    "category": "Money Market (Annualized Return )",
+    "fund_name": "MCB Money Market Fund",
+    "rating": "N/A",
+    "benchmark": "N/A",
+    "validity_date": "Jul 08, 2026",
+    "nav": "100.0000",
+    "returns": {
+      "mtd": "N/A",
+      "ytd": "N/A",
+      "1d": "N/A",
+      "15d": "N/A",
+      "30d": "N/A",
+      "90d": "N/A",
+      "180d": "N/A",
+      "270d": "N/A",
+      "365d": "N/A",
+      "2y": "N/A",
+      "3y": "N/A"
+    },
+    "amc": "MCB Investment Management Limited",
+    "inception_date": "Jul 08, 2026",
+    "offer": "100.0000",
+    "repurchase": "100.0000",
+    "front_end_load": "1.5",
+    "back_end_load": "0",
+    "contingent_load": "0",
+    "trustee": "CDC",
+    "management_fee": "0.00",
+    "ter_ytd": "0.90",
+    "sm_fee": "0.00",
+    "is_shariah": false,
+    "risk_level": "Low",
+    "major_category": "Money Market",
+    "total_load": 1.5,
+    "is_ter_estimated": true,
+    "screener_score": 3.7
   },
   {
     "sector": "Open-End Funds",
@@ -777,7 +816,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.6
+    "screener_score": 31.5
   },
   {
     "sector": "Open-End Funds",
@@ -816,7 +855,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.2
+    "screener_score": 33.1
   },
   {
     "sector": "Open-End Funds",
@@ -894,7 +933,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.9
+    "screener_score": 36.8
   },
   {
     "sector": "Open-End Funds",
@@ -919,20 +958,20 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2026",
-    "offer": "10.0000",
-    "repurchase": "10.0000",
+    "offer": "10.1233",
+    "repurchase": "10.0082",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.00",
-    "ter_ytd": "0.92",
+    "management_fee": "0.29",
+    "ter_ytd": "0.25",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
-    "is_ter_estimated": true,
+    "is_ter_estimated": false,
     "screener_score": 4.3
   },
   {
@@ -972,7 +1011,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 47.3
+    "screener_score": 47.1
   },
   {
     "sector": "Open-End Funds",
@@ -1050,7 +1089,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.7
+    "screener_score": 36.6
   },
   {
     "sector": "Open-End Funds",
@@ -1128,7 +1167,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.1
+    "screener_score": 30.2
   },
   {
     "sector": "Open-End Funds",
@@ -1192,8 +1231,8 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Aug 01, 2023",
-    "offer": "10.2708",
-    "repurchase": "10.0379",
+    "offer": "10.2738",
+    "repurchase": "10.0409",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -1206,7 +1245,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.4
+    "screener_score": 32.3
   },
   {
     "sector": "Open-End Funds",
@@ -1231,8 +1270,8 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Nov 29, 2011",
-    "offer": "10.3927",
-    "repurchase": "10.2150",
+    "offer": "10.3932",
+    "repurchase": "10.2155",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -1270,21 +1309,21 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Sep 19, 2008",
-    "offer": "10.4231",
-    "repurchase": "10.2448",
+    "offer": "10.4197",
+    "repurchase": "10.2415",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.25",
-    "ter_ytd": "1.71",
+    "ter_ytd": "1.72",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.6
+    "screener_score": 31.7
   },
   {
     "sector": "Open-End Funds",
@@ -1323,7 +1362,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.6
+    "screener_score": 32.5
   },
   {
     "sector": "Open-End Funds",
@@ -1362,7 +1401,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.7
+    "screener_score": 45.5
   },
   {
     "sector": "Open-End Funds",
@@ -1401,7 +1440,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.0
+    "screener_score": 35.9
   },
   {
     "sector": "Open-End Funds",
@@ -1440,7 +1479,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.2
+    "screener_score": 36.0
   },
   {
     "sector": "Open-End Funds",
@@ -1479,7 +1518,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.3
+    "screener_score": 36.2
   },
   {
     "sector": "Open-End Funds",
@@ -1518,7 +1557,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.4
+    "screener_score": 33.2
   },
   {
     "sector": "Open-End Funds",
@@ -1557,7 +1596,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.0
+    "screener_score": 49.8
   },
   {
     "sector": "Open-End Funds",
@@ -1596,7 +1635,7 @@
     "major_category": "Income",
     "total_load": 8.0,
     "is_ter_estimated": false,
-    "screener_score": 31.3
+    "screener_score": 31.1
   },
   {
     "sector": "Open-End Funds",
@@ -1635,7 +1674,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.0
+    "screener_score": 20.9
   },
   {
     "sector": "Open-End Funds",
@@ -1674,7 +1713,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.9
+    "screener_score": 13.0
   },
   {
     "sector": "Open-End Funds",
@@ -1791,7 +1830,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.1
+    "screener_score": 46.0
   },
   {
     "sector": "Open-End Funds",
@@ -1830,7 +1869,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.1
+    "screener_score": 46.0
   },
   {
     "sector": "Open-End Funds",
@@ -1838,38 +1877,38 @@
     "fund_name": "Askari Sovereign Yield Enhancer",
     "rating": "AA-(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "104.8016",
+    "validity_date": "Jul 08, 2026",
+    "nav": "104.8308",
     "returns": {
-      "mtd": "10.10",
-      "ytd": "10.10",
-      "1d": "10.15",
-      "15d": "9.37",
+      "mtd": "10.11",
+      "ytd": "10.11",
+      "1d": "10.18",
+      "15d": "10.05",
       "30d": "13.12",
-      "90d": "10.91",
-      "180d": "9.90",
-      "270d": "9.79",
+      "90d": "10.92",
+      "180d": "9.91",
+      "270d": "9.80",
       "365d": "9.78",
-      "2y": "12.76",
-      "3y": "18.63"
+      "2y": "12.74",
+      "3y": "18.61"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "May 07, 2012",
-    "offer": "106.2819",
-    "repurchase": "104.8016",
+    "offer": "106.3115",
+    "repurchase": "104.8308",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.50",
-    "ter_ytd": "1.95",
+    "ter_ytd": "1.99",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.3
+    "screener_score": 31.2
   },
   {
     "sector": "Open-End Funds",
@@ -1908,7 +1947,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.1
+    "screener_score": 41.9
   },
   {
     "sector": "Open-End Funds",
@@ -1986,7 +2025,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 28.4
+    "screener_score": 28.3
   },
   {
     "sector": "Open-End Funds",
@@ -2025,7 +2064,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.1
+    "screener_score": 38.0
   },
   {
     "sector": "Open-End Funds",
@@ -2064,7 +2103,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.4
+    "screener_score": 46.2
   },
   {
     "sector": "Open-End Funds",
@@ -2103,7 +2142,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.0
+    "screener_score": 25.1
   },
   {
     "sector": "Open-End Funds",
@@ -2259,7 +2298,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.0
+    "screener_score": 49.9
   },
   {
     "sector": "Open-End Funds",
@@ -2267,38 +2306,38 @@
     "fund_name": "Lakson Income Fund",
     "rating": "A+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jun 18, 2026",
-    "nav": "112.2306",
+    "validity_date": "Jul 07, 2026",
+    "nav": "102.7684",
     "returns": {
-      "mtd": "15.26",
-      "ytd": "10.11",
-      "1d": "77.02",
-      "15d": "16.60",
-      "30d": "13.73",
-      "90d": "10.41",
-      "180d": "8.09",
-      "270d": "9.61",
-      "365d": "10.14",
-      "2y": "15.14",
-      "3y": "17.00"
+      "mtd": "13.00",
+      "ytd": "13.00",
+      "1d": "10.15",
+      "15d": "12.70",
+      "30d": "14.69",
+      "90d": "11.14",
+      "180d": "7.46",
+      "270d": "9.82",
+      "365d": "10.10",
+      "2y": "14.93",
+      "3y": "16.83"
     },
     "amc": "Lakson Investments Limited",
     "inception_date": "Nov 13, 2009",
-    "offer": "114.1722",
-    "repurchase": "112.2306",
+    "offer": "104.5463",
+    "repurchase": "102.7684",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.50",
-    "ter_ytd": "1.50",
+    "management_fee": "0.80",
+    "ter_ytd": "1.33",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
-    "is_ter_estimated": false,
-    "screener_score": 29.9
+    "is_ter_estimated": true,
+    "screener_score": 28.4
   },
   {
     "sector": "Open-End Funds",
@@ -2454,7 +2493,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.5
+    "screener_score": 44.3
   },
   {
     "sector": "Open-End Funds",
@@ -2532,7 +2571,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.8
+    "screener_score": 43.6
   },
   {
     "sector": "Open-End Funds",
@@ -2610,7 +2649,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.7
+    "screener_score": 31.6
   },
   {
     "sector": "Open-End Funds",
@@ -2649,7 +2688,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.0
+    "screener_score": 52.8
   },
   {
     "sector": "Open-End Funds",
@@ -2688,7 +2727,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.4
+    "screener_score": 42.2
   },
   {
     "sector": "Open-End Funds",
@@ -2727,7 +2766,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.4
+    "screener_score": 46.2
   },
   {
     "sector": "Open-End Funds",
@@ -2766,7 +2805,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.6
+    "screener_score": 51.4
   },
   {
     "sector": "Open-End Funds",
@@ -2844,7 +2883,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.3
+    "screener_score": 54.2
   },
   {
     "sector": "Open-End Funds",
@@ -2883,7 +2922,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.7
+    "screener_score": 48.4
   },
   {
     "sector": "Open-End Funds",
@@ -2891,31 +2930,31 @@
     "fund_name": "Pak Oman Income Fund",
     "rating": "A+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "10.9420",
+    "validity_date": "Jul 08, 2026",
+    "nav": "10.9442",
     "returns": {
-      "mtd": "7.54",
-      "ytd": "7.54",
-      "1d": "7.67",
-      "15d": "7.56",
+      "mtd": "7.51",
+      "ytd": "7.51",
+      "1d": "7.34",
+      "15d": "8.05",
       "30d": "7.40",
-      "90d": "7.01",
+      "90d": "7.02",
       "180d": "7.02",
       "270d": "7.27",
       "365d": "7.58",
-      "2y": "10.20",
-      "3y": "16.09"
+      "2y": "10.17",
+      "3y": "16.07"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Jul 28, 2011",
-    "offer": "10.9420",
-    "repurchase": "10.9420",
+    "offer": "10.9442",
+    "repurchase": "10.9442",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "1.10",
-    "ter_ytd": "3.08",
+    "ter_ytd": "3.10",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -2930,38 +2969,38 @@
     "fund_name": "Pak Oman Micro Finance Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "101.3955",
+    "validity_date": "Jul 08, 2026",
+    "nav": "101.4261",
     "returns": {
-      "mtd": "11.14",
-      "ytd": "11.14",
-      "1d": "10.99",
-      "15d": "21.78",
+      "mtd": "11.12",
+      "ytd": "11.12",
+      "1d": "11.02",
+      "15d": "22.52",
       "30d": "16.14",
-      "90d": "12.43",
+      "90d": "12.44",
       "180d": "11.78",
       "270d": "11.77",
       "365d": "11.58",
-      "2y": "13.74",
+      "2y": "13.72",
       "3y": "N/A"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "May 14, 2024",
-    "offer": "101.3955",
-    "repurchase": "101.3955",
+    "offer": "101.4261",
+    "repurchase": "101.4261",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "0.50",
-    "ter_ytd": "0.62",
+    "ter_ytd": "0.64",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.8
+    "screener_score": 37.7
   },
   {
     "sector": "Open-End Funds",
@@ -3000,7 +3039,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.8
+    "screener_score": 55.6
   },
   {
     "sector": "Open-End Funds",
@@ -3039,7 +3078,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 39.5
+    "screener_score": 39.3
   },
   {
     "sector": "Open-End Funds",
@@ -3078,7 +3117,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 47.8
+    "screener_score": 47.5
   },
   {
     "sector": "Open-End Funds",
@@ -3117,7 +3156,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 80.2
+    "screener_score": 80.3
   },
   {
     "sector": "Open-End Funds",
@@ -3156,7 +3195,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.9
+    "screener_score": 71.2
   },
   {
     "sector": "Open-End Funds",
@@ -3195,7 +3234,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 81.4
+    "screener_score": 81.6
   },
   {
     "sector": "Open-End Funds",
@@ -3234,7 +3273,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 81.4
+    "screener_score": 81.6
   },
   {
     "sector": "Open-End Funds",
@@ -3273,7 +3312,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.9
+    "screener_score": 80.1
   },
   {
     "sector": "Open-End Funds",
@@ -3312,7 +3351,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.9
+    "screener_score": 67.0
   },
   {
     "sector": "Open-End Funds",
@@ -3429,7 +3468,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.4
+    "screener_score": 79.6
   },
   {
     "sector": "Open-End Funds",
@@ -3507,7 +3546,7 @@
     "major_category": "Stock",
     "total_load": 2.0,
     "is_ter_estimated": false,
-    "screener_score": 67.8
+    "screener_score": 68.2
   },
   {
     "sector": "Open-End Funds",
@@ -3554,25 +3593,25 @@
     "fund_name": "HBL Energy Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "35.3368",
+    "validity_date": "Jul 08, 2026",
+    "nav": "34.6470",
     "returns": {
-      "mtd": "1.66",
-      "ytd": "1.66",
-      "1d": "-1.19",
-      "15d": "-1.46",
-      "30d": "5.56",
-      "90d": "5.56",
-      "180d": "-0.74",
-      "270d": "10.44",
-      "365d": "30.87",
-      "2y": "110.06",
+      "mtd": "-0.33",
+      "ytd": "-0.33",
+      "1d": "-1.95",
+      "15d": "-1.61",
+      "30d": "4.61",
+      "90d": "5.27",
+      "180d": "-1.54",
+      "270d": "8.29",
+      "365d": "28.55",
+      "2y": "104.40",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Jan 20, 2006",
-    "offer": "36.1495",
-    "repurchase": "35.3368",
+    "offer": "35.4439",
+    "repurchase": "34.6470",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3585,7 +3624,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 71.0
+    "screener_score": 68.6
   },
   {
     "sector": "Open-End Funds",
@@ -3624,7 +3663,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.0
+    "screener_score": 67.1
   },
   {
     "sector": "Open-End Funds",
@@ -3663,7 +3702,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.5
+    "screener_score": 22.6
   },
   {
     "sector": "Open-End Funds",
@@ -3702,7 +3741,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.6
+    "screener_score": 79.7
   },
   {
     "sector": "Open-End Funds",
@@ -3741,7 +3780,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.2
+    "screener_score": 22.3
   },
   {
     "sector": "Open-End Funds",
@@ -3788,25 +3827,25 @@
     "fund_name": "HBL Stock Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "239.7526",
+    "validity_date": "Jul 08, 2026",
+    "nav": "232.9701",
     "returns": {
-      "mtd": "5.34",
-      "ytd": "5.34",
-      "1d": "-0.17",
-      "15d": "5.04",
-      "30d": "11.56",
-      "90d": "14.72",
-      "180d": "-1.83",
-      "270d": "8.34",
-      "365d": "34.76",
-      "2y": "95.41",
+      "mtd": "2.36",
+      "ytd": "2.36",
+      "1d": "-2.83",
+      "15d": "1.86",
+      "30d": "9.31",
+      "90d": "11.54",
+      "180d": "-3.87",
+      "270d": "5.27",
+      "365d": "30.22",
+      "2y": "87.29",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Aug 23, 2007",
-    "offer": "245.2669",
-    "repurchase": "239.7526",
+    "offer": "238.3284",
+    "repurchase": "232.9701",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3819,7 +3858,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.2
+    "screener_score": 68.9
   },
   {
     "sector": "Open-End Funds",
@@ -3858,7 +3897,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.0
+    "screener_score": 73.5
   },
   {
     "sector": "Open-End Funds",
@@ -3897,7 +3936,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 72.5
+    "screener_score": 72.9
   },
   {
     "sector": "Open-End Funds",
@@ -3936,7 +3975,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.9
+    "screener_score": 75.2
   },
   {
     "sector": "Open-End Funds",
@@ -4053,7 +4092,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.1
+    "screener_score": 60.2
   },
   {
     "sector": "Open-End Funds",
@@ -4131,7 +4170,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.8
+    "screener_score": 79.9
   },
   {
     "sector": "Open-End Funds",
@@ -4209,7 +4248,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 76.7
+    "screener_score": 76.8
   },
   {
     "sector": "Open-End Funds",
@@ -4248,7 +4287,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.6
+    "screener_score": 48.5
   },
   {
     "sector": "Open-End Funds",
@@ -4287,7 +4326,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.7
+    "screener_score": 50.6
   },
   {
     "sector": "Open-End Funds",
@@ -4365,7 +4404,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.3
+    "screener_score": 51.2
   },
   {
     "sector": "Open-End Funds",
@@ -4404,7 +4443,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.5
+    "screener_score": 36.6
   },
   {
     "sector": "Open-End Funds",
@@ -4443,7 +4482,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.4
+    "screener_score": 51.3
   },
   {
     "sector": "Open-End Funds",
@@ -4482,7 +4521,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.7
+    "screener_score": 33.8
   },
   {
     "sector": "Open-End Funds",
@@ -4521,7 +4560,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.3
+    "screener_score": 42.0
   },
   {
     "sector": "Open-End Funds",
@@ -4646,12 +4685,12 @@
     "fund_name": "ABL Fixed Rate Plan XXVII",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "10.0260",
+    "validity_date": "Jul 08, 2026",
+    "nav": "10.0278",
     "returns": {
-      "mtd": "13.56",
-      "ytd": "13.56",
-      "1d": "10.91",
+      "mtd": "12.68",
+      "ytd": "12.68",
+      "1d": "6.57",
       "15d": "N/A",
       "30d": "N/A",
       "90d": "N/A",
@@ -4664,7 +4703,7 @@
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Jun 29, 2026",
     "offer": "0.0000",
-    "repurchase": "10.0260",
+    "repurchase": "10.0278",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -5099,7 +5138,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.18",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -5301,7 +5340,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.5
+    "screener_score": 37.4
   },
   {
     "sector": "Open-End Funds",
@@ -5657,6 +5696,45 @@
   {
     "sector": "Open-End Funds",
     "category": "Fixed Rate / Return (Annualized Return )",
+    "fund_name": "MCB DCF Fixed Return Plan XII",
+    "rating": "N/A",
+    "benchmark": "N/A",
+    "validity_date": "Jul 07, 2026",
+    "nav": "100.0000",
+    "returns": {
+      "mtd": "N/A",
+      "ytd": "N/A",
+      "1d": "N/A",
+      "15d": "N/A",
+      "30d": "N/A",
+      "90d": "N/A",
+      "180d": "N/A",
+      "270d": "N/A",
+      "365d": "N/A",
+      "2y": "N/A",
+      "3y": "N/A"
+    },
+    "amc": "MCB Investment Management Limited",
+    "inception_date": "Jul 07, 2026",
+    "offer": "100.0000",
+    "repurchase": "100.0000",
+    "front_end_load": "0",
+    "back_end_load": "0",
+    "contingent_load": "0",
+    "trustee": "CDC",
+    "management_fee": "0.00",
+    "ter_ytd": "1.19",
+    "sm_fee": "0.00",
+    "is_shariah": false,
+    "risk_level": "Medium",
+    "major_category": "Income",
+    "total_load": 0.0,
+    "is_ter_estimated": true,
+    "screener_score": 4.3
+  },
+  {
+    "sector": "Open-End Funds",
+    "category": "Fixed Rate / Return (Annualized Return )",
     "fund_name": "NBP Fixed Term Munafa Plan VB",
     "rating": "N/A",
     "benchmark": "N/A",
@@ -5723,7 +5801,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.18",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -5801,7 +5879,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.18",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -5964,7 +6042,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.9
+    "screener_score": 37.8
   },
   {
     "sector": "Open-End Funds",
@@ -6081,7 +6159,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.9
+    "screener_score": 55.8
   },
   {
     "sector": "Open-End Funds",
@@ -6159,7 +6237,7 @@
     "major_category": "Income",
     "total_load": 18.0,
     "is_ter_estimated": false,
-    "screener_score": 52.8
+    "screener_score": 52.6
   },
   {
     "sector": "Open-End Funds",
@@ -6198,7 +6276,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.4
+    "screener_score": 39.5
   },
   {
     "sector": "Open-End Funds",
@@ -6206,24 +6284,24 @@
     "fund_name": "Askari High Yield Scheme",
     "rating": "A(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "105.4410",
+    "validity_date": "Jul 08, 2026",
+    "nav": "106.2467",
     "returns": {
-      "mtd": "42.63",
-      "ytd": "42.63",
-      "1d": "131.91",
-      "15d": "21.11",
-      "30d": "132.47",
-      "90d": "47.73",
-      "180d": "26.78",
-      "270d": "20.17",
-      "365d": "16.88",
-      "2y": "15.32",
-      "3y": "18.90"
+      "mtd": "72.45",
+      "ytd": "72.45",
+      "1d": "N/A",
+      "15d": "39.86",
+      "30d": "142.60",
+      "90d": "51.14",
+      "180d": "28.50",
+      "270d": "21.33",
+      "365d": "17.75",
+      "2y": "15.80",
+      "3y": "19.27"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Mar 16, 2006",
-    "offer": "107.8239",
+    "offer": "108.6478",
     "repurchase": "109.1701",
     "front_end_load": "0",
     "back_end_load": "0",
@@ -6237,7 +6315,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.6
+    "screener_score": 52.8
   },
   {
     "sector": "Open-End Funds",
@@ -6315,7 +6393,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.0
+    "screener_score": 54.8
   },
   {
     "sector": "Open-End Funds",
@@ -6354,7 +6432,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 48.6
+    "screener_score": 48.5
   },
   {
     "sector": "Open-End Funds",
@@ -6393,7 +6471,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 61.0
+    "screener_score": 61.1
   },
   {
     "sector": "Open-End Funds",
@@ -6432,7 +6510,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.7
+    "screener_score": 71.0
   },
   {
     "sector": "Open-End Funds",
@@ -6471,7 +6549,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 71.2
+    "screener_score": 71.5
   },
   {
     "sector": "Open-End Funds",
@@ -6510,7 +6588,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.8
+    "screener_score": 68.1
   },
   {
     "sector": "Open-End Funds",
@@ -6518,25 +6596,25 @@
     "fund_name": "ABL Optimal Asset Allocation Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "10.2179",
+    "validity_date": "Jul 08, 2026",
+    "nav": "10.0896",
     "returns": {
-      "mtd": "1.85",
-      "ytd": "1.85",
-      "1d": "-0.35",
-      "15d": "2.55",
-      "30d": "5.58",
-      "90d": "8.89",
-      "180d": "5.52",
-      "270d": "12.83",
+      "mtd": "0.57",
+      "ytd": "0.57",
+      "1d": "-1.26",
+      "15d": "1.44",
+      "30d": "4.82",
+      "90d": "7.15",
+      "180d": "4.47",
+      "270d": "11.40",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Sep 03, 2025",
-    "offer": "10.5735",
-    "repurchase": "10.2179",
+    "offer": "10.4407",
+    "repurchase": "10.0896",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -6588,7 +6666,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.9
+    "screener_score": 74.1
   },
   {
     "sector": "Open-End Funds",
@@ -6666,7 +6744,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.6
+    "screener_score": 38.7
   },
   {
     "sector": "Open-End Funds",
@@ -6744,7 +6822,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 75.7
+    "screener_score": 75.9
   },
   {
     "sector": "Open-End Funds",
@@ -6769,14 +6847,14 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Nov 23, 2018",
-    "offer": "18.6024",
-    "repurchase": "17.9768",
+    "offer": "18.2155",
+    "repurchase": "17.6029",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.00",
-    "ter_ytd": "6.77",
+    "ter_ytd": "6.54",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
@@ -6861,7 +6939,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 65.0
+    "screener_score": 65.2
   },
   {
     "sector": "Open-End Funds",
@@ -6900,7 +6978,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.9
+    "screener_score": 77.1
   },
   {
     "sector": "Open-End Funds",
@@ -6939,7 +7017,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 82.7
+    "screener_score": 82.8
   },
   {
     "sector": "Open-End Funds",
@@ -6978,7 +7056,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.3
+    "screener_score": 78.4
   },
   {
     "sector": "Open-End Funds",
@@ -7017,7 +7095,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 62.4
+    "screener_score": 62.5
   },
   {
     "sector": "Open-End Funds",
@@ -7025,38 +7103,38 @@
     "fund_name": "Pak Oman Advantage Asset Allocation Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "41.9322",
+    "validity_date": "Jul 08, 2026",
+    "nav": "41.2731",
     "returns": {
-      "mtd": "2.71",
-      "ytd": "2.71",
-      "1d": "0.35",
-      "15d": "3.85",
-      "30d": "11.77",
-      "90d": "16.52",
-      "180d": "-1.76",
-      "270d": "9.30",
-      "365d": "21.61",
-      "2y": "72.49",
-      "3y": "138.34"
+      "mtd": "1.10",
+      "ytd": "1.10",
+      "1d": "-1.57",
+      "15d": "2.22",
+      "30d": "11.63",
+      "90d": "12.93",
+      "180d": "-2.29",
+      "270d": "7.59",
+      "365d": "19.97",
+      "2y": "68.76",
+      "3y": "134.56"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Oct 30, 2008",
-    "offer": "43.1167",
-    "repurchase": "41.9322",
+    "offer": "42.4390",
+    "repurchase": "41.2731",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "2.00",
-    "ter_ytd": "4.25",
+    "ter_ytd": "4.15",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.1
+    "screener_score": 58.8
   },
   {
     "sector": "Open-End Funds",
@@ -7095,7 +7173,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 68.5
+    "screener_score": 68.8
   },
   {
     "sector": "Open-End Funds",
@@ -7103,25 +7181,25 @@
     "fund_name": "Alfalah GHP Prosperity Planning Fund (Alfalah GHP Active Allocation Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "131.9481",
+    "validity_date": "Jul 07, 2026",
+    "nav": "130.8202",
     "returns": {
-      "mtd": "4.22",
-      "ytd": "4.22",
-      "1d": "1.11",
-      "15d": "4.09",
-      "30d": "9.77",
-      "90d": "24.18",
-      "180d": "0.60",
-      "270d": "11.33",
-      "365d": "34.33",
-      "2y": "126.79",
+      "mtd": "3.32",
+      "ytd": "3.32",
+      "1d": "-0.85",
+      "15d": "3.61",
+      "30d": "8.84",
+      "90d": "12.88",
+      "180d": "-0.10",
+      "270d": "11.14",
+      "365d": "31.76",
+      "2y": "124.83",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Sep 12, 2015",
-    "offer": "134.9829",
-    "repurchase": "131.9481",
+    "offer": "133.8291",
+    "repurchase": "130.8202",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7134,7 +7212,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 75.1
+    "screener_score": 72.5
   },
   {
     "sector": "Open-End Funds",
@@ -7142,25 +7220,25 @@
     "fund_name": "Alfalah GHP Prosperity Planning Fund (Alfalah GHP Conservative Allocation Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "116.0769",
+    "validity_date": "Jul 07, 2026",
+    "nav": "115.9242",
     "returns": {
-      "mtd": "0.90",
-      "ytd": "0.90",
-      "1d": "0.23",
-      "15d": "1.01",
-      "30d": "2.51",
-      "90d": "6.47",
-      "180d": "4.09",
-      "270d": "8.45",
-      "365d": "15.20",
-      "2y": "44.68",
-      "3y": "93.31"
+      "mtd": "0.77",
+      "ytd": "0.77",
+      "1d": "-0.13",
+      "15d": "0.94",
+      "30d": "2.35",
+      "90d": "4.41",
+      "180d": "3.97",
+      "270d": "8.44",
+      "365d": "14.77",
+      "2y": "44.43",
+      "3y": "93.05"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Sep 12, 2015",
-    "offer": "117.4118",
-    "repurchase": "116.0769",
+    "offer": "117.2573",
+    "repurchase": "115.9242",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7173,7 +7251,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.4
+    "screener_score": 55.1
   },
   {
     "sector": "Open-End Funds",
@@ -7181,25 +7259,25 @@
     "fund_name": "Alfalah GHP Prosperity Planning Fund (Alfalah GHP Moderate Allocation Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "102.2509",
+    "validity_date": "Jul 07, 2026",
+    "nav": "101.9409",
     "returns": {
-      "mtd": "2.67",
-      "ytd": "2.67",
-      "1d": "0.43",
-      "15d": "2.93",
-      "30d": "5.77",
-      "90d": "9.56",
-      "180d": "6.85",
-      "270d": "11.92",
-      "365d": "21.98",
-      "2y": "68.74",
-      "3y": "134.84"
+      "mtd": "2.36",
+      "ytd": "2.36",
+      "1d": "-0.30",
+      "15d": "2.80",
+      "30d": "5.44",
+      "90d": "7.49",
+      "180d": "6.54",
+      "270d": "11.85",
+      "365d": "21.09",
+      "2y": "68.16",
+      "3y": "134.13"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Sep 12, 2015",
-    "offer": "104.0147",
-    "repurchase": "102.2509",
+    "offer": "103.6994",
+    "repurchase": "101.9409",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7212,7 +7290,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.1
+    "screener_score": 59.6
   },
   {
     "sector": "Open-End Funds",
@@ -7220,14 +7298,14 @@
     "fund_name": "Alfalah Strategic Allocation Capital Preservation Plan II",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "101.8191",
+    "validity_date": "Jul 07, 2026",
+    "nav": "101.5456",
     "returns": {
-      "mtd": "1.53",
-      "ytd": "1.53",
-      "1d": "0.40",
-      "15d": "1.81",
-      "30d": "3.57",
+      "mtd": "1.25",
+      "ytd": "1.25",
+      "1d": "-0.27",
+      "15d": "1.65",
+      "30d": "3.27",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -7237,8 +7315,8 @@
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Apr 21, 2026",
-    "offer": "101.8191",
-    "repurchase": "101.8191",
+    "offer": "101.5456",
+    "repurchase": "101.5456",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7259,25 +7337,25 @@
     "fund_name": "Alfalah Strategic Allocation Fund Plan - I",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "100.4786",
+    "validity_date": "Jul 07, 2026",
+    "nav": "100.5107",
     "returns": {
-      "mtd": "0.39",
-      "ytd": "0.39",
-      "1d": "0.06",
-      "15d": "0.79",
+      "mtd": "0.42",
+      "ytd": "0.42",
+      "1d": "0.03",
+      "15d": "0.80",
       "30d": "1.77",
-      "90d": "3.36",
-      "180d": "-7.29",
-      "270d": "3.84",
-      "365d": "25.55",
+      "90d": "3.04",
+      "180d": "-7.85",
+      "270d": "4.51",
+      "365d": "25.53",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Nov 21, 2024",
-    "offer": "103.9451",
-    "repurchase": "100.4786",
+    "offer": "103.9783",
+    "repurchase": "100.5107",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7368,7 +7446,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.8
+    "screener_score": 79.0
   },
   {
     "sector": "Open-End Funds",
@@ -7393,8 +7471,8 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Feb 13, 2020",
-    "offer": "10.1594",
-    "repurchase": "10.0429",
+    "offer": "10.1624",
+    "repurchase": "10.0459",
     "front_end_load": "1",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7407,7 +7485,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 35.6
+    "screener_score": 35.5
   },
   {
     "sector": "Open-End Funds",
@@ -7446,7 +7524,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.8
+    "screener_score": 31.7
   },
   {
     "sector": "Open-End Funds",
@@ -7485,7 +7563,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.7
+    "screener_score": 45.5
   },
   {
     "sector": "Open-End Funds",
@@ -7524,7 +7602,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.5
+    "screener_score": 27.6
   },
   {
     "sector": "Open-End Funds",
@@ -7563,7 +7641,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.3
+    "screener_score": 41.2
   },
   {
     "sector": "Open-End Funds",
@@ -7602,7 +7680,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.3
+    "screener_score": 33.1
   },
   {
     "sector": "Open-End Funds",
@@ -7680,7 +7758,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.4
+    "screener_score": 35.3
   },
   {
     "sector": "Open-End Funds",
@@ -7719,7 +7797,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.2
+    "screener_score": 17.3
   },
   {
     "sector": "Open-End Funds",
@@ -7758,7 +7836,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.8
+    "screener_score": 38.7
   },
   {
     "sector": "Open-End Funds",
@@ -7836,7 +7914,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.6
+    "screener_score": 30.5
   },
   {
     "sector": "Open-End Funds",
@@ -7875,7 +7953,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.0
+    "screener_score": 42.9
   },
   {
     "sector": "Open-End Funds",
@@ -7914,7 +7992,7 @@
     "major_category": "Money Market",
     "total_load": 0.5,
     "is_ter_estimated": false,
-    "screener_score": 37.8
+    "screener_score": 37.7
   },
   {
     "sector": "Open-End Funds",
@@ -7992,7 +8070,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.3
+    "screener_score": 18.4
   },
   {
     "sector": "Open-End Funds",
@@ -8000,20 +8078,20 @@
     "fund_name": "Faysal Islamic Cash Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "100.7136",
+    "validity_date": "Jul 08, 2026",
+    "nav": "100.7554",
     "returns": {
-      "mtd": "10.21",
-      "ytd": "10.21",
-      "1d": "14.45",
-      "15d": "10.23",
-      "30d": "10.38",
-      "90d": "9.53",
-      "180d": "9.28",
-      "270d": "9.25",
-      "365d": "9.33",
+      "mtd": "10.92",
+      "ytd": "10.92",
+      "1d": "15.15",
+      "15d": "10.56",
+      "30d": "10.68",
+      "90d": "9.60",
+      "180d": "9.32",
+      "270d": "9.28",
+      "365d": "9.35",
       "2y": "12.25",
-      "3y": "17.41"
+      "3y": "17.40"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Aug 11, 2020",
@@ -8031,7 +8109,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.2
+    "screener_score": 21.4
   },
   {
     "sector": "Open-End Funds",
@@ -8070,7 +8148,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.6
+    "screener_score": 39.4
   },
   {
     "sector": "Open-End Funds",
@@ -8148,7 +8226,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.4
+    "screener_score": 31.3
   },
   {
     "sector": "Open-End Funds",
@@ -8156,31 +8234,31 @@
     "fund_name": "Lakson Islamic Money Market Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "101.3109",
+    "validity_date": "Jul 08, 2026",
+    "nav": "101.3378",
     "returns": {
-      "mtd": "9.81",
-      "ytd": "9.81",
+      "mtd": "9.79",
+      "ytd": "9.79",
       "1d": "9.71",
-      "15d": "8.54",
-      "30d": "9.40",
-      "90d": "9.99",
+      "15d": "8.52",
+      "30d": "9.36",
+      "90d": "9.98",
       "180d": "10.03",
-      "270d": "10.24",
-      "365d": "10.30",
-      "2y": "12.54",
-      "3y": "17.34"
+      "270d": "10.23",
+      "365d": "10.31",
+      "2y": "12.52",
+      "3y": "17.33"
     },
     "amc": "Lakson Investments Limited",
     "inception_date": "Sep 29, 2022",
-    "offer": "102.4760",
-    "repurchase": "101.3109",
+    "offer": "102.5032",
+    "repurchase": "101.3378",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.20",
-    "ter_ytd": "0.58",
+    "ter_ytd": "0.57",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
@@ -8265,7 +8343,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.9
+    "screener_score": 29.8
   },
   {
     "sector": "Open-End Funds",
@@ -8304,7 +8382,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.2
+    "screener_score": 37.1
   },
   {
     "sector": "Open-End Funds",
@@ -8336,7 +8414,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "1.38",
+    "ter_ytd": "1.37",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
@@ -8375,7 +8453,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "1.38",
+    "ter_ytd": "1.37",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
@@ -8393,8 +8471,8 @@
     "validity_date": "Jul 07, 2026",
     "nav": "50.0000",
     "returns": {
-      "mtd": "9.94",
-      "ytd": "9.94",
+      "mtd": "9.95",
+      "ytd": "9.95",
       "1d": "9.71",
       "15d": "10.92",
       "30d": "9.98",
@@ -8414,14 +8492,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.10",
-    "ter_ytd": "1.48",
+    "ter_ytd": "1.42",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
-    "is_ter_estimated": true,
-    "screener_score": 21.0
+    "is_ter_estimated": false,
+    "screener_score": 21.3
   },
   {
     "sector": "Open-End Funds",
@@ -8460,7 +8538,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.9
+    "screener_score": 41.8
   },
   {
     "sector": "Open-End Funds",
@@ -8499,7 +8577,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.0
+    "screener_score": 36.9
   },
   {
     "sector": "Open-End Funds",
@@ -8538,7 +8616,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.9
+    "screener_score": 35.8
   },
   {
     "sector": "Open-End Funds",
@@ -8546,20 +8624,20 @@
     "fund_name": "Pak Oman Daily Dividend Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 08, 2026",
+    "validity_date": "Jul 09, 2026",
     "nav": "9.9699",
     "returns": {
-      "mtd": "-0.21",
-      "ytd": "-0.21",
-      "1d": "-0.37",
+      "mtd": "-0.18",
+      "ytd": "-0.18",
+      "1d": "N/A",
       "15d": "-0.19",
-      "30d": "-0.26",
-      "90d": "-0.74",
-      "180d": "0.54",
-      "270d": "2.14",
-      "365d": "3.16",
-      "2y": "6.88",
-      "3y": "10.76"
+      "30d": "-0.23",
+      "90d": "-0.73",
+      "180d": "0.51",
+      "270d": "2.12",
+      "365d": "3.14",
+      "2y": "6.85",
+      "3y": "10.79"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Dec 07, 2021",
@@ -8577,7 +8655,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 7.5
+    "screener_score": 7.6
   },
   {
     "sector": "Open-End Funds",
@@ -8616,7 +8694,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.1
+    "screener_score": 42.0
   },
   {
     "sector": "Open-End Funds",
@@ -8625,7 +8703,7 @@
     "rating": "AA(f)",
     "benchmark": "N/A",
     "validity_date": "Jul 08, 2026",
-    "nav": "100.0289",
+    "nav": "100.0000",
     "returns": {
       "mtd": "18.86",
       "ytd": "18.86",
@@ -8641,8 +8719,8 @@
     },
     "amc": "Pak-Qatar Asset Management Company Limited",
     "inception_date": "Oct 03, 2022",
-    "offer": "103.4799",
-    "repurchase": "100.0289",
+    "offer": "103.4500",
+    "repurchase": "100.0000",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -8655,7 +8733,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.7
+    "screener_score": 41.6
   },
   {
     "sector": "Open-End Funds",
@@ -8719,14 +8797,14 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Jul 31, 2010",
-    "offer": "10.5043",
-    "repurchase": "10.3247",
+    "offer": "10.5071",
+    "repurchase": "10.3274",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.55",
-    "ter_ytd": "3.11",
+    "ter_ytd": "2.92",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -8758,14 +8836,14 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Jul 22, 2024",
-    "offer": "10.4420",
-    "repurchase": "10.0908",
+    "offer": "10.4622",
+    "repurchase": "10.1104",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.55",
-    "ter_ytd": "1.56",
+    "ter_ytd": "1.55",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -8811,7 +8889,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.5
+    "screener_score": 23.6
   },
   {
     "sector": "Open-End Funds",
@@ -8889,7 +8967,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 12.2
+    "screener_score": 12.3
   },
   {
     "sector": "Open-End Funds",
@@ -9045,7 +9123,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.0
+    "screener_score": 8.1
   },
   {
     "sector": "Open-End Funds",
@@ -9084,7 +9162,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.1
+    "screener_score": 9.2
   },
   {
     "sector": "Open-End Funds",
@@ -9201,7 +9279,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 13.5
+    "screener_score": 13.6
   },
   {
     "sector": "Open-End Funds",
@@ -9357,7 +9435,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.0
+    "screener_score": 35.9
   },
   {
     "sector": "Open-End Funds",
@@ -9396,7 +9474,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.1
+    "screener_score": 30.0
   },
   {
     "sector": "Open-End Funds",
@@ -9630,7 +9708,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.3
+    "screener_score": 36.2
   },
   {
     "sector": "Open-End Funds",
@@ -9638,14 +9716,14 @@
     "fund_name": "HBL Islamic Regualar Income Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
+    "validity_date": "Jul 08, 2026",
     "nav": "100.0000",
     "returns": {
-      "mtd": "10.49",
-      "ytd": "10.49",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "9.67",
+      "mtd": "10.42",
+      "ytd": "10.42",
+      "1d": "10.18",
+      "15d": "10.42",
+      "30d": "9.38",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -9708,7 +9786,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.9
+    "screener_score": 9.0
   },
   {
     "sector": "Open-End Funds",
@@ -9747,7 +9825,7 @@
     "major_category": "Income",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 30.9
+    "screener_score": 30.8
   },
   {
     "sector": "Open-End Funds",
@@ -9779,7 +9857,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.15",
-    "ter_ytd": "1.67",
+    "ter_ytd": "1.68",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -9818,14 +9896,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "2.02",
+    "ter_ytd": "2.03",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 17.1
+    "screener_score": 17.3
   },
   {
     "sector": "Open-End Funds",
@@ -9872,25 +9950,25 @@
     "fund_name": "Meezan Daily Income Fund (Meezan Sehl Account Plan) (MSHP)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "50.7036",
+    "validity_date": "Jul 08, 2026",
+    "nav": "50.7314",
     "returns": {
-      "mtd": "9.94",
-      "ytd": "9.94",
-      "1d": "8.94",
-      "15d": "9.51",
-      "30d": "9.01",
-      "90d": "10.52",
-      "180d": "9.24",
-      "270d": "8.96",
-      "365d": "8.85",
-      "2y": "10.01",
-      "3y": "14.81"
+      "mtd": "9.96",
+      "ytd": "9.96",
+      "1d": "8.87",
+      "15d": "9.65",
+      "30d": "9.12",
+      "90d": "10.56",
+      "180d": "9.27",
+      "270d": "8.97",
+      "365d": "8.87",
+      "2y": "9.99",
+      "3y": "14.79"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Jun 19, 2023",
-    "offer": "50.7036",
-    "repurchase": "50.7036",
+    "offer": "50.7314",
+    "repurchase": "50.7314",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -9903,7 +9981,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 11.1
+    "screener_score": 11.2
   },
   {
     "sector": "Open-End Funds",
@@ -9935,7 +10013,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "2.02",
+    "ter_ytd": "2.03",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -10013,14 +10091,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "2.02",
+    "ter_ytd": "2.03",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 13.8
+    "screener_score": 14.0
   },
   {
     "sector": "Open-End Funds",
@@ -10137,7 +10215,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.4
+    "screener_score": 12.5
   },
   {
     "sector": "Open-End Funds",
@@ -10176,7 +10254,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.8
+    "screener_score": 18.9
   },
   {
     "sector": "Open-End Funds",
@@ -10215,7 +10293,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.8
+    "screener_score": 18.9
   },
   {
     "sector": "Open-End Funds",
@@ -10254,7 +10332,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.9
+    "screener_score": 26.0
   },
   {
     "sector": "Open-End Funds",
@@ -10301,25 +10379,25 @@
     "fund_name": "Pak Oman Advantage Islamic Income Fund",
     "rating": "A+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "53.6284",
+    "validity_date": "Jul 08, 2026",
+    "nav": "53.6375",
     "returns": {
-      "mtd": "6.72",
-      "ytd": "6.72",
+      "mtd": "6.65",
+      "ytd": "6.65",
       "1d": "6.21",
-      "15d": "5.97",
-      "30d": "5.77",
+      "15d": "6.38",
+      "30d": "5.81",
       "90d": "5.81",
-      "180d": "5.52",
+      "180d": "5.51",
       "270d": "5.69",
-      "365d": "5.76",
-      "2y": "8.59",
-      "3y": "14.08"
+      "365d": "5.75",
+      "2y": "8.57",
+      "3y": "14.06"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Oct 28, 2008",
-    "offer": "54.2344",
-    "repurchase": "53.6284",
+    "offer": "54.2436",
+    "repurchase": "53.6375",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -10332,7 +10410,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 7.2
+    "screener_score": 7.3
   },
   {
     "sector": "Open-End Funds",
@@ -10371,7 +10449,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.9
+    "screener_score": 35.8
   },
   {
     "sector": "Open-End Funds",
@@ -10435,14 +10513,14 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Jun 11, 2013",
-    "offer": "35.2832",
-    "repurchase": "34.4832",
+    "offer": "34.3195",
+    "repurchase": "33.5413",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "3.00",
-    "ter_ytd": "5.10",
+    "ter_ytd": "5.45",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -10527,7 +10605,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 71.3
+    "screener_score": 71.7
   },
   {
     "sector": "Open-End Funds",
@@ -10566,7 +10644,7 @@
     "major_category": "Stock",
     "total_load": 2.5,
     "is_ter_estimated": false,
-    "screener_score": 75.8
+    "screener_score": 76.0
   },
   {
     "sector": "Open-End Funds",
@@ -10644,7 +10722,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.1
+    "screener_score": 69.5
   },
   {
     "sector": "Open-End Funds",
@@ -10683,7 +10761,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.9
+    "screener_score": 69.1
   },
   {
     "sector": "Open-End Funds",
@@ -10761,7 +10839,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.6
+    "screener_score": 73.8
   },
   {
     "sector": "Open-End Funds",
@@ -10917,7 +10995,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.3
+    "screener_score": 70.6
   },
   {
     "sector": "Open-End Funds",
@@ -10956,7 +11034,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.9
+    "screener_score": 67.0
   },
   {
     "sector": "Open-End Funds",
@@ -10995,7 +11073,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.8
+    "screener_score": 68.1
   },
   {
     "sector": "Open-End Funds",
@@ -11034,7 +11112,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.5
+    "screener_score": 55.6
   },
   {
     "sector": "Open-End Funds",
@@ -11073,7 +11151,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 72.6
+    "screener_score": 72.9
   },
   {
     "sector": "Open-End Funds",
@@ -11268,7 +11346,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 48.5
+    "screener_score": 48.9
   },
   {
     "sector": "Open-End Funds",
@@ -11300,7 +11378,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.48",
+    "ter_ytd": "4.49",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -11339,14 +11417,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.48",
+    "ter_ytd": "4.49",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 70.9
+    "screener_score": 71.3
   },
   {
     "sector": "Open-End Funds",
@@ -11385,7 +11463,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 72.2
+    "screener_score": 72.6
   },
   {
     "sector": "Open-End Funds",
@@ -11424,7 +11502,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 75.4
+    "screener_score": 75.7
   },
   {
     "sector": "Open-End Funds",
@@ -11463,7 +11541,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.3
+    "screener_score": 68.6
   },
   {
     "sector": "Open-End Funds",
@@ -11502,7 +11580,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 65.7
+    "screener_score": 66.0
   },
   {
     "sector": "Open-End Funds",
@@ -11612,7 +11690,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.64",
-    "ter_ytd": "2.16",
+    "ter_ytd": "2.17",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12392,7 +12470,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.01",
-    "ter_ytd": "0.53",
+    "ter_ytd": "0.54",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12431,91 +12509,13 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.10",
-    "ter_ytd": "0.62",
+    "ter_ytd": "0.63",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.3
-  },
-  {
-    "sector": "Open-End Funds",
-    "category": "Shariah Compliant Fixed Rate / Return (Annualized Return )",
-    "fund_name": "Meezan Paidaar Munafa Plan 40",
-    "rating": "N/A",
-    "benchmark": "N/A",
-    "validity_date": "Jun 23, 2026",
-    "nav": "50.0000",
-    "returns": {
-      "mtd": "9.95",
-      "ytd": "10.15",
-      "1d": "10.33",
-      "15d": "9.91",
-      "30d": "9.98",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
-    },
-    "amc": "Al Meezan Investment Management Limited",
-    "inception_date": "Mar 30, 2026",
-    "offer": "0.0000",
-    "repurchase": "50.0000",
-    "front_end_load": "0",
-    "back_end_load": "0",
-    "contingent_load": "0",
-    "trustee": "CDC",
-    "management_fee": "0.39",
-    "ter_ytd": "0.60",
-    "sm_fee": "0.00",
-    "is_shariah": true,
-    "risk_level": "Medium",
-    "major_category": "Income",
-    "total_load": 0.0,
-    "is_ter_estimated": false,
-    "screener_score": 4.3
-  },
-  {
-    "sector": "Open-End Funds",
-    "category": "Shariah Compliant Fixed Rate / Return (Annualized Return )",
-    "fund_name": "Meezan Paidaar Munafa Plan 42",
-    "rating": "N/A",
-    "benchmark": "N/A",
-    "validity_date": "Jun 23, 2026",
-    "nav": "50.0000",
-    "returns": {
-      "mtd": "10.77",
-      "ytd": "11.20",
-      "1d": "8.83",
-      "15d": "10.40",
-      "30d": "10.95",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
-    },
-    "amc": "Al Meezan Investment Management Limited",
-    "inception_date": "Mar 31, 2026",
-    "offer": "0.0000",
-    "repurchase": "50.0000",
-    "front_end_load": "0",
-    "back_end_load": "0",
-    "contingent_load": "0",
-    "trustee": "CDC",
-    "management_fee": "0.05",
-    "ter_ytd": "0.20",
-    "sm_fee": "0.00",
-    "is_shariah": true,
-    "risk_level": "Medium",
-    "major_category": "Income",
-    "total_load": 0.0,
-    "is_ter_estimated": false,
     "screener_score": 4.3
   },
   {
@@ -12548,7 +12548,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.10",
-    "ter_ytd": "0.62",
+    "ter_ytd": "0.63",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12587,7 +12587,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.18",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12626,7 +12626,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.18",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12665,7 +12665,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.18",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12704,7 +12704,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.18",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12828,7 +12828,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.3
+    "screener_score": 54.2
   },
   {
     "sector": "Open-End Funds",
@@ -12867,7 +12867,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 28.0
+    "screener_score": 27.9
   },
   {
     "sector": "Open-End Funds",
@@ -12906,7 +12906,7 @@
     "major_category": "Income",
     "total_load": 0.25,
     "is_ter_estimated": false,
-    "screener_score": 58.0
+    "screener_score": 58.3
   },
   {
     "sector": "Open-End Funds",
@@ -12984,7 +12984,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.0
+    "screener_score": 12.1
   },
   {
     "sector": "Open-End Funds",
@@ -13023,7 +13023,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 16.4
+    "screener_score": 16.5
   },
   {
     "sector": "Open-End Funds",
@@ -13094,7 +13094,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.38",
-    "ter_ytd": "3.44",
+    "ter_ytd": "3.43",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -13126,8 +13126,8 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "May 31, 2018",
-    "offer": "10.3283",
-    "repurchase": "9.9810",
+    "offer": "10.3330",
+    "repurchase": "9.9855",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -13296,7 +13296,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.6
+    "screener_score": 66.7
   },
   {
     "sector": "Open-End Funds",
@@ -13374,7 +13374,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.5
+    "screener_score": 49.4
   },
   {
     "sector": "Open-End Funds",
@@ -13413,7 +13413,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.6
+    "screener_score": 43.7
   },
   {
     "sector": "Open-End Funds",
@@ -13686,7 +13686,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.1
+    "screener_score": 69.4
   },
   {
     "sector": "Open-End Funds",
@@ -13757,7 +13757,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.82",
-    "ter_ytd": "3.88",
+    "ter_ytd": "3.87",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -13796,14 +13796,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.80",
-    "ter_ytd": "3.86",
+    "ter_ytd": "3.85",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Assets",
     "total_load": 2.0,
     "is_ter_estimated": true,
-    "screener_score": 52.3
+    "screener_score": 52.6
   },
   {
     "sector": "Open-End Funds",
@@ -13842,7 +13842,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 72.5
+    "screener_score": 72.8
   },
   {
     "sector": "Open-End Funds",
@@ -13850,38 +13850,38 @@
     "fund_name": "Pak Oman Islamic Asset Allocation Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "40.6267",
+    "validity_date": "Jul 08, 2026",
+    "nav": "40.0171",
     "returns": {
-      "mtd": "2.19",
-      "ytd": "2.19",
-      "1d": "0.36",
-      "15d": "3.56",
-      "30d": "10.67",
-      "90d": "13.26",
-      "180d": "-4.67",
-      "270d": "5.66",
-      "365d": "16.94",
-      "2y": "61.53",
-      "3y": "108.31"
+      "mtd": "0.65",
+      "ytd": "0.65",
+      "1d": "-1.50",
+      "15d": "2.00",
+      "30d": "10.61",
+      "90d": "9.91",
+      "180d": "-5.14",
+      "270d": "4.08",
+      "365d": "15.49",
+      "2y": "57.78",
+      "3y": "105.11"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Oct 28, 2008",
-    "offer": "41.7744",
-    "repurchase": "40.6267",
+    "offer": "41.1475",
+    "repurchase": "40.0171",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "2.00",
-    "ter_ytd": "4.96",
+    "ter_ytd": "4.86",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.4
+    "screener_score": 55.8
   },
   {
     "sector": "Open-End Funds",
@@ -13998,7 +13998,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.6
+    "screener_score": 49.9
   },
   {
     "sector": "Open-End Funds",
@@ -14037,7 +14037,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 59.2
+    "screener_score": 59.3
   },
   {
     "sector": "Open-End Funds",
@@ -14076,7 +14076,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.7
+    "screener_score": 30.8
   },
   {
     "sector": "Open-End Funds",
@@ -14084,25 +14084,25 @@
     "fund_name": "Alfalah GHP Islamic Prosperity Planning Fund (Alfalah GHP Islamic Active Allocation Plan II)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "110.4100",
+    "validity_date": "Jul 07, 2026",
+    "nav": "109.4705",
     "returns": {
-      "mtd": "2.83",
-      "ytd": "2.83",
-      "1d": "0.65",
-      "15d": "3.04",
-      "30d": "7.93",
-      "90d": "20.24",
-      "180d": "2.73",
-      "270d": "9.74",
-      "365d": "20.45",
-      "2y": "77.85",
+      "mtd": "1.96",
+      "ytd": "1.96",
+      "1d": "-0.85",
+      "15d": "2.09",
+      "30d": "7.03",
+      "90d": "9.34",
+      "180d": "2.55",
+      "270d": "9.20",
+      "365d": "19.09",
+      "2y": "76.34",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Nov 01, 2016",
-    "offer": "113.5843",
-    "repurchase": "110.4100",
+    "offer": "112.6178",
+    "repurchase": "109.4705",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -14115,7 +14115,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.3
+    "screener_score": 59.4
   },
   {
     "sector": "Open-End Funds",
@@ -14123,25 +14123,25 @@
     "fund_name": "Alfalah GHP Islamic Prosperity Planning Fund (Alfalah GHP Islamic Balance Allocation Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "104.4604",
+    "validity_date": "Jul 07, 2026",
+    "nav": "104.2775",
     "returns": {
-      "mtd": "0.79",
-      "ytd": "0.79",
-      "1d": "0.17",
-      "15d": "0.90",
-      "30d": "-0.73",
-      "90d": "5.65",
-      "180d": "4.09",
-      "270d": "6.74",
-      "365d": "12.47",
-      "2y": "35.97",
-      "3y": "73.30"
+      "mtd": "0.62",
+      "ytd": "0.62",
+      "1d": "-0.18",
+      "15d": "0.68",
+      "30d": "-0.92",
+      "90d": "3.70",
+      "180d": "4.04",
+      "270d": "6.68",
+      "365d": "12.01",
+      "2y": "35.68",
+      "3y": "72.99"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Jun 11, 2016",
-    "offer": "105.9620",
-    "repurchase": "104.4604",
+    "offer": "105.7765",
+    "repurchase": "104.2775",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -14154,7 +14154,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.6
+    "screener_score": 52.8
   },
   {
     "sector": "Open-End Funds",
@@ -14162,25 +14162,25 @@
     "fund_name": "Alfalah GHP Islamic Prosperity Planning Fund (Alfalah GHP Islamic Moderate Allocation Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "115.2178",
+    "validity_date": "Jul 07, 2026",
+    "nav": "114.8246",
     "returns": {
-      "mtd": "1.33",
-      "ytd": "1.33",
-      "1d": "0.30",
-      "15d": "1.33",
-      "30d": "3.30",
-      "90d": "8.58",
-      "180d": "5.82",
-      "270d": "8.82",
-      "365d": "18.08",
-      "2y": "54.59",
-      "3y": "106.95"
+      "mtd": "0.99",
+      "ytd": "0.99",
+      "1d": "-0.34",
+      "15d": "0.93",
+      "30d": "2.94",
+      "90d": "4.94",
+      "180d": "5.59",
+      "270d": "8.65",
+      "365d": "17.14",
+      "2y": "54.02",
+      "3y": "106.24"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Jun 11, 2016",
     "offer": "0.0000",
-    "repurchase": "115.2178",
+    "repurchase": "114.8246",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -14193,7 +14193,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.2
+    "screener_score": 56.3
   },
   {
     "sector": "Open-End Funds",
@@ -14201,31 +14201,31 @@
     "fund_name": "Alfalah KTrade Islamic Plan VII",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "125.2137",
+    "validity_date": "Jul 07, 2026",
+    "nav": "125.2471",
     "returns": {
-      "mtd": "0.16",
-      "ytd": "0.16",
+      "mtd": "0.19",
+      "ytd": "0.19",
       "1d": "0.03",
       "15d": "-7.69",
-      "30d": "-7.30",
-      "90d": "-4.73",
-      "180d": "-3.12",
+      "30d": "-7.31",
+      "90d": "-4.72",
+      "180d": "-3.11",
       "270d": "-1.20",
-      "365d": "0.15",
-      "2y": "11.12",
+      "365d": "0.17",
+      "2y": "11.13",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Aug 21, 2023",
-    "offer": "129.5336",
-    "repurchase": "125.2137",
+    "offer": "129.5681",
+    "repurchase": "125.2471",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "N/A",
     "management_fee": "0.20",
-    "ter_ytd": "0.76",
+    "ter_ytd": "0.75",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14240,31 +14240,31 @@
     "fund_name": "Alhamra Smart Portfolio",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jun 30, 2026",
-    "nav": "174.2927",
+    "validity_date": "Jul 02, 2026",
+    "nav": "175.0514",
     "returns": {
-      "mtd": "3.24",
-      "ytd": "14.38",
-      "1d": "0.71",
-      "15d": "2.41",
-      "30d": "3.24",
-      "90d": "5.92",
-      "180d": "4.02",
-      "270d": "6.17",
-      "365d": "14.38",
-      "2y": "42.20",
-      "3y": "89.99"
+      "mtd": "0.44",
+      "ytd": "0.44",
+      "1d": "0.15",
+      "15d": "2.03",
+      "30d": "4.16",
+      "90d": "7.69",
+      "180d": "4.08",
+      "270d": "6.63",
+      "365d": "14.42",
+      "2y": "42.35",
+      "3y": "90.82"
     },
     "amc": "MCB Investment Management Limited",
     "inception_date": "Jun 11, 2021",
-    "offer": "180.3058",
-    "repurchase": "174.2927",
+    "offer": "181.0907",
+    "repurchase": "175.0514",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "0.03",
-    "ter_ytd": "0.72",
+    "ter_ytd": "0.64",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14349,7 +14349,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.2
+    "screener_score": 57.1
   },
   {
     "sector": "Open-End Funds",
@@ -14396,25 +14396,25 @@
     "fund_name": "Faysal Islamic Financial Planning Fund II (Faysal Priority Ascend Plan I)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "120.1454",
+    "validity_date": "Jul 07, 2026",
+    "nav": "119.8314",
     "returns": {
-      "mtd": "0.90",
-      "ytd": "0.90",
-      "1d": "0.32",
-      "15d": "1.20",
-      "30d": "2.72",
-      "90d": "6.08",
-      "180d": "4.89",
-      "270d": "10.88",
+      "mtd": "0.64",
+      "ytd": "0.64",
+      "1d": "-0.26",
+      "15d": "0.92",
+      "30d": "2.44",
+      "90d": "3.58",
+      "180d": "4.79",
+      "270d": "10.78",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jul 18, 2025",
-    "offer": "124.2905",
-    "repurchase": "120.1454",
+    "offer": "123.9655",
+    "repurchase": "119.8314",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -14435,25 +14435,25 @@
     "fund_name": "Faysal Islamic Financial Planning Fund II (Faysal Priority Ascend Plan II)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "109.0074",
+    "validity_date": "Jul 07, 2026",
+    "nav": "109.0125",
     "returns": {
       "mtd": "0.25",
       "ytd": "0.25",
-      "1d": "0.07",
-      "15d": "0.50",
-      "30d": "1.05",
-      "90d": "2.67",
-      "180d": "4.32",
-      "270d": "7.55",
+      "1d": "N/A",
+      "15d": "0.49",
+      "30d": "1.03",
+      "90d": "2.46",
+      "180d": "4.37",
+      "270d": "7.58",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Aug 11, 2025",
-    "offer": "112.7681",
-    "repurchase": "109.0074",
+    "offer": "112.7735",
+    "repurchase": "109.0125",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -14474,15 +14474,15 @@
     "fund_name": "Faysal Islamic Financial Planning Fund II (Faysal Priority Ascend Plan III)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "110.2238",
+    "validity_date": "Jul 07, 2026",
+    "nav": "110.2554",
     "returns": {
-      "mtd": "0.14",
-      "ytd": "0.14",
-      "1d": "0.02",
-      "15d": "0.45",
-      "30d": "0.77",
-      "90d": "2.24",
+      "mtd": "0.17",
+      "ytd": "0.17",
+      "1d": "0.03",
+      "15d": "1.47",
+      "30d": "0.78",
+      "90d": "2.25",
       "180d": "4.46",
       "270d": "6.99",
       "365d": "9.91",
@@ -14491,14 +14491,14 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "May 29, 2025",
-    "offer": "114.0265",
-    "repurchase": "110.2238",
+    "offer": "114.0593",
+    "repurchase": "110.2554",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "0.44",
+    "ter_ytd": "0.48",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14513,16 +14513,16 @@
     "fund_name": "Faysal Khushal Mustaqbil Fund (Faysal Barak’ah Women Savers Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "109.1421",
+    "validity_date": "Jul 07, 2026",
+    "nav": "109.1710",
     "returns": {
-      "mtd": "0.16",
-      "ytd": "0.16",
+      "mtd": "0.18",
+      "ytd": "0.18",
       "1d": "0.03",
       "15d": "0.48",
       "30d": "0.87",
-      "90d": "2.24",
-      "180d": "4.13",
+      "90d": "2.25",
+      "180d": "4.14",
       "270d": "6.40",
       "365d": "8.89",
       "2y": "N/A",
@@ -14530,8 +14530,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jan 10, 2025",
-    "offer": "112.9075",
-    "repurchase": "109.1421",
+    "offer": "112.9374",
+    "repurchase": "109.1710",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -14552,25 +14552,25 @@
     "fund_name": "Faysal Khushal Mustaqbil Fund (Faysal Nu’umah Women Savers Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "109.3445",
+    "validity_date": "Jul 07, 2026",
+    "nav": "109.3756",
     "returns": {
-      "mtd": "0.17",
-      "ytd": "0.17",
-      "1d": "0.04",
+      "mtd": "0.20",
+      "ytd": "0.20",
+      "1d": "0.03",
       "15d": "0.53",
-      "30d": "0.94",
+      "30d": "0.95",
       "90d": "2.40",
       "180d": "4.34",
       "270d": "6.62",
-      "365d": "9.09",
+      "365d": "9.10",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jan 10, 2025",
-    "offer": "113.1168",
-    "repurchase": "109.3445",
+    "offer": "113.1491",
+    "repurchase": "109.3756",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -14615,7 +14615,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14654,14 +14654,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 55.3
+    "screener_score": 55.2
   },
   {
     "sector": "Open-End Funds",
@@ -14693,14 +14693,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 62.0
+    "screener_score": 62.1
   },
   {
     "sector": "Open-End Funds",
@@ -14732,7 +14732,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14771,14 +14771,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 14.8
+    "screener_score": 14.7
   },
   {
     "sector": "Open-End Funds",
@@ -14810,14 +14810,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 59.6
+    "screener_score": 59.8
   },
   {
     "sector": "Open-End Funds",
@@ -14849,14 +14849,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 61.2
+    "screener_score": 61.3
   },
   {
     "sector": "Open-End Funds",
@@ -14888,7 +14888,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14927,7 +14927,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14966,14 +14966,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "2.06",
+    "ter_ytd": "2.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 58.5
+    "screener_score": 58.4
   },
   {
     "sector": "Open-End Funds",
@@ -15044,7 +15044,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "2.56",
+    "ter_ytd": "2.55",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -15129,7 +15129,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 77.7
+    "screener_score": 78.0
   },
   {
     "sector": "Dedicated Equity Funds",
@@ -15246,7 +15246,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.8
+    "screener_score": 71.1
   },
   {
     "sector": "Dedicated Equity Funds",
@@ -15324,7 +15324,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.2
+    "screener_score": 67.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15332,25 +15332,25 @@
     "fund_name": "ABL Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "288.7820",
+    "validity_date": "Jul 08, 2026",
+    "nav": "288.8550",
     "returns": {
-      "mtd": "10.00",
-      "ytd": "10.00",
-      "1d": "10.99",
-      "15d": "11.86",
-      "30d": "11.68",
-      "90d": "10.61",
-      "180d": "9.84",
+      "mtd": "9.91",
+      "ytd": "9.91",
+      "1d": "9.23",
+      "15d": "11.78",
+      "30d": "11.59",
+      "90d": "10.59",
+      "180d": "9.91",
       "270d": "10.26",
-      "365d": "10.25",
-      "2y": "12.84",
-      "3y": "18.10"
+      "365d": "10.26",
+      "2y": "12.82",
+      "3y": "18.09"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Aug 20, 2014",
-    "offer": "298.8316",
-    "repurchase": "288.7820",
+    "offer": "298.9072",
+    "repurchase": "288.8550",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -15363,7 +15363,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.4
+    "screener_score": 35.7
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15402,7 +15402,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.4
+    "screener_score": 44.2
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15519,7 +15519,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.7
+    "screener_score": 45.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15597,7 +15597,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.2
+    "screener_score": 34.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15675,7 +15675,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.3
+    "screener_score": 36.2
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15714,7 +15714,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.4
+    "screener_score": 31.5
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15761,25 +15761,25 @@
     "fund_name": "ABL Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "381.5325",
+    "validity_date": "Jul 08, 2026",
+    "nav": "381.6757",
     "returns": {
-      "mtd": "9.77",
-      "ytd": "9.77",
-      "1d": "10.84",
-      "15d": "10.68",
-      "30d": "13.04",
-      "90d": "12.24",
-      "180d": "11.70",
-      "270d": "11.58",
-      "365d": "11.35",
+      "mtd": "10.27",
+      "ytd": "10.27",
+      "1d": "13.69",
+      "15d": "10.92",
+      "30d": "13.02",
+      "90d": "12.30",
+      "180d": "11.73",
+      "270d": "11.60",
+      "365d": "11.39",
       "2y": "14.84",
-      "3y": "20.33"
+      "3y": "20.32"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Aug 20, 2014",
-    "offer": "298.8316",
-    "repurchase": "288.7820",
+    "offer": "298.9072",
+    "repurchase": "288.8550",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -15792,7 +15792,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.8
+    "screener_score": 49.6
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15831,7 +15831,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.3
+    "screener_score": 44.1
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15948,7 +15948,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.9
+    "screener_score": 40.7
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -15987,7 +15987,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.3
+    "screener_score": 29.2
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16026,7 +16026,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.1
+    "screener_score": 20.2
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16065,7 +16065,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.4
+    "screener_score": 37.1
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16104,7 +16104,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.1
+    "screener_score": 41.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16182,7 +16182,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 40.8
+    "screener_score": 40.5
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16268,25 +16268,25 @@
     "fund_name": "ABL Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "694.6463",
+    "validity_date": "Jul 08, 2026",
+    "nav": "677.3171",
     "returns": {
-      "mtd": "3.06",
-      "ytd": "3.06",
-      "1d": "-0.72",
-      "15d": "4.06",
-      "30d": "8.70",
-      "90d": "11.57",
-      "180d": "-0.94",
-      "270d": "12.29",
-      "365d": "40.22",
-      "2y": "137.50",
+      "mtd": "0.49",
+      "ytd": "0.49",
+      "1d": "-2.49",
+      "15d": "1.79",
+      "30d": "7.07",
+      "90d": "8.59",
+      "180d": "-2.65",
+      "270d": "9.50",
+      "365d": "36.63",
+      "2y": "130.35",
       "3y": "N/A"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Aug 20, 2014",
-    "offer": "298.8316",
-    "repurchase": "288.7820",
+    "offer": "298.9072",
+    "repurchase": "288.8550",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -16299,7 +16299,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 81.3
+    "screener_score": 79.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16377,7 +16377,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.9
+    "screener_score": 79.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16416,7 +16416,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.7
+    "screener_score": 4.8
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16494,7 +16494,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 72.5
+    "screener_score": 72.8
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16533,7 +16533,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 81.6
+    "screener_score": 81.7
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16572,7 +16572,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 81.2
+    "screener_score": 81.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16611,7 +16611,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.1
+    "screener_score": 78.2
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16689,7 +16689,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 79.6
+    "screener_score": 79.8
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16697,25 +16697,25 @@
     "fund_name": "ABL Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "234.6482",
+    "validity_date": "Jul 08, 2026",
+    "nav": "234.6951",
     "returns": {
-      "mtd": "9.34",
-      "ytd": "9.34",
-      "1d": "14.93",
-      "15d": "12.88",
-      "30d": "10.81",
-      "90d": "9.95",
-      "180d": "9.47",
+      "mtd": "9.08",
+      "ytd": "9.08",
+      "1d": "7.30",
+      "15d": "11.77",
+      "30d": "10.73",
+      "90d": "9.94",
+      "180d": "9.45",
       "270d": "9.49",
-      "365d": "9.63",
+      "365d": "9.62",
       "2y": "12.14",
-      "3y": "16.11"
+      "3y": "16.10"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Aug 20, 2014",
-    "offer": "242.8140",
-    "repurchase": "234.6482",
+    "offer": "242.8625",
+    "repurchase": "234.6951",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -16767,7 +16767,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 12.5
+    "screener_score": 12.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16845,7 +16845,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.5
+    "screener_score": 21.6
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16884,7 +16884,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.3
+    "screener_score": 33.2
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16923,7 +16923,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.8
+    "screener_score": 27.9
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -16962,7 +16962,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 35.7
+    "screener_score": 35.6
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17118,7 +17118,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 52.5
+    "screener_score": 52.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17274,7 +17274,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.2
+    "screener_score": 19.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17313,7 +17313,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.2
+    "screener_score": 27.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17360,25 +17360,25 @@
     "fund_name": "ABL Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "231.3697",
+    "validity_date": "Jul 08, 2026",
+    "nav": "231.3990",
     "returns": {
-      "mtd": "8.97",
-      "ytd": "8.97",
-      "1d": "8.07",
-      "15d": "12.85",
-      "30d": "9.88",
-      "90d": "10.05",
-      "180d": "9.01",
-      "270d": "9.23",
-      "365d": "9.04",
+      "mtd": "8.43",
+      "ytd": "8.43",
+      "1d": "4.64",
+      "15d": "10.90",
+      "30d": "9.72",
+      "90d": "9.98",
+      "180d": "8.88",
+      "270d": "9.22",
+      "365d": "9.02",
       "2y": "11.10",
-      "3y": "15.33"
+      "3y": "15.31"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Aug 20, 2014",
-    "offer": "242.8140",
-    "repurchase": "234.6482",
+    "offer": "242.8625",
+    "repurchase": "234.6951",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -17391,7 +17391,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 13.0
+    "screener_score": 12.9
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17469,7 +17469,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.2
+    "screener_score": 9.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17547,7 +17547,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.9
+    "screener_score": 18.8
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17586,7 +17586,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.9
+    "screener_score": 33.8
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17703,7 +17703,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.6
+    "screener_score": 10.7
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -17937,7 +17937,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 16.9
+    "screener_score": 17.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18015,7 +18015,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.2
+    "screener_score": 38.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18023,16 +18023,16 @@
     "fund_name": "Lucky Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 06, 2026",
-    "nav": "102.8621",
+    "validity_date": "Jul 07, 2026",
+    "nav": "101.9375",
     "returns": {
-      "mtd": "1.95",
-      "ytd": "1.95",
-      "1d": "-0.03",
-      "15d": "0.67",
-      "30d": "-0.57",
-      "90d": "-6.14",
-      "180d": "-1.33",
+      "mtd": "1.03",
+      "ytd": "1.03",
+      "1d": "-0.90",
+      "15d": "-1.92",
+      "30d": "-1.46",
+      "90d": "-6.43",
+      "180d": "-2.39",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -18093,7 +18093,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 60.4
+    "screener_score": 60.3
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18101,25 +18101,25 @@
     "fund_name": "ABL Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "636.5403",
+    "validity_date": "Jul 08, 2026",
+    "nav": "620.9607",
     "returns": {
-      "mtd": "1.92",
-      "ytd": "1.92",
-      "1d": "-1.03",
-      "15d": "2.45",
-      "30d": "6.88",
-      "90d": "7.02",
-      "180d": "-0.54",
-      "270d": "8.16",
-      "365d": "30.86",
-      "2y": "108.55",
+      "mtd": "-0.57",
+      "ytd": "-0.57",
+      "1d": "-2.45",
+      "15d": "0.01",
+      "30d": "5.26",
+      "90d": "4.92",
+      "180d": "-2.04",
+      "270d": "5.52",
+      "365d": "27.66",
+      "2y": "102.43",
       "3y": "N/A"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Aug 20, 2014",
-    "offer": "242.8140",
-    "repurchase": "234.6482",
+    "offer": "242.8625",
+    "repurchase": "234.6951",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -18132,7 +18132,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 71.8
+    "screener_score": 68.8
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18210,7 +18210,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.2
+    "screener_score": 66.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18249,7 +18249,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 71.7
+    "screener_score": 72.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18288,7 +18288,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 75.7
+    "screener_score": 76.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18327,7 +18327,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.3
+    "screener_score": 74.6
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18366,7 +18366,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 48.3
+    "screener_score": 48.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18444,7 +18444,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.6
+    "screener_score": 73.9
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18483,7 +18483,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.1
+    "screener_score": 73.4
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18639,7 +18639,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 70.6
+    "screener_score": 71.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18678,7 +18678,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.9
+    "screener_score": 77.0
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18717,7 +18717,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.1
+    "screener_score": 73.5
   },
   {
     "sector": "Voluntary Pension Scheme (VPS)",
@@ -18756,7 +18756,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 71.4
+    "screener_score": 71.7
   },
   {
     "sector": "Exchange Traded Fund (ETF)",
@@ -18912,7 +18912,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 82.4
+    "screener_score": 82.5
   },
   {
     "sector": "Exchange Traded Fund (ETF)",
@@ -18951,7 +18951,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 24.4
+    "screener_score": 24.5
   },
   {
     "sector": "Exchange Traded Fund (ETF)",
@@ -19029,7 +19029,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.8
+    "screener_score": 54.1
   },
   {
     "sector": "Exchange Traded Fund (ETF)",
@@ -19061,14 +19061,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.50",
-    "ter_ytd": "1.56",
+    "ter_ytd": "1.55",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 76.5
+    "screener_score": 76.7
   },
   {
     "sector": "Employer Pension Funds",
@@ -19107,7 +19107,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.6
+    "screener_score": 36.5
   },
   {
     "sector": "Employer Pension Funds",
@@ -19146,7 +19146,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.0
+    "screener_score": 28.9
   },
   {
     "sector": "Employer Pension Funds",
@@ -19185,7 +19185,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.8
+    "screener_score": 18.9
   },
   {
     "sector": "Employer Pension Funds",
@@ -19224,7 +19224,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.3
+    "screener_score": 29.2
   },
   {
     "sector": "Employer Pension Funds",
@@ -19263,7 +19263,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.3
+    "screener_score": 33.2
   },
   {
     "sector": "Employer Pension Funds",
@@ -19302,7 +19302,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 26.5
+    "screener_score": 26.4
   },
   {
     "sector": "Employer Pension Funds",
@@ -19341,7 +19341,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.3
+    "screener_score": 31.2
   },
   {
     "sector": "Employer Pension Funds",
@@ -19380,7 +19380,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.4
+    "screener_score": 37.3
   },
   {
     "sector": "Employer Pension Funds",
@@ -19388,16 +19388,16 @@
     "fund_name": "ABL GOPB Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "105.7891",
+    "validity_date": "Jul 08, 2026",
+    "nav": "105.8159",
     "returns": {
       "mtd": "9.26",
       "ytd": "9.26",
-      "1d": "18.51",
+      "1d": "9.23",
       "15d": "13.96",
-      "30d": "11.59",
-      "90d": "9.47",
-      "180d": "9.19",
+      "30d": "11.62",
+      "90d": "9.48",
+      "180d": "9.18",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -19406,7 +19406,7 @@
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Nov 26, 2025",
     "offer": "0.0000",
-    "repurchase": "105.7891",
+    "repurchase": "105.8159",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19692,7 +19692,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.5
+    "screener_score": 30.4
   },
   {
     "sector": "Employer Pension Funds",
@@ -19739,25 +19739,25 @@
     "fund_name": "ABL GOKP Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "124.6858",
+    "validity_date": "Jul 08, 2026",
+    "nav": "124.7250",
     "returns": {
-      "mtd": "9.18",
-      "ytd": "9.18",
-      "1d": "15.84",
-      "15d": "10.30",
-      "30d": "10.17",
-      "90d": "9.81",
-      "180d": "8.68",
-      "270d": "8.92",
-      "365d": "9.52",
-      "2y": "10.65",
+      "mtd": "9.46",
+      "ytd": "9.46",
+      "1d": "11.46",
+      "15d": "9.65",
+      "30d": "10.35",
+      "90d": "9.83",
+      "180d": "8.64",
+      "270d": "8.96",
+      "365d": "9.49",
+      "2y": "10.66",
       "3y": "N/A"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Apr 23, 2024",
     "offer": "0.0000",
-    "repurchase": "124.6858",
+    "repurchase": "124.7250",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19770,7 +19770,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 16.8
+    "screener_score": 15.8
   },
   {
     "sector": "Employer Pension Funds",
@@ -19848,7 +19848,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.3
+    "screener_score": 9.4
   },
   {
     "sector": "Employer Pension Funds",
@@ -19887,7 +19887,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.6
+    "screener_score": 12.7
   },
   {
     "sector": "Employer Pension Funds",
@@ -19926,7 +19926,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 24.9
+    "screener_score": 24.8
   },
   {
     "sector": "Employer Pension Funds",
@@ -19965,7 +19965,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 16.4
+    "screener_score": 16.5
   },
   {
     "sector": "Employer Pension Funds",
@@ -20129,16 +20129,16 @@
     "fund_name": "ABL GOPB Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 07, 2026",
-    "nav": "104.2963",
+    "validity_date": "Jul 08, 2026",
+    "nav": "104.3163",
     "returns": {
-      "mtd": "25.99",
-      "ytd": "25.99",
-      "1d": "120.78",
-      "15d": "22.06",
-      "30d": "14.41",
-      "90d": "8.55",
-      "180d": "7.17",
+      "mtd": "23.62",
+      "ytd": "23.62",
+      "1d": "7.01",
+      "15d": "22.15",
+      "30d": "14.45",
+      "90d": "8.56",
+      "180d": "7.18",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -20147,7 +20147,7 @@
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Nov 26, 2025",
     "offer": "0.0000",
-    "repurchase": "104.2963",
+    "repurchase": "104.3163",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20511,7 +20511,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.2
+    "screener_score": 19.3
   },
   {
     "sector": "Employer Pension Funds",
@@ -20550,7 +20550,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 35.2
+    "screener_score": 35.1
   },
   {
     "sector": "Employer Pension Funds",

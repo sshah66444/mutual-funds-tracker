@@ -220,6 +220,16 @@
                             </label>
                             <button class="reset-filters" id="btn-reset-filters"><i class="fa-solid fa-arrow-rotate-left"></i> Reset Filters</button>
                         </div>
+                        <div class="filter-row flex-row" style="margin-top: 8px; gap: 14px; align-items: center;">
+                            <button id="btn-inflation-filter" class="inflation-toggle">
+                                <i class="fa-solid fa-fire-flame-curved"></i> Beat Inflation
+                                <span id="inflation-label">(&gt;10%)</span>
+                            </button>
+                            <div style="display:flex; align-items:center; gap:8px;">
+                                <label for="inflation-threshold" style="font-size:0.78rem; color:var(--text-secondary); white-space:nowrap;">Threshold (%):</label>
+                                <input type="number" id="inflation-threshold" value="10" min="0" max="50" step="0.5" style="width:70px; padding:5px 8px; background:var(--bg-card); border:1px solid var(--border-color); border-radius:6px; color:var(--text-primary); font-size:0.82rem;">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="directory-container">
@@ -372,6 +382,72 @@
                                         <h3 id="portfolio-sim-result">Rs. --</h3>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- My Investments P&L Tracker -->
+                    <div class="panel-header-desc" style="margin-top: 36px;">
+                        <h2><i class="fa-solid fa-chart-line" style="color:var(--accent-green);"></i> My Investments &mdash; Live P&amp;L Tracker</h2>
+                        <p>Log your actual investment entries below. The dashboard will calculate your real profit or loss using each fund's current daily NAV.</p>
+                    </div>
+                    <div class="glass-card" style="margin-top: 0;">
+                        <div class="add-fund-search-box" style="gap:10px; flex-wrap:wrap; align-items:flex-end;">
+                            <div style="display:flex; flex-direction:column; gap:4px; flex:2; min-width:180px;">
+                                <label style="font-size:0.75rem; color:var(--text-secondary);">Fund</label>
+                                <select id="inv-fund-select" style="padding:9px 12px; background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; color:var(--text-primary); font-family:var(--font-main); font-size:0.85rem;">
+                                    <option value="">-- Select Fund --</option>
+                                </select>
+                            </div>
+                            <div style="display:flex; flex-direction:column; gap:4px; flex:1; min-width:130px;">
+                                <label style="font-size:0.75rem; color:var(--text-secondary);">Date Purchased</label>
+                                <input type="date" id="inv-date" style="padding:9px 12px; background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; color:var(--text-primary); font-family:var(--font-main); font-size:0.85rem;">
+                            </div>
+                            <div style="display:flex; flex-direction:column; gap:4px; flex:1; min-width:120px;">
+                                <label style="font-size:0.75rem; color:var(--text-secondary);">Amount Invested (Rs.)</label>
+                                <input type="number" id="inv-amount" placeholder="e.g. 50000" min="1" style="padding:9px 12px; background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; color:var(--text-primary); font-family:var(--font-main); font-size:0.85rem;">
+                            </div>
+                            <div style="display:flex; flex-direction:column; gap:4px; flex:1; min-width:110px;">
+                                <label style="font-size:0.75rem; color:var(--text-secondary);">Units (optional)</label>
+                                <input type="number" id="inv-units" placeholder="e.g. 4882" min="0" step="0.001" style="padding:9px 12px; background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; color:var(--text-primary); font-family:var(--font-main); font-size:0.85rem;">
+                            </div>
+                            <button class="btn-primary" id="btn-add-investment" style="padding:9px 18px; align-self:flex-end;">
+                                <i class="fa-solid fa-plus"></i> Log Entry
+                            </button>
+                        </div>
+                        <div style="margin-top: 20px; overflow-x: auto;">
+                            <table class="investments-table">
+                                <thead>
+                                    <tr>
+                                        <th>Fund Name</th>
+                                        <th>Date</th>
+                                        <th>Invested (Rs.)</th>
+                                        <th>Units</th>
+                                        <th>Current NAV</th>
+                                        <th>Current Value</th>
+                                        <th>P&amp;L (Rs.)</th>
+                                        <th>Return %</th>
+                                        <th>Held</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="investments-tbody">
+                                    <tr><td colspan="10" style="text-align:center; color:var(--text-muted); padding:24px; font-style:italic;">No investment entries yet. Log your first entry above.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="investment-summary-bar" id="investment-summary-bar" style="display:none;">
+                            <div class="inv-summary-item">
+                                <span class="inv-s-label">Total Invested</span>
+                                <span class="inv-s-value" id="investments-total-invested">Rs. 0</span>
+                            </div>
+                            <div class="inv-summary-item">
+                                <span class="inv-s-label">Current Value</span>
+                                <span class="inv-s-value" id="investments-current-value">Rs. 0</span>
+                            </div>
+                            <div class="inv-summary-item">
+                                <span class="inv-s-label">Total P&amp;L</span>
+                                <span class="inv-s-value" id="investments-total-pnl">Rs. 0</span>
                             </div>
                         </div>
                     </div>
@@ -687,11 +763,36 @@
                     <button class="btn-primary w-100" id="modal-btn-add-portfolio" style="margin-top: 20px;"><i class="fa-solid fa-plus"></i> Add to Portfolio</button>
                 </div>
                 <div class="modal-chart-column">
-                    <h3>5-Year Growth Performance (Rs. 100 Growth)</h3>
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 12px;">
+                        <h3 id="modal-chart-title">Performance Chart</h3>
+                        <div style="display:flex; gap:6px;">
+                            <button id="modal-chart-btn-projected" class="chart-toggle-btn active" onclick="switchModalChart('projected')">Projected</button>
+                            <button id="modal-chart-btn-historical" class="chart-toggle-btn" onclick="switchModalChart('historical')">NAV History</button>
+                        </div>
+                    </div>
                     <div class="modal-chart-container">
                         <canvas id="modal-performance-chart"></canvas>
                     </div>
-                    <p class="chart-note">*Years 4 & 5 projected using the fund's 3-year annualized yield rate.</p>
+                    <p class="chart-note" id="modal-chart-note">*Projected growth using trailing annualized returns. Years 4–5 use 3-year CAGR.</p>
+
+                    <!-- Dividend History Section -->
+                    <div id="modal-dividends-section" style="margin-top: 20px; display: none;">
+                        <h4 style="color: var(--accent-cyan); margin-bottom: 10px; font-size: 0.9rem; letter-spacing: 0.03em;">
+                            <i class="fa-solid fa-coins"></i> Payout / Dividend History
+                        </h4>
+                        <div style="overflow-x: auto;">
+                            <table class="dividends-table">
+                                <thead>
+                                    <tr>
+                                        <th>Payout Date</th>
+                                        <th>Payout / Unit (Rs.)</th>
+                                        <th>Ex-NAV (Rs.)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="modal-dividends-tbody"></tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

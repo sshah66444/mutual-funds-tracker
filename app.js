@@ -1,9 +1,14 @@
 // Global State
 let fundsData = [];
 let uniqueAMCs = [];
-let portfolioItems = []; // List of { fund_name, weight }
+let portfolioItems = [];
+let chartInstance = null;
 let portfolioChartInstance = null;
-let growthChartInstance = null;
+let calcChartInstance = null;
+let inflationFilterActive = false;
+let inflationThreshold = 10.0;
+let investmentEntries = [];
+let navArchive = {};
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
@@ -43,6 +48,16 @@ async function loadData() {
         } catch (perfErr) {
             console.warn("Could not load PSX performers data:", perfErr);
         }
+
+        // Load NAV Archive for historical chart
+        try {
+            const archiveResponse = await fetch('./data/nav_archive.json');
+            if (archiveResponse.ok) {
+                navArchive = await archiveResponse.json();
+            }
+        } catch (archErr) {
+            console.warn("No NAV archive yet:", archErr);
+        }
         
         // Extract unique AMCs
         const amcs = [...new Set(fundsData.map(f => f.amc))].filter(amc => amc && amc !== 'Unknown').sort();
@@ -57,6 +72,9 @@ async function loadData() {
         
         // Trigger initial calculator draw
         calculateGrowth();
+
+        // Load saved investment entries from localStorage
+        loadInvestmentsFromStorage();
         
     } catch (error) {
         console.error("Error loading data:", error);
@@ -152,6 +170,29 @@ function setupEventHandlers() {
             modal.style.display = 'none';
         }
     });
+
+    // Inflation filter toggle
+    const inflationBtn = document.getElementById('btn-inflation-filter');
+    const inflationInput = document.getElementById('inflation-threshold');
+    if (inflationBtn) {
+        inflationBtn.addEventListener('click', () => {
+            inflationFilterActive = !inflationFilterActive;
+            inflationBtn.classList.toggle('active', inflationFilterActive);
+            renderDirectoryTable();
+        });
+    }
+    if (inflationInput) {
+        inflationInput.addEventListener('input', () => {
+            inflationThreshold = parseFloat(inflationInput.value) || 10;
+            const lbl = document.getElementById('inflation-label');
+            if (lbl) lbl.textContent = `(>${inflationThreshold}%)`;
+            if (inflationFilterActive) renderDirectoryTable();
+        });
+    }
+
+    // My Investments button
+    const addInvBtn = document.getElementById('btn-add-investment');
+    if (addInvBtn) addInvBtn.addEventListener('click', addInvestmentEntry);
 }
 
 // Parse value helper for maths
@@ -222,6 +263,10 @@ function populateSelectors() {
 
         // Portfolio allocator dropdown
         portfolioSelect.add(new Option(fund.fund_name, fund.fund_name));
+
+        // My Investments dropdown
+        const invSel = document.getElementById('inv-fund-select');
+        if (invSel) invSel.add(new Option(fund.fund_name, fund.fund_name));
 
         // Growth Calculator select list
         calcSelect.add(new Option(nameText, fund.fund_name));
@@ -311,6 +356,12 @@ function renderDirectoryTable() {
 
         // Shariah
         if (shariahFilter && !fund.is_shariah) return false;
+
+        // Beat Inflation filter
+        if (inflationFilterActive) {
+            const r = parseFloatReturn(fund.returns['365d']);
+            if (r === null || r <= inflationThreshold) return false;
+        }
 
         // Search Query
         if (searchQuery) {
@@ -858,10 +909,12 @@ function calculateGrowth() {
 }
 
 let modalChartInstance = null;
+let _currentModalFund = null;
 
 window.showFundDetails = function(fundName) {
     const fund = fundsData.find(f => f.fund_name === fundName);
     if (!fund) return;
+    _currentModalFund = fund;
 
     // Fill textual details
     document.getElementById('modal-fund-name').innerText = fund.fund_name;
@@ -886,6 +939,22 @@ window.showFundDetails = function(fundName) {
     document.getElementById('modal-trustee').innerText = fund.trustee;
     document.getElementById('modal-score').innerText = `${fund.screener_score} / 100`;
 
+    // Populate Dividend History
+    const divSection = document.getElementById('modal-dividends-section');
+    const divBody = document.getElementById('modal-dividends-tbody');
+    const dividends = fund.dividends || [];
+    if (dividends.length > 0) {
+        divBody.innerHTML = dividends.map(d => `
+            <tr>
+                <td>${d.date || 'N/A'}</td>
+                <td style="font-weight:600; color:var(--accent-cyan);">Rs. ${d.payout_per_unit}</td>
+                <td>${d.ex_nav !== 'N/A' ? 'Rs. ' + d.ex_nav : 'N/A'}</td>
+            </tr>`).join('');
+        if (divSection) divSection.style.display = 'block';
+    } else {
+        if (divSection) divSection.style.display = 'none';
+    }
+
     // Setup add-to-portfolio button click in modal
     const addBtn = document.getElementById('modal-btn-add-portfolio');
     addBtn.onclick = () => {
@@ -896,22 +965,55 @@ window.showFundDetails = function(fundName) {
     // Show modal
     document.getElementById('fund-details-modal').style.display = 'block';
 
-    // 5-Year Growth calculations
-    // Base amount is Rs. 100
+    // Default to projected chart
+    switchModalChart('projected');
+};
+
+window.switchModalChart = function(mode) {
+    const fund = _currentModalFund;
+    if (!fund) return;
+
+    const projBtn = document.getElementById('modal-chart-btn-projected');
+    const histBtn = document.getElementById('modal-chart-btn-historical');
+    const chartNote = document.getElementById('modal-chart-note');
+    const chartTitle = document.getElementById('modal-chart-title');
+
+    if (projBtn) projBtn.classList.toggle('active', mode === 'projected');
+    if (histBtn) histBtn.classList.toggle('active', mode === 'historical');
+
+    const archiveEntries = navArchive[fund.fund_name] || [];
+
+    if (mode === 'historical' && archiveEntries.length >= 2) {
+        // Plot real NAV archive data
+        if (chartTitle) chartTitle.textContent = 'NAV Price History';
+        if (chartNote) chartNote.textContent = `Showing ${archiveEntries.length} day(s) of archived NAV data. Archive grows daily each time the scraper runs.`;
+        const labels = archiveEntries.map(e => e.date);
+        const values = archiveEntries.map(e => parseFloat(e.nav));
+        _renderModalChart(labels, values, 'NAV (Rs.)', 'rgba(16, 185, 129, 1)', 'rgba(16, 185, 129, 0.1)', v => 'Rs. ' + parseFloat(v).toFixed(4));
+    } else if (mode === 'historical') {
+        // Not enough archive data — fall back to trailing returns curve
+        if (chartNote) chartNote.textContent = 'NAV archive is building. Run the daily scraper to accumulate data. Showing trailing returns approximation.';
+        _renderTrailingReturnsChart(fund, chartTitle, chartNote);
+    } else {
+        // Projected mode
+        _renderTrailingReturnsChart(fund, chartTitle, chartNote);
+    }
+};
+
+function _renderTrailingReturnsChart(fund, chartTitle, chartNote) {
+    if (chartTitle) chartTitle.textContent = '5-Year Growth Performance (Rs. 100)';
+    if (chartNote) chartNote.textContent = '*Projected growth using trailing annualized returns. Years 4–5 use 3-year CAGR.';
+
     const base = 100;
-    
-    // Trailing returns check
     const r1 = parseFloatReturn(fund.returns['365d']);
     const r2 = parseFloatReturn(fund.returns['2y']);
     const r3 = parseFloatReturn(fund.returns['3y']);
 
-    // Determine CAGR for missing periods (default 10%)
     let cagr = 0.10;
     if (r3 !== null && r3 > 0) cagr = r3 / 100;
     else if (r2 !== null && r2 > 0) cagr = r2 / 100;
     else if (r1 !== null && r1 > 0) cagr = r1 / 100;
 
-    // Calculate Y0 to Y5 growth values
     const y0 = base;
     const y1 = r1 !== null ? base * (1 + r1/100) : base * (1 + cagr);
     const y2 = r2 !== null ? base * Math.pow(1 + r2/100, 2) : base * Math.pow(1 + cagr, 2);
@@ -919,43 +1021,35 @@ window.showFundDetails = function(fundName) {
     const y4 = base * Math.pow(1 + cagr, 4);
     const y5 = base * Math.pow(1 + cagr, 5);
 
-    const chartData = [
-        Math.round(y0),
-        Math.round(y1),
-        Math.round(y2),
-        Math.round(y3),
-        Math.round(y4),
-        Math.round(y5)
-    ];
+    const now = new Date().getFullYear();
+    const labels = [now-5, now-4, now-3, now-2, now-1, now].map(String);
+    const values = [y0, y1, y2, y3, y4, y5].map(Math.round);
+    _renderModalChart(labels, values, 'Asset Value (Rs.)', 'rgba(6, 182, 212, 1)', 'rgba(6, 182, 212, 0.12)', v => 'Rs. ' + v);
+}
 
-    // Render Growth Chart
+function _renderModalChart(labels, values, label, borderColor, bgColor, tickFormatter) {
     const ctx = document.getElementById('modal-performance-chart').getContext('2d');
-    if (modalChartInstance) {
-        modalChartInstance.destroy();
-    }
-
+    if (modalChartInstance) modalChartInstance.destroy();
     modalChartInstance = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['2021', '2022', '2023', '2024', '2025 (Proj)', '2026 (Proj)'],
+            labels,
             datasets: [{
-                label: 'Asset Value (Rs.)',
-                data: chartData,
-                borderColor: 'rgba(6, 182, 212, 1)',
-                backgroundColor: 'rgba(6, 182, 212, 0.12)',
+                label,
+                data: values,
+                borderColor,
+                backgroundColor: bgColor,
                 fill: true,
                 tension: 0.3,
                 borderWidth: 3,
-                pointBackgroundColor: 'rgba(6, 182, 212, 1)',
+                pointBackgroundColor: borderColor,
                 pointRadius: 4
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            plugins: {
-                legend: { display: false }
-            },
+            plugins: { legend: { display: false } },
             scales: {
                 x: {
                     grid: { color: 'rgba(255, 255, 255, 0.05)' },
@@ -966,13 +1060,14 @@ window.showFundDetails = function(fundName) {
                     ticks: {
                         color: '#9ca3af',
                         font: { family: 'Inter', size: 10 },
-                        callback: function(value) { return 'Rs. ' + value; }
+                        callback: tickFormatter
                     }
                 }
             }
         }
     });
-};
+}
+
 
 function updateKSE100Card(psxData) {
     if (!psxData) return;
@@ -1027,3 +1122,118 @@ function renderPSXMovers(perfData) {
         });
     });
 }
+
+// ==========================================================================
+// MY INVESTMENTS — P&L TRACKER
+// ==========================================================================
+function loadInvestmentsFromStorage() {
+    try {
+        const stored = localStorage.getItem('pakfund_investments');
+        if (stored) {
+            investmentEntries = JSON.parse(stored);
+            renderInvestmentsTable();
+        }
+    } catch (e) {
+        investmentEntries = [];
+    }
+}
+
+function saveInvestmentsToStorage() {
+    localStorage.setItem('pakfund_investments', JSON.stringify(investmentEntries));
+}
+
+function addInvestmentEntry() {
+    const fundSelect = document.getElementById('inv-fund-select');
+    const dateInput = document.getElementById('inv-date');
+    const amountInput = document.getElementById('inv-amount');
+    const unitsInput = document.getElementById('inv-units');
+
+    const fundName = fundSelect.value;
+    const date = dateInput.value;
+    const amount = parseFloat(amountInput.value);
+    const unitsManual = parseFloat(unitsInput.value);
+
+    if (!fundName || !date || !amount || amount <= 0) {
+        alert('Please select a fund, a date, and a valid investment amount.');
+        return;
+    }
+
+    const fund = fundsData.find(f => f.fund_name === fundName);
+    const currentNav = fund ? parseFloat(fund.nav) : null;
+    const units = (unitsManual > 0) ? unitsManual : (currentNav ? amount / currentNav : null);
+
+    investmentEntries.push({ id: Date.now(), fund_name: fundName, date, amount_invested: amount, units });
+    saveInvestmentsToStorage();
+    renderInvestmentsTable();
+
+    fundSelect.value = '';
+    dateInput.value = '';
+    amountInput.value = '';
+    if (unitsInput) unitsInput.value = '';
+}
+
+function renderInvestmentsTable() {
+    const tbody = document.getElementById('investments-tbody');
+    const summaryBar = document.getElementById('investment-summary-bar');
+    if (!tbody) return;
+
+    if (investmentEntries.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="10" style="text-align:center; color:var(--text-muted); padding:24px; font-style:italic;">No investment entries yet. Log your first entry above.</td></tr>';
+        if (summaryBar) summaryBar.style.display = 'none';
+        return;
+    }
+
+    const today = new Date();
+    let totalInvested = 0, totalCurrentValue = 0;
+    let rows = '';
+
+    investmentEntries.forEach(entry => {
+        const fund = fundsData.find(f => f.fund_name === entry.fund_name);
+        const currentNav = fund ? parseFloat(fund.nav) : null;
+        const units = entry.units;
+        const currentValue = (currentNav && units) ? currentNav * units : null;
+        const pnl = currentValue !== null ? currentValue - entry.amount_invested : null;
+        const returnPct = pnl !== null ? (pnl / entry.amount_invested) * 100 : null;
+        const daysHeld = Math.floor((today - new Date(entry.date)) / 86400000);
+
+        totalInvested += entry.amount_invested;
+        if (currentValue !== null) totalCurrentValue += currentValue;
+
+        const pnlClass = pnl === null ? '' : (pnl >= 0 ? 'pnl-positive' : 'pnl-negative');
+        const sign = pnl !== null && pnl > 0 ? '+' : '';
+        const fmt = n => n.toLocaleString('en-PK', { maximumFractionDigits: 0 });
+
+        rows += `<tr>
+            <td style="font-weight:600; max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${entry.fund_name}">${entry.fund_name}</td>
+            <td>${entry.date}</td>
+            <td>Rs. ${fmt(entry.amount_invested)}</td>
+            <td>${units ? units.toLocaleString('en-PK', {minimumFractionDigits:3, maximumFractionDigits:3}) : 'N/A'}</td>
+            <td>${currentNav ? 'Rs. ' + currentNav.toFixed(4) : 'N/A'}</td>
+            <td>${currentValue ? 'Rs. ' + fmt(currentValue) : 'N/A'}</td>
+            <td class="${pnlClass}">${pnl !== null ? sign + 'Rs. ' + fmt(Math.abs(pnl)) : 'N/A'}</td>
+            <td class="${pnlClass}">${returnPct !== null ? sign + returnPct.toFixed(2) + '%' : 'N/A'}</td>
+            <td>${daysHeld}d</td>
+            <td><button class="inv-delete-btn" onclick="deleteInvestmentEntry(${entry.id})" title="Remove"><i class="fa-solid fa-trash-can"></i></button></td>
+        </tr>`;
+    });
+
+    tbody.innerHTML = rows;
+
+    const totalPnl = totalCurrentValue - totalInvested;
+    const pnlClass = totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
+    const sign = totalPnl >= 0 ? '+' : '';
+    const fmt = n => n.toLocaleString('en-PK', { maximumFractionDigits: 0 });
+
+    document.getElementById('investments-total-invested').textContent = 'Rs. ' + fmt(totalInvested);
+    document.getElementById('investments-current-value').textContent = totalCurrentValue > 0 ? 'Rs. ' + fmt(totalCurrentValue) : 'N/A';
+    const pnlEl = document.getElementById('investments-total-pnl');
+    pnlEl.textContent = totalCurrentValue > 0 ? sign + 'Rs. ' + fmt(Math.abs(totalPnl)) : 'N/A';
+    pnlEl.className = 'inv-s-value ' + (totalCurrentValue > 0 ? pnlClass : '');
+    if (summaryBar) summaryBar.style.display = 'flex';
+}
+
+window.deleteInvestmentEntry = function(id) {
+    investmentEntries = investmentEntries.filter(e => e.id !== id);
+    saveInvestmentsToStorage();
+    renderInvestmentsTable();
+};

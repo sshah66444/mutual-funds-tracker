@@ -165,6 +165,69 @@ def rating_score(rating):
         return 0.45
     return 0.25 if rating and rating != "N/A" else 0.0
 
+def fetch_dividend_history():
+    """Scrape historical dividend/payout data from MUFAP payouts page."""
+    url = "https://mufap.com.pk/Industry/IndustryStatDaily?tab=3"
+    dividends_by_fund = {}
+    try:
+        rows = fetch_table(url)
+        # Expected columns: Sector, Category, Fund Name, Inception Date, Payout per Unit, Ex-NAV, Payout Date
+        for row in rows[1:]:
+            if len(row) < 6:
+                continue
+            fund_name = row[2].strip() if len(row) > 2 else ''
+            payout_str = row[4].strip() if len(row) > 4 else ''
+            ex_nav_str = row[5].strip() if len(row) > 5 else ''
+            date_str = row[6].strip() if len(row) > 6 else ''
+            if not fund_name or payout_str in ('', 'N/A', '-', '0'):
+                continue
+            entry = {
+                'date': date_str,
+                'payout_per_unit': clean_value(payout_str),
+                'ex_nav': clean_value(ex_nav_str)
+            }
+            if fund_name not in dividends_by_fund:
+                dividends_by_fund[fund_name] = []
+            dividends_by_fund[fund_name].append(entry)
+    except Exception as e:
+        print(f"Warning: Could not fetch dividend history: {e}")
+    return dividends_by_fund
+
+
+def update_nav_archive(funds, out_dir):
+    """Append today's NAV snapshot to a local archive for historical chart building."""
+    import datetime
+    archive_path = os.path.join(out_dir, "nav_archive.json")
+    today = datetime.date.today().isoformat()
+    
+    # Load existing archive
+    archive = {}
+    if os.path.exists(archive_path):
+        try:
+            with open(archive_path, 'r', encoding='utf-8') as f:
+                archive = json.load(f)
+        except Exception:
+            archive = {}
+    
+    for fund in funds:
+        name = fund.get('fund_name', '')
+        nav = fund.get('nav', 'N/A')
+        if not name or nav == 'N/A':
+            continue
+        if name not in archive:
+            archive[name] = []
+        # Only add one entry per day
+        entries = archive[name]
+        if not entries or entries[-1].get('date') != today:
+            entries.append({'date': today, 'nav': nav})
+        # Keep last 400 days max per fund
+        archive[name] = entries[-400:]
+    
+    with open(archive_path, 'w', encoding='utf-8') as f:
+        json.dump(archive, f, ensure_ascii=False)
+    print(f"NAV archive updated for {len(archive)} funds.")
+
+
 def main():
     try:
         perf_url = "https://mufap.com.pk/Industry/IndustryStatDaily?tab=1"
@@ -461,9 +524,25 @@ def main():
         except Exception as e_perf:
             print(f"Failed to scrape PSX performers: {e_perf}")
 
+        # 3.5 Fetch dividend/payout history and attach to funds
+        print("Fetching dividend payout history from MUFAP...")
+        dividends_map = fetch_dividend_history()
+        matched = 0
+        for fund in final_funds:
+            name = fund['fund_name']
+            if name in dividends_map:
+                fund['dividends'] = dividends_map[name][:10]  # last 10 payouts
+                matched += 1
+            else:
+                fund['dividends'] = []
+        print(f"Matched dividend data for {matched} funds.")
+
         # 4. Save to json
         out_dir = "/Users/syed/.gemini/antigravity/scratch/pk-mutual-funds-tracker/data"
         os.makedirs(out_dir, exist_ok=True)
+        
+        # 4.1 Update NAV archive
+        update_nav_archive(final_funds, out_dir)
         
         psx_perf_path = os.path.join(out_dir, "psx_performers.json")
         with open(psx_perf_path, 'w', encoding='utf-8') as f_perf:

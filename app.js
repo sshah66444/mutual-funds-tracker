@@ -327,6 +327,69 @@ function renderOverviewHighlights() {
     getTopFunds('equity', 'top-equity-list');
     getTopFunds('income', 'top-income-list');
     getTopFunds('money market', 'top-mm-list');
+    renderMFMovers();
+}
+
+function renderMFMovers() {
+    // Collect all funds with a valid 1-day return
+    const withReturn = fundsData
+        .filter(f => f.major_category !== 'Pension')
+        .map(f => ({ fund: f, r1d: parseFloatReturn(f.returns['1d']) }))
+        .filter(x => x.r1d !== null);
+
+    // Sort descending for gainers, ascending for losers
+    const sorted = [...withReturn].sort((a, b) => b.r1d - a.r1d);
+    const gainers = sorted.filter(x => x.r1d > 0).slice(0, 5);
+    const losers  = sorted.filter(x => x.r1d < 0).slice(-5).reverse();
+    const flat    = withReturn.filter(x => x.r1d === 0).slice(0, 5);
+
+    const buildCard = (f, r1d) => {
+        const card = document.createElement('div');
+        card.className = 'mini-fund-card';
+        card.onclick = () => showFundDetails(f.fund_name);
+        const sign = r1d > 0 ? '+' : '';
+        const cls  = r1d > 0 ? '' : (r1d < 0 ? 'negative' : '');
+        card.innerHTML = `
+            <div class="m-fund-info">
+                <div class="m-fund-name">${f.fund_name}</div>
+                <div class="m-fund-meta">
+                    <span>${f.amc.replace(' Limited','').replace(' Company','')}</span>
+                    ${f.is_shariah ? '<span class="shariah-badge"><i class="fa-solid fa-mosque"></i> Islamic</span>' : ''}
+                </div>
+            </div>
+            <div class="m-fund-yield">
+                <div class="m-yield-val ${cls}">${sign}${r1d.toFixed(2)}%</div>
+                <div class="m-yield-label">Today</div>
+            </div>`;
+        return card;
+    };
+
+    const gainEl = document.getElementById('mf-gainers-list');
+    const loseEl = document.getElementById('mf-losers-list');
+    const flatEl = document.getElementById('mf-flat-list');
+    if (!gainEl) return;
+
+    gainEl.innerHTML = '';
+    loseEl.innerHTML = '';
+    flatEl.innerHTML = '';
+
+    if (gainers.length === 0) {
+        gainEl.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem; padding:10px 0; font-style:italic;">No funds with positive 1-day return today.</p>';
+    } else {
+        gainers.forEach(x => gainEl.appendChild(buildCard(x.fund, x.r1d)));
+    }
+
+    if (losers.length === 0) {
+        loseEl.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem; padding:10px 0; font-style:italic;">No funds with negative 1-day return today.</p>';
+    } else {
+        losers.forEach(x => loseEl.appendChild(buildCard(x.fund, x.r1d)));
+    }
+
+    if (flat.length === 0) {
+        flatEl.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem; padding:10px 0; font-style:italic;">No unchanged funds (or 1-day data not yet available).</p>';
+    } else {
+        flat.forEach(x => flatEl.appendChild(buildCard(x.fund, x.r1d)));
+    }
 }
 
 // Render Directory Table Grid
@@ -384,6 +447,9 @@ function renderDirectoryTable() {
         if (sortVal === 'score_desc') {
             valA = parseFloat(a.screener_score) || 0;
             valB = parseFloat(b.screener_score) || 0;
+        } else if (sortVal === 'returns_1d_desc') {
+            valA = parseFloatReturn(a.returns['1d']) ?? -9999;
+            valB = parseFloatReturn(b.returns['1d']) ?? -9999;
         } else if (sortVal === 'returns_ytd_desc') {
             valA = parseFloatReturn(a.returns.ytd) ?? -9999;
             valB = parseFloatReturn(b.returns.ytd) ?? -9999;
@@ -411,7 +477,7 @@ function renderDirectoryTable() {
     document.getElementById('filtered-count').innerText = filtered.length;
 
     if (filtered.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="11" style="text-align:center; padding: 40px; color: var(--text-muted);">No funds matched your current filters. Clear filters and try searching something else.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="12" style="text-align:center; padding: 40px; color: var(--text-muted);">No funds matched your current filters. Clear filters and try searching something else.</td></tr>`;
         return;
     }
 
@@ -420,9 +486,11 @@ function renderDirectoryTable() {
         const tr = document.createElement('tr');
         
         const ytd = parseFloatReturn(fund.returns.ytd);
+        const y1d = parseFloatReturn(fund.returns['1d']);
         const y365 = parseFloatReturn(fund.returns['365d']);
         const y3y = parseFloatReturn(fund.returns['3y']);
 
+        const y1dClass = y1d === null ? 'na' : (y1d < 0 ? 'negative' : '');
         const ytdClass = ytd === null ? 'na' : (ytd < 0 ? 'negative' : '');
         const y365Class = y365 === null ? 'na' : (y365 < 0 ? 'negative' : '');
         const y3yClass = y3y === null ? 'na' : (y3y < 0 ? 'negative' : '');
@@ -430,7 +498,7 @@ function renderDirectoryTable() {
         tr.innerHTML = `
             <td><span style="font-weight:700; color:var(--accent-cyan); font-size:1.05rem;">${fund.screener_score}</span></td>
             <td>
-                <div class="fund-td-name" style="cursor:pointer; text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);" onclick="showFundDetails('${fund.fund_name.replace(/'/g, "\\'")}')">${fund.fund_name}</div>
+                <div class="fund-td-name" style="cursor:pointer; text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);" onclick="showFundDetails('${fund.fund_name.replace(/'/g, "\\'")}')">  ${fund.fund_name}</div>
                 <div class="fund-td-amc">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
             </td>
             <td><span style="font-size:0.8rem; color:var(--text-secondary);">${fund.category}</span></td>
@@ -438,6 +506,7 @@ function renderDirectoryTable() {
             <td><span style="font-size:0.82rem; font-weight:600; color:var(--accent-gold);">${fund.rating}</span></td>
             <td style="font-weight:600;">Rs. ${parseFloat(fund.nav).toLocaleString()}</td>
             <td style="font-weight:600; color:var(--text-secondary);">${fund.ter_ytd === 'N/A' ? 'N/A' : fund.ter_ytd + '%'}${fund.is_ter_estimated ? '*' : ''}</td>
+            <td><span class="return-val ${y1dClass}">${y1d !== null ? (y1d > 0 ? '+' : '') + y1d.toFixed(2) + '%' : 'N/A'}</span></td>
             <td><span class="return-val ${ytdClass}">${ytd !== null ? ytd.toFixed(2) + '%' : 'N/A'}</span></td>
             <td><span class="return-val ${y365Class}">${y365 !== null ? y365.toFixed(2) + '%' : 'N/A'}</span></td>
             <td><span class="return-val ${y3yClass}">${y3y !== null ? y3y.toFixed(2) + '%' : 'N/A'}</span></td>

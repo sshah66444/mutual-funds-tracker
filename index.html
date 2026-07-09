@@ -153,6 +153,25 @@
                         </div>
                     </div>
 
+                    <!-- Today's Mutual Fund Movers -->
+                    <div class="section-title" style="margin-top: 40px;">
+                        <h2><i class="fa-solid fa-bolt"></i> Today's Mutual Fund Movers (1-Day Return)</h2>
+                    </div>
+                    <div class="top-funds-slider">
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-circle-chevron-up" style="color:var(--accent-green);"></i> Top Gainers Today</h3>
+                            <div class="top-funds-list" id="mf-gainers-list"><!-- JS Populated --></div>
+                        </div>
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-circle-chevron-down" style="color:var(--accent-red);"></i> Top Losers Today</h3>
+                            <div class="top-funds-list" id="mf-losers-list"><!-- JS Populated --></div>
+                        </div>
+                        <div class="category-block">
+                            <h3><i class="fa-solid fa-circle-dot" style="color:var(--accent-gold);"></i> Flat / Unchanged Today</h3>
+                            <div class="top-funds-list" id="mf-flat-list"><!-- JS Populated --></div>
+                        </div>
+                    </div>
+
                     <!-- PSX Daily Highlights Movers -->
                     <div class="section-title" style="margin-top: 40px;">
                         <h2><i class="fa-solid fa-gauge-high"></i> Pakistan Stock Exchange (PSX) Daily Movers</h2>
@@ -239,6 +258,7 @@
                                 <label for="sort-select">Sort By:</label>
                                 <select id="sort-select">
                                     <option value="score_desc">Highest Screener Score</option>
+                                    <option value="returns_1d_desc">Highest Return (Today)</option>
                                     <option value="returns_ytd_desc">Highest Return (YTD)</option>
                                     <option value="returns_365d_desc">Highest Return (1 Year)</option>
                                     <option value="returns_3y_desc">Highest Return (3 Year)</option>
@@ -261,6 +281,7 @@
                                         <th>Rating</th>
                                         <th>NAV (Rs.)</th>
                                         <th>TER YTD</th>
+                                        <th title="Today's single-day return">1-Day ↕</th>
                                         <th>YTD Return</th>
                                         <th>1-Year Return</th>
                                         <th>3-Year Return</th>

@@ -922,11 +922,11 @@ function calculateGrowth() {
 
     // Render Chart
     const ctx = document.getElementById('calc-growth-chart').getContext('2d');
-    if (growthChartInstance) {
-        growthChartInstance.destroy();
+    if (calcChartInstance) {
+        calcChartInstance.destroy();
     }
 
-    growthChartInstance = new Chart(ctx, {
+    calcChartInstance = new Chart(ctx, {
         type: 'line',
         data: {
             labels: labelsArr,

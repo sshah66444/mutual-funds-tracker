@@ -55,10 +55,11 @@ function loadFromCache(key) {
 
 // Load JSON Data with Offline-First & Cache Strategy
 async function loadData() {
-    let mufapLoaded = false;
-    
-    // 1. Try to load from online fetch
     try {
+        let mufapLoaded = false;
+        
+        // 1. Try to load from online fetch
+        try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 6000); // 6s timeout
         const mufapUrl = getUrl('mufap');

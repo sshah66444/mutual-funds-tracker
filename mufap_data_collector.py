@@ -558,8 +558,35 @@ def main():
             
         print(f"Scrape and scoring complete! Saved {len(final_funds)} scored funds to {out_path}")
         
+        # Auto-deploy database changes to GitHub Pages
+        push_data_to_github(out_dir)
+        
     except Exception as e:
         print(f"Error executing scraper script: {e}")
+
+def push_data_to_github(out_dir):
+    import subprocess
+    print("Auto-deploying updated database to GitHub Pages...")
+    try:
+        project_root = os.path.dirname(out_dir)
+        # Check if there are changes in the data/ directory
+        status_res = subprocess.run(["git", "status", "--porcelain", "data/"], cwd=project_root, capture_output=True, text=True)
+        if not status_res.stdout.strip():
+            print("No database changes detected. Skipping GitHub push.")
+            return
+
+        # Stage data JSON files
+        subprocess.run(["git", "add", "data/mufap_data.json", "data/psx_index.json", "data/psx_performers.json", "data/nav_archive.json"], cwd=project_root, check=True)
+        
+        # Commit
+        subprocess.run(["git", "commit", "-m", "chore: Auto-update mutual fund database (MUFAP & PSX)"], cwd=project_root, check=True)
+        
+        # Push to default branch (main)
+        subprocess.run(["git", "push", "origin", "main"], cwd=project_root, check=True)
+        print("Successfully pushed database updates to GitHub!")
+    except Exception as e:
+        print(f"Warning: Failed to auto-deploy updates to GitHub: {e}")
+
 
 if __name__ == "__main__":
     main()

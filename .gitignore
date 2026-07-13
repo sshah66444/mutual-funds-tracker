@@ -5,3 +5,8 @@ __pycache__/
 scratch/
 venv/
 .env
+android-app/jdk/
+android-app/app/build/
+android-app/.gradle/
+android-app/local.properties
+

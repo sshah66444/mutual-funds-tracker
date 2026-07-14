@@ -556,13 +556,13 @@ function renderMFMovers() {
         const sign = absR1d > 0 ? '+' : '';
         const cls  = absR1d > 0 ? '' : (absR1d < 0 ? 'negative' : '');
         
-        // Build display yield string: if annualized, show absolute daily yield + annualized rate p.a.
+        // Build display yield string: if annualized, show annualized rate p.a. as primary, absolute daily yield as secondary
         let yieldHtml = '';
         if (isAnnualized) {
-            yieldHtml = `<div class="m-yield-val ${cls}" style="font-size: 0.85rem; text-align: right; line-height: 1.2;">
-                ${sign}${absR1d.toFixed(3)}%
+            yieldHtml = `<div class="m-yield-val ${cls}" style="font-size: 1.05rem; text-align: right; line-height: 1.2;">
+                ${sign}${r1d.toFixed(1)}% <span style="font-size: 0.75rem; font-weight: 500;">p.a.</span>
                 <span class="annualized-sub-label" style="display: block; font-size: 0.65rem; color: var(--text-muted); font-weight: 500; margin-top: 2px;">
-                    (${r1d.toFixed(1)}% p.a.)
+                    (${sign}${absR1d.toFixed(3)}% today)
                 </span>
             </div>`;
         } else {

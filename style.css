@@ -544,6 +544,14 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.m-fund-meta span:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .m-fund-meta span.shariah-badge {
@@ -2108,6 +2116,18 @@ body {
     .top-funds-slider, .psx-movers-grid {
         grid-template-columns: 1fr !important;
         gap: 16px !important;
+    }
+    
+    .content-body {
+        padding: 10px !important;
+    }
+    
+    .category-block {
+        padding: 12px !important;
+    }
+    
+    .mini-fund-card {
+        padding: 10px 12px !important;
     }
     
     .welcome-banner {

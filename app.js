@@ -523,21 +523,52 @@ function renderMFMovers() {
     // Collect all funds with a valid 1-day return
     const withReturn = fundsData
         .filter(f => f.major_category !== 'Pension')
-        .map(f => ({ fund: f, r1d: parseFloatReturn(f.returns['1d']) }))
-        .filter(x => x.r1d !== null);
+        .map(f => {
+            const r1d = parseFloatReturn(f.returns['1d']);
+            if (r1d === null) return { fund: f, r1d: null, absR1d: null };
+            
+            // Check if the category is annualized (contains 'Annualized')
+            const isAnnualized = f.category.toLowerCase().includes('annualized');
+            const absR1d = isAnnualized ? (r1d / 365) : r1d;
+            
+            return { fund: f, r1d: r1d, absR1d: absR1d, isAnnualized: isAnnualized };
+        })
+        .filter(x => x.absR1d !== null);
 
-    // Sort descending for gainers, ascending for losers
-    const sorted = [...withReturn].sort((a, b) => b.r1d - a.r1d);
-    const gainers = sorted.filter(x => x.r1d > 0).slice(0, 5);
-    const losers  = sorted.filter(x => x.r1d < 0).slice(-5).reverse();
-    const flat    = withReturn.filter(x => x.r1d === 0).slice(0, 5);
+    // Sort descending for gainers, ascending for losers based on absolute daily yield (absR1d)
+    const sorted = [...withReturn].sort((a, b) => b.absR1d - a.absR1d);
+    
+    // Filters positive/negative/flat changes
+    const gainers = sorted.filter(x => x.absR1d > 0.0001).slice(0, 5);
+    const losers  = sorted.filter(x => x.absR1d < -0.0001).slice(-5).reverse();
+    const flat    = withReturn.filter(x => Math.abs(x.absR1d) <= 0.0001).slice(0, 5);
 
-    const buildCard = (f, r1d) => {
+    const buildCard = (item) => {
+        const f = item.fund;
+        const r1d = item.r1d;
+        const absR1d = item.absR1d;
+        const isAnnualized = item.isAnnualized;
+        
         const card = document.createElement('div');
         card.className = 'mini-fund-card';
         card.onclick = () => showFundDetails(f.fund_name);
-        const sign = r1d > 0 ? '+' : '';
-        const cls  = r1d > 0 ? '' : (r1d < 0 ? 'negative' : '');
+        
+        const sign = absR1d > 0 ? '+' : '';
+        const cls  = absR1d > 0 ? '' : (absR1d < 0 ? 'negative' : '');
+        
+        // Build display yield string: if annualized, show absolute daily yield + annualized rate p.a.
+        let yieldHtml = '';
+        if (isAnnualized) {
+            yieldHtml = `<div class="m-yield-val ${cls}" style="font-size: 0.85rem; text-align: right; line-height: 1.2;">
+                ${sign}${absR1d.toFixed(3)}%
+                <span class="annualized-sub-label" style="display: block; font-size: 0.65rem; color: var(--text-muted); font-weight: 500; margin-top: 2px;">
+                    (${r1d.toFixed(1)}% p.a.)
+                </span>
+            </div>`;
+        } else {
+            yieldHtml = `<div class="m-yield-val ${cls}">${sign}${r1d.toFixed(2)}%</div>`;
+        }
+        
         card.innerHTML = `
             <div class="m-fund-info">
                 <div class="m-fund-name">${f.fund_name}</div>
@@ -546,9 +577,9 @@ function renderMFMovers() {
                     ${f.is_shariah ? '<span class="shariah-badge"><i class="fa-solid fa-mosque"></i> Islamic</span>' : ''}
                 </div>
             </div>
-            <div class="m-fund-yield">
-                <div class="m-yield-val ${cls}">${sign}${r1d.toFixed(2)}%</div>
-                <div class="m-yield-label">Today</div>
+            <div class="m-fund-yield" style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
+                ${yieldHtml}
+                <div class="m-yield-label" style="margin-top: 2px;">Today</div>
             </div>`;
         return card;
     };
@@ -565,19 +596,19 @@ function renderMFMovers() {
     if (gainers.length === 0) {
         gainEl.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem; padding:10px 0; font-style:italic;">No funds with positive 1-day return today.</p>';
     } else {
-        gainers.forEach(x => gainEl.appendChild(buildCard(x.fund, x.r1d)));
+        gainers.forEach(x => gainEl.appendChild(buildCard(x)));
     }
 
     if (losers.length === 0) {
         loseEl.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem; padding:10px 0; font-style:italic;">No funds with negative 1-day return today.</p>';
     } else {
-        losers.forEach(x => loseEl.appendChild(buildCard(x.fund, x.r1d)));
+        losers.forEach(x => loseEl.appendChild(buildCard(x)));
     }
 
     if (flat.length === 0) {
         flatEl.innerHTML = '<p style="color:var(--text-muted); font-size:0.8rem; padding:10px 0; font-style:italic;">No unchanged funds (or 1-day data not yet available).</p>';
     } else {
-        flat.forEach(x => flatEl.appendChild(buildCard(x.fund, x.r1d)));
+        flat.forEach(x => flatEl.appendChild(buildCard(x)));
     }
 }
 

@@ -395,6 +395,46 @@ function parseFloatReturn(str) {
     return isNaN(val) ? null : val;
 }
 
+// Helper to calculate daily NAV change in absolute Rupees and percentage
+function getDailyChangeDetails(fund) {
+    const r1d = parseFloatReturn(fund.returns['1d']);
+    const nav = parseFloat(String(fund.nav).replace(/,/g, ''));
+    if (r1d === null || isNaN(nav)) {
+        return { percent: 0, rawPercent: 0, rupee: 0, display: 'N/A', isAnnualized: false, sign: '' };
+    }
+    
+    const isAnnualized = fund.category.toLowerCase().includes('annualized');
+    let absPercent = 0;
+    
+    if (isAnnualized) {
+        absPercent = r1d / 365;
+    } else {
+        absPercent = r1d;
+    }
+    
+    // yesterday_nav = nav / (1 + absPercent / 100)
+    // rupee_change = nav - yesterday_nav
+    const yesterdayNav = nav / (1 + absPercent / 100);
+    const rupeeChange = nav - yesterdayNav;
+    
+    const sign = rupeeChange > 0 ? '+' : '';
+    let displayHtml = '';
+    if (isAnnualized) {
+        displayHtml = `${sign}Rs. ${Math.abs(rupeeChange).toFixed(4)} (${sign}${absPercent.toFixed(3)}% today / ${r1d.toFixed(1)}% p.a.)`;
+    } else {
+        displayHtml = `${sign}Rs. ${Math.abs(rupeeChange).toFixed(2)} (${sign}${r1d.toFixed(2)}%)`;
+    }
+    
+    return {
+        percent: absPercent,
+        rawPercent: r1d,
+        rupee: rupeeChange,
+        sign: sign,
+        display: displayHtml,
+        isAnnualized: isAnnualized
+    };
+}
+
 // Update Global counts and dates
 function updateGlobalStats() {
     const totalFunds = fundsData.length;
@@ -524,49 +564,45 @@ function renderMFMovers() {
     const withReturn = fundsData
         .filter(f => f.major_category !== 'Pension')
         .map(f => {
-            const r1d = parseFloatReturn(f.returns['1d']);
-            if (r1d === null) return { fund: f, r1d: null, absR1d: null };
-            
-            // Check if the category is annualized (contains 'Annualized')
-            const isAnnualized = f.category.toLowerCase().includes('annualized');
-            const absR1d = isAnnualized ? (r1d / 365) : r1d;
-            
-            return { fund: f, r1d: r1d, absR1d: absR1d, isAnnualized: isAnnualized };
+            const details = getDailyChangeDetails(f);
+            return { fund: f, details: details };
         })
-        .filter(x => x.absR1d !== null);
+        .filter(x => x.details.percent !== 0 || x.details.rupee !== 0);
 
-    // Sort descending for gainers, ascending for losers based on absolute daily yield (absR1d)
-    const sorted = [...withReturn].sort((a, b) => b.absR1d - a.absR1d);
+    // Sort descending for gainers, ascending for losers based on absolute daily percentage (details.percent)
+    const sorted = [...withReturn].sort((a, b) => b.details.percent - a.details.percent);
     
     // Filters positive/negative/flat changes
-    const gainers = sorted.filter(x => x.absR1d > 0.0001).slice(0, 5);
-    const losers  = sorted.filter(x => x.absR1d < -0.0001).slice(-5).reverse();
-    const flat    = withReturn.filter(x => Math.abs(x.absR1d) <= 0.0001).slice(0, 5);
+    const gainers = sorted.filter(x => x.details.percent > 0.0001).slice(0, 5);
+    const losers  = sorted.filter(x => x.details.percent < -0.0001).slice(-5).reverse();
+    const flat    = withReturn.filter(x => Math.abs(x.details.percent) <= 0.0001).slice(0, 5);
 
     const buildCard = (item) => {
         const f = item.fund;
-        const r1d = item.r1d;
-        const absR1d = item.absR1d;
-        const isAnnualized = item.isAnnualized;
+        const details = item.details;
         
         const card = document.createElement('div');
         card.className = 'mini-fund-card';
         card.onclick = () => showFundDetails(f.fund_name);
         
-        const sign = absR1d > 0 ? '+' : '';
-        const cls  = absR1d > 0 ? '' : (absR1d < 0 ? 'negative' : '');
+        const cls = details.rupee > 0 ? '' : (details.rupee < 0 ? 'negative' : '');
         
-        // Build display yield string: if annualized, show annualized rate p.a. as primary, absolute daily yield as secondary
+        // Build display yield string: if annualized, show annualized rate p.a. + daily Rupee change
         let yieldHtml = '';
-        if (isAnnualized) {
+        if (details.isAnnualized) {
             yieldHtml = `<div class="m-yield-val ${cls}" style="font-size: 1.05rem; text-align: right; line-height: 1.2;">
-                ${sign}${r1d.toFixed(1)}% <span style="font-size: 0.75rem; font-weight: 500;">p.a.</span>
+                ${details.sign}${details.rawPercent.toFixed(1)}% <span style="font-size: 0.75rem; font-weight: 500;">p.a.</span>
                 <span class="annualized-sub-label" style="display: block; font-size: 0.65rem; color: var(--text-muted); font-weight: 500; margin-top: 2px;">
-                    (${sign}${absR1d.toFixed(3)}% today)
+                    ${details.sign}Rs. ${Math.abs(details.rupee).toFixed(3)}
                 </span>
             </div>`;
         } else {
-            yieldHtml = `<div class="m-yield-val ${cls}">${sign}${r1d.toFixed(2)}%</div>`;
+            yieldHtml = `<div class="m-yield-val ${cls}" style="font-size: 1.05rem; text-align: right; line-height: 1.2;">
+                ${details.sign}${details.rawPercent.toFixed(2)}%
+                <span style="display: block; font-size: 0.65rem; color: var(--text-muted); font-weight: 500; margin-top: 2px;">
+                    ${details.sign}Rs. ${Math.abs(details.rupee).toFixed(2)}
+                </span>
+            </div>`;
         }
         
         card.innerHTML = `
@@ -726,7 +762,30 @@ function renderDirectoryTable() {
             <td><span style="font-size:0.82rem; font-weight:600; color:var(--accent-gold);">${fund.rating}</span></td>
             <td style="font-weight:600;">Rs. ${parseFloat(fund.nav).toLocaleString()}</td>
             <td style="font-weight:600; color:var(--text-secondary);">${fund.ter_ytd === 'N/A' ? 'N/A' : fund.ter_ytd + '%'}${fund.is_ter_estimated ? '*' : ''}</td>
-            <td><span class="return-val ${y1dClass}">${y1d !== null ? (y1d > 0 ? '+' : '') + y1d.toFixed(2) + '%' : 'N/A'}</span></td>
+            <td>
+                ${(function() {
+                    const r1dRaw = parseFloatReturn(fund.returns['1d']);
+                    if (r1dRaw === null) return `<span class="return-val na">N/A</span>`;
+                    const details = getDailyChangeDetails(fund);
+                    const colorClass = details.percent < 0 ? 'negative' : '';
+                    const sign = details.percent > 0 ? '+' : '';
+                    if (details.isAnnualized) {
+                        return `<span class="return-val ${colorClass}" style="font-weight:600; display:block;">
+                            ${sign}${details.rawPercent.toFixed(1)}% <span style="font-size:0.65rem; font-weight:500;">p.a.</span>
+                        </span>
+                        <span style="font-size:0.65rem; color:var(--text-muted); display:block; margin-top:2px;">
+                            ${sign}Rs. ${Math.abs(details.rupee).toFixed(4)}
+                        </span>`;
+                    } else {
+                        return `<span class="return-val ${colorClass}" style="font-weight:600; display:block;">
+                            ${sign}${details.rawPercent.toFixed(2)}%
+                        </span>
+                        <span style="font-size:0.65rem; color:var(--text-muted); display:block; margin-top:2px;">
+                            ${sign}Rs. ${Math.abs(details.rupee).toFixed(2)}
+                        </span>`;
+                    }
+                })()}
+            </td>
             <td><span class="return-val ${ytdClass}">${ytd !== null ? ytd.toFixed(2) + '%' : 'N/A'}</span></td>
             <td><span class="return-val ${y365Class}">${y365 !== null ? y365.toFixed(2) + '%' : 'N/A'}</span></td>
             <td><span class="return-val ${y3yClass}">${y3y !== null ? y3y.toFixed(2) + '%' : 'N/A'}</span></td>
@@ -1220,6 +1279,21 @@ window.showFundDetails = function(fundName) {
     document.getElementById('modal-risk').innerHTML = `<span class="badge-risk ${fund.risk_level.toLowerCase()}">${fund.risk_level}</span>`;
     document.getElementById('modal-rating').innerText = fund.rating;
     document.getElementById('modal-nav').innerText = `Rs. ${fund.nav}`;
+    
+    // Daily Change calculation and display
+    const details = getDailyChangeDetails(fund);
+    const dcEl = document.getElementById('modal-daily-change');
+    if (dcEl) {
+        dcEl.innerHTML = details.display;
+        if (details.rupee < 0) {
+            dcEl.style.color = 'var(--accent-red)';
+        } else if (details.rupee > 0) {
+            dcEl.style.color = 'var(--accent-green)';
+        } else {
+            dcEl.style.color = 'var(--text-muted)';
+        }
+    }
+
     document.getElementById('modal-date').innerText = fund.validity_date;
     document.getElementById('modal-inception').innerText = fund.inception_date;
     document.getElementById('modal-m-fee').innerText = fund.management_fee === 'N/A' ? 'N/A' : fund.management_fee + '%';

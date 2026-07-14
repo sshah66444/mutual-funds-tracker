@@ -524,7 +524,8 @@ body {
 }
 
 .m-fund-info {
-    max-width: 70%;
+    flex: 1;
+    min-width: 0;
 }
 
 .m-fund-name {
@@ -555,7 +556,9 @@ body {
 }
 
 .m-fund-yield {
+    flex-shrink: 0;
     text-align: right;
+    min-width: 100px;
 }
 
 .m-yield-val {

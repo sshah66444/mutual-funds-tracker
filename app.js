@@ -500,7 +500,7 @@ function renderOverviewHighlights() {
                 <div class="m-fund-info">
                     <div class="m-fund-name">${f.fund_name}</div>
                     <div class="m-fund-meta">
-                        <span>${f.amc.replace(' Limited', '').replace(' Company', '')}</span>
+                        <span>${f.amc.replace(' Limited', '').replace(' Company', '')} • Rs. ${parseFloat(f.nav).toFixed(2)}</span>
                         ${f.is_shariah ? '<span class="shariah-badge"><i class="fa-solid fa-mosque"></i> Islamic</span>' : ''}
                     </div>
                 </div>
@@ -573,7 +573,7 @@ function renderMFMovers() {
             <div class="m-fund-info">
                 <div class="m-fund-name">${f.fund_name}</div>
                 <div class="m-fund-meta">
-                    <span>${f.amc.replace(' Limited','').replace(' Company','')}</span>
+                    <span>${f.amc.replace(' Limited','').replace(' Company','')} • Rs. ${parseFloat(f.nav).toFixed(2)}</span>
                     ${f.is_shariah ? '<span class="shariah-badge"><i class="fa-solid fa-mosque"></i> Islamic</span>' : ''}
                 </div>
             </div>

@@ -36,7 +36,7 @@
     "major_category": "Money Market",
     "total_load": 4.0,
     "is_ter_estimated": false,
-    "screener_score": 41.7,
+    "screener_score": 41.9,
     "dividends": [
       {
         "date": "10.3051",
@@ -160,26 +160,26 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Mar 10, 2011",
-    "offer": "105.3892",
-    "repurchase": "102.3196",
+    "offer": "105.4156",
+    "repurchase": "102.3452",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.25",
-    "ter_ytd": "1.58",
+    "management_fee": "1.16",
+    "ter_ytd": "1.47",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.7,
+    "screener_score": 41.8,
     "dividends": [
       {
-        "date": "102.3196",
+        "date": "102.3452",
         "payout_per_unit": "Mar 10, 2011",
-        "ex_nav": "105.3892"
+        "ex_nav": "105.4156"
       }
     ]
   },
@@ -206,14 +206,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Dec 20, 2021",
-    "offer": "104.5487",
-    "repurchase": "101.5036",
+    "offer": "104.5687",
+    "repurchase": "101.5230",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.08",
-    "ter_ytd": "1.39",
+    "management_fee": "1.01",
+    "ter_ytd": "1.30",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
@@ -223,9 +223,9 @@
     "screener_score": 43.0,
     "dividends": [
       {
-        "date": "101.5036",
+        "date": "101.5230",
         "payout_per_unit": "Dec 20, 2021",
-        "ex_nav": "104.5487"
+        "ex_nav": "104.5687"
       }
     ]
   },
@@ -312,7 +312,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.7,
+    "screener_score": 29.6,
     "dividends": [
       {
         "date": "509.3022",
@@ -373,31 +373,31 @@
     "fund_name": "Alfalah Money Market Fund - II",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "104.1678",
+    "validity_date": "Jul 14, 2026",
+    "nav": "104.1973",
     "returns": {
-      "mtd": "11.97",
-      "ytd": "11.97",
-      "1d": "10.77",
-      "15d": "11.34",
-      "30d": "12.59",
+      "mtd": "11.85",
+      "ytd": "11.85",
+      "1d": "10.33",
+      "15d": "11.66",
+      "30d": "12.58",
       "90d": "11.50",
       "180d": "11.39",
-      "270d": "10.83",
+      "270d": "10.84",
       "365d": "10.64",
-      "2y": "13.03",
-      "3y": "17.78"
+      "2y": "13.01",
+      "3y": "17.77"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Dec 13, 2010",
-    "offer": "106.5637",
-    "repurchase": "104.1678",
+    "offer": "106.5938",
+    "repurchase": "104.1973",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.10",
-    "ter_ytd": "0.41",
+    "ter_ytd": "0.40",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
@@ -407,9 +407,9 @@
     "screener_score": 43.2,
     "dividends": [
       {
-        "date": "104.1678",
+        "date": "104.1973",
         "payout_per_unit": "Dec 13, 2010",
-        "ex_nav": "106.5637"
+        "ex_nav": "106.5938"
       }
     ]
   },
@@ -450,7 +450,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.1,
+    "screener_score": 20.8,
     "dividends": [
       {
         "date": "104.2520",
@@ -542,7 +542,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 47.9,
+    "screener_score": 47.8,
     "dividends": [
       {
         "date": "516.7606",
@@ -603,25 +603,25 @@
     "fund_name": "HBL Cash Fund",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "104.1155",
+    "validity_date": "Jul 15, 2026",
+    "nav": "104.1344",
     "returns": {
-      "mtd": "10.64",
-      "ytd": "10.64",
-      "1d": "8.47",
-      "15d": "10.56",
-      "30d": "13.63",
-      "90d": "10.71",
-      "180d": "9.99",
-      "270d": "10.16",
+      "mtd": "10.36",
+      "ytd": "10.36",
+      "1d": "6.64",
+      "15d": "10.15",
+      "30d": "13.86",
+      "90d": "10.66",
+      "180d": "9.97",
+      "270d": "10.15",
       "365d": "10.22",
-      "2y": "13.01",
-      "3y": "17.29"
+      "2y": "12.92",
+      "3y": "17.30"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 13, 2010",
-    "offer": "105.3128",
-    "repurchase": "104.1155",
+    "offer": "105.3319",
+    "repurchase": "104.1344",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -634,12 +634,12 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.4,
+    "screener_score": 34.5,
     "dividends": [
       {
-        "date": "104.1155",
+        "date": "104.1344",
         "payout_per_unit": "Dec 13, 2010",
-        "ex_nav": "105.3128"
+        "ex_nav": "105.3319"
       }
     ]
   },
@@ -680,7 +680,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.5,
+    "screener_score": 25.3,
     "dividends": [
       {
         "date": "104.3294",
@@ -726,7 +726,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 35.7,
+    "screener_score": 35.8,
     "dividends": [
       {
         "date": "107.2537",
@@ -818,7 +818,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.9,
+    "screener_score": 37.0,
     "dividends": [
       {
         "date": "103.1942",
@@ -942,8 +942,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 10, 2023",
-    "offer": "10.5108",
-    "repurchase": "10.1603",
+    "offer": "10.5117",
+    "repurchase": "10.1611",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -956,12 +956,12 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.5,
+    "screener_score": 33.6,
     "dividends": [
       {
-        "date": "10.1603",
+        "date": "10.1611",
         "payout_per_unit": "Jan 10, 2023",
-        "ex_nav": "10.5108"
+        "ex_nav": "10.5117"
       }
     ]
   },
@@ -1002,7 +1002,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.0,
+    "screener_score": 35.1,
     "dividends": [
       {
         "date": "10.0000",
@@ -1034,8 +1034,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "May 16, 2009",
-    "offer": "10.4977",
-    "repurchase": "10.3783",
+    "offer": "10.4987",
+    "repurchase": "10.3793",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -1051,9 +1051,9 @@
     "screener_score": 31.8,
     "dividends": [
       {
-        "date": "10.3783",
+        "date": "10.3793",
         "payout_per_unit": "May 16, 2009",
-        "ex_nav": "10.4977"
+        "ex_nav": "10.4987"
       }
     ]
   },
@@ -1080,14 +1080,14 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Feb 24, 2012",
-    "offer": "10.2259",
-    "repurchase": "10.1096",
+    "offer": "10.2268",
+    "repurchase": "10.1105",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.73",
-    "ter_ytd": "0.98",
+    "ter_ytd": "0.99",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
@@ -1097,9 +1097,9 @@
     "screener_score": 38.0,
     "dividends": [
       {
-        "date": "10.1096",
+        "date": "10.1105",
         "payout_per_unit": "Feb 24, 2012",
-        "ex_nav": "10.2259"
+        "ex_nav": "10.2268"
       }
     ]
   },
@@ -1126,8 +1126,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2026",
-    "offer": "10.1483",
-    "repurchase": "10.0329",
+    "offer": "10.1510",
+    "repurchase": "10.0356",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -1143,9 +1143,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "10.0329",
+        "date": "10.0356",
         "payout_per_unit": "Jul 02, 2026",
-        "ex_nav": "10.1483"
+        "ex_nav": "10.1510"
       }
     ]
   },
@@ -1201,20 +1201,20 @@
     "fund_name": "Pakistan Cash Management Fund",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
+    "validity_date": "Jul 15, 2026",
     "nav": "50.4678",
     "returns": {
-      "mtd": "13.35",
-      "ytd": "13.35",
-      "1d": "18.72",
-      "15d": "14.90",
-      "30d": "9.53",
+      "mtd": "13.25",
+      "ytd": "13.25",
+      "1d": "11.94",
+      "15d": "15.08",
+      "30d": "9.93",
       "90d": "9.36",
-      "180d": "9.37",
-      "270d": "9.73",
-      "365d": "9.89",
-      "2y": "12.75",
-      "3y": "17.58"
+      "180d": "9.38",
+      "270d": "9.71",
+      "365d": "9.90",
+      "2y": "12.74",
+      "3y": "17.56"
     },
     "amc": "MCB Investment Management Limited",
     "inception_date": "Mar 19, 2008",
@@ -1224,15 +1224,15 @@
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.26",
-    "ter_ytd": "1.80",
+    "management_fee": "1.25",
+    "ter_ytd": "1.79",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.9,
+    "screener_score": 29.8,
     "dividends": [
       {
         "date": "50.4678",
@@ -1370,7 +1370,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.0,
+    "screener_score": 30.9,
     "dividends": [
       {
         "date": "101.9559",
@@ -1416,7 +1416,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 33.9,
+    "screener_score": 34.0,
     "dividends": [
       {
         "date": "101.7894",
@@ -1586,26 +1586,26 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jul 13, 2023",
-    "offer": "104.3369",
-    "repurchase": "101.2980",
+    "offer": "104.3303",
+    "repurchase": "101.2916",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.50",
-    "ter_ytd": "1.86",
+    "management_fee": "1.39",
+    "ter_ytd": "1.74",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.2,
+    "screener_score": 44.4,
     "dividends": [
       {
-        "date": "101.2980",
+        "date": "101.2916",
         "payout_per_unit": "Jul 13, 2023",
-        "ex_nav": "104.3369"
+        "ex_nav": "104.3303"
       }
     ]
   },
@@ -1632,8 +1632,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "May 29, 2007",
-    "offer": "106.6926",
-    "repurchase": "103.5850",
+    "offer": "106.7096",
+    "repurchase": "103.6016",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -1649,9 +1649,9 @@
     "screener_score": 46.8,
     "dividends": [
       {
-        "date": "103.5850",
+        "date": "103.6016",
         "payout_per_unit": "May 29, 2007",
-        "ex_nav": "106.6926"
+        "ex_nav": "106.7096"
       }
     ]
   },
@@ -1678,14 +1678,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 03, 2025",
-    "offer": "100.7270",
-    "repurchase": "100.7270",
+    "offer": "100.7263",
+    "repurchase": "100.7263",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.69",
-    "ter_ytd": "0.96",
+    "management_fee": "0.16",
+    "ter_ytd": "0.34",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -1695,9 +1695,9 @@
     "screener_score": 37.3,
     "dividends": [
       {
-        "date": "100.7270",
+        "date": "100.7263",
         "payout_per_unit": "Jun 03, 2025",
-        "ex_nav": "100.7270"
+        "ex_nav": "100.7263"
       }
     ]
   },
@@ -1724,14 +1724,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 19, 2025",
-    "offer": "100.7267",
-    "repurchase": "100.7267",
+    "offer": "100.7146",
+    "repurchase": "100.7146",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.77",
-    "ter_ytd": "1.05",
+    "management_fee": "0.00",
+    "ter_ytd": "0.16",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -1741,9 +1741,9 @@
     "screener_score": 37.4,
     "dividends": [
       {
-        "date": "100.7267",
+        "date": "100.7146",
         "payout_per_unit": "Jun 19, 2025",
-        "ex_nav": "100.7267"
+        "ex_nav": "100.7146"
       }
     ]
   },
@@ -1770,14 +1770,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 19, 2025",
-    "offer": "100.6799",
-    "repurchase": "100.6799",
+    "offer": "100.6819",
+    "repurchase": "100.6819",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.13",
-    "ter_ytd": "0.60",
+    "management_fee": "0.11",
+    "ter_ytd": "0.55",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -1787,9 +1787,9 @@
     "screener_score": 37.7,
     "dividends": [
       {
-        "date": "100.6799",
+        "date": "100.6819",
         "payout_per_unit": "Jun 19, 2025",
-        "ex_nav": "100.6799"
+        "ex_nav": "100.6819"
       }
     ]
   },
@@ -1845,31 +1845,31 @@
     "fund_name": "Alfalah Financial Sector Opportunity Fund",
     "rating": "A+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "115.3175",
+    "validity_date": "Jul 14, 2026",
+    "nav": "115.3521",
     "returns": {
-      "mtd": "11.86",
-      "ytd": "11.86",
-      "1d": "10.91",
+      "mtd": "11.79",
+      "ytd": "11.79",
+      "1d": "10.95",
       "15d": "11.74",
-      "30d": "11.73",
-      "90d": "11.38",
+      "30d": "11.72",
+      "90d": "11.39",
       "180d": "10.81",
       "270d": "11.78",
-      "365d": "12.91",
-      "2y": "13.20",
-      "3y": "18.57"
+      "365d": "12.92",
+      "2y": "13.19",
+      "3y": "18.53"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Jul 05, 2013",
-    "offer": "117.9698",
-    "repurchase": "115.3175",
+    "offer": "118.0052",
+    "repurchase": "115.3521",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.75",
-    "ter_ytd": "1.03",
+    "ter_ytd": "2.72",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -1879,9 +1879,9 @@
     "screener_score": 51.4,
     "dividends": [
       {
-        "date": "115.3175",
+        "date": "115.3521",
         "payout_per_unit": "Jul 05, 2013",
-        "ex_nav": "117.9698"
+        "ex_nav": "118.0052"
       }
     ]
   },
@@ -1937,43 +1937,43 @@
     "fund_name": "Alfalah GHP Sovereign Fund",
     "rating": "AA-(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "108.9103",
+    "validity_date": "Jul 14, 2026",
+    "nav": "108.8618",
     "returns": {
-      "mtd": "12.62",
-      "ytd": "12.62",
-      "1d": "-12.45",
-      "15d": "13.08",
-      "30d": "17.86",
-      "90d": "10.33",
-      "180d": "5.37",
-      "270d": "8.55",
-      "365d": "8.43",
-      "2y": "13.69",
-      "3y": "18.77"
+      "mtd": "10.55",
+      "ytd": "10.55",
+      "1d": "-16.24",
+      "15d": "11.16",
+      "30d": "17.01",
+      "90d": "9.58",
+      "180d": "5.02",
+      "270d": "8.31",
+      "365d": "8.39",
+      "2y": "13.64",
+      "3y": "18.75"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "May 10, 2014",
-    "offer": "111.4152",
-    "repurchase": "108.9103",
+    "offer": "111.3656",
+    "repurchase": "108.8618",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "1.98",
+    "ter_ytd": "1.97",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.6,
+    "screener_score": 22.4,
     "dividends": [
       {
-        "date": "108.9103",
+        "date": "108.8618",
         "payout_per_unit": "May 10, 2014",
-        "ex_nav": "111.4152"
+        "ex_nav": "111.3656"
       }
     ]
   },
@@ -1983,43 +1983,43 @@
     "fund_name": "Alfalah Government Securities Fund - II",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "138.2135",
+    "validity_date": "Jul 14, 2026",
+    "nav": "138.0288",
     "returns": {
-      "mtd": "11.03",
-      "ytd": "11.03",
-      "1d": "-22.01",
-      "15d": "11.18",
-      "30d": "14.10",
-      "90d": "11.12",
-      "180d": "6.63",
-      "270d": "9.51",
-      "365d": "8.95",
-      "2y": "13.57",
-      "3y": "15.87"
+      "mtd": "6.74",
+      "ytd": "6.74",
+      "1d": "-48.76",
+      "15d": "7.08",
+      "30d": "12.06",
+      "90d": "10.18",
+      "180d": "6.10",
+      "270d": "9.19",
+      "365d": "8.83",
+      "2y": "13.51",
+      "3y": "15.78"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Mar 16, 2020",
-    "offer": "141.3924",
-    "repurchase": "138.2135",
+    "offer": "141.2035",
+    "repurchase": "138.0288",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "0.46",
+    "ter_ytd": "0.47",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 15.0,
+    "screener_score": 14.1,
     "dividends": [
       {
-        "date": "138.2135",
+        "date": "138.0288",
         "payout_per_unit": "Mar 16, 2020",
-        "ex_nav": "141.3924"
+        "ex_nav": "141.2035"
       }
     ]
   },
@@ -2029,43 +2029,43 @@
     "fund_name": "Alfalah Government Securities Fund Plan I",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "101.4479",
+    "validity_date": "Jul 14, 2026",
+    "nav": "101.2849",
     "returns": {
-      "mtd": "18.79",
-      "ytd": "18.79",
-      "1d": "-33.25",
-      "15d": "17.40",
-      "30d": "28.66",
-      "90d": "14.62",
-      "180d": "4.87",
-      "270d": "9.60",
-      "365d": "8.98",
+      "mtd": "13.23",
+      "ytd": "13.23",
+      "1d": "-58.66",
+      "15d": "12.92",
+      "30d": "26.26",
+      "90d": "12.55",
+      "180d": "4.04",
+      "270d": "9.13",
+      "365d": "8.83",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Sep 10, 2024",
-    "offer": "104.9479",
-    "repurchase": "101.4479",
+    "offer": "104.7792",
+    "repurchase": "101.2849",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "0.24",
+    "ter_ytd": "0.27",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.3,
+    "screener_score": 11.3,
     "dividends": [
       {
-        "date": "101.4479",
+        "date": "101.2849",
         "payout_per_unit": "Sep 10, 2024",
-        "ex_nav": "104.9479"
+        "ex_nav": "104.7792"
       }
     ]
   },
@@ -2075,25 +2075,25 @@
     "fund_name": "Alfalah Government Securities Fund Plan II",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "106.4870",
+    "validity_date": "Jul 14, 2026",
+    "nav": "106.5384",
     "returns": {
-      "mtd": "9.70",
-      "ytd": "9.70",
-      "1d": "4.23",
-      "15d": "10.42",
-      "30d": "10.06",
-      "90d": "6.58",
-      "180d": "2.08",
+      "mtd": "10.27",
+      "ytd": "10.27",
+      "1d": "17.63",
+      "15d": "10.05",
+      "30d": "10.35",
+      "90d": "6.68",
+      "180d": "2.05",
       "270d": "5.35",
-      "365d": "5.82",
+      "365d": "5.88",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Nov 12, 2024",
-    "offer": "110.1608",
-    "repurchase": "106.4870",
+    "offer": "110.2140",
+    "repurchase": "106.5384",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -2106,12 +2106,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 6.5,
+    "screener_score": 6.3,
     "dividends": [
       {
-        "date": "106.4870",
+        "date": "106.5384",
         "payout_per_unit": "Nov 12, 2024",
-        "ex_nav": "110.1608"
+        "ex_nav": "110.2140"
       }
     ]
   },
@@ -2167,25 +2167,25 @@
     "fund_name": "Alfalah Savings Growth Fund",
     "rating": "AA-(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "105.3811",
+    "validity_date": "Jul 14, 2026",
+    "nav": "105.2652",
     "returns": {
-      "mtd": "18.43",
-      "ytd": "18.43",
-      "1d": "-20.08",
-      "15d": "17.19",
-      "30d": "25.40",
-      "90d": "14.13",
-      "180d": "7.69",
-      "270d": "10.71",
-      "365d": "10.45",
-      "2y": "16.72",
-      "3y": "20.11"
+      "mtd": "14.22",
+      "ytd": "14.22",
+      "1d": "-40.15",
+      "15d": "13.97",
+      "30d": "23.66",
+      "90d": "12.55",
+      "180d": "7.15",
+      "270d": "10.39",
+      "365d": "10.33",
+      "2y": "16.61",
+      "3y": "20.02"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "May 11, 2007",
-    "offer": "107.8049",
-    "repurchase": "105.3811",
+    "offer": "107.6863",
+    "repurchase": "105.2652",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -2198,12 +2198,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.7,
+    "screener_score": 44.1,
     "dividends": [
       {
-        "date": "105.3811",
+        "date": "105.2652",
         "payout_per_unit": "May 11, 2007",
-        "ex_nav": "107.8049"
+        "ex_nav": "107.6863"
       }
     ]
   },
@@ -2290,7 +2290,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.2,
+    "screener_score": 43.4,
     "dividends": [
       {
         "date": "533.8314",
@@ -2428,7 +2428,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.5,
+    "screener_score": 39.6,
     "dividends": [
       {
         "date": "100.9232",
@@ -2520,7 +2520,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 24.1,
+    "screener_score": 24.0,
     "dividends": [
       {
         "date": "114.0178",
@@ -2612,7 +2612,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.9,
+    "screener_score": 14.8,
     "dividends": [
       {
         "date": "121.1800",
@@ -2658,7 +2658,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.2,
+    "screener_score": 12.1,
     "dividends": [
       {
         "date": "125.6800",
@@ -2704,7 +2704,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.7,
+    "screener_score": 51.9,
     "dividends": [
       {
         "date": "121.1734",
@@ -2750,7 +2750,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.3,
+    "screener_score": 30.4,
     "dividends": [
       {
         "date": "102.8651",
@@ -2796,7 +2796,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.7,
+    "screener_score": 18.6,
     "dividends": [
       {
         "date": "110.5062",
@@ -2842,7 +2842,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.1,
+    "screener_score": 19.9,
     "dividends": [
       {
         "date": "101.3364",
@@ -2888,7 +2888,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.8,
+    "screener_score": 19.6,
     "dividends": [
       {
         "date": "55.6500",
@@ -2920,8 +2920,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Oct 28, 2011",
-    "offer": "10.8848",
-    "repurchase": "10.7610",
+    "offer": "10.8876",
+    "repurchase": "10.7638",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -2937,9 +2937,9 @@
     "screener_score": 46.1,
     "dividends": [
       {
-        "date": "10.7610",
+        "date": "10.7638",
         "payout_per_unit": "Oct 28, 2011",
-        "ex_nav": "10.8848"
+        "ex_nav": "10.8876"
       }
     ]
   },
@@ -2966,14 +2966,14 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Apr 20, 2026",
-    "offer": "10.4130",
-    "repurchase": "10.0657",
+    "offer": "10.4162",
+    "repurchase": "10.0688",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.53",
-    "ter_ytd": "0.86",
+    "ter_ytd": "0.85",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -2983,9 +2983,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "10.0657",
+        "date": "10.0688",
         "payout_per_unit": "Apr 20, 2026",
-        "ex_nav": "10.4130"
+        "ex_nav": "10.4162"
       }
     ]
   },
@@ -3012,8 +3012,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "May 10, 2023",
-    "offer": "10.5393",
-    "repurchase": "10.1878",
+    "offer": "10.5287",
+    "repurchase": "10.1776",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3029,9 +3029,9 @@
     "screener_score": 42.7,
     "dividends": [
       {
-        "date": "10.1878",
+        "date": "10.1776",
         "payout_per_unit": "May 10, 2023",
-        "ex_nav": "10.5393"
+        "ex_nav": "10.5287"
       }
     ]
   },
@@ -3058,14 +3058,14 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Aug 19, 2025",
-    "offer": "13.5098",
-    "repurchase": "13.0593",
+    "offer": "13.5129",
+    "repurchase": "13.0623",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.25",
-    "ter_ytd": "8.24",
+    "ter_ytd": "8.21",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -3075,9 +3075,9 @@
     "screener_score": 2.6,
     "dividends": [
       {
-        "date": "13.0593",
+        "date": "13.0623",
         "payout_per_unit": "Aug 19, 2025",
-        "ex_nav": "13.5098"
+        "ex_nav": "13.5129"
       }
     ]
   },
@@ -3104,8 +3104,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 03, 2014",
-    "offer": "10.7413",
-    "repurchase": "10.6192",
+    "offer": "10.7290",
+    "repurchase": "10.6070",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3118,12 +3118,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.5,
+    "screener_score": 31.3,
     "dividends": [
       {
-        "date": "10.6192",
+        "date": "10.6070",
         "payout_per_unit": "Jul 03, 2014",
-        "ex_nav": "10.7413"
+        "ex_nav": "10.7290"
       }
     ]
   },
@@ -3150,8 +3150,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Apr 22, 2006",
-    "offer": "11.1131",
-    "repurchase": "10.9868",
+    "offer": "11.1145",
+    "repurchase": "10.9881",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3167,9 +3167,9 @@
     "screener_score": 54.3,
     "dividends": [
       {
-        "date": "10.9868",
+        "date": "10.9881",
         "payout_per_unit": "Apr 22, 2006",
-        "ex_nav": "11.1131"
+        "ex_nav": "11.1145"
       }
     ]
   },
@@ -3196,8 +3196,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 10, 2023",
-    "offer": "10.5339",
-    "repurchase": "10.1826",
+    "offer": "10.5365",
+    "repurchase": "10.1851",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3210,12 +3210,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.9,
+    "screener_score": 43.8,
     "dividends": [
       {
-        "date": "10.1826",
+        "date": "10.1851",
         "payout_per_unit": "Jan 10, 2023",
-        "ex_nav": "10.5339"
+        "ex_nav": "10.5365"
       }
     ]
   },
@@ -3242,14 +3242,14 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Nov 21, 2009",
-    "offer": "10.4956",
-    "repurchase": "10.3763",
+    "offer": "10.4986",
+    "repurchase": "10.3792",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.70",
-    "ter_ytd": "1.01",
+    "ter_ytd": "1.02",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -3259,9 +3259,9 @@
     "screener_score": 48.0,
     "dividends": [
       {
-        "date": "10.3763",
+        "date": "10.3792",
         "payout_per_unit": "Nov 21, 2009",
-        "ex_nav": "10.4956"
+        "ex_nav": "10.4986"
       }
     ]
   },
@@ -3288,8 +3288,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Mar 29, 2008",
-    "offer": "10.3216",
-    "repurchase": "9.9774",
+    "offer": "10.3239",
+    "repurchase": "9.9796",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3305,9 +3305,9 @@
     "screener_score": 53.0,
     "dividends": [
       {
-        "date": "9.9774",
+        "date": "9.9796",
         "payout_per_unit": "Mar 29, 2008",
-        "ex_nav": "10.3216"
+        "ex_nav": "10.3239"
       }
     ]
   },
@@ -3348,7 +3348,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.3,
+    "screener_score": 21.4,
     "dividends": [
       {
         "date": "10.1707",
@@ -3440,7 +3440,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.1,
+    "screener_score": 50.3,
     "dividends": [
       {
         "date": "10.3606",
@@ -3486,7 +3486,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.9,
+    "screener_score": 9.7,
     "dividends": [
       {
         "date": "10.9578",
@@ -3532,7 +3532,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.2,
+    "screener_score": 39.3,
     "dividends": [
       {
         "date": "101.6111",
@@ -3716,7 +3716,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.1,
+    "screener_score": 78.4,
     "dividends": [
       {
         "date": "37.2239",
@@ -3762,7 +3762,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.2,
+    "screener_score": 68.6,
     "dividends": [
       {
         "date": "225.0000",
@@ -3794,26 +3794,26 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Oct 08, 2009",
-    "offer": "160.9807",
-    "repurchase": "157.8242",
+    "offer": "154.2763",
+    "repurchase": "151.2513",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.71",
+    "ter_ytd": "4.89",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 83.2,
+    "screener_score": 83.3,
     "dividends": [
       {
-        "date": "157.8242",
+        "date": "151.2513",
         "payout_per_unit": "Oct 08, 2009",
-        "ex_nav": "160.9807"
+        "ex_nav": "154.2763"
       }
     ]
   },
@@ -3854,7 +3854,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.7,
+    "screener_score": 79.0,
     "dividends": [
       {
         "date": "114.5539",
@@ -3900,7 +3900,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.7,
+    "screener_score": 76.9,
     "dividends": [
       {
         "date": "195.9689",
@@ -4084,7 +4084,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.5,
+    "screener_score": 76.8,
     "dividends": [
       {
         "date": "2100.2205",
@@ -4176,7 +4176,7 @@
     "major_category": "Stock",
     "total_load": 2.0,
     "is_ter_estimated": false,
-    "screener_score": 66.1,
+    "screener_score": 66.3,
     "dividends": [
       {
         "date": "16.9349",
@@ -4268,7 +4268,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 75.1,
+    "screener_score": 75.5,
     "dividends": [
       {
         "date": "33.7033",
@@ -4314,7 +4314,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 62.0,
+    "screener_score": 62.1,
     "dividends": [
       {
         "date": "230.0811",
@@ -4360,7 +4360,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.4,
+    "screener_score": 22.7,
     "dividends": [
       {
         "date": "0.0000",
@@ -4406,7 +4406,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.8,
+    "screener_score": 78.9,
     "dividends": [
       {
         "date": "43.3238",
@@ -4421,25 +4421,25 @@
     "fund_name": "HBL Investment Fund-Class A",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "14.4137",
+    "validity_date": "Jul 14, 2026",
+    "nav": "13.9958",
     "returns": {
-      "mtd": "3.02",
-      "ytd": "3.02",
-      "1d": "0.50",
-      "15d": "-0.80",
-      "30d": "0.50",
-      "90d": "-2.46",
-      "180d": "-22.71",
-      "270d": "-24.25",
-      "365d": "-7.14",
-      "2y": "104.61",
+      "mtd": "0.04",
+      "ytd": "0.04",
+      "1d": "-2.90",
+      "15d": "-2.36",
+      "30d": "-2.41",
+      "90d": "-6.12",
+      "180d": "-24.92",
+      "270d": "-25.80",
+      "365d": "-9.03",
+      "2y": "98.68",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Jul 02, 2018",
-    "offer": "14.7452",
-    "repurchase": "14.4137",
+    "offer": "14.3177",
+    "repurchase": "13.9958",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -4452,12 +4452,12 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.8,
+    "screener_score": 22.4,
     "dividends": [
       {
-        "date": "14.4137",
+        "date": "13.9958",
         "payout_per_unit": "Jul 02, 2018",
-        "ex_nav": "14.7452"
+        "ex_nav": "14.3177"
       }
     ]
   },
@@ -4467,25 +4467,25 @@
     "fund_name": "HBL Investment Fund-Class B",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "21.1730",
+    "validity_date": "Jul 14, 2026",
+    "nav": "20.3233",
     "returns": {
-      "mtd": "2.18",
-      "ytd": "2.18",
-      "1d": "-1.68",
-      "15d": "-0.60",
-      "30d": "5.46",
-      "90d": "15.72",
-      "180d": "0.96",
-      "270d": "13.79",
-      "365d": "36.88",
-      "2y": "104.09",
+      "mtd": "-1.92",
+      "ytd": "-1.92",
+      "1d": "-4.01",
+      "15d": "-1.98",
+      "30d": "1.24",
+      "90d": "9.18",
+      "180d": "-2.74",
+      "270d": "9.61",
+      "365d": "30.64",
+      "2y": "95.90",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Jul 02, 2018",
-    "offer": "21.6600",
-    "repurchase": "21.1730",
+    "offer": "20.7907",
+    "repurchase": "20.3233",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -4498,12 +4498,12 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.5,
+    "screener_score": 77.5,
     "dividends": [
       {
-        "date": "21.1730",
+        "date": "20.3233",
         "payout_per_unit": "Jul 02, 2018",
-        "ex_nav": "21.6600"
+        "ex_nav": "20.7907"
       }
     ]
   },
@@ -4544,7 +4544,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.9,
+    "screener_score": 69.2,
     "dividends": [
       {
         "date": "220.4402",
@@ -4590,7 +4590,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.3,
+    "screener_score": 67.5,
     "dividends": [
       {
         "date": "489.9100",
@@ -4682,7 +4682,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.4,
+    "screener_score": 74.7,
     "dividends": [
       {
         "date": "318.9411",
@@ -4774,7 +4774,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 82.9,
+    "screener_score": 83.0,
     "dividends": [
       {
         "date": "367.6480",
@@ -4820,7 +4820,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.0,
+    "screener_score": 26.8,
     "dividends": [
       {
         "date": "152.3700",
@@ -4852,14 +4852,14 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Feb 14, 2018",
-    "offer": "26.6065",
-    "repurchase": "25.7192",
+    "offer": "25.5552",
+    "repurchase": "24.7029",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "2.61",
+    "ter_ytd": "2.57",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
@@ -4869,9 +4869,9 @@
     "screener_score": 84.1,
     "dividends": [
       {
-        "date": "25.7192",
+        "date": "24.7029",
         "payout_per_unit": "Feb 14, 2018",
-        "ex_nav": "26.6065"
+        "ex_nav": "25.5552"
       }
     ]
   },
@@ -4898,14 +4898,14 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 22, 2007",
-    "offer": "45.3105",
-    "repurchase": "43.7994",
+    "offer": "43.6310",
+    "repurchase": "42.1759",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.99",
-    "ter_ytd": "3.96",
+    "ter_ytd": "3.95",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
@@ -4915,9 +4915,9 @@
     "screener_score": 81.2,
     "dividends": [
       {
-        "date": "43.7994",
+        "date": "42.1759",
         "payout_per_unit": "Jan 22, 2007",
-        "ex_nav": "45.3105"
+        "ex_nav": "43.6310"
       }
     ]
   },
@@ -5004,7 +5004,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 72.6,
+    "screener_score": 72.8,
     "dividends": [
       {
         "date": "254.1500",
@@ -5050,7 +5050,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.6,
+    "screener_score": 50.5,
     "dividends": [
       {
         "date": "10.1608",
@@ -5096,7 +5096,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 52.2,
+    "screener_score": 52.3,
     "dividends": [
       {
         "date": "10.7956",
@@ -5188,7 +5188,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 52.6,
+    "screener_score": 52.8,
     "dividends": [
       {
         "date": "10.1989",
@@ -5280,7 +5280,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.1,
+    "screener_score": 53.3,
     "dividends": [
       {
         "date": "10.1195",
@@ -5312,8 +5312,8 @@
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Oct 01, 2021",
-    "offer": "152.1511",
-    "repurchase": "148.7303",
+    "offer": "151.9579",
+    "repurchase": "148.5414",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -5326,12 +5326,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.4,
+    "screener_score": 30.2,
     "dividends": [
       {
-        "date": "148.7303",
+        "date": "148.5414",
         "payout_per_unit": "Oct 01, 2021",
-        "ex_nav": "152.1511"
+        "ex_nav": "151.9579"
       }
     ]
   },
@@ -5418,7 +5418,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 16.9,
+    "screener_score": 16.8,
     "dividends": [
       {
         "date": "102.8094",
@@ -5588,26 +5588,26 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Mar 06, 2025",
-    "offer": "100.8241",
-    "repurchase": "100.8241",
+    "offer": "100.6472",
+    "repurchase": "100.6472",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.05",
-    "ter_ytd": "3.29",
+    "ter_ytd": "3.16",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.4,
+    "screener_score": 19.3,
     "dividends": [
       {
-        "date": "100.8241",
+        "date": "100.6472",
         "payout_per_unit": "Mar 06, 2025",
-        "ex_nav": "100.8241"
+        "ex_nav": "100.6472"
       }
     ]
   },
@@ -5634,13 +5634,13 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Aug 22, 2025",
-    "offer": "100.4221",
-    "repurchase": "100.4221",
+    "offer": "100.4470",
+    "repurchase": "100.4470",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.45",
+    "management_fee": "0.46",
     "ter_ytd": "0.66",
     "sm_fee": "0.00",
     "is_shariah": false,
@@ -5651,9 +5651,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "100.4221",
+        "date": "100.4470",
         "payout_per_unit": "Aug 22, 2025",
-        "ex_nav": "100.4221"
+        "ex_nav": "100.4470"
       }
     ]
   },
@@ -5680,14 +5680,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Mar 06, 2026",
-    "offer": "100.5826",
-    "repurchase": "100.5826",
+    "offer": "100.5192",
+    "repurchase": "100.5192",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.08",
-    "ter_ytd": "0.23",
+    "management_fee": "0.07",
+    "ter_ytd": "0.22",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -5697,9 +5697,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "100.5826",
+        "date": "100.5192",
         "payout_per_unit": "Mar 06, 2026",
-        "ex_nav": "100.5826"
+        "ex_nav": "100.5192"
       }
     ]
   },
@@ -5726,14 +5726,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 22, 2026",
-    "offer": "100.5348",
-    "repurchase": "100.5348",
+    "offer": "100.4040",
+    "repurchase": "100.4040",
     "front_end_load": "3",
     "back_end_load": "3",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.23",
-    "ter_ytd": "0.40",
+    "management_fee": "0.21",
+    "ter_ytd": "0.38",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -5743,9 +5743,9 @@
     "screener_score": 2.3,
     "dividends": [
       {
-        "date": "100.5348",
+        "date": "100.4040",
         "payout_per_unit": "Jun 22, 2026",
-        "ex_nav": "100.5348"
+        "ex_nav": "100.4040"
       }
     ]
   },
@@ -5832,7 +5832,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.1,
+    "screener_score": 9.0,
     "dividends": [
       {
         "date": "100.6402",
@@ -6055,7 +6055,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.08",
+    "ter_ytd": "1.07",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -6154,7 +6154,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.9,
+    "screener_score": 39.1,
     "dividends": [
       {
         "date": "116.2388",
@@ -6883,7 +6883,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.08",
+    "ter_ytd": "1.07",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -6975,7 +6975,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.04",
-    "ter_ytd": "0.21",
+    "ter_ytd": "0.25",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -7120,7 +7120,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.9,
+    "screener_score": 14.7,
     "dividends": [
       {
         "date": "101.9861",
@@ -7212,7 +7212,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.8,
+    "screener_score": 60.9,
     "dividends": [
       {
         "date": "55.0000",
@@ -7273,25 +7273,25 @@
     "fund_name": "Alfalah GHP Income Multiplier Fund",
     "rating": "A+(f)",
     "benchmark": "23",
-    "validity_date": "Jul 13, 2026",
-    "nav": "55.0444",
+    "validity_date": "Jul 14, 2026",
+    "nav": "55.0465",
     "returns": {
-      "mtd": "11.61",
-      "ytd": "11.61",
-      "1d": "7.45",
-      "15d": "11.64",
-      "30d": "12.76",
-      "90d": "11.16",
-      "180d": "9.77",
-      "270d": "10.06",
-      "365d": "17.38",
-      "2y": "17.21",
-      "3y": "21.99"
+      "mtd": "10.88",
+      "ytd": "10.88",
+      "1d": "1.39",
+      "15d": "11.01",
+      "30d": "12.47",
+      "90d": "10.91",
+      "180d": "9.70",
+      "270d": "10.00",
+      "365d": "17.47",
+      "2y": "17.18",
+      "3y": "21.96"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Jun 15, 2007",
-    "offer": "56.9434",
-    "repurchase": "55.0444",
+    "offer": "56.9456",
+    "repurchase": "55.0465",
     "front_end_load": "6",
     "back_end_load": "6",
     "contingent_load": "6",
@@ -7304,12 +7304,12 @@
     "major_category": "Income",
     "total_load": 18.0,
     "is_ter_estimated": false,
-    "screener_score": 56.7,
+    "screener_score": 56.8,
     "dividends": [
       {
-        "date": "55.0444",
+        "date": "55.0465",
         "payout_per_unit": "Jun 15, 2007",
-        "ex_nav": "56.9434"
+        "ex_nav": "56.9456"
       }
     ]
   },
@@ -7442,7 +7442,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.8,
+    "screener_score": 41.9,
     "dividends": [
       {
         "date": "101.1183",
@@ -7488,7 +7488,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 58.9,
+    "screener_score": 58.8,
     "dividends": [
       {
         "date": "55.7062",
@@ -7580,7 +7580,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.7,
+    "screener_score": 63.8,
     "dividends": [
       {
         "date": "217.1764",
@@ -7612,13 +7612,13 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 22, 2007",
-    "offer": "45.2401",
-    "repurchase": "43.7314",
+    "offer": "44.0217",
+    "repurchase": "42.5536",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "2.53",
+    "management_fee": "2.52",
     "ter_ytd": "3.30",
     "sm_fee": "0.00",
     "is_shariah": false,
@@ -7626,12 +7626,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.3,
+    "screener_score": 74.4,
     "dividends": [
       {
-        "date": "43.7314",
+        "date": "42.5536",
         "payout_per_unit": "Jan 22, 2007",
-        "ex_nav": "45.2401"
+        "ex_nav": "44.0217"
       }
     ]
   },
@@ -7672,7 +7672,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.5,
+    "screener_score": 71.0,
     "dividends": [
       {
         "date": "30.2600",
@@ -7718,7 +7718,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.8,
+    "screener_score": 67.0,
     "dividends": [
       {
         "date": "411.6700",
@@ -7796,8 +7796,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Nov 08, 2017",
-    "offer": "108.1355",
-    "repurchase": "106.0152",
+    "offer": "104.0103",
+    "repurchase": "101.9709",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7810,12 +7810,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 77.9,
+    "screener_score": 78.2,
     "dividends": [
       {
-        "date": "106.0152",
+        "date": "101.9709",
         "payout_per_unit": "Nov 08, 2017",
-        "ex_nav": "108.1355"
+        "ex_nav": "104.0103"
       }
     ]
   },
@@ -7871,25 +7871,25 @@
     "fund_name": "Alfalah Financial Value Fund (Alfalah Financial Value Plan I)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "153.6975",
+    "validity_date": "Jul 14, 2026",
+    "nav": "153.6865",
     "returns": {
-      "mtd": "0.41",
-      "ytd": "0.41",
-      "1d": "-0.02",
-      "15d": "0.46",
-      "30d": "1.26",
-      "90d": "3.02",
-      "180d": "5.11",
-      "270d": "8.90",
-      "365d": "11.95",
-      "2y": "31.64",
+      "mtd": "0.40",
+      "ytd": "0.40",
+      "1d": "-0.01",
+      "15d": "0.43",
+      "30d": "1.23",
+      "90d": "2.89",
+      "180d": "4.95",
+      "270d": "8.83",
+      "365d": "11.91",
+      "2y": "31.56",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Oct 19, 2023",
-    "offer": "159.0001",
-    "repurchase": "153.6975",
+    "offer": "158.9887",
+    "repurchase": "153.6865",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7902,12 +7902,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.6,
+    "screener_score": 39.8,
     "dividends": [
       {
-        "date": "153.6975",
+        "date": "153.6865",
         "payout_per_unit": "Oct 19, 2023",
-        "ex_nav": "159.0001"
+        "ex_nav": "158.9887"
       }
     ]
   },
@@ -7963,25 +7963,25 @@
     "fund_name": "Alfalah GHP Value Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "91.3045",
+    "validity_date": "Jul 14, 2026",
+    "nav": "88.1217",
     "returns": {
-      "mtd": "-0.48",
-      "ytd": "-0.48",
-      "1d": "-1.26",
-      "15d": "-1.01",
-      "30d": "5.59",
-      "90d": "8.64",
-      "180d": "0.58",
-      "270d": "11.19",
-      "365d": "30.26",
-      "2y": "101.28",
+      "mtd": "-3.95",
+      "ytd": "-3.95",
+      "1d": "-3.49",
+      "15d": "-3.55",
+      "30d": "1.91",
+      "90d": "3.00",
+      "180d": "-2.26",
+      "270d": "7.77",
+      "365d": "24.42",
+      "2y": "94.23",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Oct 28, 2005",
-    "offer": "94.4545",
-    "repurchase": "91.3045",
+    "offer": "91.1619",
+    "repurchase": "88.1217",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7994,12 +7994,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.8,
+    "screener_score": 73.2,
     "dividends": [
       {
-        "date": "91.3045",
+        "date": "88.1217",
         "payout_per_unit": "Oct 28, 2005",
-        "ex_nav": "94.4545"
+        "ex_nav": "91.1619"
       }
     ]
   },
@@ -8040,7 +8040,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.2,
+    "screener_score": 76.4,
     "dividends": [
       {
         "date": "16.8306",
@@ -8055,43 +8055,43 @@
     "fund_name": "Lakson Asset Allocation Developed Markets Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "194.0460",
+    "validity_date": "Jul 14, 2026",
+    "nav": "194.6001",
     "returns": {
-      "mtd": "-1.25",
-      "ytd": "-1.25",
-      "1d": "-0.57",
-      "15d": "-0.30",
-      "30d": "-3.66",
-      "90d": "-2.19",
-      "180d": "-0.06",
-      "270d": "2.51",
-      "365d": "4.23",
-      "2y": "15.38",
-      "3y": "30.44"
+      "mtd": "-0.96",
+      "ytd": "-0.96",
+      "1d": "0.29",
+      "15d": "-0.28",
+      "30d": "1.44",
+      "90d": "3.09",
+      "180d": "5.02",
+      "270d": "7.88",
+      "365d": "9.74",
+      "2y": "21.48",
+      "3y": "37.32"
     },
     "amc": "Lakson Investments Limited",
     "inception_date": "Oct 10, 2011",
-    "offer": "199.6346",
-    "repurchase": "194.0460",
+    "offer": "200.2046",
+    "repurchase": "194.6001",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.25",
-    "ter_ytd": "0.09",
+    "ter_ytd": "0.10",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.8,
+    "screener_score": 33.6,
     "dividends": [
       {
-        "date": "194.0460",
+        "date": "194.6001",
         "payout_per_unit": "Oct 10, 2011",
-        "ex_nav": "199.6346"
+        "ex_nav": "200.2046"
       }
     ]
   },
@@ -8101,43 +8101,43 @@
     "fund_name": "Lakson Tactical Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "105.5656",
+    "validity_date": "Jul 14, 2026",
+    "nav": "102.5539",
     "returns": {
-      "mtd": "0.79",
-      "ytd": "0.79",
-      "1d": "-0.86",
-      "15d": "0.78",
-      "30d": "2.64",
-      "90d": "4.24",
-      "180d": "1.45",
-      "270d": "10.54",
-      "365d": "25.53",
-      "2y": "72.94",
-      "3y": "133.61"
+      "mtd": "-2.09",
+      "ytd": "-2.09",
+      "1d": "-2.85",
+      "15d": "-1.39",
+      "30d": "-0.29",
+      "90d": "0.12",
+      "180d": "-1.06",
+      "270d": "7.98",
+      "365d": "21.71",
+      "2y": "67.99",
+      "3y": "126.89"
     },
     "amc": "Lakson Investments Limited",
     "inception_date": "Oct 10, 2011",
-    "offer": "108.6059",
-    "repurchase": "105.5656",
+    "offer": "105.5075",
+    "repurchase": "102.5539",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.25",
-    "ter_ytd": "0.12",
+    "ter_ytd": "0.13",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.4,
+    "screener_score": 67.3,
     "dividends": [
       {
-        "date": "105.5656",
+        "date": "102.5539",
         "payout_per_unit": "Oct 10, 2011",
-        "ex_nav": "108.6059"
+        "ex_nav": "105.5075"
       }
     ]
   },
@@ -8178,7 +8178,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.9,
+    "screener_score": 75.2,
     "dividends": [
       {
         "date": "238.1946",
@@ -8224,7 +8224,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 82.8,
+    "screener_score": 82.9,
     "dividends": [
       {
         "date": "346.1778",
@@ -8256,13 +8256,13 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Aug 20, 2010",
-    "offer": "42.1738",
-    "repurchase": "40.7673",
+    "offer": "40.7707",
+    "repurchase": "39.4110",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "2.79",
+    "management_fee": "2.78",
     "ter_ytd": "3.76",
     "sm_fee": "0.00",
     "is_shariah": false,
@@ -8270,12 +8270,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 80.1,
+    "screener_score": 80.2,
     "dividends": [
       {
-        "date": "40.7673",
+        "date": "39.4110",
         "payout_per_unit": "Aug 20, 2010",
-        "ex_nav": "42.1738"
+        "ex_nav": "40.7707"
       }
     ]
   },
@@ -8362,7 +8362,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 62.6,
+    "screener_score": 62.8,
     "dividends": [
       {
         "date": "40.5753",
@@ -8408,7 +8408,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 65.3,
+    "screener_score": 65.6,
     "dividends": [
       {
         "date": "304.4845",
@@ -8454,7 +8454,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 75.8,
+    "screener_score": 76.1,
     "dividends": [
       {
         "date": "125.9511",
@@ -8546,7 +8546,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.7,
+    "screener_score": 63.9,
     "dividends": [
       {
         "date": "100.6090",
@@ -8638,7 +8638,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 52.8,
+    "screener_score": 53.1,
     "dividends": [
       {
         "date": "100.6334",
@@ -8684,7 +8684,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.5,
+    "screener_score": 29.4,
     "dividends": [
       {
         "date": "146.0800",
@@ -8730,7 +8730,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.4,
+    "screener_score": 76.6,
     "dividends": [
       {
         "date": "40.0000",
@@ -8791,25 +8791,25 @@
     "fund_name": "ABL Islamic Money Market Plan I",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "10.0608",
+    "validity_date": "Jul 15, 2026",
+    "nav": "10.0637",
     "returns": {
-      "mtd": "10.90",
-      "ytd": "10.90",
-      "1d": "11.61",
+      "mtd": "10.87",
+      "ytd": "10.87",
+      "1d": "10.51",
       "15d": "11.13",
-      "30d": "11.29",
-      "90d": "10.69",
-      "180d": "10.21",
-      "270d": "10.25",
+      "30d": "11.32",
+      "90d": "10.71",
+      "180d": "10.22",
+      "270d": "10.24",
       "365d": "10.37",
-      "2y": "12.71",
+      "2y": "12.70",
       "3y": "N/A"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Dec 22, 2023",
-    "offer": "10.2942",
-    "repurchase": "10.0608",
+    "offer": "10.2972",
+    "repurchase": "10.0637",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -8822,12 +8822,12 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.1,
+    "screener_score": 33.2,
     "dividends": [
       {
-        "date": "10.0608",
+        "date": "10.0637",
         "payout_per_unit": "Dec 22, 2023",
-        "ex_nav": "10.2942"
+        "ex_nav": "10.2972"
       }
     ]
   },
@@ -8868,7 +8868,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.4,
+    "screener_score": 46.6,
     "dividends": [
       {
         "date": "50.5244",
@@ -8929,25 +8929,25 @@
     "fund_name": "Al Ameen Islamic Cash Plan I",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "100.9173",
+    "validity_date": "Jul 15, 2026",
+    "nav": "100.9464",
     "returns": {
-      "mtd": "10.53",
-      "ytd": "10.53",
-      "1d": "10.29",
-      "15d": "N/A",
-      "30d": "11.23",
-      "90d": "10.86",
+      "mtd": "10.54",
+      "ytd": "10.54",
+      "1d": "10.51",
+      "15d": "10.53",
+      "30d": "11.24",
+      "90d": "10.87",
       "180d": "10.45",
       "270d": "10.60",
-      "365d": "10.56",
-      "2y": "12.88",
-      "3y": "17.75"
+      "365d": "10.57",
+      "2y": "12.86",
+      "3y": "17.74"
     },
     "amc": "UBL Fund Managers Limited",
     "inception_date": "May 29, 2020",
-    "offer": "100.9173",
-    "repurchase": "100.9173",
+    "offer": "100.9464",
+    "repurchase": "100.9464",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -8963,9 +8963,9 @@
     "screener_score": 42.5,
     "dividends": [
       {
-        "date": "100.9173",
+        "date": "100.9464",
         "payout_per_unit": "May 29, 2020",
-        "ex_nav": "100.9173"
+        "ex_nav": "100.9464"
       }
     ]
   },
@@ -8992,14 +8992,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Dec 20, 2021",
-    "offer": "104.3883",
-    "repurchase": "101.3479",
+    "offer": "104.4184",
+    "repurchase": "101.3771",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.83",
-    "ter_ytd": "1.11",
+    "management_fee": "0.77",
+    "ter_ytd": "1.04",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
@@ -9009,9 +9009,9 @@
     "screener_score": 34.2,
     "dividends": [
       {
-        "date": "101.3479",
+        "date": "101.3771",
         "payout_per_unit": "Dec 20, 2021",
-        "ex_nav": "104.3883"
+        "ex_nav": "104.4184"
       }
     ]
   },
@@ -9038,8 +9038,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Mar 05, 2026",
-    "offer": "103.6672",
-    "repurchase": "100.6478",
+    "offer": "103.6957",
+    "repurchase": "100.6754",
     "front_end_load": "3",
     "back_end_load": "3",
     "contingent_load": "3",
@@ -9055,9 +9055,9 @@
     "screener_score": 2.3,
     "dividends": [
       {
-        "date": "100.6478",
+        "date": "100.6754",
         "payout_per_unit": "Mar 05, 2026",
-        "ex_nav": "103.6672"
+        "ex_nav": "103.6957"
       }
     ]
   },
@@ -9144,7 +9144,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.1,
+    "screener_score": 19.0,
     "dividends": [
       {
         "date": "100.8366",
@@ -9190,7 +9190,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.1,
+    "screener_score": 40.2,
     "dividends": [
       {
         "date": "101.0385",
@@ -9205,20 +9205,20 @@
     "fund_name": "Alhamra Islamic Money Market Fund",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
+    "validity_date": "Jul 15, 2026",
     "nav": "99.5100",
     "returns": {
-      "mtd": "12.80",
-      "ytd": "12.80",
-      "1d": "10.84",
-      "15d": "12.97",
-      "30d": "11.05",
-      "90d": "9.80",
-      "180d": "9.31",
-      "270d": "9.47",
-      "365d": "9.73",
-      "2y": "12.20",
-      "3y": "17.13"
+      "mtd": "12.27",
+      "ytd": "12.27",
+      "1d": "5.33",
+      "15d": "12.73",
+      "30d": "10.94",
+      "90d": "9.77",
+      "180d": "9.28",
+      "270d": "9.45",
+      "365d": "9.71",
+      "2y": "12.18",
+      "3y": "17.11"
     },
     "amc": "MCB Investment Management Limited",
     "inception_date": "Aug 20, 2020",
@@ -9228,15 +9228,15 @@
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.25",
-    "ter_ytd": "1.71",
+    "management_fee": "1.24",
+    "ter_ytd": "1.73",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 26.0,
+    "screener_score": 25.9,
     "dividends": [
       {
         "date": "99.5100",
@@ -9282,7 +9282,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.9,
+    "screener_score": 32.0,
     "dividends": [
       {
         "date": "505.6535",
@@ -9328,7 +9328,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.9,
+    "screener_score": 44.8,
     "dividends": [
       {
         "date": "509.3112",
@@ -9360,14 +9360,14 @@
     },
     "amc": "AWT Investments Limited",
     "inception_date": "Feb 26, 2025",
-    "offer": "118.4164",
-    "repurchase": "118.4164",
+    "offer": "118.4502",
+    "repurchase": "118.4502",
     "front_end_load": "0.5",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "0.51",
+    "ter_ytd": "0.56",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
@@ -9377,9 +9377,9 @@
     "screener_score": 39.1,
     "dividends": [
       {
-        "date": "118.4164",
+        "date": "118.4502",
         "payout_per_unit": "Feb 26, 2025",
-        "ex_nav": "118.4164"
+        "ex_nav": "118.4502"
       }
     ]
   },
@@ -9435,43 +9435,43 @@
     "fund_name": "Faysal Halal Amdani Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "102.5249",
+    "validity_date": "Jul 15, 2026",
+    "nav": "102.5558",
     "returns": {
-      "mtd": "9.64",
-      "ytd": "9.64",
-      "1d": "7.74",
-      "15d": "10.02",
-      "30d": "10.36",
-      "90d": "9.50",
-      "180d": "9.20",
-      "270d": "9.21",
-      "365d": "9.29",
-      "2y": "11.60",
-      "3y": "16.65"
+      "mtd": "9.75",
+      "ytd": "9.75",
+      "1d": "10.99",
+      "15d": "10.04",
+      "30d": "10.45",
+      "90d": "9.53",
+      "180d": "9.21",
+      "270d": "9.22",
+      "365d": "9.30",
+      "2y": "11.58",
+      "3y": "16.64"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Oct 10, 2019",
-    "offer": "104.8830",
-    "repurchase": "102.5249",
+    "offer": "104.9146",
+    "repurchase": "102.5558",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.25",
-    "ter_ytd": "1.48",
+    "ter_ytd": "1.49",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.3,
+    "screener_score": 19.2,
     "dividends": [
       {
-        "date": "102.5249",
+        "date": "102.5558",
         "payout_per_unit": "Oct 10, 2019",
-        "ex_nav": "104.8830"
+        "ex_nav": "104.9146"
       }
     ]
   },
@@ -9481,43 +9481,43 @@
     "fund_name": "Faysal Islamic Cash Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "100.9111",
+    "validity_date": "Jul 15, 2026",
+    "nav": "100.9398",
     "returns": {
-      "mtd": "10.23",
-      "ytd": "10.23",
-      "1d": "8.94",
-      "15d": "10.51",
-      "30d": "10.68",
-      "90d": "9.64",
-      "180d": "9.33",
+      "mtd": "10.24",
+      "ytd": "10.24",
+      "1d": "10.37",
+      "15d": "10.62",
+      "30d": "10.78",
+      "90d": "9.66",
+      "180d": "9.34",
       "270d": "9.30",
       "365d": "9.36",
-      "2y": "12.14",
-      "3y": "17.31"
+      "2y": "12.12",
+      "3y": "17.30"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Aug 11, 2020",
-    "offer": "103.2320",
-    "repurchase": "100.9111",
+    "offer": "103.2614",
+    "repurchase": "100.9398",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.25",
-    "ter_ytd": "1.60",
+    "ter_ytd": "1.50",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.4,
+    "screener_score": 22.3,
     "dividends": [
       {
-        "date": "100.9111",
+        "date": "100.9398",
         "payout_per_unit": "Aug 11, 2020",
-        "ex_nav": "103.2320"
+        "ex_nav": "103.2614"
       }
     ]
   },
@@ -9604,7 +9604,7 @@
     "major_category": "Money Market",
     "total_load": 2.0,
     "is_ter_estimated": false,
-    "screener_score": 18.3,
+    "screener_score": 18.2,
     "dividends": [
       {
         "date": "101.2898",
@@ -9619,25 +9619,25 @@
     "fund_name": "JS Islamic Money Market Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "104.5346",
+    "validity_date": "Jul 15, 2026",
+    "nav": "104.5621",
     "returns": {
-      "mtd": "10.01",
-      "ytd": "10.01",
-      "1d": "9.42",
-      "15d": "10.13",
-      "30d": "10.26",
+      "mtd": "9.99",
+      "ytd": "9.99",
+      "1d": "9.60",
+      "15d": "10.07",
+      "30d": "10.24",
       "90d": "10.11",
       "180d": "9.77",
       "270d": "9.85",
       "365d": "10.09",
-      "2y": "12.59",
-      "3y": "17.39"
+      "2y": "12.58",
+      "3y": "17.38"
     },
     "amc": "JS Investments Limited",
     "inception_date": "Sep 03, 2020",
-    "offer": "105.7400",
-    "repurchase": "104.5346",
+    "offer": "105.7700",
+    "repurchase": "104.5621",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -9650,12 +9650,12 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.8,
+    "screener_score": 32.0,
     "dividends": [
       {
-        "date": "104.5346",
+        "date": "104.5621",
         "payout_per_unit": "Sep 03, 2020",
-        "ex_nav": "105.7400"
+        "ex_nav": "105.7700"
       }
     ]
   },
@@ -9689,14 +9689,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "0.83",
+    "ter_ytd": "0.82",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 36.0,
+    "screener_score": 36.2,
     "dividends": [
       {
         "date": "101.5387",
@@ -9803,43 +9803,43 @@
     "fund_name": "Mahaana Islamic Cash Fund",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "107.5761",
+    "validity_date": "Jul 15, 2026",
+    "nav": "107.5987",
     "returns": {
-      "mtd": "10.38",
-      "ytd": "10.38",
-      "1d": "6.02",
-      "15d": "11.82",
-      "30d": "10.72",
-      "90d": "10.27",
-      "180d": "9.88",
-      "270d": "10.03",
-      "365d": "10.22",
-      "2y": "12.52",
-      "3y": "18.09"
+      "mtd": "10.19",
+      "ytd": "10.19",
+      "1d": "7.67",
+      "15d": "11.66",
+      "30d": "10.71",
+      "90d": "10.25",
+      "180d": "9.86",
+      "270d": "10.00",
+      "365d": "10.20",
+      "2y": "12.50",
+      "3y": "18.08"
     },
     "amc": "Mahaana Wealth Limited",
     "inception_date": "Mar 29, 2023",
-    "offer": "107.5761",
-    "repurchase": "107.5761",
+    "offer": "107.5987",
+    "repurchase": "107.5987",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.60",
-    "ter_ytd": "0.81",
+    "ter_ytd": "0.82",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.3,
+    "screener_score": 38.0,
     "dividends": [
       {
-        "date": "107.5761",
+        "date": "107.5987",
         "payout_per_unit": "Mar 29, 2023",
-        "ex_nav": "107.5761"
+        "ex_nav": "107.5987"
       }
     ]
   },
@@ -9880,7 +9880,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 22.8,
+    "screener_score": 22.7,
     "dividends": [
       {
         "date": "51.7987",
@@ -9972,7 +9972,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 23.0,
+    "screener_score": 22.8,
     "dividends": [
       {
         "date": "50.0000",
@@ -10050,8 +10050,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Feb 28, 2018",
-    "offer": "10.3541",
-    "repurchase": "10.2364",
+    "offer": "10.3572",
+    "repurchase": "10.2394",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -10064,12 +10064,12 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.5,
+    "screener_score": 38.6,
     "dividends": [
       {
-        "date": "10.2364",
+        "date": "10.2394",
         "payout_per_unit": "Feb 28, 2018",
-        "ex_nav": "10.3541"
+        "ex_nav": "10.3572"
       }
     ]
   },
@@ -10217,20 +10217,20 @@
     "fund_name": "Pak Qatar Daily Dividend Plan",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
+    "validity_date": "Jul 15, 2026",
     "nav": "100.0000",
     "returns": {
-      "mtd": "15.12",
-      "ytd": "15.12",
-      "1d": "10.22",
-      "15d": "14.86",
-      "30d": "13.26",
-      "90d": "11.67",
-      "180d": "10.77",
-      "270d": "10.80",
-      "365d": "10.70",
-      "2y": "12.67",
-      "3y": "17.60"
+      "mtd": "16.01",
+      "ytd": "16.01",
+      "1d": "28.36",
+      "15d": "16.01",
+      "30d": "13.85",
+      "90d": "11.88",
+      "180d": "10.88",
+      "270d": "10.88",
+      "365d": "10.75",
+      "2y": "12.69",
+      "3y": "17.61"
     },
     "amc": "Pak-Qatar Asset Management Company Limited",
     "inception_date": "Oct 03, 2022",
@@ -10248,7 +10248,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.4,
+    "screener_score": 44.2,
     "dividends": [
       {
         "date": "100.0000",
@@ -10294,7 +10294,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.1,
+    "screener_score": 19.0,
     "dividends": [
       {
         "date": "100.9236",
@@ -10340,7 +10340,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.2,
+    "screener_score": 14.3,
     "dividends": [
       {
         "date": "10.3441",
@@ -10386,7 +10386,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.4,
+    "screener_score": 9.3,
     "dividends": [
       {
         "date": "10.0780",
@@ -10432,7 +10432,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.7,
+    "screener_score": 22.5,
     "dividends": [
       {
         "date": "53.0000",
@@ -10447,43 +10447,43 @@
     "fund_name": "Al Ameen Islamic Income Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "100.8406",
+    "validity_date": "Jul 14, 2026",
+    "nav": "100.8720",
     "returns": {
-      "mtd": "11.09",
-      "ytd": "11.09",
-      "1d": "10.88",
+      "mtd": "11.11",
+      "ytd": "11.11",
+      "1d": "11.35",
       "15d": "11.20",
       "30d": "11.49",
-      "90d": "10.76",
-      "180d": "9.42",
-      "270d": "9.47",
-      "365d": "9.17",
-      "2y": "13.41",
-      "3y": "17.16"
+      "90d": "10.80",
+      "180d": "9.34",
+      "270d": "9.50",
+      "365d": "9.22",
+      "2y": "13.40",
+      "3y": "17.15"
     },
     "amc": "UBL Fund Managers Limited",
     "inception_date": "May 29, 2023",
-    "offer": "102.5801",
-    "repurchase": "100.8406",
+    "offer": "102.6120",
+    "repurchase": "100.8720",
     "front_end_load": "1.5",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "N/A",
     "management_fee": "0.00",
-    "ter_ytd": "0.04",
+    "ter_ytd": "0.05",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 19.3,
+    "screener_score": 19.7,
     "dividends": [
       {
-        "date": "100.8406",
+        "date": "100.8720",
         "payout_per_unit": "May 29, 2023",
-        "ex_nav": "102.5801"
+        "ex_nav": "102.6120"
       }
     ]
   },
@@ -10524,7 +10524,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 13.4,
+    "screener_score": 13.2,
     "dividends": [
       {
         "date": "102.7096",
@@ -10556,26 +10556,26 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jan 23, 2017",
-    "offer": "105.7258",
-    "repurchase": "102.6464",
+    "offer": "105.6139",
+    "repurchase": "102.5378",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.50",
-    "ter_ytd": "1.89",
+    "management_fee": "0.00",
+    "ter_ytd": "0.17",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.6,
+    "screener_score": 19.4,
     "dividends": [
       {
-        "date": "102.6464",
+        "date": "102.5378",
         "payout_per_unit": "Jan 23, 2017",
-        "ex_nav": "105.7258"
+        "ex_nav": "105.6139"
       }
     ]
   },
@@ -10602,26 +10602,26 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Dec 20, 2021",
-    "offer": "104.4868",
-    "repurchase": "101.4435",
+    "offer": "104.4559",
+    "repurchase": "101.4135",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.29",
-    "ter_ytd": "0.51",
+    "management_fee": "0.00",
+    "ter_ytd": "0.17",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.2,
+    "screener_score": 21.1,
     "dividends": [
       {
-        "date": "101.4435",
+        "date": "101.4135",
         "payout_per_unit": "Dec 20, 2021",
-        "ex_nav": "104.4868"
+        "ex_nav": "104.4559"
       }
     ]
   },
@@ -10662,7 +10662,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.4,
+    "screener_score": 12.3,
     "dividends": [
       {
         "date": "104.2501",
@@ -10708,7 +10708,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.2,
+    "screener_score": 8.1,
     "dividends": [
       {
         "date": "99.6129",
@@ -10754,7 +10754,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.7,
+    "screener_score": 9.6,
     "dividends": [
       {
         "date": "111.4593",
@@ -10800,7 +10800,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.3,
+    "screener_score": 10.1,
     "dividends": [
       {
         "date": "101.7011",
@@ -10815,19 +10815,19 @@
     "fund_name": "Alhamra Daily Dividend Fund",
     "rating": "AA-(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
+    "validity_date": "Jul 15, 2026",
     "nav": "100.0000",
     "returns": {
-      "mtd": "10.57",
-      "ytd": "10.57",
-      "1d": "10.44",
-      "15d": "10.75",
-      "30d": "9.26",
-      "90d": "9.33",
-      "180d": "9.03",
+      "mtd": "10.54",
+      "ytd": "10.54",
+      "1d": "10.22",
+      "15d": "10.60",
+      "30d": "9.25",
+      "90d": "9.36",
+      "180d": "9.04",
       "270d": "9.14",
-      "365d": "9.33",
-      "2y": "11.68",
+      "365d": "9.34",
+      "2y": "11.67",
       "3y": "16.44"
     },
     "amc": "MCB Investment Management Limited",
@@ -10838,8 +10838,8 @@
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "0.83",
-    "ter_ytd": "1.20",
+    "management_fee": "0.85",
+    "ter_ytd": "1.19",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -10892,7 +10892,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 13.7,
+    "screener_score": 13.4,
     "dividends": [
       {
         "date": "103.1489",
@@ -10938,7 +10938,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.3,
+    "screener_score": 17.4,
     "dividends": [
       {
         "date": "106.7365",
@@ -11062,8 +11062,8 @@
     },
     "amc": "AWT Investments Limited",
     "inception_date": "Mar 04, 2014",
-    "offer": "108.6805",
-    "repurchase": "106.2370",
+    "offer": "108.7062",
+    "repurchase": "106.2622",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -11076,12 +11076,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.1,
+    "screener_score": 37.2,
     "dividends": [
       {
-        "date": "106.2370",
+        "date": "106.2622",
         "payout_per_unit": "Mar 04, 2014",
-        "ex_nav": "108.6805"
+        "ex_nav": "108.7062"
       }
     ]
   },
@@ -11122,7 +11122,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.4,
+    "screener_score": 30.5,
     "dividends": [
       {
         "date": "100.5220",
@@ -11214,7 +11214,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.4,
+    "screener_score": 10.2,
     "dividends": [
       {
         "date": "106.2144",
@@ -11260,7 +11260,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.2,
+    "screener_score": 10.0,
     "dividends": [
       {
         "date": "101.3185",
@@ -11306,7 +11306,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.4,
+    "screener_score": 8.3,
     "dividends": [
       {
         "date": "101.1041",
@@ -11321,43 +11321,43 @@
     "fund_name": "Faysal Islamic Special Income Plan I",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 14, 2026",
-    "nav": "10.1737",
+    "validity_date": "Jul 15, 2026",
+    "nav": "10.1718",
     "returns": {
-      "mtd": "11.72",
-      "ytd": "11.72",
-      "1d": "8.98",
-      "15d": "16.57",
-      "30d": "15.19",
-      "90d": "9.10",
-      "180d": "7.66",
-      "270d": "8.81",
-      "365d": "8.99",
-      "2y": "12.03",
-      "3y": "16.00"
+      "mtd": "10.40",
+      "ytd": "10.40",
+      "1d": "-6.83",
+      "15d": "15.38",
+      "30d": "14.70",
+      "90d": "8.87",
+      "180d": "7.58",
+      "270d": "8.75",
+      "365d": "9.00",
+      "2y": "11.99",
+      "3y": "15.99"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jun 20, 2022",
-    "offer": "10.4077",
-    "repurchase": "10.1737",
+    "offer": "10.4057",
+    "repurchase": "10.1718",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "2.67",
+    "ter_ytd": "2.69",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 15.7,
+    "screener_score": 15.6,
     "dividends": [
       {
-        "date": "10.1737",
+        "date": "10.1718",
         "payout_per_unit": "Jun 20, 2022",
-        "ex_nav": "10.4077"
+        "ex_nav": "10.4057"
       }
     ]
   },
@@ -11398,7 +11398,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.5,
+    "screener_score": 36.6,
     "dividends": [
       {
         "date": "105.3657",
@@ -11490,7 +11490,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.3,
+    "screener_score": 9.2,
     "dividends": [
       {
         "date": "107.3783",
@@ -11536,7 +11536,7 @@
     "major_category": "Income",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 31.6,
+    "screener_score": 31.7,
     "dividends": [
       {
         "date": "100.6978",
@@ -11575,7 +11575,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.15",
-    "ter_ytd": "1.61",
+    "ter_ytd": "1.62",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -11621,14 +11621,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "1.96",
+    "ter_ytd": "1.97",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 18.6,
+    "screener_score": 18.5,
     "dividends": [
       {
         "date": "50.0000",
@@ -11667,7 +11667,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.80",
-    "ter_ytd": "1.26",
+    "ter_ytd": "1.27",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -11720,7 +11720,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.4,
+    "screener_score": 12.6,
     "dividends": [
       {
         "date": "50.8222",
@@ -11759,14 +11759,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "1.96",
+    "ter_ytd": "1.97",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 14.2,
+    "screener_score": 13.9,
     "dividends": [
       {
         "date": "50.7378",
@@ -11781,12 +11781,12 @@
     "fund_name": "Meezan Government Securities Fund Plan I",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "50.2979",
+    "validity_date": "Jul 14, 2026",
+    "nav": "50.3547",
     "returns": {
-      "mtd": "21.75",
-      "ytd": "21.75",
-      "1d": "32.89",
+      "mtd": "23.54",
+      "ytd": "23.54",
+      "1d": "41.21",
       "15d": "N/A",
       "30d": "N/A",
       "90d": "N/A",
@@ -11798,14 +11798,14 @@
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Jul 03, 2026",
-    "offer": "50.8763",
-    "repurchase": "50.2979",
+    "offer": "50.9337",
+    "repurchase": "50.3547",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "1.91",
+    "ter_ytd": "1.93",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -11815,9 +11815,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "50.2979",
+        "date": "50.3547",
         "payout_per_unit": "Jul 03, 2026",
-        "ex_nav": "50.8763"
+        "ex_nav": "50.9337"
       }
     ]
   },
@@ -11851,14 +11851,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "1.96",
+    "ter_ytd": "1.97",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 14.9,
+    "screener_score": 14.7,
     "dividends": [
       {
         "date": "52.1325",
@@ -11897,14 +11897,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "1.96",
+    "ter_ytd": "1.91",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
-    "is_ter_estimated": true,
-    "screener_score": 12.5,
+    "is_ter_estimated": false,
+    "screener_score": 12.3,
     "dividends": [
       {
         "date": "52.7314",
@@ -11936,26 +11936,26 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 19, 2024",
-    "offer": "10.4876",
-    "repurchase": "10.1378",
+    "offer": "10.4843",
+    "repurchase": "10.1347",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.18",
-    "ter_ytd": "1.89",
+    "ter_ytd": "1.88",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.7,
+    "screener_score": 8.5,
     "dividends": [
       {
-        "date": "10.1378",
+        "date": "10.1347",
         "payout_per_unit": "Jan 19, 2024",
-        "ex_nav": "10.4876"
+        "ex_nav": "10.4843"
       }
     ]
   },
@@ -11982,26 +11982,26 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Aug 14, 2020",
-    "offer": "10.3108",
-    "repurchase": "10.1936",
+    "offer": "10.3143",
+    "repurchase": "10.1970",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.42",
-    "ter_ytd": "1.85",
+    "ter_ytd": "1.84",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 13.5,
+    "screener_score": 13.4,
     "dividends": [
       {
-        "date": "10.1936",
+        "date": "10.1970",
         "payout_per_unit": "Aug 14, 2020",
-        "ex_nav": "10.3108"
+        "ex_nav": "10.3143"
       }
     ]
   },
@@ -12028,8 +12028,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Oct 08, 2018",
-    "offer": "10.3099",
-    "repurchase": "10.1927",
+    "offer": "10.3130",
+    "repurchase": "10.1957",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -12042,12 +12042,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.4,
+    "screener_score": 19.2,
     "dividends": [
       {
-        "date": "10.1927",
+        "date": "10.1957",
         "payout_per_unit": "Oct 08, 2018",
-        "ex_nav": "10.3099"
+        "ex_nav": "10.3130"
       }
     ]
   },
@@ -12074,8 +12074,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Oct 29, 2007",
-    "offer": "9.9865",
-    "repurchase": "9.6535",
+    "offer": "9.9892",
+    "repurchase": "9.6561",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -12088,12 +12088,12 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.8,
+    "screener_score": 19.7,
     "dividends": [
       {
-        "date": "9.6535",
+        "date": "9.6561",
         "payout_per_unit": "Oct 29, 2007",
-        "ex_nav": "9.9865"
+        "ex_nav": "9.9892"
       }
     ]
   },
@@ -12120,8 +12120,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Aug 20, 2010",
-    "offer": "10.5405",
-    "repurchase": "10.4207",
+    "offer": "10.5435",
+    "repurchase": "10.4236",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -12137,9 +12137,9 @@
     "screener_score": 26.4,
     "dividends": [
       {
-        "date": "10.4207",
+        "date": "10.4236",
         "payout_per_unit": "Aug 20, 2010",
-        "ex_nav": "10.5405"
+        "ex_nav": "10.5435"
       }
     ]
   },
@@ -12180,7 +12180,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 28.3,
+    "screener_score": 28.2,
     "dividends": [
       {
         "date": "9.7494",
@@ -12226,7 +12226,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 7.5,
+    "screener_score": 7.3,
     "dividends": [
       {
         "date": "53.6936",
@@ -12364,7 +12364,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.7,
+    "screener_score": 63.8,
     "dividends": [
       {
         "date": "31.9374",
@@ -12410,7 +12410,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 64.7,
+    "screener_score": 64.8,
     "dividends": [
       {
         "date": "107.0000",
@@ -12456,7 +12456,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 73.2,
+    "screener_score": 73.4,
     "dividends": [
       {
         "date": "319.3496",
@@ -12502,7 +12502,7 @@
     "major_category": "Stock",
     "total_load": 2.5,
     "is_ter_estimated": false,
-    "screener_score": 73.5,
+    "screener_score": 73.8,
     "dividends": [
       {
         "date": "476.1800",
@@ -12534,26 +12534,26 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Nov 09, 2012",
-    "offer": "172.1830",
-    "repurchase": "168.8069",
+    "offer": "164.9163",
+    "repurchase": "161.6826",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.72",
+    "ter_ytd": "5.37",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.5,
+    "screener_score": 73.8,
     "dividends": [
       {
-        "date": "168.8069",
+        "date": "161.6826",
         "payout_per_unit": "Nov 09, 2012",
-        "ex_nav": "172.1830"
+        "ex_nav": "164.9163"
       }
     ]
   },
@@ -12587,14 +12587,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.47",
+    "ter_ytd": "3.96",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
-    "is_ter_estimated": true,
-    "screener_score": 67.7,
+    "is_ter_estimated": false,
+    "screener_score": 67.8,
     "dividends": [
       {
         "date": "48.9161",
@@ -12640,7 +12640,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.8,
+    "screener_score": 67.0,
     "dividends": [
       {
         "date": "71.4665",
@@ -12732,7 +12732,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 71.3,
+    "screener_score": 71.6,
     "dividends": [
       {
         "date": "29.8800",
@@ -12778,7 +12778,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.8,
+    "screener_score": 57.9,
     "dividends": [
       {
         "date": "211.9590",
@@ -12916,7 +12916,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.9,
+    "screener_score": 68.0,
     "dividends": [
       {
         "date": "1521.5730",
@@ -12948,26 +12948,26 @@
     },
     "amc": "AWT Investments Limited",
     "inception_date": "Mar 04, 2014",
-    "offer": "193.7353",
-    "repurchase": "189.3796",
+    "offer": "186.6529",
+    "repurchase": "182.4564",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "3.89",
+    "ter_ytd": "3.93",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.9,
+    "screener_score": 71.2,
     "dividends": [
       {
-        "date": "189.3796",
+        "date": "182.4564",
         "payout_per_unit": "Mar 04, 2014",
-        "ex_nav": "193.7353"
+        "ex_nav": "186.6529"
       }
     ]
   },
@@ -13008,7 +13008,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 65.7,
+    "screener_score": 65.8,
     "dividends": [
       {
         "date": "118.7261",
@@ -13054,7 +13054,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.9,
+    "screener_score": 54.3,
     "dividends": [
       {
         "date": "132.9248",
@@ -13100,7 +13100,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.4,
+    "screener_score": 69.6,
     "dividends": [
       {
         "date": "200.3773",
@@ -13192,7 +13192,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.1,
+    "screener_score": 27.0,
     "dividends": [
       {
         "date": "242.0800",
@@ -13330,7 +13330,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 47.8,
+    "screener_score": 48.1,
     "dividends": [
       {
         "date": "131.0000",
@@ -13369,14 +13369,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.47",
+    "ter_ytd": "4.46",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 68.8,
+    "screener_score": 69.0,
     "dividends": [
       {
         "date": "60.1034",
@@ -13415,14 +13415,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.47",
+    "ter_ytd": "4.46",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 69.2,
+    "screener_score": 69.5,
     "dividends": [
       {
         "date": "161.1499",
@@ -13454,26 +13454,26 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Apr 21, 2016",
-    "offer": "22.8798",
-    "repurchase": "22.1168",
+    "offer": "22.0865",
+    "repurchase": "21.3499",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.39",
+    "ter_ytd": "4.41",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.4,
+    "screener_score": 79.5,
     "dividends": [
       {
-        "date": "22.1168",
+        "date": "21.3499",
         "payout_per_unit": "Apr 21, 2016",
-        "ex_nav": "22.8798"
+        "ex_nav": "22.0865"
       }
     ]
   },
@@ -13500,26 +13500,26 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 12, 2015",
-    "offer": "26.1077",
-    "repurchase": "25.2370",
+    "offer": "25.1749",
+    "repurchase": "24.3353",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.20",
+    "ter_ytd": "4.19",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 77.1,
+    "screener_score": 77.3,
     "dividends": [
       {
-        "date": "25.2370",
+        "date": "24.3353",
         "payout_per_unit": "Jan 12, 2015",
-        "ex_nav": "26.1077"
+        "ex_nav": "25.1749"
       }
     ]
   },
@@ -13560,7 +13560,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.0,
+    "screener_score": 68.3,
     "dividends": [
       {
         "date": "18.8000",
@@ -13606,7 +13606,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 64.6,
+    "screener_score": 64.8,
     "dividends": [
       {
         "date": "211.4530",
@@ -13737,7 +13737,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.74",
-    "ter_ytd": "2.20",
+    "ter_ytd": "2.21",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -13776,13 +13776,13 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Sep 25, 2025",
-    "offer": "10.0189",
-    "repurchase": "10.0189",
+    "offer": "9.9893",
+    "repurchase": "9.9893",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.64",
+    "management_fee": "1.63",
     "ter_ytd": "2.23",
     "sm_fee": "0.00",
     "is_shariah": true,
@@ -13793,9 +13793,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "10.0189",
+        "date": "9.9893",
         "payout_per_unit": "Sep 25, 2025",
-        "ex_nav": "10.0189"
+        "ex_nav": "9.9893"
       }
     ]
   },
@@ -13822,13 +13822,13 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Dec 19, 2025",
-    "offer": "10.3573",
-    "repurchase": "10.0119",
+    "offer": "10.3277",
+    "repurchase": "9.9833",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.64",
+    "management_fee": "1.63",
     "ter_ytd": "2.25",
     "sm_fee": "0.00",
     "is_shariah": true,
@@ -13839,9 +13839,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "10.0119",
+        "date": "9.9833",
         "payout_per_unit": "Dec 19, 2025",
-        "ex_nav": "10.3573"
+        "ex_nav": "10.3277"
       }
     ]
   },
@@ -13868,14 +13868,14 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 26, 2026",
-    "offer": "10.3514",
-    "repurchase": "10.0062",
+    "offer": "10.3210",
+    "repurchase": "9.9768",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.63",
-    "ter_ytd": "2.21",
+    "ter_ytd": "2.20",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -13885,9 +13885,9 @@
     "screener_score": 2.6,
     "dividends": [
       {
-        "date": "10.0062",
+        "date": "9.9768",
         "payout_per_unit": "Jan 26, 2026",
-        "ex_nav": "10.3514"
+        "ex_nav": "10.3210"
       }
     ]
   },
@@ -13914,13 +13914,13 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Feb 23, 2026",
-    "offer": "10.4235",
-    "repurchase": "10.0759",
+    "offer": "10.3951",
+    "repurchase": "10.0484",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "1.63",
+    "management_fee": "1.62",
     "ter_ytd": "2.32",
     "sm_fee": "0.00",
     "is_shariah": true,
@@ -13931,9 +13931,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "10.0759",
+        "date": "10.0484",
         "payout_per_unit": "Feb 23, 2026",
-        "ex_nav": "10.4235"
+        "ex_nav": "10.3951"
       }
     ]
   },
@@ -13960,8 +13960,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jun 12, 2026",
-    "offer": "10.3654",
-    "repurchase": "10.0197",
+    "offer": "10.3451",
+    "repurchase": "10.0001",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -13977,9 +13977,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "10.0197",
+        "date": "10.0001",
         "payout_per_unit": "Jun 12, 2026",
-        "ex_nav": "10.3654"
+        "ex_nav": "10.3451"
       }
     ]
   },
@@ -14006,8 +14006,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 19, 2026",
-    "offer": "100.4289",
-    "repurchase": "100.4289",
+    "offer": "100.4582",
+    "repurchase": "100.4582",
     "front_end_load": "3",
     "back_end_load": "3",
     "contingent_load": "0",
@@ -14023,9 +14023,9 @@
     "screener_score": 2.3,
     "dividends": [
       {
-        "date": "100.4289",
+        "date": "100.4582",
         "payout_per_unit": "Jun 19, 2026",
-        "ex_nav": "100.4289"
+        "ex_nav": "100.4582"
       }
     ]
   },
@@ -14657,7 +14657,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.01",
-    "ter_ytd": "0.47",
+    "ter_ytd": "0.48",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14703,7 +14703,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.10",
-    "ter_ytd": "0.56",
+    "ter_ytd": "0.57",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14749,7 +14749,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.10",
-    "ter_ytd": "0.56",
+    "ter_ytd": "0.57",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14795,7 +14795,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.08",
+    "ter_ytd": "1.07",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14841,7 +14841,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.08",
+    "ter_ytd": "1.07",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14887,7 +14887,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.02",
-    "ter_ytd": "0.48",
+    "ter_ytd": "0.49",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -14933,7 +14933,7 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "1.08",
+    "ter_ytd": "1.07",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -15047,25 +15047,25 @@
     "fund_name": "ABL Islamic Financial Planning Fund (Capital Preservation Plan I)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "100.5502",
+    "validity_date": "Jul 14, 2026",
+    "nav": "99.7641",
     "returns": {
-      "mtd": "-0.07",
-      "ytd": "-0.07",
-      "1d": "-0.27",
-      "15d": "-0.01",
-      "30d": "0.53",
-      "90d": "2.16",
-      "180d": "1.51",
-      "270d": "4.76",
-      "365d": "12.13",
-      "2y": "40.90",
-      "3y": "77.41"
+      "mtd": "-0.85",
+      "ytd": "-0.85",
+      "1d": "-0.78",
+      "15d": "-0.50",
+      "30d": "-0.25",
+      "90d": "0.94",
+      "180d": "0.84",
+      "270d": "4.02",
+      "365d": "11.19",
+      "2y": "39.80",
+      "3y": "76.02"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Mar 29, 2019",
     "offer": "0.0000",
-    "repurchase": "100.5502",
+    "repurchase": "99.7641",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -15078,10 +15078,10 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.7,
+    "screener_score": 52.9,
     "dividends": [
       {
-        "date": "100.5502",
+        "date": "99.7641",
         "payout_per_unit": "Mar 29, 2019",
         "ex_nav": "0.0000"
       }
@@ -15093,25 +15093,25 @@
     "fund_name": "Al Ameen Islamic Aggressive Income Fund",
     "rating": "A+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "102.0231",
+    "validity_date": "Jul 14, 2026",
+    "nav": "102.0386",
     "returns": {
-      "mtd": "16.25",
-      "ytd": "16.25",
-      "1d": "9.38",
-      "15d": "20.91",
-      "30d": "18.05",
-      "90d": "10.70",
-      "180d": "8.79",
-      "270d": "9.88",
-      "365d": "9.22",
-      "2y": "18.14",
-      "3y": "22.52"
+      "mtd": "15.48",
+      "ytd": "15.48",
+      "1d": "5.55",
+      "15d": "20.62",
+      "30d": "17.93",
+      "90d": "10.56",
+      "180d": "9.19",
+      "270d": "9.85",
+      "365d": "9.24",
+      "2y": "18.12",
+      "3y": "22.50"
     },
     "amc": "UBL Fund Managers Limited",
     "inception_date": "Oct 20, 2007",
-    "offer": "103.1964",
-    "repurchase": "102.0231",
+    "offer": "103.2120",
+    "repurchase": "102.0386",
     "front_end_load": "1",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -15127,9 +15127,9 @@
     "screener_score": 28.3,
     "dividends": [
       {
-        "date": "102.0231",
+        "date": "102.0386",
         "payout_per_unit": "Oct 20, 2007",
-        "ex_nav": "103.1964"
+        "ex_nav": "103.2120"
       }
     ]
   },
@@ -15170,7 +15170,7 @@
     "major_category": "Income",
     "total_load": 0.25,
     "is_ter_estimated": false,
-    "screener_score": 64.7,
+    "screener_score": 65.0,
     "dividends": [
       {
         "date": "100.4533",
@@ -15262,7 +15262,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 13.3,
+    "screener_score": 13.2,
     "dividends": [
       {
         "date": "101.1247",
@@ -15308,7 +15308,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.2,
+    "screener_score": 17.1,
     "dividends": [
       {
         "date": "100.7772",
@@ -15446,7 +15446,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.6,
+    "screener_score": 19.5,
     "dividends": [
       {
         "date": "9.9966",
@@ -15507,25 +15507,25 @@
     "fund_name": "Alfalah GHP Islamic Value Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "142.2916",
+    "validity_date": "Jul 14, 2026",
+    "nav": "142.3165",
     "returns": {
-      "mtd": "0.42",
-      "ytd": "0.42",
-      "1d": "0.03",
-      "15d": "0.55",
-      "30d": "1.16",
-      "90d": "2.25",
-      "180d": "4.70",
-      "270d": "7.44",
-      "365d": "9.91",
-      "2y": "26.98",
-      "3y": "57.76"
+      "mtd": "0.43",
+      "ytd": "0.43",
+      "1d": "0.02",
+      "15d": "0.53",
+      "30d": "1.15",
+      "90d": "2.30",
+      "180d": "4.73",
+      "270d": "7.45",
+      "365d": "9.95",
+      "2y": "26.93",
+      "3y": "57.79"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Oct 12, 2017",
-    "offer": "145.5643",
-    "repurchase": "142.2916",
+    "offer": "145.5898",
+    "repurchase": "142.3165",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -15538,12 +15538,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.5,
+    "screener_score": 36.7,
     "dividends": [
       {
-        "date": "142.2916",
+        "date": "142.3165",
         "payout_per_unit": "Oct 12, 2017",
-        "ex_nav": "145.5643"
+        "ex_nav": "145.5898"
       }
     ]
   },
@@ -15630,7 +15630,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 64.9,
+    "screener_score": 65.0,
     "dividends": [
       {
         "date": "212.8190",
@@ -15662,14 +15662,14 @@
     },
     "amc": "AWT Investments Limited",
     "inception_date": "Sep 22, 2025",
-    "offer": "179.1086",
-    "repurchase": "175.0817",
+    "offer": "173.4998",
+    "repurchase": "169.5990",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "3.80",
+    "ter_ytd": "4.01",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
@@ -15679,9 +15679,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "175.0817",
+        "date": "169.5990",
         "payout_per_unit": "Sep 22, 2025",
-        "ex_nav": "179.1086"
+        "ex_nav": "173.4998"
       }
     ]
   },
@@ -16090,7 +16090,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.9,
+    "screener_score": 68.2,
     "dividends": [
       {
         "date": "310.0583",
@@ -16136,7 +16136,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.7,
+    "screener_score": 45.8,
     "dividends": [
       {
         "date": "90.5896",
@@ -16228,7 +16228,7 @@
     "major_category": "Assets",
     "total_load": 2.0,
     "is_ter_estimated": true,
-    "screener_score": 52.3,
+    "screener_score": 52.6,
     "dividends": [
       {
         "date": "82.7037",
@@ -16260,13 +16260,13 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Oct 29, 2007",
-    "offer": "36.9108",
-    "repurchase": "35.6798",
+    "offer": "35.6973",
+    "repurchase": "34.5068",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
-    "management_fee": "2.80",
+    "management_fee": "2.81",
     "ter_ytd": "3.73",
     "sm_fee": "0.00",
     "is_shariah": true,
@@ -16274,12 +16274,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.6,
+    "screener_score": 75.0,
     "dividends": [
       {
-        "date": "35.6798",
+        "date": "34.5068",
         "payout_per_unit": "Oct 29, 2007",
-        "ex_nav": "36.9108"
+        "ex_nav": "35.6973"
       }
     ]
   },
@@ -16366,7 +16366,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 11.2,
+    "screener_score": 11.3,
     "dividends": [
       {
         "date": "119.6173",
@@ -16412,7 +16412,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.9,
+    "screener_score": 21.7,
     "dividends": [
       {
         "date": "117.1871",
@@ -16458,7 +16458,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.7,
+    "screener_score": 49.9,
     "dividends": [
       {
         "date": "136.3042",
@@ -16490,8 +16490,8 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Dec 22, 2015",
-    "offer": "85.2326",
-    "repurchase": "83.3000",
+    "offer": "82.4876",
+    "repurchase": "80.6173",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -16507,9 +16507,9 @@
     "screener_score": 59.9,
     "dividends": [
       {
-        "date": "83.3000",
+        "date": "80.6173",
         "payout_per_unit": "Dec 22, 2015",
-        "ex_nav": "85.2326"
+        "ex_nav": "82.4876"
       }
     ]
   },
@@ -16536,8 +16536,8 @@
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Dec 22, 2015",
-    "offer": "118.9626",
-    "repurchase": "116.2652",
+    "offer": "118.9979",
+    "repurchase": "116.2997",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -16550,12 +16550,12 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.6,
+    "screener_score": 32.4,
     "dividends": [
       {
-        "date": "116.2652",
+        "date": "116.2997",
         "payout_per_unit": "Dec 22, 2015",
-        "ex_nav": "118.9626"
+        "ex_nav": "118.9979"
       }
     ]
   },
@@ -16780,7 +16780,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.4,
+    "screener_score": 54.6,
     "dividends": [
       {
         "date": "172.5122",
@@ -16826,7 +16826,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 65.9,
+    "screener_score": 66.1,
     "dividends": [
       {
         "date": "1427.2755",
@@ -17102,7 +17102,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 9.7,
+    "screener_score": 9.9,
     "dividends": [
       {
         "date": "109.3447",
@@ -17148,7 +17148,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 11.9,
+    "screener_score": 11.8,
     "dividends": [
       {
         "date": "109.5605",
@@ -17194,7 +17194,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 67.5,
+    "screener_score": 67.8,
     "dividends": [
       {
         "date": "183.6771",
@@ -17332,7 +17332,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 60.9,
+    "screener_score": 61.0,
     "dividends": [
       {
         "date": "146.3936",
@@ -17378,7 +17378,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 15.8,
+    "screener_score": 15.7,
     "dividends": [
       {
         "date": "52.7285",
@@ -17647,14 +17647,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.75",
-    "ter_ytd": "2.22",
+    "ter_ytd": "1.21",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
-    "is_ter_estimated": true,
-    "screener_score": 73.2,
+    "is_ter_estimated": false,
+    "screener_score": 73.7,
     "dividends": [
       {
         "date": "175.3696",
@@ -17700,7 +17700,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 63.4,
+    "screener_score": 63.5,
     "dividends": [
       {
         "date": "278.8441",
@@ -17732,8 +17732,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "May 04, 2026",
-    "offer": "9.6814",
-    "repurchase": "9.3182",
+    "offer": "9.7772",
+    "repurchase": "9.4104",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -17749,9 +17749,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "9.3182",
+        "date": "9.4104",
         "payout_per_unit": "May 04, 2026",
-        "ex_nav": "9.6814"
+        "ex_nav": "9.7772"
       }
     ]
   },
@@ -17761,43 +17761,43 @@
     "fund_name": "Alfalah GHP Dedicated Equity Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "213.5102",
+    "validity_date": "Jul 14, 2026",
+    "nav": "204.7250",
     "returns": {
-      "mtd": "-0.49",
-      "ytd": "-0.49",
-      "1d": "-1.40",
-      "15d": "-0.87",
-      "30d": "4.20",
-      "90d": "6.57",
-      "180d": "-5.06",
-      "270d": "6.02",
-      "365d": "26.64",
-      "2y": "131.23",
+      "mtd": "-4.59",
+      "ytd": "-4.59",
+      "1d": "-4.11",
+      "15d": "-4.10",
+      "30d": "-0.08",
+      "90d": "0.16",
+      "180d": "-8.54",
+      "270d": "2.20",
+      "365d": "19.89",
+      "2y": "121.74",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Nov 28, 2022",
-    "offer": "218.4209",
-    "repurchase": "213.5102",
+    "offer": "209.4337",
+    "repurchase": "204.7250",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.05",
+    "ter_ytd": "4.04",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 80.6,
+    "screener_score": 73.8,
     "dividends": [
       {
-        "date": "213.5102",
+        "date": "204.7250",
         "payout_per_unit": "Nov 28, 2022",
-        "ex_nav": "218.4209"
+        "ex_nav": "209.4337"
       }
     ]
   },
@@ -17930,7 +17930,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.6,
+    "screener_score": 68.7,
     "dividends": [
       {
         "date": "1562.7242",
@@ -18015,14 +18015,14 @@
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "3.00",
-    "ter_ytd": "4.47",
+    "ter_ytd": "4.60",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Stock",
     "total_load": 0.0,
-    "is_ter_estimated": true,
-    "screener_score": 64.1,
+    "is_ter_estimated": false,
+    "screener_score": 64.2,
     "dividends": [
       {
         "date": "92.4730",
@@ -18110,36 +18110,36 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 30, 2022",
-    "offer": "188.8040",
-    "repurchase": "183.3049",
+    "offer": "188.8241",
+    "repurchase": "183.3244",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "1.33",
+    "ter_ytd": "1.34",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.3,
+    "screener_score": 46.1,
     "dividends": [
       {
-        "date": "187.7514",
+        "date": "187.7064",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "193.3839"
+        "ex_nav": "193.3376"
       },
       {
-        "date": "545.8095",
+        "date": "523.1267",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "562.1838"
+        "ex_nav": "538.8205"
       },
       {
-        "date": "183.3049",
+        "date": "183.3244",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "188.8040"
+        "ex_nav": "188.8241"
       }
     ]
   },
@@ -18180,7 +18180,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 28.2,
+    "screener_score": 28.0,
     "dividends": [
       {
         "date": "252.2514",
@@ -18205,7 +18205,7 @@
     "fund_name": "Alfalah Pension Fund - II",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
+    "validity_date": "Jul 14, 2026",
     "nav": "0.0001",
     "returns": {
       "mtd": "N/A",
@@ -18348,7 +18348,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.8,
+    "screener_score": 23.7,
     "dividends": [
       {
         "date": "446.1689",
@@ -18404,7 +18404,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.8,
+    "screener_score": 35.0,
     "dividends": [
       {
         "date": "611.9500",
@@ -18446,8 +18446,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2013",
-    "offer": "344.0337",
-    "repurchase": "344.0337",
+    "offer": "344.0438",
+    "repurchase": "344.0438",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -18463,19 +18463,19 @@
     "screener_score": 27.6,
     "dividends": [
       {
-        "date": "403.6055",
+        "date": "403.1744",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "403.6055"
+        "ex_nav": "403.1744"
       },
       {
-        "date": "1474.5037",
+        "date": "1418.9723",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "1474.5037"
+        "ex_nav": "1418.9723"
       },
       {
-        "date": "344.0337",
+        "date": "344.0438",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "344.0337"
+        "ex_nav": "344.0438"
       }
     ]
   },
@@ -18577,7 +18577,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.8,
+    "screener_score": 34.9,
     "dividends": [
       {
         "date": "653.2700",
@@ -18694,7 +18694,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.5,
+    "screener_score": 51.6,
     "dividends": [
       {
         "date": "382.3185",
@@ -18736,14 +18736,14 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 30, 2022",
-    "offer": "188.8040",
-    "repurchase": "183.3049",
+    "offer": "188.8241",
+    "repurchase": "183.3244",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "1.33",
+    "ter_ytd": "1.34",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -18753,19 +18753,19 @@
     "screener_score": 45.2,
     "dividends": [
       {
-        "date": "187.7514",
+        "date": "187.7064",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "193.3839"
+        "ex_nav": "193.3376"
       },
       {
-        "date": "545.8095",
+        "date": "523.1267",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "562.1838"
+        "ex_nav": "538.8205"
       },
       {
-        "date": "183.3049",
+        "date": "183.3244",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "188.8040"
+        "ex_nav": "188.8241"
       }
     ]
   },
@@ -18806,7 +18806,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.6,
+    "screener_score": 18.4,
     "dividends": [
       {
         "date": "252.2514",
@@ -18831,7 +18831,7 @@
     "fund_name": "Alfalah Pension Fund - II",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
+    "validity_date": "Jul 14, 2026",
     "nav": "0.0000",
     "returns": {
       "mtd": "N/A",
@@ -18974,7 +18974,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.6,
+    "screener_score": 29.4,
     "dividends": [
       {
         "date": "446.1689",
@@ -19030,7 +19030,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.7,
+    "screener_score": 18.5,
     "dividends": [
       {
         "date": "611.9500",
@@ -19072,8 +19072,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2013",
-    "offer": "344.0337",
-    "repurchase": "344.0337",
+    "offer": "344.0438",
+    "repurchase": "344.0438",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19089,19 +19089,19 @@
     "screener_score": 36.3,
     "dividends": [
       {
-        "date": "403.6055",
+        "date": "403.1744",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "403.6055"
+        "ex_nav": "403.1744"
       },
       {
-        "date": "1474.5037",
+        "date": "1418.9723",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "1474.5037"
+        "ex_nav": "1418.9723"
       },
       {
-        "date": "344.0337",
+        "date": "344.0438",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "344.0337"
+        "ex_nav": "344.0438"
       }
     ]
   },
@@ -19203,7 +19203,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.2,
+    "screener_score": 23.0,
     "dividends": [
       {
         "date": "653.2700",
@@ -19320,7 +19320,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.0,
+    "screener_score": 66.3,
     "dividends": [
       {
         "date": "30.3148",
@@ -19442,7 +19442,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 80.1,
+    "screener_score": 80.3,
     "dividends": [
       {
         "date": "382.3185",
@@ -19484,36 +19484,36 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jun 30, 2022",
-    "offer": "188.8040",
-    "repurchase": "183.3049",
+    "offer": "188.8241",
+    "repurchase": "183.3244",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.00",
-    "ter_ytd": "1.33",
+    "ter_ytd": "1.34",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 81.6,
+    "screener_score": 81.8,
     "dividends": [
       {
-        "date": "187.7514",
+        "date": "187.7064",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "193.3839"
+        "ex_nav": "193.3376"
       },
       {
-        "date": "545.8095",
+        "date": "523.1267",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "562.1838"
+        "ex_nav": "538.8205"
       },
       {
-        "date": "183.3049",
+        "date": "183.3244",
         "payout_per_unit": "Jun 30, 2022",
-        "ex_nav": "188.8040"
+        "ex_nav": "188.8241"
       }
     ]
   },
@@ -19554,7 +19554,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 75.5,
+    "screener_score": 75.8,
     "dividends": [
       {
         "date": "252.2514",
@@ -19579,7 +19579,7 @@
     "fund_name": "Alfalah Pension Fund - II",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
+    "validity_date": "Jul 14, 2026",
     "nav": "0.0000",
     "returns": {
       "mtd": "-100.00",
@@ -19666,7 +19666,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 80.4,
+    "screener_score": 80.5,
     "dividends": [
       {
         "date": "666.1600",
@@ -19722,7 +19722,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.4,
+    "screener_score": 78.5,
     "dividends": [
       {
         "date": "446.1689",
@@ -19778,7 +19778,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 79.0,
+    "screener_score": 79.2,
     "dividends": [
       {
         "date": "611.9500",
@@ -19820,8 +19820,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2013",
-    "offer": "344.0337",
-    "repurchase": "344.0337",
+    "offer": "344.0438",
+    "repurchase": "344.0438",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19834,22 +19834,22 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 82.8,
+    "screener_score": 82.9,
     "dividends": [
       {
-        "date": "403.6055",
+        "date": "403.1744",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "403.6055"
+        "ex_nav": "403.1744"
       },
       {
-        "date": "1474.5037",
+        "date": "1418.9723",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "1474.5037"
+        "ex_nav": "1418.9723"
       },
       {
-        "date": "344.0337",
+        "date": "344.0438",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "344.0337"
+        "ex_nav": "344.0438"
       }
     ]
   },
@@ -19890,7 +19890,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.4,
+    "screener_score": 76.7,
     "dividends": [
       {
         "date": "30.3148",
@@ -19951,7 +19951,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 82.7,
+    "screener_score": 82.8,
     "dividends": [
       {
         "date": "653.2700",
@@ -20007,7 +20007,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 76.3,
+    "screener_score": 76.7,
     "dividends": [
       {
         "date": "566.6665",
@@ -20068,7 +20068,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.7,
+    "screener_score": 20.6,
     "dividends": [
       {
         "date": "231.7580",
@@ -20124,7 +20124,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 13.9,
+    "screener_score": 14.0,
     "dividends": [
       {
         "date": "380.8306",
@@ -20166,8 +20166,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Sep 05, 2022",
-    "offer": "172.8985",
-    "repurchase": "167.8626",
+    "offer": "172.9331",
+    "repurchase": "167.8962",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20180,22 +20180,22 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.0,
+    "screener_score": 11.9,
     "dividends": [
       {
-        "date": "169.4043",
+        "date": "169.2447",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "174.4864"
+        "ex_nav": "174.3220"
       },
       {
-        "date": "462.6898",
+        "date": "443.5646",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "476.5705"
+        "ex_nav": "456.8715"
       },
       {
-        "date": "167.8626",
+        "date": "167.8962",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "172.8985"
+        "ex_nav": "172.9331"
       }
     ]
   },
@@ -20236,7 +20236,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.9,
+    "screener_score": 22.8,
     "dividends": [
       {
         "date": "218.3944",
@@ -20292,7 +20292,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.1,
+    "screener_score": 34.0,
     "dividends": [
       {
         "date": "471.0800",
@@ -20348,7 +20348,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.7,
+    "screener_score": 29.6,
     "dividends": [
       {
         "date": "487.3800",
@@ -20390,8 +20390,8 @@
     },
     "amc": "AWT Investments Limited",
     "inception_date": "Apr 07, 2025",
-    "offer": "113.9246",
-    "repurchase": "113.9246",
+    "offer": "113.9017",
+    "repurchase": "113.9017",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20407,19 +20407,19 @@
     "screener_score": 36.7,
     "dividends": [
       {
-        "date": "115.2650",
+        "date": "115.2527",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "115.2650"
+        "ex_nav": "115.2527"
       },
       {
-        "date": "132.9445",
+        "date": "128.0701",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "132.9445"
+        "ex_nav": "128.0701"
       },
       {
-        "date": "113.9246",
+        "date": "113.9017",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "113.9246"
+        "ex_nav": "113.9017"
       }
     ]
   },
@@ -20516,7 +20516,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.6,
+    "screener_score": 20.4,
     "dividends": [
       {
         "date": "183.2426",
@@ -20572,7 +20572,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.2,
+    "screener_score": 17.1,
     "dividends": [
       {
         "date": "342.5794",
@@ -20628,7 +20628,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.2,
+    "screener_score": 43.3,
     "dividends": [
       {
         "date": "444.8243",
@@ -20714,25 +20714,25 @@
     "fund_name": "Mahaana IGI Islamic Retirement Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "11.0875",
+    "validity_date": "Jul 14, 2026",
+    "nav": "11.0880",
     "returns": {
-      "mtd": "9.43",
-      "ytd": "9.43",
-      "1d": "0.99",
-      "15d": "10.42",
-      "30d": "10.00",
-      "90d": "8.97",
-      "180d": "8.04",
-      "270d": "8.92",
-      "365d": "9.34",
+      "mtd": "8.87",
+      "ytd": "8.87",
+      "1d": "1.64",
+      "15d": "9.39",
+      "30d": "9.93",
+      "90d": "8.91",
+      "180d": "7.99",
+      "270d": "8.85",
+      "365d": "9.26",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "IGI Life Insurance Limited",
     "inception_date": "May 26, 2025",
-    "offer": "11.0875",
-    "repurchase": "11.0875",
+    "offer": "11.0880",
+    "repurchase": "11.0880",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20745,22 +20745,22 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 13.9,
+    "screener_score": 13.2,
     "dividends": [
       {
-        "date": "11.2212",
+        "date": "11.2234",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "11.2212"
+        "ex_nav": "11.2234"
       },
       {
-        "date": "12.8678",
+        "date": "12.3871",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "12.8678"
+        "ex_nav": "12.3871"
       },
       {
-        "date": "11.0875",
+        "date": "11.0880",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "11.0875"
+        "ex_nav": "11.0880"
       }
     ]
   },
@@ -20848,8 +20848,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2013",
-    "offer": "306.1194",
-    "repurchase": "306.1194",
+    "offer": "306.1981",
+    "repurchase": "306.1981",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20862,22 +20862,22 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 21.1,
+    "screener_score": 20.9,
     "dividends": [
       {
-        "date": "299.9163",
+        "date": "299.9970",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "299.9163"
+        "ex_nav": "299.9970"
       },
       {
-        "date": "1262.9606",
+        "date": "1216.8804",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "1262.9606"
+        "ex_nav": "1216.8804"
       },
       {
-        "date": "306.1194",
+        "date": "306.1981",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "306.1194"
+        "ex_nav": "306.1981"
       }
     ]
   },
@@ -20918,7 +20918,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 28.8,
+    "screener_score": 28.9,
     "dividends": [
       {
         "date": "26.3355",
@@ -21030,7 +21030,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 13.6,
+    "screener_score": 13.5,
     "dividends": [
       {
         "date": "231.7580",
@@ -21086,7 +21086,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 19.3,
+    "screener_score": 19.2,
     "dividends": [
       {
         "date": "380.8306",
@@ -21128,8 +21128,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Sep 05, 2022",
-    "offer": "172.8985",
-    "repurchase": "167.8626",
+    "offer": "172.9331",
+    "repurchase": "167.8962",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -21142,22 +21142,22 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.0,
+    "screener_score": 9.9,
     "dividends": [
       {
-        "date": "169.4043",
+        "date": "169.2447",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "174.4864"
+        "ex_nav": "174.3220"
       },
       {
-        "date": "462.6898",
+        "date": "443.5646",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "476.5705"
+        "ex_nav": "456.8715"
       },
       {
-        "date": "167.8626",
+        "date": "167.8962",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "172.8985"
+        "ex_nav": "172.9331"
       }
     ]
   },
@@ -21198,7 +21198,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 16.1,
+    "screener_score": 15.8,
     "dividends": [
       {
         "date": "218.3944",
@@ -21352,8 +21352,8 @@
     },
     "amc": "AWT Investments Limited",
     "inception_date": "Apr 07, 2025",
-    "offer": "113.9246",
-    "repurchase": "113.9246",
+    "offer": "113.9017",
+    "repurchase": "113.9017",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -21369,19 +21369,19 @@
     "screener_score": 40.3,
     "dividends": [
       {
-        "date": "115.2650",
+        "date": "115.2527",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "115.2650"
+        "ex_nav": "115.2527"
       },
       {
-        "date": "132.9445",
+        "date": "128.0701",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "132.9445"
+        "ex_nav": "128.0701"
       },
       {
-        "date": "113.9246",
+        "date": "113.9017",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "113.9246"
+        "ex_nav": "113.9017"
       }
     ]
   },
@@ -21478,7 +21478,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 11.2,
+    "screener_score": 11.1,
     "dividends": [
       {
         "date": "183.2426",
@@ -21534,7 +21534,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.8,
+    "screener_score": 23.6,
     "dividends": [
       {
         "date": "342.5794",
@@ -21590,7 +21590,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.4,
+    "screener_score": 8.3,
     "dividends": [
       {
         "date": "444.8243",
@@ -21676,25 +21676,25 @@
     "fund_name": "Mahaana IGI Islamic Retirement Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "11.2212",
+    "validity_date": "Jul 14, 2026",
+    "nav": "11.2234",
     "returns": {
-      "mtd": "11.08",
-      "ytd": "11.08",
-      "1d": "6.17",
-      "15d": "12.25",
-      "30d": "11.50",
+      "mtd": "10.80",
+      "ytd": "10.80",
+      "1d": "7.15",
+      "15d": "11.24",
+      "30d": "11.61",
       "90d": "9.63",
-      "180d": "8.12",
-      "270d": "9.61",
-      "365d": "10.14",
+      "180d": "8.06",
+      "270d": "9.57",
+      "365d": "10.09",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "IGI Life Insurance Limited",
     "inception_date": "May 26, 2025",
-    "offer": "11.0875",
-    "repurchase": "11.0875",
+    "offer": "11.0880",
+    "repurchase": "11.0880",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -21707,22 +21707,22 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 25.1,
+    "screener_score": 23.5,
     "dividends": [
       {
-        "date": "11.2212",
+        "date": "11.2234",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "11.2212"
+        "ex_nav": "11.2234"
       },
       {
-        "date": "12.8678",
+        "date": "12.3871",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "12.8678"
+        "ex_nav": "12.3871"
       },
       {
-        "date": "11.0875",
+        "date": "11.0880",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "11.0875"
+        "ex_nav": "11.0880"
       }
     ]
   },
@@ -21763,7 +21763,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 21.5,
+    "screener_score": 21.4,
     "dividends": [
       {
         "date": "0.0000",
@@ -21810,8 +21810,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2013",
-    "offer": "306.1194",
-    "repurchase": "306.1194",
+    "offer": "306.1981",
+    "repurchase": "306.1981",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -21824,22 +21824,22 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.1,
+    "screener_score": 17.8,
     "dividends": [
       {
-        "date": "299.9163",
+        "date": "299.9970",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "299.9163"
+        "ex_nav": "299.9970"
       },
       {
-        "date": "1262.9606",
+        "date": "1216.8804",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "1262.9606"
+        "ex_nav": "1216.8804"
       },
       {
-        "date": "306.1194",
+        "date": "306.1981",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "306.1194"
+        "ex_nav": "306.1981"
       }
     ]
   },
@@ -21880,7 +21880,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.9,
+    "screener_score": 33.1,
     "dividends": [
       {
         "date": "26.3355",
@@ -21936,7 +21936,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.5,
+    "screener_score": 40.6,
     "dividends": [
       {
         "date": "170.6184",
@@ -22053,7 +22053,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 62.5,
+    "screener_score": 62.7,
     "dividends": [
       {
         "date": "0.0000",
@@ -22114,7 +22114,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 71.2,
+    "screener_score": 71.5,
     "dividends": [
       {
         "date": "231.7580",
@@ -22170,7 +22170,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 74.3,
+    "screener_score": 74.6,
     "dividends": [
       {
         "date": "380.8306",
@@ -22212,8 +22212,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Sep 05, 2022",
-    "offer": "172.8985",
-    "repurchase": "167.8626",
+    "offer": "172.9331",
+    "repurchase": "167.8962",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -22229,19 +22229,19 @@
     "screener_score": 67.6,
     "dividends": [
       {
-        "date": "169.4043",
+        "date": "169.2447",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "174.4864"
+        "ex_nav": "174.3220"
       },
       {
-        "date": "462.6898",
+        "date": "443.5646",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "476.5705"
+        "ex_nav": "456.8715"
       },
       {
-        "date": "167.8626",
+        "date": "167.8962",
         "payout_per_unit": "Sep 05, 2022",
-        "ex_nav": "172.8985"
+        "ex_nav": "172.9331"
       }
     ]
   },
@@ -22282,7 +22282,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.7,
+    "screener_score": 70.8,
     "dividends": [
       {
         "date": "218.3944",
@@ -22338,7 +22338,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 74.1,
+    "screener_score": 74.5,
     "dividends": [
       {
         "date": "471.0800",
@@ -22394,7 +22394,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.8,
+    "screener_score": 74.2,
     "dividends": [
       {
         "date": "487.3800",
@@ -22436,8 +22436,8 @@
     },
     "amc": "AWT Investments Limited",
     "inception_date": "Apr 07, 2025",
-    "offer": "113.9246",
-    "repurchase": "113.9246",
+    "offer": "113.9017",
+    "repurchase": "113.9017",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -22450,22 +22450,22 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 52.0,
+    "screener_score": 52.3,
     "dividends": [
       {
-        "date": "115.2650",
+        "date": "115.2527",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "115.2650"
+        "ex_nav": "115.2527"
       },
       {
-        "date": "132.9445",
+        "date": "128.0701",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "132.9445"
+        "ex_nav": "128.0701"
       },
       {
-        "date": "113.9246",
+        "date": "113.9017",
         "payout_per_unit": "Apr 07, 2025",
-        "ex_nav": "113.9246"
+        "ex_nav": "113.9017"
       }
     ]
   },
@@ -22562,7 +22562,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.1,
+    "screener_score": 73.5,
     "dividends": [
       {
         "date": "183.2426",
@@ -22618,7 +22618,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 77.4,
+    "screener_score": 77.5,
     "dividends": [
       {
         "date": "342.5794",
@@ -22760,25 +22760,25 @@
     "fund_name": "Mahaana IGI Islamic Retirement Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 13, 2026",
-    "nav": "12.8678",
+    "validity_date": "Jul 14, 2026",
+    "nav": "12.3871",
     "returns": {
-      "mtd": "-1.43",
-      "ytd": "-1.43",
-      "1d": "-1.29",
-      "15d": "-1.31",
-      "30d": "2.45",
-      "90d": "4.21",
-      "180d": "-4.29",
-      "270d": "2.27",
-      "365d": "22.78",
+      "mtd": "-5.12",
+      "ytd": "-5.12",
+      "1d": "-3.74",
+      "15d": "-4.17",
+      "30d": "-1.38",
+      "90d": "-1.27",
+      "180d": "-7.37",
+      "270d": "-1.48",
+      "365d": "17.99",
       "2y": "N/A",
       "3y": "N/A"
     },
     "amc": "IGI Life Insurance Limited",
     "inception_date": "May 26, 2025",
-    "offer": "11.0875",
-    "repurchase": "11.0875",
+    "offer": "11.0880",
+    "repurchase": "11.0880",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -22791,22 +22791,22 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 50.2,
+    "screener_score": 44.5,
     "dividends": [
       {
-        "date": "11.2212",
+        "date": "11.2234",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "11.2212"
+        "ex_nav": "11.2234"
       },
       {
-        "date": "12.8678",
+        "date": "12.3871",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "12.8678"
+        "ex_nav": "12.3871"
       },
       {
-        "date": "11.0875",
+        "date": "11.0880",
         "payout_per_unit": "May 26, 2025",
-        "ex_nav": "11.0875"
+        "ex_nav": "11.0880"
       }
     ]
   },
@@ -22847,7 +22847,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 68.4,
+    "screener_score": 68.5,
     "dividends": [
       {
         "date": "0.0000",
@@ -22894,8 +22894,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jul 02, 2013",
-    "offer": "306.1194",
-    "repurchase": "306.1194",
+    "offer": "306.1981",
+    "repurchase": "306.1981",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -22908,22 +22908,22 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 78.8,
+    "screener_score": 78.9,
     "dividends": [
       {
-        "date": "299.9163",
+        "date": "299.9970",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "299.9163"
+        "ex_nav": "299.9970"
       },
       {
-        "date": "1262.9606",
+        "date": "1216.8804",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "1262.9606"
+        "ex_nav": "1216.8804"
       },
       {
-        "date": "306.1194",
+        "date": "306.1981",
         "payout_per_unit": "Jul 02, 2013",
-        "ex_nav": "306.1194"
+        "ex_nav": "306.1981"
       }
     ]
   },
@@ -22964,7 +22964,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 73.2,
+    "screener_score": 73.5,
     "dividends": [
       {
         "date": "26.3355",
@@ -23020,7 +23020,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.9,
+    "screener_score": 70.3,
     "dividends": [
       {
         "date": "170.6184",
@@ -23076,7 +23076,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 24.3,
+    "screener_score": 24.2,
     "dividends": [
       {
         "date": "17.0131",
@@ -23122,7 +23122,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.3,
+    "screener_score": 30.1,
     "dividends": [
       {
         "date": "9.8189",
@@ -23154,8 +23154,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Oct 06, 2020",
-    "offer": "27.1237",
-    "repurchase": "27.1237",
+    "offer": "26.1760",
+    "repurchase": "26.1760",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -23171,9 +23171,9 @@
     "screener_score": 82.5,
     "dividends": [
       {
-        "date": "27.1237",
+        "date": "26.1760",
         "payout_per_unit": "Oct 06, 2020",
-        "ex_nav": "27.1237"
+        "ex_nav": "26.1760"
       }
     ]
   },
@@ -23214,7 +23214,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 82.1,
+    "screener_score": 82.3,
     "dividends": [
       {
         "date": "33.4461",
@@ -23352,7 +23352,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.4,
+    "screener_score": 56.5,
     "dividends": [
       {
         "date": "17.0800",
@@ -23398,7 +23398,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 75.3,
+    "screener_score": 75.4,
     "dividends": [
       {
         "date": "17.2446",
@@ -23476,8 +23476,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jan 03, 2024",
-    "offer": "140.5980",
-    "repurchase": "140.5980",
+    "offer": "140.6235",
+    "repurchase": "140.6235",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -23490,12 +23490,12 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.4,
+    "screener_score": 30.5,
     "dividends": [
       {
-        "date": "140.5980",
+        "date": "140.6235",
         "payout_per_unit": "Jan 03, 2024",
-        "ex_nav": "140.5980"
+        "ex_nav": "140.6235"
       }
     ]
   },
@@ -23582,7 +23582,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.5,
+    "screener_score": 30.7,
     "dividends": [
       {
         "date": "140.1083",
@@ -23674,7 +23674,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.2,
+    "screener_score": 32.3,
     "dividends": [
       {
         "date": "142.1023",
@@ -23706,8 +23706,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Dec 13, 2023",
-    "offer": "142.7447",
-    "repurchase": "142.7447",
+    "offer": "142.7520",
+    "repurchase": "142.7520",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -23723,9 +23723,9 @@
     "screener_score": 32.6,
     "dividends": [
       {
-        "date": "142.7447",
+        "date": "142.7520",
         "payout_per_unit": "Dec 13, 2023",
-        "ex_nav": "142.7447"
+        "ex_nav": "142.7520"
       }
     ]
   },
@@ -23766,7 +23766,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.8,
+    "screener_score": 38.9,
     "dividends": [
       {
         "date": "143.5121",
@@ -24074,8 +24074,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 14, 2026",
-    "offer": "105.3220",
-    "repurchase": "105.3220",
+    "offer": "105.3254",
+    "repurchase": "105.3254",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -24091,9 +24091,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "105.3220",
+        "date": "105.3254",
         "payout_per_unit": "Jan 14, 2026",
-        "ex_nav": "105.3220"
+        "ex_nav": "105.3254"
       }
     ]
   },
@@ -24134,7 +24134,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 31.8,
+    "screener_score": 31.9,
     "dividends": [
       {
         "date": "140.2020",
@@ -24226,7 +24226,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.8,
+    "screener_score": 17.6,
     "dividends": [
       {
         "date": "124.9261",
@@ -24304,8 +24304,8 @@
     },
     "amc": "AL Habib Asset Management Limited",
     "inception_date": "Jan 03, 2024",
-    "offer": "135.5901",
-    "repurchase": "135.5901",
+    "offer": "135.6110",
+    "repurchase": "135.6110",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -24318,12 +24318,12 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.3,
+    "screener_score": 10.2,
     "dividends": [
       {
-        "date": "135.5901",
+        "date": "135.6110",
         "payout_per_unit": "Jan 03, 2024",
-        "ex_nav": "135.5901"
+        "ex_nav": "135.6110"
       }
     ]
   },
@@ -24364,7 +24364,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 11.7,
+    "screener_score": 11.8,
     "dividends": [
       {
         "date": "134.1086",
@@ -24410,7 +24410,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.7,
+    "screener_score": 25.9,
     "dividends": [
       {
         "date": "140.0800",
@@ -24456,7 +24456,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.3,
+    "screener_score": 19.1,
     "dividends": [
       {
         "date": "135.8036",
@@ -24502,7 +24502,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.6,
+    "screener_score": 10.5,
     "dividends": [
       {
         "date": "136.3762",
@@ -24548,7 +24548,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.7,
+    "screener_score": 25.9,
     "dividends": [
       {
         "date": "140.7100",
@@ -24626,8 +24626,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Dec 13, 2023",
-    "offer": "140.6063",
-    "repurchase": "140.6063",
+    "offer": "140.6443",
+    "repurchase": "140.6443",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -24640,12 +24640,12 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.0,
+    "screener_score": 25.2,
     "dividends": [
       {
-        "date": "140.6063",
+        "date": "140.6443",
         "payout_per_unit": "Dec 13, 2023",
-        "ex_nav": "140.6063"
+        "ex_nav": "140.6443"
       }
     ]
   },
@@ -25178,8 +25178,8 @@
     },
     "amc": "NBP Fund Management Limited",
     "inception_date": "Jan 14, 2026",
-    "offer": "104.9274",
-    "repurchase": "104.9274",
+    "offer": "104.9582",
+    "repurchase": "104.9582",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -25195,9 +25195,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "104.9274",
+        "date": "104.9582",
         "payout_per_unit": "Jan 14, 2026",
-        "ex_nav": "104.9274"
+        "ex_nav": "104.9582"
       }
     ]
   },

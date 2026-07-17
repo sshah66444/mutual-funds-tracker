@@ -1553,6 +1553,59 @@ function updateKSE100Card(psxData) {
     if (tipEl)     tipEl.textContent     = tip;
     if (kseValEl)  kseValEl.style.color  = changePct >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
     banner.style.display = 'flex';
+
+    // Populate KSE-100 7-Day Performance Trend
+    const historyListEl = document.getElementById('kse100-weekly-list');
+    const weeklyReturnEl = document.getElementById('kse100-weekly-return');
+    
+    function formatIndexDate(dateStr) {
+        const parts = dateStr.split('-');
+        if (parts.length !== 3) return dateStr;
+        const day = parts[2];
+        const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        const monthIdx = parseInt(parts[1], 10) - 1;
+        const month = months[monthIdx] || '';
+        return `${day} ${month}`;
+    }
+
+    if (historyListEl && psxData.history && psxData.history.length > 0) {
+        historyListEl.innerHTML = '';
+        const history = psxData.history;
+        const cardHtmls = [];
+        
+        for (let i = 0; i < Math.min(history.length - 1, 7); i++) {
+            const todayVal = history[i].price;
+            const yesterdayVal = history[i+1].price;
+            const diffPct = ((todayVal / yesterdayVal) - 1) * 100;
+            
+            const sign = diffPct > 0 ? '+' : '';
+            const colorClass = diffPct < 0 ? 'negative' : (diffPct > 0 ? 'positive' : '');
+            const formattedDate = formatIndexDate(history[i].date);
+            const formattedPrice = (todayVal / 1000).toFixed(1) + 'K';
+            
+            const card = document.createElement('div');
+            card.className = 'psx-day-card';
+            card.innerHTML = `
+                <div class="day-date">${formattedDate}</div>
+                <div class="day-price" title="${todayVal.toLocaleString()}">${formattedPrice}</div>
+                <div class="day-change ${colorClass}">${sign}${diffPct.toFixed(2)}%</div>
+            `;
+            cardHtmls.push(card);
+        }
+        
+        cardHtmls.forEach(c => historyListEl.appendChild(c));
+        
+        const lastIdx = Math.min(history.length - 1, 7);
+        const startVal = history[lastIdx].price;
+        const endVal = history[0].price;
+        const weeklyReturn = ((endVal / startVal) - 1) * 100;
+        
+        if (weeklyReturnEl) {
+            const sign = weeklyReturn > 0 ? '+' : '';
+            const colorClass = weeklyReturn < 0 ? 'var(--accent-red)' : 'var(--accent-green)';
+            weeklyReturnEl.innerHTML = `1-Week Return: <span style="color:${colorClass}; font-weight: 700;">${sign}${weeklyReturn.toFixed(2)}%</span>`;
+        }
+    }
 }
 
 

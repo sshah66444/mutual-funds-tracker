@@ -2220,6 +2220,52 @@ body {
     color: var(--accent-gold);
 }
 
+/* KSE-100 daily history day card */
+.psx-day-card {
+    background-color: var(--bg-sidebar);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 12px;
+    flex: 0 0 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    transition: all var(--transition-speed);
+}
+
+.psx-day-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(6, 182, 212, 0.4);
+}
+
+.psx-day-card .day-date {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.psx-day-card .day-price {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.psx-day-card .day-change {
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.psx-day-card .day-change.negative {
+    color: var(--accent-red);
+}
+
+.psx-day-card .day-change.positive {
+    color: var(--accent-green);
+}
+
 
 
 

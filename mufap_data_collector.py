@@ -477,6 +477,31 @@ def main():
                         "as_of": match.group(5).strip()
                     }
                     print(f"Parsed KSE-100: {psx_data['price']} ({psx_data['direction']}{psx_data['change_points']})")
+                    
+                    # Fetch KSE-100 EOD timeseries history
+                    try:
+                        import datetime
+                        print("Requesting KSE-100 historical timeseries from PSX...")
+                        hist_url = "https://dps.psx.com.pk/timeseries/eod/KSE100"
+                        hist_req = urllib.request.Request(hist_url, headers={'User-Agent': 'Mozilla/5.0'})
+                        with urllib.request.urlopen(hist_req, context=ctx) as hist_res:
+                            hist_json = json.loads(hist_res.read().decode('utf-8', errors='ignore'))
+                            raw_history = hist_json.get('data', [])
+                            
+                            history_list = []
+                            for day_data in raw_history[:10]:
+                                if len(day_data) >= 2:
+                                    timestamp = day_data[0]
+                                    close_val = day_data[1]
+                                    date_str = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
+                                    history_list.append({
+                                        "date": date_str,
+                                        "price": float(close_val)
+                                    })
+                            psx_data["history"] = history_list
+                    except Exception as e_hist:
+                        print(f"Failed to scrape PSX KSE-100 history: {e_hist}")
+                        psx_data["history"] = []
                 else:
                     print("Could not match KSE100 pattern in PSX html, using default fallbacks.")
         except Exception as e_psx:

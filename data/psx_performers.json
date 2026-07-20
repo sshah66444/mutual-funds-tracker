@@ -3,47 +3,56 @@
     {
       "symbol": "CNERGY",
       "name": "Cnergyico PK  Limited",
-      "price": "10.25",
+      "price": "10.61",
       "direction": "+",
-      "change": "0.44",
-      "percent": "4.49%",
-      "volume": "96,495,955"
+      "change": "0.80",
+      "percent": "8.16%",
+      "volume": "166,059,814"
     },
     {
       "symbol": "PRL",
       "name": "Pakistan Refinery Limited",
-      "price": "47.93",
+      "price": "49.05",
       "direction": "+",
-      "change": "3.34",
-      "percent": "7.49%",
-      "volume": "42,206,430"
+      "change": "4.46",
+      "percent": "10.00%",
+      "volume": "49,159,104"
     },
     {
       "symbol": "TPLP",
       "name": "TPL Properties Limited",
-      "price": "12.25",
+      "price": "12.51",
       "direction": "+",
-      "change": "0.15",
-      "percent": "1.24%",
-      "volume": "24,715,827"
+      "change": "0.41",
+      "percent": "3.39%",
+      "volume": "38,436,785"
     },
     {
       "symbol": "TSBL",
       "name": "Trust Securities &amp; Brokerage Limited",
-      "price": "2.16",
+      "price": "2.15",
       "direction": "+",
-      "change": "0.16",
-      "percent": "8.00%",
-      "volume": "23,616,315"
+      "change": "0.15",
+      "percent": "7.50%",
+      "volume": "36,283,729"
     },
     {
       "symbol": "KEL",
       "name": "K-Electric Limited",
-      "price": "7.21",
+      "price": "7.28",
       "direction": "-",
-      "change": "-0.14",
-      "percent": "-1.90%",
-      "volume": "20,955,166"
+      "change": "-0.07",
+      "percent": "-0.95%",
+      "volume": "27,615,297"
+    },
+    {
+      "symbol": "LOTCHEM",
+      "name": "Lotte Chemical Pakistan Limited",
+      "price": "29.65",
+      "direction": "+",
+      "change": "0.54",
+      "percent": "1.86%",
+      "volume": "17,575,908"
     },
     {
       "symbol": "WTL",
@@ -52,43 +61,34 @@
       "direction": "noc",
       "change": "0.00",
       "percent": "0.00%",
-      "volume": "13,362,089"
-    },
-    {
-      "symbol": "LOTCHEM",
-      "name": "Lotte Chemical Pakistan Limited",
-      "price": "29.61",
-      "direction": "+",
-      "change": "0.50",
-      "percent": "1.72%",
-      "volume": "12,323,845"
+      "volume": "15,089,114"
     },
     {
       "symbol": "BOP",
       "name": "The Bank of Punjab",
-      "price": "33.39",
-      "direction": "-",
-      "change": "-0.29",
-      "percent": "-0.86%",
-      "volume": "12,059,378"
+      "price": "33.69",
+      "direction": "+",
+      "change": "0.01",
+      "percent": "0.03%",
+      "volume": "14,202,726"
     },
     {
       "symbol": "MLCF",
       "name": "Maple Leaf Cement Factory Limited",
-      "price": "96.00",
+      "price": "96.36",
       "direction": "+",
-      "change": "0.50",
-      "percent": "0.52%",
-      "volume": "10,110,497"
+      "change": "0.86",
+      "percent": "0.90%",
+      "volume": "13,521,739"
     },
     {
       "symbol": "FNEL",
       "name": "First National Equities Limited",
-      "price": "1.21",
-      "direction": "noc",
-      "change": "0.00",
-      "percent": "0.00%",
-      "volume": "9,544,828"
+      "price": "1.22",
+      "direction": "+",
+      "change": "0.01",
+      "percent": "0.83%",
+      "volume": "13,125,536"
     }
   ],
   "gainers": [
@@ -108,7 +108,7 @@
       "direction": "+",
       "change": "5.83",
       "percent": "10.01%",
-      "volume": "221,637"
+      "volume": "237,238"
     },
     {
       "symbol": "CCM",
@@ -117,7 +117,7 @@
       "direction": "+",
       "change": "5.37",
       "percent": "10.00%",
-      "volume": "313,968"
+      "volume": "317,069"
     },
     {
       "symbol": "OML",
@@ -126,16 +126,16 @@
       "direction": "+",
       "change": "10.76",
       "percent": "10.00%",
-      "volume": "35,617"
+      "volume": "36,633"
     },
     {
-      "symbol": "SUHJ",
-      "name": "Suhail Jute Mills Limited",
-      "price": "246.36",
+      "symbol": "PRL",
+      "name": "Pakistan Refinery Limited",
+      "price": "49.05",
       "direction": "+",
-      "change": "22.40",
+      "change": "4.46",
       "percent": "10.00%",
-      "volume": "1,522"
+      "volume": "49,159,104"
     },
     {
       "symbol": "BAFS",
@@ -144,7 +144,7 @@
       "direction": "+",
       "change": "41.86",
       "percent": "10.00%",
-      "volume": "4,457"
+      "volume": "6,461"
     },
     {
       "symbol": "AHTM",
@@ -153,7 +153,7 @@
       "direction": "+",
       "change": "9.11",
       "percent": "10.00%",
-      "volume": "11,288"
+      "volume": "11,540"
     },
     {
       "symbol": "HUSI",
@@ -162,7 +162,7 @@
       "direction": "+",
       "change": "5.00",
       "percent": "10.00%",
-      "volume": "41,986"
+      "volume": "41,987"
     },
     {
       "symbol": "LEUL",
@@ -171,7 +171,7 @@
       "direction": "+",
       "change": "4.18",
       "percent": "10.00%",
-      "volume": "28,214"
+      "volume": "28,478"
     },
     {
       "symbol": "NSRM",
@@ -180,7 +180,7 @@
       "direction": "+",
       "change": "27.22",
       "percent": "10.00%",
-      "volume": "14,505"
+      "volume": "15,148"
     }
   ],
   "losers": [
@@ -191,7 +191,7 @@
       "direction": "-",
       "change": "-6.23",
       "percent": "-10.00%",
-      "volume": "1,570,785"
+      "volume": "1,588,738"
     },
     {
       "symbol": "SGPL",
@@ -200,7 +200,7 @@
       "direction": "-",
       "change": "-9.76",
       "percent": "-10.00%",
-      "volume": "183,110"
+      "volume": "248,197"
     },
     {
       "symbol": "KPUS",
@@ -209,70 +209,70 @@
       "direction": "-",
       "change": "-187.15",
       "percent": "-10.00%",
-      "volume": "5,388"
-    },
-    {
-      "symbol": "IDEAL",
-      "name": "Ideal Dynamics Limited",
-      "price": "49.28",
-      "direction": "-",
-      "change": "-5.47",
-      "percent": "-9.99%",
-      "volume": "15,579"
-    },
-    {
-      "symbol": "NATM",
-      "name": "Nadeem Textile Mills Limited",
-      "price": "77.00",
-      "direction": "-",
-      "change": "-8.16",
-      "percent": "-9.58%",
-      "volume": "1"
+      "volume": "6,965"
     },
     {
       "symbol": "MQTM",
       "name": "Maqbool Textile Mills Limited",
-      "price": "33.61",
+      "price": "33.43",
       "direction": "-",
-      "change": "-3.53",
-      "percent": "-9.50%",
-      "volume": "338,176"
+      "change": "-3.71",
+      "percent": "-9.99%",
+      "volume": "420,629"
     },
     {
-      "symbol": "MSCL",
-      "name": "Metropolitan Steel Corporation Limited",
-      "price": "22.10",
+      "symbol": "IDEAL",
+      "name": "Ideal Dynamics Limited",
+      "price": "49.50",
       "direction": "-",
-      "change": "-1.95",
-      "percent": "-8.11%",
-      "volume": "238,099"
+      "change": "-5.25",
+      "percent": "-9.59%",
+      "volume": "21,692"
     },
     {
-      "symbol": "SZTM",
-      "name": "Shahzad Textile Mills Limited",
-      "price": "92.50",
+      "symbol": "FSWL",
+      "name": "Fateh Sports Wear Limited",
+      "price": "136.39",
       "direction": "-",
-      "change": "-8.01",
-      "percent": "-7.97%",
-      "volume": "67,266"
+      "change": "-13.90",
+      "percent": "-9.25%",
+      "volume": "5,659"
     },
     {
-      "symbol": "DAAG",
-      "name": "Data Agro Limited",
-      "price": "81.05",
+      "symbol": "BUXL",
+      "name": "Buxly Paints Limited",
+      "price": "173.04",
       "direction": "-",
-      "change": "-6.95",
-      "percent": "-7.90%",
-      "volume": "151"
+      "change": "-16.90",
+      "percent": "-8.90%",
+      "volume": "9,562"
+    },
+    {
+      "symbol": "ARMG",
+      "name": "ARM Green Industries Limited",
+      "price": "64.63",
+      "direction": "-",
+      "change": "-6.07",
+      "percent": "-8.59%",
+      "volume": "1,222"
     },
     {
       "symbol": "ELCM",
       "name": "Elahi Cotton Mills Limited",
-      "price": "218.00",
+      "price": "216.01",
       "direction": "-",
-      "change": "-18.09",
-      "percent": "-7.66%",
-      "volume": "178"
+      "change": "-20.08",
+      "percent": "-8.50%",
+      "volume": "1,075"
+    },
+    {
+      "symbol": "MSCL",
+      "name": "Metropolitan Steel Corporation Limited",
+      "price": "22.03",
+      "direction": "-",
+      "change": "-2.02",
+      "percent": "-8.40%",
+      "volume": "301,187"
     }
   ]
 }

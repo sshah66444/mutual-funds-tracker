@@ -1,278 +1,278 @@
 {
   "active": [
     {
-      "symbol": "CNERGY",
-      "name": "Cnergyico PK  Limited",
-      "price": "10.61",
+      "symbol": "TSBL",
+      "name": "Trust Securities &amp; Brokerage Limited",
+      "price": "2.41",
       "direction": "+",
-      "change": "0.80",
-      "percent": "8.16%",
-      "volume": "166,059,814"
+      "change": "0.02",
+      "percent": "0.84%",
+      "volume": "128,674,317"
     },
     {
-      "symbol": "PRL",
-      "name": "Pakistan Refinery Limited",
-      "price": "49.05",
-      "direction": "+",
-      "change": "4.46",
-      "percent": "10.00%",
-      "volume": "49,159,104"
+      "symbol": "CNERGY",
+      "name": "Cnergyico PK  Limited",
+      "price": "9.87",
+      "direction": "-",
+      "change": "-0.09",
+      "percent": "-0.90%",
+      "volume": "95,107,474"
     },
     {
       "symbol": "TPLP",
       "name": "TPL Properties Limited",
-      "price": "12.51",
+      "price": "13.35",
       "direction": "+",
-      "change": "0.41",
-      "percent": "3.39%",
-      "volume": "38,436,785"
-    },
-    {
-      "symbol": "TSBL",
-      "name": "Trust Securities &amp; Brokerage Limited",
-      "price": "2.15",
-      "direction": "+",
-      "change": "0.15",
-      "percent": "7.50%",
-      "volume": "36,283,729"
-    },
-    {
-      "symbol": "KEL",
-      "name": "K-Electric Limited",
-      "price": "7.28",
-      "direction": "-",
-      "change": "-0.07",
-      "percent": "-0.95%",
-      "volume": "27,615,297"
-    },
-    {
-      "symbol": "LOTCHEM",
-      "name": "Lotte Chemical Pakistan Limited",
-      "price": "29.65",
-      "direction": "+",
-      "change": "0.54",
-      "percent": "1.86%",
-      "volume": "17,575,908"
-    },
-    {
-      "symbol": "WTL",
-      "name": "Worldcall Telecom Limited",
-      "price": "1.23",
-      "direction": "noc",
-      "change": "0.00",
-      "percent": "0.00%",
-      "volume": "15,089,114"
-    },
-    {
-      "symbol": "BOP",
-      "name": "The Bank of Punjab",
-      "price": "33.69",
-      "direction": "+",
-      "change": "0.01",
-      "percent": "0.03%",
-      "volume": "14,202,726"
-    },
-    {
-      "symbol": "MLCF",
-      "name": "Maple Leaf Cement Factory Limited",
-      "price": "96.36",
-      "direction": "+",
-      "change": "0.86",
-      "percent": "0.90%",
-      "volume": "13,521,739"
-    },
-    {
-      "symbol": "FNEL",
-      "name": "First National Equities Limited",
-      "price": "1.22",
-      "direction": "+",
-      "change": "0.01",
-      "percent": "0.83%",
-      "volume": "13,125,536"
-    }
-  ],
-  "gainers": [
-    {
-      "symbol": "ASIC",
-      "name": "Asia Insurance Company Limited",
-      "price": "37.90",
-      "direction": "+",
-      "change": "3.45",
-      "percent": "10.02%",
-      "volume": "10,570"
-    },
-    {
-      "symbol": "TPLI",
-      "name": "TPL Insurance Limited",
-      "price": "64.08",
-      "direction": "+",
-      "change": "5.83",
-      "percent": "10.01%",
-      "volume": "237,238"
-    },
-    {
-      "symbol": "CCM",
-      "name": "Crescent Cotton Mills Limited",
-      "price": "59.05",
-      "direction": "+",
-      "change": "5.37",
-      "percent": "10.00%",
-      "volume": "317,069"
-    },
-    {
-      "symbol": "OML",
-      "name": "Olympia Mills Limited",
-      "price": "118.34",
-      "direction": "+",
-      "change": "10.76",
-      "percent": "10.00%",
-      "volume": "36,633"
+      "change": "0.08",
+      "percent": "0.60%",
+      "volume": "47,902,343"
     },
     {
       "symbol": "PRL",
       "name": "Pakistan Refinery Limited",
-      "price": "49.05",
+      "price": "50.46",
       "direction": "+",
-      "change": "4.46",
+      "change": "1.27",
+      "percent": "2.58%",
+      "volume": "31,103,179"
+    },
+    {
+      "symbol": "BOP",
+      "name": "The Bank of Punjab",
+      "price": "33.80",
+      "direction": "-",
+      "change": "-0.23",
+      "percent": "-0.68%",
+      "volume": "18,951,136"
+    },
+    {
+      "symbol": "WTL",
+      "name": "Worldcall Telecom Limited",
+      "price": "1.24",
+      "direction": "-",
+      "change": "-0.02",
+      "percent": "-1.59%",
+      "volume": "18,860,587"
+    },
+    {
+      "symbol": "DCL",
+      "name": "Dewan Cement Limited",
+      "price": "11.69",
+      "direction": "+",
+      "change": "0.63",
+      "percent": "5.70%",
+      "volume": "17,043,189"
+    },
+    {
+      "symbol": "KEL",
+      "name": "K-Electric Limited",
+      "price": "7.20",
+      "direction": "-",
+      "change": "-0.20",
+      "percent": "-2.70%",
+      "volume": "16,623,115"
+    },
+    {
+      "symbol": "FNEL",
+      "name": "First National Equities Limited",
+      "price": "1.21",
+      "direction": "-",
+      "change": "-0.02",
+      "percent": "-1.63%",
+      "volume": "14,233,406"
+    },
+    {
+      "symbol": "YOUW",
+      "name": "Yousaf Weaving Mills Limited",
+      "price": "5.45",
+      "direction": "+",
+      "change": "0.34",
+      "percent": "6.65%",
+      "volume": "12,933,063"
+    }
+  ],
+  "gainers": [
+    {
+      "symbol": "SLYT",
+      "name": "Sally Textile Mills Limited",
+      "price": "16.13",
+      "direction": "+",
+      "change": "1.47",
+      "percent": "10.03%",
+      "volume": "34,327"
+    },
+    {
+      "symbol": "FCIBL",
+      "name": "First Credit and Investment Bank Limited",
+      "price": "35.93",
+      "direction": "+",
+      "change": "3.27",
+      "percent": "10.01%",
+      "volume": "82,052"
+    },
+    {
+      "symbol": "DBCI",
+      "name": "Dadabhoy Cement Industries Limited",
+      "price": "22.64",
+      "direction": "+",
+      "change": "2.06",
+      "percent": "10.01%",
+      "volume": "510,076"
+    },
+    {
+      "symbol": "GAMON",
+      "name": "Gammon Pakistan Limited",
+      "price": "24.18",
+      "direction": "+",
+      "change": "2.20",
+      "percent": "10.01%",
+      "volume": "26,275"
+    },
+    {
+      "symbol": "ASIC",
+      "name": "Asia Insurance Company Limited",
+      "price": "45.86",
+      "direction": "+",
+      "change": "4.17",
       "percent": "10.00%",
-      "volume": "49,159,104"
+      "volume": "4,895"
+    },
+    {
+      "symbol": "OML",
+      "name": "Olympia Mills Limited",
+      "price": "143.19",
+      "direction": "+",
+      "change": "13.02",
+      "percent": "10.00%",
+      "volume": "62,360"
+    },
+    {
+      "symbol": "PMRS",
+      "name": "The Premier Sugar Mills",
+      "price": "552.50",
+      "direction": "+",
+      "change": "50.23",
+      "percent": "10.00%",
+      "volume": "1,955"
     },
     {
       "symbol": "BAFS",
       "name": "Baba Farid Sugar Mills Limited",
-      "price": "460.42",
+      "price": "461.24",
       "direction": "+",
-      "change": "41.86",
+      "change": "41.93",
       "percent": "10.00%",
-      "volume": "6,461"
+      "volume": "6,814"
     },
     {
-      "symbol": "AHTM",
-      "name": "Ahmad Hassan Textile Mills Limited",
-      "price": "100.21",
+      "symbol": "SHCM",
+      "name": "Shadman Cotton Mills Limited",
+      "price": "53.35",
       "direction": "+",
-      "change": "9.11",
+      "change": "4.85",
       "percent": "10.00%",
-      "volume": "11,540"
+      "volume": "39,437"
     },
     {
-      "symbol": "HUSI",
-      "name": "Husein Industries Limited",
-      "price": "55.00",
+      "symbol": "TICL",
+      "name": "The Thal Industries Corporation Limited",
+      "price": "1,048.37",
       "direction": "+",
-      "change": "5.00",
+      "change": "95.31",
       "percent": "10.00%",
-      "volume": "41,987"
-    },
-    {
-      "symbol": "LEUL",
-      "name": "Leather Up Limited",
-      "price": "45.98",
-      "direction": "+",
-      "change": "4.18",
-      "percent": "10.00%",
-      "volume": "28,478"
-    },
-    {
-      "symbol": "NSRM",
-      "name": "The National Silk &amp; Rayon Mills Limited",
-      "price": "299.43",
-      "direction": "+",
-      "change": "27.22",
-      "percent": "10.00%",
-      "volume": "15,148"
+      "volume": "9,739"
     }
   ],
   "losers": [
     {
-      "symbol": "SERT",
-      "name": "Service Industries Textiles Limited",
-      "price": "56.04",
+      "symbol": "CCM",
+      "name": "Crescent Cotton Mills Limited",
+      "price": "58.37",
       "direction": "-",
-      "change": "-6.23",
-      "percent": "-10.00%",
-      "volume": "1,588,738"
+      "change": "-6.49",
+      "percent": "-10.01%",
+      "volume": "180,213"
     },
     {
-      "symbol": "SGPL",
-      "name": "S.G. Power Limited",
-      "price": "87.83",
+      "symbol": "STML",
+      "name": "Shams Textile Mills Limited",
+      "price": "53.71",
       "direction": "-",
-      "change": "-9.76",
+      "change": "-5.97",
       "percent": "-10.00%",
-      "volume": "248,197"
+      "volume": "48,876"
+    },
+    {
+      "symbol": "NSRM",
+      "name": "The National Silk &amp; Rayon Mills Limited",
+      "price": "296.43",
+      "direction": "-",
+      "change": "-32.94",
+      "percent": "-10.00%",
+      "volume": "30,630"
+    },
+    {
+      "symbol": "SUHJ",
+      "name": "Suhail Jute Mills Limited",
+      "price": "243.87",
+      "direction": "-",
+      "change": "-27.10",
+      "percent": "-10.00%",
+      "volume": "7,365"
+    },
+    {
+      "symbol": "GEMNETS",
+      "name": "Nets International Communication Limited",
+      "price": "26.10",
+      "direction": "-",
+      "change": "-2.90",
+      "percent": "-10.00%",
+      "volume": "1,700"
     },
     {
       "symbol": "KPUS",
       "name": "Khairpur Sugar Mills Limited",
-      "price": "1,684.32",
+      "price": "1,364.30",
       "direction": "-",
-      "change": "-187.15",
+      "change": "-151.59",
       "percent": "-10.00%",
-      "volume": "6,965"
+      "volume": "18,279"
     },
     {
-      "symbol": "MQTM",
-      "name": "Maqbool Textile Mills Limited",
-      "price": "33.43",
+      "symbol": "SGPL",
+      "name": "S.G. Power Limited",
+      "price": "71.55",
       "direction": "-",
-      "change": "-3.71",
-      "percent": "-9.99%",
-      "volume": "420,629"
+      "change": "-7.95",
+      "percent": "-10.00%",
+      "volume": "3,744,922"
     },
     {
-      "symbol": "IDEAL",
-      "name": "Ideal Dynamics Limited",
-      "price": "49.50",
+      "symbol": "REWM",
+      "name": "Reliance Weaving Mills Limited",
+      "price": "174.62",
       "direction": "-",
-      "change": "-5.25",
-      "percent": "-9.59%",
-      "volume": "21,692"
+      "change": "-19.40",
+      "percent": "-10.00%",
+      "volume": "17,215"
     },
     {
-      "symbol": "FSWL",
-      "name": "Fateh Sports Wear Limited",
-      "price": "136.39",
+      "symbol": "DIIL",
+      "name": "Diamond Industries Limited",
+      "price": "54.30",
       "direction": "-",
-      "change": "-13.90",
-      "percent": "-9.25%",
-      "volume": "5,659"
+      "change": "-5.85",
+      "percent": "-9.73%",
+      "volume": "14,398"
     },
     {
-      "symbol": "BUXL",
-      "name": "Buxly Paints Limited",
-      "price": "173.04",
+      "symbol": "FIBLM",
+      "name": "First IBL Modaraba",
+      "price": "13.90",
       "direction": "-",
-      "change": "-16.90",
-      "percent": "-8.90%",
-      "volume": "9,562"
-    },
-    {
-      "symbol": "ARMG",
-      "name": "ARM Green Industries Limited",
-      "price": "64.63",
-      "direction": "-",
-      "change": "-6.07",
-      "percent": "-8.59%",
-      "volume": "1,222"
-    },
-    {
-      "symbol": "ELCM",
-      "name": "Elahi Cotton Mills Limited",
-      "price": "216.01",
-      "direction": "-",
-      "change": "-20.08",
-      "percent": "-8.50%",
-      "volume": "1,075"
-    },
-    {
-      "symbol": "MSCL",
-      "name": "Metropolitan Steel Corporation Limited",
-      "price": "22.03",
-      "direction": "-",
-      "change": "-2.02",
-      "percent": "-8.40%",
-      "volume": "301,187"
+      "change": "-1.37",
+      "percent": "-8.97%",
+      "volume": "1,625,549"
     }
   ]
 }

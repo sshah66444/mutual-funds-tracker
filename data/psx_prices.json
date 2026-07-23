@@ -2,9 +2,9 @@
   "CNERGY": {
     "symbol": "CNERGY",
     "name": "Cnergyico PK  Limited",
-    "price": 10.0,
-    "change": 0.12,
-    "percent": 1.214574898785425,
+    "price": 10.01,
+    "change": 0.13,
+    "percent": 1.3157894736842104,
     "direction": "+",
     "open": "9.8",
     "high": "10.15",
@@ -14,9 +14,9 @@
   "PRL": {
     "symbol": "PRL",
     "name": "Pakistan Refinery Limited",
-    "price": 51.99,
-    "change": 1.13,
-    "percent": 2.2217852929610693,
+    "price": 51.95,
+    "change": 1.09,
+    "percent": 2.1431380259535984,
     "direction": "+",
     "open": "51.88",
     "high": "52.58",
@@ -38,9 +38,9 @@
   "TPLP": {
     "symbol": "TPLP",
     "name": "TPL Properties Limited",
-    "price": 13.26,
-    "change": -0.13,
-    "percent": -0.9708737864077669,
+    "price": 13.21,
+    "change": -0.18,
+    "percent": -1.344286781179985,
     "direction": "-",
     "open": "13.25",
     "high": "13.62",
@@ -62,10 +62,10 @@
   "WTL": {
     "symbol": "WTL",
     "name": "Worldcall Telecom Limited",
-    "price": 1.23,
-    "change": 0.0,
-    "percent": 0.0,
-    "direction": " ",
+    "price": 1.22,
+    "change": -0.01,
+    "percent": -0.8130081300813009,
+    "direction": "-",
     "open": "1.22",
     "high": "1.24",
     "low": "1.21",
@@ -74,9 +74,9 @@
   "MLCF": {
     "symbol": "MLCF",
     "name": "Maple Leaf Cement Factory Limited",
-    "price": 89.89,
-    "change": -2.27,
-    "percent": -2.4631076388888893,
+    "price": 89.99,
+    "change": -2.17,
+    "percent": -2.354600694444444,
     "direction": "-",
     "open": "92",
     "high": "92.5",
@@ -86,9 +86,9 @@
   "PIBTL": {
     "symbol": "PIBTL",
     "name": "Pakistan International Bulk Terminal",
-    "price": 16.34,
-    "change": -0.07,
-    "percent": -0.4265691651432054,
+    "price": 16.35,
+    "change": -0.06,
+    "percent": -0.3656307129798903,
     "direction": "-",
     "open": "16.51",
     "high": "16.65",
@@ -98,9 +98,9 @@
   "LOTCHEM": {
     "symbol": "LOTCHEM",
     "name": "Lotte Chemical Pakistan Limited",
-    "price": 29.34,
-    "change": 0.03,
-    "percent": 0.1023541453428864,
+    "price": 29.33,
+    "change": 0.02,
+    "percent": 0.0682360968952576,
     "direction": "+",
     "open": "29.32",
     "high": "29.85",
@@ -110,9 +110,9 @@
   "YOUW": {
     "symbol": "YOUW",
     "name": "Yousaf Weaving Mills Limited",
-    "price": 5.66,
-    "change": 0.23,
-    "percent": 4.23572744014733,
+    "price": 5.68,
+    "change": 0.25,
+    "percent": 4.6040515653775325,
     "direction": "+",
     "open": "5.48",
     "high": "5.94",
@@ -134,9 +134,9 @@
   "SSGC": {
     "symbol": "SSGC",
     "name": "Sui Southern Gas Company Limited",
-    "price": 25.99,
-    "change": -0.99,
-    "percent": -3.6693847294292063,
+    "price": 26.0,
+    "change": -0.98,
+    "percent": -3.6323202372127503,
     "direction": "-",
     "open": "27.19",
     "high": "27.28",
@@ -158,10 +158,10 @@
   "FNEL": {
     "symbol": "FNEL",
     "name": "First National Equities Limited",
-    "price": 1.21,
-    "change": 0.0,
-    "percent": 0.0,
-    "direction": " ",
+    "price": 1.2,
+    "change": -0.01,
+    "percent": -0.8264462809917356,
+    "direction": "-",
     "open": "1.21",
     "high": "1.22",
     "low": "1.19",
@@ -182,9 +182,9 @@
   "KOSM": {
     "symbol": "KOSM",
     "name": "Kohinoor Spinning Mills Limited",
-    "price": 5.75,
-    "change": 0.03,
-    "percent": 0.5244755244755245,
+    "price": 5.74,
+    "change": 0.02,
+    "percent": 0.3496503496503497,
     "direction": "+",
     "open": "5.66",
     "high": "5.89",
@@ -230,9 +230,9 @@
   "HASCOL": {
     "symbol": "HASCOL",
     "name": "Hascol Petroleum Limited",
-    "price": 19.51,
-    "change": -0.37,
-    "percent": -1.8611670020120725,
+    "price": 19.52,
+    "change": -0.36,
+    "percent": -1.8108651911468814,
     "direction": "-",
     "open": "19.9",
     "high": "20",
@@ -266,9 +266,9 @@
   "TELE": {
     "symbol": "TELE",
     "name": "Telecard Limited",
-    "price": 8.43,
-    "change": -0.22,
-    "percent": -2.543352601156069,
+    "price": 8.42,
+    "change": -0.23,
+    "percent": -2.6589595375722546,
     "direction": "-",
     "open": "8.55",
     "high": "8.75",
@@ -290,9 +290,9 @@
   "TPLRF1": {
     "symbol": "TPLRF1",
     "name": "TPL REIT Fund I",
-    "price": 9.82,
-    "change": -0.26,
-    "percent": -2.5793650793650795,
+    "price": 9.94,
+    "change": -0.14,
+    "percent": -1.388888888888889,
     "direction": "-",
     "open": "10.18",
     "high": "10.28",
@@ -302,9 +302,9 @@
   "PAEL": {
     "symbol": "PAEL",
     "name": "Pak Elektron Limited",
-    "price": 41.7,
-    "change": -0.34,
-    "percent": -0.8087535680304472,
+    "price": 41.85,
+    "change": -0.19,
+    "percent": -0.4519505233111323,
     "direction": "-",
     "open": "41.11",
     "high": "42.35",
@@ -314,9 +314,9 @@
   "FCCL": {
     "symbol": "FCCL",
     "name": "Fauji Cement Company Limited",
-    "price": 52.69,
-    "change": -0.4,
-    "percent": -0.7534375588623092,
+    "price": 52.6,
+    "change": -0.49,
+    "percent": -0.9229610096063289,
     "direction": "-",
     "open": "52.7",
     "high": "53.75",
@@ -350,9 +350,9 @@
   "PICT": {
     "symbol": "PICT",
     "name": "Pakistan International Container",
-    "price": 57.7,
-    "change": -0.58,
-    "percent": -0.9951956074124915,
+    "price": 57.75,
+    "change": -0.53,
+    "percent": -0.9094028826355525,
     "direction": "-",
     "open": "59.49",
     "high": "61.5",
@@ -362,9 +362,9 @@
   "PSX": {
     "symbol": "PSX",
     "name": "Pakistan Stock Exchange Limited",
-    "price": 49.67,
-    "change": -0.41,
-    "percent": -0.8186900958466454,
+    "price": 49.75,
+    "change": -0.33,
+    "percent": -0.6589456869009586,
     "direction": "-",
     "open": "50.16",
     "high": "50.45",
@@ -386,9 +386,9 @@
   "UNITY": {
     "symbol": "UNITY",
     "name": "Unity Foods Limited",
-    "price": 10.13,
-    "change": -0.17,
-    "percent": -1.650485436893204,
+    "price": 10.12,
+    "change": -0.18,
+    "percent": -1.7475728155339803,
     "direction": "-",
     "open": "10.25",
     "high": "10.31",
@@ -410,9 +410,9 @@
   "PPL": {
     "symbol": "PPL",
     "name": "Pakistan Petroleum Limited",
-    "price": 215.47,
-    "change": -1.37,
-    "percent": -0.6318022505072864,
+    "price": 215.5,
+    "change": -1.34,
+    "percent": -0.6179671647297547,
     "direction": "-",
     "open": "216",
     "high": "219",
@@ -422,9 +422,9 @@
   "JSMFETF": {
     "symbol": "JSMFETF",
     "name": "JS Momentum Factor Exchange Traded Fund",
-    "price": 9.56,
-    "change": -0.17,
-    "percent": -1.747173689619733,
+    "price": 9.57,
+    "change": -0.16,
+    "percent": -1.644398766700925,
     "direction": "-",
     "open": "9.91",
     "high": "9.91",
@@ -566,9 +566,9 @@
   "HUBC": {
     "symbol": "HUBC",
     "name": "The Hub Power Company Limited",
-    "price": 216.0,
-    "change": -1.08,
-    "percent": -0.4975124378109453,
+    "price": 216.25,
+    "change": -0.83,
+    "percent": -0.38234752165100416,
     "direction": "-",
     "open": "217",
     "high": "218.9",
@@ -590,9 +590,9 @@
   "OGDC": {
     "symbol": "OGDC",
     "name": "Oil &amp; Gas Development Company Limited",
-    "price": 315.6,
-    "change": -0.69,
-    "percent": -0.21815422555249925,
+    "price": 315.89,
+    "change": -0.4,
+    "percent": -0.1264662177115938,
     "direction": "-",
     "open": "317.04",
     "high": "319",
@@ -602,9 +602,9 @@
   "PIAHCLA": {
     "symbol": "PIAHCLA",
     "name": "PIA Holding Company Limited",
-    "price": 28.0,
-    "change": -0.13,
-    "percent": -0.46214006398862423,
+    "price": 28.05,
+    "change": -0.08,
+    "percent": -0.2843938855314611,
     "direction": "-",
     "open": "28.05",
     "high": "28.36",
@@ -614,9 +614,9 @@
   "AKBL": {
     "symbol": "AKBL",
     "name": "Askari Bank Limited",
-    "price": 102.2,
-    "change": -2.11,
-    "percent": -2.022816604352411,
+    "price": 102.32,
+    "change": -1.99,
+    "percent": -1.9077749017352126,
     "direction": "-",
     "open": "104.45",
     "high": "105.79",
@@ -626,10 +626,10 @@
   "NRL": {
     "symbol": "NRL",
     "name": "National Refinery Limited",
-    "price": 413.51,
-    "change": 3.48,
-    "percent": 0.8487183864595275,
-    "direction": "+",
+    "price": 410.0,
+    "change": -0.03,
+    "percent": -0.0073165378143062705,
+    "direction": "-",
     "open": "411.98",
     "high": "420",
     "low": "410",
@@ -638,9 +638,9 @@
   "UBL": {
     "symbol": "UBL",
     "name": "United Bank Limited",
-    "price": 459.25,
-    "change": -5.54,
-    "percent": -1.191936143204458,
+    "price": 459.45,
+    "change": -5.34,
+    "percent": -1.1489059575292067,
     "direction": "-",
     "open": "465.11",
     "high": "469.5",
@@ -650,9 +650,9 @@
   "NCPL": {
     "symbol": "NCPL",
     "name": "Nishat Chunian Power Limited",
-    "price": 55.5,
-    "change": -0.95,
-    "percent": -1.6829052258635961,
+    "price": 55.49,
+    "change": -0.96,
+    "percent": -1.7006200177147917,
     "direction": "-",
     "open": "56.8",
     "high": "56.99",
@@ -686,21 +686,21 @@
   "NML": {
     "symbol": "NML",
     "name": "Nishat Mills Limited",
-    "price": 139.33,
-    "change": -1.69,
-    "percent": -1.1984115728265494,
+    "price": 139.07,
+    "change": -1.95,
+    "percent": -1.3827825840306338,
     "direction": "-",
     "open": "140.55",
     "high": "142.99",
-    "low": "139.01",
+    "low": "139.05",
     "volume": "N/A"
   },
   "MEBL": {
     "symbol": "MEBL",
     "name": "Meezan Bank Limited",
-    "price": 545.0,
-    "change": 5.51,
-    "percent": 1.0213349645035126,
+    "price": 544.99,
+    "change": 5.5,
+    "percent": 1.0194813620270997,
     "direction": "+",
     "open": "540",
     "high": "547.05",
@@ -710,9 +710,9 @@
   "SEARL": {
     "symbol": "SEARL",
     "name": "The Searle Company Limited",
-    "price": 89.87,
-    "change": -0.55,
-    "percent": -0.6082725060827251,
+    "price": 89.8,
+    "change": -0.62,
+    "percent": -0.68568900685689,
     "direction": "-",
     "open": "91.5",
     "high": "91.5",
@@ -755,6 +755,18 @@
     "low": "6.9",
     "volume": "N/A"
   },
+  "SNGP": {
+    "symbol": "SNGP",
+    "name": "Sui Northern Gas Pipelines Limited",
+    "price": 99.89,
+    "change": -1.83,
+    "percent": -1.7990562327959105,
+    "direction": "-",
+    "open": "102.39",
+    "high": "102.83",
+    "low": "99.6",
+    "volume": "N/A"
+  },
   "MZNPETF": {
     "symbol": "MZNPETF",
     "name": "Meezan Pakistan ETF",
@@ -767,24 +779,12 @@
     "low": "17.27",
     "volume": "N/A"
   },
-  "SNGP": {
-    "symbol": "SNGP",
-    "name": "Sui Northern Gas Pipelines Limited",
-    "price": 99.75,
-    "change": -1.97,
-    "percent": -1.9366889500589857,
-    "direction": "-",
-    "open": "102.39",
-    "high": "102.83",
-    "low": "99.6",
-    "volume": "N/A"
-  },
   "NBP": {
     "symbol": "NBP",
     "name": "National Bank of Pakistan",
-    "price": 200.13,
-    "change": -1.48,
-    "percent": -0.7340905709042209,
+    "price": 200.45,
+    "change": -1.16,
+    "percent": -0.5753682853033083,
     "direction": "-",
     "open": "202",
     "high": "202.69",
@@ -813,18 +813,6 @@
     "open": "26.31",
     "high": "26.6",
     "low": "26.15",
-    "volume": "N/A"
-  },
-  "UNIC": {
-    "symbol": "UNIC",
-    "name": "The United Insurance Company",
-    "price": 12.25,
-    "change": 0.08,
-    "percent": 0.657354149548069,
-    "direction": "+",
-    "open": "12.31",
-    "high": "12.59",
-    "low": "12.16",
     "volume": "N/A"
   },
   "NPL": {
@@ -875,16 +863,16 @@
     "low": "10.41",
     "volume": "N/A"
   },
-  "SKRS": {
-    "symbol": "SKRS",
-    "name": "Sakrand Sugar Mills Limited",
-    "price": 31.45,
-    "change": 2.86,
-    "percent": 10.00349772647779,
+  "UNIC": {
+    "symbol": "UNIC",
+    "name": "The United Insurance Company",
+    "price": 12.22,
+    "change": 0.05,
+    "percent": 0.4108463434675432,
     "direction": "+",
-    "open": "28.59",
-    "high": "31.45",
-    "low": "28.1",
+    "open": "12.31",
+    "high": "12.59",
+    "low": "12.16",
     "volume": "N/A"
   },
   "HMB": {
@@ -914,9 +902,9 @@
   "ATRL": {
     "symbol": "ATRL",
     "name": "Attock Refinery Limited",
-    "price": 918.0,
-    "change": 4.33,
-    "percent": 0.473912900719078,
+    "price": 919.9,
+    "change": 6.23,
+    "percent": 0.6818654437597821,
     "direction": "+",
     "open": "911",
     "high": "931.01",
@@ -926,9 +914,9 @@
   "ENGROH": {
     "symbol": "ENGROH",
     "name": "Engro Holdings Limited",
-    "price": 271.51,
-    "change": -2.23,
-    "percent": -0.8146416307445021,
+    "price": 271.55,
+    "change": -2.19,
+    "percent": -0.8000292248118651,
     "direction": "-",
     "open": "274.11",
     "high": "275.5",
@@ -938,9 +926,9 @@
   "PSO": {
     "symbol": "PSO",
     "name": "Pakistan State Oil Company Limited",
-    "price": 343.0,
-    "change": -2.26,
-    "percent": -0.6545791577361988,
+    "price": 343.3,
+    "change": -1.96,
+    "percent": -0.5676881190986502,
     "direction": "-",
     "open": "345",
     "high": "348",
@@ -962,9 +950,9 @@
   "TOMCL": {
     "symbol": "TOMCL",
     "name": "The Organic Meat Company Limited",
-    "price": 36.5,
-    "change": -0.76,
-    "percent": -2.0397208803005906,
+    "price": 36.52,
+    "change": -0.74,
+    "percent": -1.9860440150295224,
     "direction": "-",
     "open": "37.01",
     "high": "37.58",
@@ -986,9 +974,9 @@
   "SYS": {
     "symbol": "SYS",
     "name": "Systems Limited",
-    "price": 134.91,
-    "change": -0.71,
-    "percent": -0.5235216044831146,
+    "price": 134.99,
+    "change": -0.63,
+    "percent": -0.4645332546822003,
     "direction": "-",
     "open": "135.62",
     "high": "136.71",
@@ -1007,28 +995,28 @@
     "low": "46",
     "volume": "N/A"
   },
-  "DFML": {
-    "symbol": "DFML",
-    "name": "Dewan Farooque Motors Limited",
-    "price": 17.99,
-    "change": -0.01,
-    "percent": -0.05555555555555555,
-    "direction": "-",
-    "open": "17.55",
-    "high": "18.33",
-    "low": "17.55",
-    "volume": "N/A"
-  },
   "GDL": {
     "symbol": "GDL",
     "name": "Ghani Dairies Limited",
-    "price": 17.9,
-    "change": -0.22,
-    "percent": -1.2141280353200883,
+    "price": 17.93,
+    "change": -0.19,
+    "percent": -1.0485651214128036,
     "direction": "-",
     "open": "18.39",
     "high": "18.39",
     "low": "17.7",
+    "volume": "N/A"
+  },
+  "DFML": {
+    "symbol": "DFML",
+    "name": "Dewan Farooque Motors Limited",
+    "price": 18.0,
+    "change": 0.0,
+    "percent": 0.0,
+    "direction": " ",
+    "open": "17.55",
+    "high": "18.33",
+    "low": "17.55",
     "volume": "N/A"
   },
   "TBL": {
@@ -1070,25 +1058,13 @@
   "FFC": {
     "symbol": "FFC",
     "name": "Fauji Fertilizer Company Limited",
-    "price": 542.69,
-    "change": -1.22,
-    "percent": -0.22430181463845125,
+    "price": 542.0,
+    "change": -1.91,
+    "percent": -0.35116103767167367,
     "direction": "-",
     "open": "543.91",
     "high": "546.98",
     "low": "540.11",
-    "volume": "N/A"
-  },
-  "BBFL": {
-    "symbol": "BBFL",
-    "name": "Big Bird Foods Limited",
-    "price": 43.4,
-    "change": -1.72,
-    "percent": -3.8120567375886525,
-    "direction": "-",
-    "open": "44.5",
-    "high": "44.66",
-    "low": "43.01",
     "volume": "N/A"
   },
   "BAFL": {
@@ -1127,18 +1103,6 @@
     "low": "4.78",
     "volume": "N/A"
   },
-  "IGIHL": {
-    "symbol": "IGIHL",
-    "name": "IGI Holdings Limited",
-    "price": 262.0,
-    "change": 7.58,
-    "percent": 2.979325524722899,
-    "direction": "+",
-    "open": "257.9",
-    "high": "266",
-    "low": "251.2",
-    "volume": "N/A"
-  },
   "KSBP": {
     "symbol": "KSBP",
     "name": "KSB Pumps Company Limited",
@@ -1151,12 +1115,24 @@
     "low": "255",
     "volume": "N/A"
   },
+  "IGIHL": {
+    "symbol": "IGIHL",
+    "name": "IGI Holdings Limited",
+    "price": 260.0,
+    "change": 5.58,
+    "percent": 2.193223803160129,
+    "direction": "+",
+    "open": "257.9",
+    "high": "266",
+    "low": "251.2",
+    "volume": "N/A"
+  },
   "STL": {
     "symbol": "STL",
     "name": "Supernet Technologies Limited",
-    "price": 36.23,
-    "change": -1.36,
-    "percent": -3.6179835062516625,
+    "price": 36.11,
+    "change": -1.48,
+    "percent": -3.937217345038574,
     "direction": "-",
     "open": "37",
     "high": "37.69",
@@ -1173,6 +1149,18 @@
     "open": "2.46",
     "high": "2.54",
     "low": "2.41",
+    "volume": "N/A"
+  },
+  "SKRS": {
+    "symbol": "SKRS",
+    "name": "Sakrand Sugar Mills Limited",
+    "price": 30.21,
+    "change": 1.62,
+    "percent": 5.6663168940188875,
+    "direction": "+",
+    "open": "28.59",
+    "high": "30.69",
+    "low": "28.1",
     "volume": "N/A"
   },
   "FIBLM": {
@@ -1223,12 +1211,24 @@
     "low": "13.05",
     "volume": "N/A"
   },
+  "BBFL": {
+    "symbol": "BBFL",
+    "name": "Big Bird Foods Limited",
+    "price": 43.28,
+    "change": -1.84,
+    "percent": -4.078014184397164,
+    "direction": "-",
+    "open": "44.5",
+    "high": "44.66",
+    "low": "43.25",
+    "volume": "N/A"
+  },
   "CSAP": {
     "symbol": "CSAP",
     "name": "Crescent Steel &amp; Allied Products Limited",
-    "price": 103.5,
-    "change": -0.41,
-    "percent": -0.39457222596477715,
+    "price": 103.45,
+    "change": -0.46,
+    "percent": -0.4426907901068232,
     "direction": "-",
     "open": "103.4",
     "high": "105.75",
@@ -1271,18 +1271,6 @@
     "low": "5.02",
     "volume": "N/A"
   },
-  "MIIETF": {
-    "symbol": "MIIETF",
-    "name": "Mahaana Islamic Index ETF",
-    "price": 16.2,
-    "change": -0.1,
-    "percent": -0.6134969325153374,
-    "direction": "-",
-    "open": "16.47",
-    "high": "16.47",
-    "low": "16.2",
-    "volume": "N/A"
-  },
   "FCL": {
     "symbol": "FCL",
     "name": "Fast Cables Limited",
@@ -1298,25 +1286,25 @@
   "PIOC": {
     "symbol": "PIOC",
     "name": "Pioneer Cement Limited",
-    "price": 290.0,
-    "change": -10.24,
-    "percent": -3.41060484945377,
+    "price": 290.88,
+    "change": -9.36,
+    "percent": -3.1175059952038366,
     "direction": "-",
     "open": "301",
     "high": "303.8",
     "low": "286.01",
     "volume": "N/A"
   },
-  "ALTN": {
-    "symbol": "ALTN",
-    "name": "Altern Energy Limited",
-    "price": 7.8,
+  "MIIETF": {
+    "symbol": "MIIETF",
+    "name": "Mahaana Islamic Index ETF",
+    "price": 16.25,
     "change": -0.05,
-    "percent": -0.6369426751592357,
+    "percent": -0.3067484662576687,
     "direction": "-",
-    "open": "7.82",
-    "high": "7.98",
-    "low": "7.75",
+    "open": "16.47",
+    "high": "16.47",
+    "low": "16.2",
     "volume": "N/A"
   },
   "POWER": {
@@ -1331,12 +1319,24 @@
     "low": "20.21",
     "volume": "N/A"
   },
+  "ALTN": {
+    "symbol": "ALTN",
+    "name": "Altern Energy Limited",
+    "price": 7.8,
+    "change": -0.05,
+    "percent": -0.6369426751592357,
+    "direction": "-",
+    "open": "7.82",
+    "high": "7.98",
+    "low": "7.75",
+    "volume": "N/A"
+  },
   "ILP": {
     "symbol": "ILP",
     "name": "Interloop Limited",
-    "price": 99.0,
-    "change": -0.9,
-    "percent": -0.9009009009009009,
+    "price": 98.7,
+    "change": -1.2,
+    "percent": -1.201201201201201,
     "direction": "-",
     "open": "100",
     "high": "101.4",
@@ -1403,24 +1403,12 @@
     "low": "10.26",
     "volume": "N/A"
   },
-  "PIL": {
-    "symbol": "PIL",
-    "name": "PICIC Insurance Limited",
-    "price": 5.0,
-    "change": -0.31,
-    "percent": -5.838041431261771,
-    "direction": "-",
-    "open": "5.16",
-    "high": "5.4",
-    "low": "4.9",
-    "volume": "N/A"
-  },
   "SYM": {
     "symbol": "SYM",
     "name": "Symmetry Group Limited",
-    "price": 11.32,
-    "change": -0.03,
-    "percent": -0.2643171806167401,
+    "price": 11.25,
+    "change": -0.1,
+    "percent": -0.881057268722467,
     "direction": "-",
     "open": "11.4",
     "high": "11.54",
@@ -1461,6 +1449,18 @@
     "open": "12.6",
     "high": "12.69",
     "low": "12.5",
+    "volume": "N/A"
+  },
+  "PIL": {
+    "symbol": "PIL",
+    "name": "PICIC Insurance Limited",
+    "price": 5.18,
+    "change": -0.13,
+    "percent": -2.448210922787194,
+    "direction": "-",
+    "open": "5.16",
+    "high": "5.4",
+    "low": "4.91",
     "volume": "N/A"
   },
   "UBLPETF": {
@@ -1634,9 +1634,9 @@
   "GAL": {
     "symbol": "GAL",
     "name": "Ghandhara Automobiles Limited",
-    "price": 568.4,
-    "change": -5.39,
-    "percent": -0.9393680614859096,
+    "price": 569.0,
+    "change": -4.79,
+    "percent": -0.8348001882221721,
     "direction": "-",
     "open": "575",
     "high": "577.77",
@@ -1670,9 +1670,9 @@
   "MARI": {
     "symbol": "MARI",
     "name": "Mari Energies Limited",
-    "price": 642.45,
-    "change": -3.18,
-    "percent": -0.49254216811486456,
+    "price": 642.13,
+    "change": -3.5,
+    "percent": -0.542106159874851,
     "direction": "-",
     "open": "646",
     "high": "649.96",
@@ -1763,18 +1763,6 @@
     "low": "15.15",
     "volume": "N/A"
   },
-  "MUGHAL": {
-    "symbol": "MUGHAL",
-    "name": "Mughal Iron &amp; Steel Industries Limited",
-    "price": 78.99,
-    "change": -0.4,
-    "percent": -0.5038417936767855,
-    "direction": "-",
-    "open": "79.39",
-    "high": "80.2",
-    "low": "78.51",
-    "volume": "N/A"
-  },
   "SERT": {
     "symbol": "SERT",
     "name": "Service Industries Textiles Limited",
@@ -1785,6 +1773,18 @@
     "open": "49.3",
     "high": "50.45",
     "low": "45.5",
+    "volume": "N/A"
+  },
+  "MUGHAL": {
+    "symbol": "MUGHAL",
+    "name": "Mughal Iron &amp; Steel Industries Limited",
+    "price": 78.72,
+    "change": -0.67,
+    "percent": -0.8439350044086157,
+    "direction": "-",
+    "open": "79.39",
+    "high": "80.2",
+    "low": "78.51",
     "volume": "N/A"
   },
   "CHBL": {
@@ -1910,9 +1910,9 @@
   "KOHC": {
     "symbol": "KOHC",
     "name": "Kohat Cement Company Limited",
-    "price": 91.49,
-    "change": -1.28,
-    "percent": -1.3797563867629623,
+    "price": 90.72,
+    "change": -2.05,
+    "percent": -2.2097660881750567,
     "direction": "-",
     "open": "92.1",
     "high": "93.99",
@@ -1955,18 +1955,6 @@
     "low": "7.82",
     "volume": "N/A"
   },
-  "PINL": {
-    "symbol": "PINL",
-    "name": "Premier Insurance Limited",
-    "price": 10.3,
-    "change": 0.17,
-    "percent": 1.678183613030602,
-    "direction": "+",
-    "open": "10.01",
-    "high": "10.37",
-    "low": "9.61",
-    "volume": "N/A"
-  },
   "AICL": {
     "symbol": "AICL",
     "name": "Adamjee Insurance Company Limited",
@@ -2006,13 +1994,25 @@
   "HCAR": {
     "symbol": "HCAR",
     "name": "Honda Atlas Cars (Pakistan) Limited",
-    "price": 235.77,
-    "change": 0.09,
-    "percent": 0.03818737270875763,
+    "price": 235.79,
+    "change": 0.11,
+    "percent": 0.046673455532926005,
     "direction": "+",
     "open": "238.75",
     "high": "238.75",
     "low": "234.71",
+    "volume": "N/A"
+  },
+  "PINL": {
+    "symbol": "PINL",
+    "name": "Premier Insurance Limited",
+    "price": 10.28,
+    "change": 0.15,
+    "percent": 1.4807502467917077,
+    "direction": "+",
+    "open": "10.01",
+    "high": "10.37",
+    "low": "9.61",
     "volume": "N/A"
   },
   "FML": {
@@ -2066,9 +2066,9 @@
   "MSOT": {
     "symbol": "MSOT",
     "name": "Masood Textile Mills Limited",
-    "price": 120.16,
-    "change": 4.41,
-    "percent": 3.809935205183585,
+    "price": 123.0,
+    "change": 7.25,
+    "percent": 6.263498920086392,
     "direction": "+",
     "open": "111",
     "high": "124.45",
@@ -2078,9 +2078,9 @@
   "GHNI": {
     "symbol": "GHNI",
     "name": "Ghandhara Industries Limited",
-    "price": 1164.0,
-    "change": -7.38,
-    "percent": -0.6300261230343696,
+    "price": 1165.0,
+    "change": -6.38,
+    "percent": -0.5446567296692789,
     "direction": "-",
     "open": "1165.2",
     "high": "1182",
@@ -2126,25 +2126,13 @@
   "FFLM": {
     "symbol": "FFLM",
     "name": "First Fidelity Leasing Modaraba",
-    "price": 13.95,
-    "change": -0.2,
-    "percent": -1.4134275618374559,
+    "price": 13.9,
+    "change": -0.25,
+    "percent": -1.76678445229682,
     "direction": "-",
     "open": "14.16",
     "high": "14.47",
     "low": "13.5",
-    "volume": "N/A"
-  },
-  "SAIF": {
-    "symbol": "SAIF",
-    "name": "Saif Textile Mills Limited",
-    "price": 42.25,
-    "change": -3.28,
-    "percent": -7.204041291456183,
-    "direction": "-",
-    "open": "45.5",
-    "high": "46.4",
-    "low": "41.62",
     "volume": "N/A"
   },
   "GAMON": {
@@ -2157,6 +2145,18 @@
     "open": "26.6",
     "high": "26.6",
     "low": "26.6",
+    "volume": "N/A"
+  },
+  "SAIF": {
+    "symbol": "SAIF",
+    "name": "Saif Textile Mills Limited",
+    "price": 42.95,
+    "change": -2.58,
+    "percent": -5.666593454864924,
+    "direction": "-",
+    "open": "45.5",
+    "high": "46.4",
+    "low": "41.62",
     "volume": "N/A"
   },
   "AMTEX": {
@@ -2193,18 +2193,6 @@
     "open": "33.18",
     "high": "33.94",
     "low": "33.18",
-    "volume": "N/A"
-  },
-  "BIFO": {
-    "symbol": "BIFO",
-    "name": "Biafo Industries Limited",
-    "price": 124.0,
-    "change": -2.94,
-    "percent": -2.316054829053096,
-    "direction": "-",
-    "open": "126.93",
-    "high": "128.4",
-    "low": "123.5",
     "volume": "N/A"
   },
   "ANL": {
@@ -2253,6 +2241,18 @@
     "open": "30.5",
     "high": "31.47",
     "low": "28.21",
+    "volume": "N/A"
+  },
+  "BIFO": {
+    "symbol": "BIFO",
+    "name": "Biafo Industries Limited",
+    "price": 123.5,
+    "change": -3.44,
+    "percent": -2.709941704742398,
+    "direction": "-",
+    "open": "126.93",
+    "high": "128.4",
+    "low": "123.5",
     "volume": "N/A"
   },
   "CJPL": {
@@ -2351,30 +2351,6 @@
     "low": "119.51",
     "volume": "N/A"
   },
-  "GLAXO": {
-    "symbol": "GLAXO",
-    "name": "GlaxoSmithKline Pakistan Limited",
-    "price": 347.88,
-    "change": -1.3,
-    "percent": -0.37230081906180196,
-    "direction": "-",
-    "open": "349.18",
-    "high": "350.01",
-    "low": "346.19",
-    "volume": "N/A"
-  },
-  "SAZEW": {
-    "symbol": "SAZEW",
-    "name": "Sazgar Engineering Works Limited",
-    "price": 1915.0,
-    "change": -33.27,
-    "percent": -1.707668854932838,
-    "direction": "-",
-    "open": "1947",
-    "high": "1950",
-    "low": "1911",
-    "volume": "N/A"
-  },
   "FCEPL": {
     "symbol": "FCEPL",
     "name": "Frieslandcampina Engro Pakistan Limited",
@@ -2385,6 +2361,30 @@
     "open": "103.5",
     "high": "103.5",
     "low": "102.06",
+    "volume": "N/A"
+  },
+  "GLAXO": {
+    "symbol": "GLAXO",
+    "name": "GlaxoSmithKline Pakistan Limited",
+    "price": 347.87,
+    "change": -1.31,
+    "percent": -0.3751646715161235,
+    "direction": "-",
+    "open": "349.18",
+    "high": "350.01",
+    "low": "346.19",
+    "volume": "N/A"
+  },
+  "SAZEW": {
+    "symbol": "SAZEW",
+    "name": "Sazgar Engineering Works Limited",
+    "price": 1916.8,
+    "change": -31.47,
+    "percent": -1.6152791964152813,
+    "direction": "-",
+    "open": "1947",
+    "high": "1950",
+    "low": "1911",
     "volume": "N/A"
   },
   "CCM": {
@@ -2555,18 +2555,6 @@
     "low": "51.05",
     "volume": "N/A"
   },
-  "BRRG": {
-    "symbol": "BRRG",
-    "name": "B.R.R Guardian Limited",
-    "price": 49.0,
-    "change": 0.58,
-    "percent": 1.1978521272201568,
-    "direction": "+",
-    "open": "51.45",
-    "high": "53.26",
-    "low": "49",
-    "volume": "N/A"
-  },
   "FECTC": {
     "symbol": "FECTC",
     "name": "Fecto Cement Limited",
@@ -2591,6 +2579,18 @@
     "low": "35.75",
     "volume": "N/A"
   },
+  "BRRG": {
+    "symbol": "BRRG",
+    "name": "B.R.R Guardian Limited",
+    "price": 49.05,
+    "change": 0.63,
+    "percent": 1.3011152416356877,
+    "direction": "+",
+    "open": "51.45",
+    "high": "53.26",
+    "low": "49",
+    "volume": "N/A"
+  },
   "ISL": {
     "symbol": "ISL",
     "name": "International Steels Limited",
@@ -2612,7 +2612,7 @@
     "direction": "-",
     "open": "170.5",
     "high": "171.9",
-    "low": "169.28",
+    "low": "169.5",
     "volume": "N/A"
   },
   "AVN": {
@@ -2654,10 +2654,10 @@
   "WAFI": {
     "symbol": "WAFI",
     "name": "Wafi Energy Pakistan Limited",
-    "price": 177.1,
-    "change": -0.63,
-    "percent": -0.3544702638834187,
-    "direction": "-",
+    "price": 177.89,
+    "change": 0.16,
+    "percent": 0.09002419400213808,
+    "direction": "+",
     "open": "180.99",
     "high": "181",
     "low": "176.15",
@@ -2666,9 +2666,9 @@
   "HRPL": {
     "symbol": "HRPL",
     "name": "Habib Rice Product Limited.",
-    "price": 19.8,
-    "change": -0.23,
-    "percent": -1.1482775836245631,
+    "price": 19.51,
+    "change": -0.52,
+    "percent": -2.596105841238143,
     "direction": "-",
     "open": "20.3",
     "high": "20.35",
@@ -2723,18 +2723,6 @@
     "low": "48.5",
     "volume": "N/A"
   },
-  "STML": {
-    "symbol": "STML",
-    "name": "Shams Textile Mills Limited",
-    "price": 59.14,
-    "change": 5.38,
-    "percent": 10.007440476190476,
-    "direction": "+",
-    "open": "53.76",
-    "high": "59.14",
-    "low": "53.76",
-    "volume": "N/A"
-  },
   "FECM": {
     "symbol": "FECM",
     "name": "First Elite Capital Modaraba",
@@ -2745,6 +2733,18 @@
     "open": "17.45",
     "high": "19.5",
     "low": "17",
+    "volume": "N/A"
+  },
+  "STML": {
+    "symbol": "STML",
+    "name": "Shams Textile Mills Limited",
+    "price": 59.14,
+    "change": 5.38,
+    "percent": 10.007440476190476,
+    "direction": "+",
+    "open": "53.76",
+    "high": "59.14",
+    "low": "53.76",
     "volume": "N/A"
   },
   "IREIT": {
@@ -2771,18 +2771,6 @@
     "low": "39.8",
     "volume": "N/A"
   },
-  "TGL": {
-    "symbol": "TGL",
-    "name": "Tariq Glass Industries Limited",
-    "price": 186.61,
-    "change": -2.92,
-    "percent": -1.5406531947448951,
-    "direction": "-",
-    "open": "189.6",
-    "high": "189.9",
-    "low": "186.6",
-    "volume": "N/A"
-  },
   "ANSM": {
     "symbol": "ANSM",
     "name": "Ansari Sugar Mills Limited",
@@ -2793,6 +2781,18 @@
     "open": "29.93",
     "high": "29.99",
     "low": "28.26",
+    "volume": "N/A"
+  },
+  "TGL": {
+    "symbol": "TGL",
+    "name": "Tariq Glass Industries Limited",
+    "price": 186.7,
+    "change": -2.83,
+    "percent": -1.493167308605498,
+    "direction": "-",
+    "open": "189.6",
+    "high": "189.9",
+    "low": "186.6",
     "volume": "N/A"
   },
   "PCAL": {
@@ -2915,18 +2915,6 @@
     "low": "41.76",
     "volume": "N/A"
   },
-  "BWCL": {
-    "symbol": "BWCL",
-    "name": "Bestway Cement Limited",
-    "price": 497.2,
-    "change": 3.87,
-    "percent": 0.7844647598970264,
-    "direction": "+",
-    "open": "494.5",
-    "high": "513.97",
-    "low": "490.01",
-    "volume": "N/A"
-  },
   "DIIL": {
     "symbol": "DIIL",
     "name": "Diamond Industries Limited",
@@ -2942,13 +2930,13 @@
   "PAKT": {
     "symbol": "PAKT",
     "name": "Pakistan Tobacco Company Limited",
-    "price": 1448.0,
-    "change": -7.69,
-    "percent": -0.5282718161146948,
-    "direction": "-",
+    "price": 1459.9,
+    "change": 4.21,
+    "percent": 0.2892099279379538,
+    "direction": "+",
     "open": "1450",
     "high": "1464.99",
-    "low": "1448",
+    "low": "1450",
     "volume": "N/A"
   },
   "MACTER": {
@@ -2966,9 +2954,9 @@
   "786": {
     "symbol": "786",
     "name": "786 Investments Limited",
-    "price": 22.06,
-    "change": -0.94,
-    "percent": -4.08695652173913,
+    "price": 22.2,
+    "change": -0.8,
+    "percent": -3.4782608695652173,
     "direction": "-",
     "open": "23.03",
     "high": "23.55",
@@ -2985,6 +2973,18 @@
     "open": "16.93",
     "high": "16.93",
     "low": "16.34",
+    "volume": "N/A"
+  },
+  "BWCL": {
+    "symbol": "BWCL",
+    "name": "Bestway Cement Limited",
+    "price": 495.0,
+    "change": 1.67,
+    "percent": 0.3385158007824377,
+    "direction": "+",
+    "open": "494.5",
+    "high": "513.97",
+    "low": "490.01",
     "volume": "N/A"
   },
   "HICL": {
@@ -3134,9 +3134,9 @@
   "BFBIO": {
     "symbol": "BFBIO",
     "name": "BF Biosciences Limited",
-    "price": 129.12,
-    "change": -0.1,
-    "percent": -0.07738740133106331,
+    "price": 129.07,
+    "change": -0.15,
+    "percent": -0.11608110199659495,
     "direction": "-",
     "open": "129.99",
     "high": "130.99",
@@ -3350,9 +3350,9 @@
   "LEUL": {
     "symbol": "LEUL",
     "name": "Leather Up Limited",
-    "price": 47.51,
-    "change": -1.85,
-    "percent": -3.7479740680713127,
+    "price": 47.5,
+    "change": -1.86,
+    "percent": -3.768233387358185,
     "direction": "-",
     "open": "51.9",
     "high": "51.9",
@@ -3434,9 +3434,9 @@
   "OTSU": {
     "symbol": "OTSU",
     "name": "Otsuka Pakistan Limited",
-    "price": 404.89,
-    "change": 2.43,
-    "percent": 0.6037867117229042,
+    "price": 404.01,
+    "change": 1.55,
+    "percent": 0.3851314416339512,
     "direction": "+",
     "open": "409",
     "high": "409",
@@ -3506,10 +3506,10 @@
   "ARCTM": {
     "symbol": "ARCTM",
     "name": "Arctic Textile Mills Limited",
-    "price": 36.4,
-    "change": -1.22,
-    "percent": -3.2429558745348217,
-    "direction": "-",
+    "price": 37.78,
+    "change": 0.16,
+    "percent": 0.42530568846358324,
+    "direction": "+",
     "open": "37",
     "high": "37.95",
     "low": "36.11",
@@ -3599,18 +3599,6 @@
     "low": "103",
     "volume": "N/A"
   },
-  "SHEZ": {
-    "symbol": "SHEZ",
-    "name": "Shezan International Limited",
-    "price": 224.52,
-    "change": -7.51,
-    "percent": -3.2366504331336463,
-    "direction": "-",
-    "open": "243.99",
-    "high": "243.99",
-    "low": "224.02",
-    "volume": "N/A"
-  },
   "HALEON": {
     "symbol": "HALEON",
     "name": "Haleon Pakistan Limited",
@@ -3621,6 +3609,18 @@
     "open": "756.75",
     "high": "759.8",
     "low": "750",
+    "volume": "N/A"
+  },
+  "SHEZ": {
+    "symbol": "SHEZ",
+    "name": "Shezan International Limited",
+    "price": 229.9,
+    "change": -2.13,
+    "percent": -0.9179847433521527,
+    "direction": "-",
+    "open": "243.99",
+    "high": "243.99",
+    "low": "224.02",
     "volume": "N/A"
   },
   "LSEFSL": {
@@ -3971,18 +3971,6 @@
     "low": "14.03",
     "volume": "N/A"
   },
-  "UBDL": {
-    "symbol": "UBDL",
-    "name": "United Brands Limited",
-    "price": 23.42,
-    "change": -0.7,
-    "percent": -2.9021558872305135,
-    "direction": "-",
-    "open": "24.17",
-    "high": "24.57",
-    "low": "23.42",
-    "volume": "N/A"
-  },
   "MIRKS": {
     "symbol": "MIRKS",
     "name": "Mirpurkhas Sugar Mills Limited",
@@ -4017,6 +4005,18 @@
     "open": "21.05",
     "high": "25.28",
     "low": "21.05",
+    "volume": "N/A"
+  },
+  "UBDL": {
+    "symbol": "UBDL",
+    "name": "United Brands Limited",
+    "price": 23.42,
+    "change": -0.7,
+    "percent": -2.9021558872305135,
+    "direction": "-",
+    "open": "24.17",
+    "high": "24.57",
+    "low": "23.42",
     "volume": "N/A"
   },
   "SIBL": {
@@ -4118,9 +4118,9 @@
   "KOHP": {
     "symbol": "KOHP",
     "name": "Kohinoor Power Company Limited",
-    "price": 25.37,
-    "change": 0.38,
-    "percent": 1.5206082432973191,
+    "price": 25.36,
+    "change": 0.37,
+    "percent": 1.480592236894758,
     "direction": "+",
     "open": "26.04",
     "high": "26.04",
@@ -4175,6 +4175,18 @@
     "low": "53.53",
     "volume": "N/A"
   },
+  "ABOT": {
+    "symbol": "ABOT",
+    "name": "Abbott Laboratories (Pakistan) Limited",
+    "price": 918.0,
+    "change": -6.32,
+    "percent": -0.6837458888696555,
+    "direction": "-",
+    "open": "920",
+    "high": "930",
+    "low": "917",
+    "volume": "N/A"
+  },
   "TCORP": {
     "symbol": "TCORP",
     "name": "Tariq Corporation Limited",
@@ -4185,18 +4197,6 @@
     "open": "22.21",
     "high": "22.21",
     "low": "22",
-    "volume": "N/A"
-  },
-  "ABOT": {
-    "symbol": "ABOT",
-    "name": "Abbott Laboratories (Pakistan) Limited",
-    "price": 917.3,
-    "change": -7.02,
-    "percent": -0.7594772373204084,
-    "direction": "-",
-    "open": "920",
-    "high": "930",
-    "low": "917",
     "volume": "N/A"
   },
   "NSRM": {
@@ -4283,18 +4283,6 @@
     "low": "120.51",
     "volume": "N/A"
   },
-  "HIFA": {
-    "symbol": "HIFA",
-    "name": "HBL Investment Fund",
-    "price": 5.11,
-    "change": 0.11,
-    "percent": 2.1999999999999997,
-    "direction": "+",
-    "open": "5.01",
-    "high": "5.2",
-    "low": "5",
-    "volume": "N/A"
-  },
   "BPL": {
     "symbol": "BPL",
     "name": "Burshane LPG (Pakistan) Limited",
@@ -4343,18 +4331,6 @@
     "low": "16.53",
     "volume": "N/A"
   },
-  "AGTL": {
-    "symbol": "AGTL",
-    "name": "Al-Ghazi Tractors Limited",
-    "price": 371.97,
-    "change": 0.47,
-    "percent": 0.12651413189771196,
-    "direction": "+",
-    "open": "373",
-    "high": "373",
-    "low": "368",
-    "volume": "N/A"
-  },
   "DEL": {
     "symbol": "DEL",
     "name": "Dawood Equities Limited",
@@ -4365,6 +4341,18 @@
     "open": "19.4",
     "high": "20.69",
     "low": "19",
+    "volume": "N/A"
+  },
+  "AGTL": {
+    "symbol": "AGTL",
+    "name": "Al-Ghazi Tractors Limited",
+    "price": 371.97,
+    "change": 0.47,
+    "percent": 0.12651413189771196,
+    "direction": "+",
+    "open": "373",
+    "high": "373",
+    "low": "368",
     "volume": "N/A"
   },
   "ACPL": {
@@ -4461,6 +4449,18 @@
     "open": "22.45",
     "high": "23",
     "low": "22.45",
+    "volume": "N/A"
+  },
+  "HIFA": {
+    "symbol": "HIFA",
+    "name": "HBL Investment Fund",
+    "price": 5.11,
+    "change": 0.11,
+    "percent": 2.1999999999999997,
+    "direction": "+",
+    "open": "5.01",
+    "high": "5.2",
+    "low": "5",
     "volume": "N/A"
   },
   "FTMM": {
@@ -4874,9 +4874,9 @@
   "PNSC": {
     "symbol": "PNSC",
     "name": "Pakistan National Shipping Corporation",
-    "price": 544.96,
-    "change": 3.75,
-    "percent": 0.6928918534395151,
+    "price": 544.95,
+    "change": 3.74,
+    "percent": 0.6910441418303431,
     "direction": "+",
     "open": "557.79",
     "high": "557.79",
@@ -5231,18 +5231,6 @@
     "low": "26",
     "volume": "N/A"
   },
-  "PKGS": {
-    "symbol": "PKGS",
-    "name": "Packages Limited",
-    "price": 780.01,
-    "change": -6.5,
-    "percent": -0.8264357732260239,
-    "direction": "-",
-    "open": "786.2",
-    "high": "793",
-    "low": "780",
-    "volume": "N/A"
-  },
   "MUREB": {
     "symbol": "MUREB",
     "name": "Murree Brewery Company Limited",
@@ -5253,6 +5241,18 @@
     "open": "914.98",
     "high": "925",
     "low": "902.01",
+    "volume": "N/A"
+  },
+  "PKGS": {
+    "symbol": "PKGS",
+    "name": "Packages Limited",
+    "price": 780.01,
+    "change": -6.5,
+    "percent": -0.8264357732260239,
+    "direction": "-",
+    "open": "786.2",
+    "high": "793",
+    "low": "780",
     "volume": "N/A"
   },
   "ARPL": {

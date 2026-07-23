@@ -7258,7 +7258,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.4,
+    "screener_score": 43.2,
     "dividends": [
       {
         "date": "108.2589",
@@ -8699,15 +8699,15 @@
     "fund_name": "Alfalah Strategic Allocation Capital Preservation Plan II",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "99.7264",
+    "validity_date": "Jul 22, 2026",
+    "nav": "99.4581",
     "returns": {
-      "mtd": "-0.56",
-      "ytd": "-0.56",
-      "1d": "0.02",
+      "mtd": "-0.83",
+      "ytd": "-0.83",
+      "1d": "-0.27",
       "15d": "-2.06",
-      "30d": "-0.28",
-      "90d": "2.37",
+      "30d": "-0.44",
+      "90d": "2.09",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -12548,7 +12548,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.3,
+    "screener_score": 63.2,
     "dividends": [
       {
         "date": "107.0000",
@@ -17194,7 +17194,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 58.6,
+    "screener_score": 58.4,
     "dividends": [
       {
         "date": "942.0336",
@@ -17272,8 +17272,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jul 18, 2025",
-    "offer": "122.4474",
-    "repurchase": "118.3639",
+    "offer": "122.1202",
+    "repurchase": "118.0476",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -17289,9 +17289,9 @@
     "screener_score": 46.3,
     "dividends": [
       {
-        "date": "118.3639",
+        "date": "118.0476",
         "payout_per_unit": "Jul 18, 2025",
-        "ex_nav": "122.4474"
+        "ex_nav": "122.1202"
       }
     ]
   },
@@ -17318,8 +17318,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Aug 11, 2025",
-    "offer": "112.9798",
-    "repurchase": "109.2119",
+    "offer": "112.9810",
+    "repurchase": "109.2131",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -17335,9 +17335,9 @@
     "screener_score": 2.6,
     "dividends": [
       {
-        "date": "109.2119",
+        "date": "109.2131",
         "payout_per_unit": "Aug 11, 2025",
-        "ex_nav": "112.9798"
+        "ex_nav": "112.9810"
       }
     ]
   },
@@ -17364,14 +17364,14 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "May 29, 2025",
-    "offer": "114.4514",
-    "repurchase": "110.6345",
+    "offer": "114.4781",
+    "repurchase": "110.6603",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "2.00",
-    "ter_ytd": "0.69",
+    "ter_ytd": "0.70",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -17381,9 +17381,9 @@
     "screener_score": 20.5,
     "dividends": [
       {
-        "date": "110.6345",
+        "date": "110.6603",
         "payout_per_unit": "May 29, 2025",
-        "ex_nav": "114.4514"
+        "ex_nav": "114.4781"
       }
     ]
   },
@@ -17410,8 +17410,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jan 10, 2025",
-    "offer": "113.3566",
-    "repurchase": "109.5762",
+    "offer": "113.3865",
+    "repurchase": "109.6051",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -17427,9 +17427,9 @@
     "screener_score": 10.0,
     "dividends": [
       {
-        "date": "109.5762",
+        "date": "109.6051",
         "payout_per_unit": "Jan 10, 2025",
-        "ex_nav": "113.3566"
+        "ex_nav": "113.3865"
       }
     ]
   },
@@ -17456,8 +17456,8 @@
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jan 10, 2025",
-    "offer": "113.5956",
-    "repurchase": "109.8073",
+    "offer": "113.6274",
+    "repurchase": "109.8380",
     "front_end_load": "3",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -17473,9 +17473,9 @@
     "screener_score": 12.2,
     "dividends": [
       {
-        "date": "109.8073",
+        "date": "109.8380",
         "payout_per_unit": "Jan 10, 2025",
-        "ex_nav": "113.5956"
+        "ex_nav": "113.6274"
       }
     ]
   },
@@ -19672,20 +19672,20 @@
     "fund_name": "UBL Retirement Saving Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "401.6000",
+    "validity_date": "Jul 22, 2026",
+    "nav": "406.0600",
     "returns": {
-      "mtd": "1.51",
-      "ytd": "1.51",
-      "1d": "1.48",
-      "15d": "-1.46",
-      "30d": "-1.15",
-      "90d": "-11.27",
-      "180d": "-16.48",
-      "270d": "-1.87",
-      "365d": "15.42",
-      "2y": "60.99",
-      "3y": "117.27"
+      "mtd": "2.64",
+      "ytd": "2.64",
+      "1d": "1.11",
+      "15d": "0.66",
+      "30d": "-0.90",
+      "90d": "-9.52",
+      "180d": "-16.17",
+      "270d": "-0.79",
+      "365d": "15.70",
+      "2y": "62.87",
+      "3y": "119.63"
     },
     "amc": "UBL Fund Managers Limited",
     "inception_date": "Apr 21, 2014",
@@ -19703,7 +19703,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 57.3,
+    "screener_score": 57.6,
     "dividends": [
       {
         "date": "567.6669",

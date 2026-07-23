@@ -12521,8 +12521,23 @@
     "dividends": [
       {
         "date": "Jun 18, 2026",
-        "payout_per_unit": "26.0",
-        "ex_nav": "500.8700"
+        "payout_per_unit": 26.0,
+        "ex_nav": 500.87
+      },
+      {
+        "date": "Jun 26, 2025",
+        "payout_per_unit": 14.7852,
+        "ex_nav": 108.34
+      },
+      {
+        "date": "Jun 28, 2024",
+        "payout_per_unit": 5.02,
+        "ex_nav": 241.69
+      },
+      {
+        "date": "Sep 20, 2023",
+        "payout_per_unit": 5.1,
+        "ex_nav": 155.0
       }
     ]
   },

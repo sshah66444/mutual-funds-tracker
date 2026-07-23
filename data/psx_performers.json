@@ -7,43 +7,43 @@
       "direction": "+",
       "change": "0.13",
       "percent": "1.32%",
-      "volume": "27,960,953"
+      "volume": "29,583,359"
     },
     {
       "symbol": "PRL",
       "name": "Pakistan Refinery Limited",
-      "price": "51.95",
+      "price": "51.83",
       "direction": "+",
-      "change": "1.09",
-      "percent": "2.14%",
-      "volume": "20,071,855"
+      "change": "0.97",
+      "percent": "1.91%",
+      "volume": "20,183,520"
     },
     {
       "symbol": "DCL",
       "name": "Dewan Cement Limited",
-      "price": "11.78",
-      "direction": "+",
-      "change": "0.04",
-      "percent": "0.34%",
-      "volume": "16,761,387"
+      "price": "11.59",
+      "direction": "-",
+      "change": "-0.15",
+      "percent": "-1.28%",
+      "volume": "17,547,109"
     },
     {
       "symbol": "TPLP",
       "name": "TPL Properties Limited",
-      "price": "13.21",
+      "price": "13.22",
       "direction": "-",
-      "change": "-0.18",
-      "percent": "-1.34%",
-      "volume": "16,136,462"
+      "change": "-0.17",
+      "percent": "-1.27%",
+      "volume": "16,228,240"
     },
     {
       "symbol": "TSBL",
       "name": "Trust Securities &amp; Brokerage Limited",
-      "price": "2.35",
+      "price": "2.32",
       "direction": "-",
-      "change": "-0.06",
-      "percent": "-2.49%",
-      "volume": "10,699,863"
+      "change": "-0.09",
+      "percent": "-3.73%",
+      "volume": "10,946,254"
     },
     {
       "symbol": "WTL",
@@ -52,43 +52,43 @@
       "direction": "-",
       "change": "-0.01",
       "percent": "-0.81%",
-      "volume": "10,580,372"
+      "volume": "10,674,778"
     },
     {
       "symbol": "MLCF",
       "name": "Maple Leaf Cement Factory Limited",
-      "price": "89.99",
+      "price": "89.80",
       "direction": "-",
-      "change": "-2.17",
-      "percent": "-2.35%",
-      "volume": "8,009,494"
+      "change": "-2.36",
+      "percent": "-2.56%",
+      "volume": "8,088,202"
     },
     {
       "symbol": "PIBTL",
       "name": "Pakistan International Bulk Terminal",
-      "price": "16.35",
+      "price": "16.22",
       "direction": "-",
-      "change": "-0.06",
-      "percent": "-0.37%",
-      "volume": "7,717,031"
+      "change": "-0.19",
+      "percent": "-1.16%",
+      "volume": "7,787,172"
     },
     {
       "symbol": "LOTCHEM",
       "name": "Lotte Chemical Pakistan Limited",
-      "price": "29.33",
-      "direction": "+",
-      "change": "0.02",
-      "percent": "0.07%",
-      "volume": "7,431,220"
+      "price": "29.30",
+      "direction": "-",
+      "change": "-0.01",
+      "percent": "-0.03%",
+      "volume": "7,560,726"
     },
     {
       "symbol": "YOUW",
       "name": "Yousaf Weaving Mills Limited",
-      "price": "5.68",
+      "price": "5.64",
       "direction": "+",
-      "change": "0.25",
-      "percent": "4.60%",
-      "volume": "6,797,574"
+      "change": "0.21",
+      "percent": "3.87%",
+      "volume": "6,848,132"
     }
   ],
   "gainers": [
@@ -99,7 +99,7 @@
       "direction": "+",
       "change": "1.82",
       "percent": "10.01%",
-      "volume": "98,097"
+      "volume": "98,498"
     },
     {
       "symbol": "SHCM",
@@ -108,7 +108,7 @@
       "direction": "+",
       "change": "5.34",
       "percent": "10.01%",
-      "volume": "7,955"
+      "volume": "12,955"
     },
     {
       "symbol": "GAMON",
@@ -117,7 +117,7 @@
       "direction": "+",
       "change": "2.42",
       "percent": "10.01%",
-      "volume": "95,334"
+      "volume": "118,334"
     },
     {
       "symbol": "STML",
@@ -126,7 +126,7 @@
       "direction": "+",
       "change": "5.38",
       "percent": "10.01%",
-      "volume": "47,977"
+      "volume": "49,948"
     },
     {
       "symbol": "UDLI",
@@ -135,7 +135,7 @@
       "direction": "+",
       "change": "1.80",
       "percent": "10.01%",
-      "volume": "2,513,338"
+      "volume": "2,723,548"
     },
     {
       "symbol": "SHJS",
@@ -153,7 +153,7 @@
       "direction": "+",
       "change": "14.32",
       "percent": "10.00%",
-      "volume": "61,117"
+      "volume": "65,980"
     },
     {
       "symbol": "FSWL",
@@ -180,7 +180,7 @@
       "direction": "+",
       "change": "2.86",
       "percent": "10.00%",
-      "volume": "79,775"
+      "volume": "79,875"
     }
   ],
   "losers": [
@@ -191,7 +191,7 @@
       "direction": "-",
       "change": "-24.39",
       "percent": "-10.00%",
-      "volume": "1,133"
+      "volume": "1,141"
     },
     {
       "symbol": "KPUS",
@@ -200,7 +200,7 @@
       "direction": "-",
       "change": "-136.43",
       "percent": "-10.00%",
-      "volume": "2,444"
+      "volume": "2,462"
     },
     {
       "symbol": "ASLCPS",
@@ -218,7 +218,7 @@
       "direction": "-",
       "change": "-7.15",
       "percent": "-9.99%",
-      "volume": "3,397,332"
+      "volume": "3,399,597"
     },
     {
       "symbol": "DBCI",
@@ -227,7 +227,7 @@
       "direction": "-",
       "change": "-2.26",
       "percent": "-9.98%",
-      "volume": "1,200,104"
+      "volume": "1,203,004"
     },
     {
       "symbol": "NSRM",
@@ -237,6 +237,15 @@
       "change": "-29.43",
       "percent": "-9.93%",
       "volume": "4,082"
+    },
+    {
+      "symbol": "FTSM",
+      "name": "First Tri-Star Modaraba",
+      "price": "28.20",
+      "direction": "-",
+      "change": "-2.83",
+      "percent": "-9.12%",
+      "volume": "11,983"
     },
     {
       "symbol": "GEMPAPL",
@@ -255,15 +264,6 @@
       "change": "-4.47",
       "percent": "-7.64%",
       "volume": "67,611"
-    },
-    {
-      "symbol": "ELCM",
-      "name": "Elahi Cotton Mills Limited",
-      "price": "210.00",
-      "direction": "-",
-      "change": "-17.34",
-      "percent": "-7.63%",
-      "volume": "11"
     },
     {
       "symbol": "HUSI",

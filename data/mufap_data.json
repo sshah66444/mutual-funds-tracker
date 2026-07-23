@@ -312,7 +312,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.2,
+    "screener_score": 29.1,
     "dividends": [
       {
         "date": "510.3400",
@@ -419,43 +419,43 @@
     "fund_name": "Askari Cash Fund",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 23, 2026",
-    "nav": "104.4788",
+    "validity_date": "Jul 24, 2026",
+    "nav": "104.5080",
     "returns": {
-      "mtd": "9.77",
-      "ytd": "9.77",
-      "1d": "9.78",
-      "15d": "9.80",
-      "30d": "7.49",
-      "90d": "9.01",
-      "180d": "9.05",
+      "mtd": "9.79",
+      "ytd": "9.79",
+      "1d": "10.18",
+      "15d": "9.84",
+      "30d": "7.83",
+      "90d": "9.03",
+      "180d": "9.07",
       "270d": "9.05",
-      "365d": "9.20",
-      "2y": "11.93",
-      "3y": "17.07"
+      "365d": "9.21",
+      "2y": "11.91",
+      "3y": "17.06"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Sep 30, 2009",
-    "offer": "104.4788",
-    "repurchase": "104.4788",
+    "offer": "104.5080",
+    "repurchase": "104.5080",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.90",
-    "ter_ytd": "0.08",
+    "ter_ytd": "0.09",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.8,
+    "screener_score": 20.7,
     "dividends": [
       {
-        "date": "104.4788",
+        "date": "104.5080",
         "payout_per_unit": "Sep 30, 2009",
-        "ex_nav": "104.4788"
+        "ex_nav": "104.5080"
       }
     ]
   },
@@ -542,7 +542,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.0,
+    "screener_score": 48.1,
     "dividends": [
       {
         "date": "517.9841",
@@ -772,7 +772,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.4,
+    "screener_score": 49.5,
     "dividends": [
       {
         "date": "122.5125",
@@ -2213,43 +2213,43 @@
     "fund_name": "Askari Sovereign Yield Enhancer",
     "rating": "AA-(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "105.2246",
+    "validity_date": "Jul 23, 2026",
+    "nav": "105.2544",
     "returns": {
-      "mtd": "9.92",
-      "ytd": "9.92",
-      "1d": "9.78",
-      "15d": "9.82",
-      "30d": "9.62",
-      "90d": "11.00",
-      "180d": "10.03",
-      "270d": "9.83",
+      "mtd": "9.94",
+      "ytd": "9.94",
+      "1d": "10.33",
+      "15d": "9.83",
+      "30d": "9.96",
+      "90d": "11.03",
+      "180d": "10.05",
+      "270d": "9.84",
       "365d": "9.81",
-      "2y": "12.52",
-      "3y": "18.39"
+      "2y": "12.51",
+      "3y": "18.37"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "May 07, 2012",
-    "offer": "106.7108",
-    "repurchase": "105.2246",
+    "offer": "106.7411",
+    "repurchase": "105.2544",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.50",
-    "ter_ytd": "0.13",
+    "ter_ytd": "0.14",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.2,
+    "screener_score": 32.3,
     "dividends": [
       {
-        "date": "105.2246",
+        "date": "105.2544",
         "payout_per_unit": "May 07, 2012",
-        "ex_nav": "106.7108"
+        "ex_nav": "106.7411"
       }
     ]
   },
@@ -2382,7 +2382,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.8,
+    "screener_score": 29.9,
     "dividends": [
       {
         "date": "103.3371",
@@ -3394,7 +3394,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.9,
+    "screener_score": 57.1,
     "dividends": [
       {
         "date": "10.4091",
@@ -3455,31 +3455,31 @@
     "fund_name": "Pak Oman Income Fund",
     "rating": "A+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "10.9746",
+    "validity_date": "Jul 23, 2026",
+    "nav": "10.9767",
     "returns": {
-      "mtd": "7.35",
-      "ytd": "7.35",
+      "mtd": "7.33",
+      "ytd": "7.33",
       "1d": "6.97",
-      "15d": "7.25",
-      "30d": "7.42",
-      "90d": "7.18",
-      "180d": "7.00",
+      "15d": "7.23",
+      "30d": "7.65",
+      "90d": "7.19",
+      "180d": "6.99",
       "270d": "7.25",
       "365d": "7.53",
-      "2y": "9.90",
-      "3y": "15.79"
+      "2y": "9.88",
+      "3y": "15.77"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Jul 28, 2011",
-    "offer": "10.9746",
-    "repurchase": "10.9746",
+    "offer": "10.9767",
+    "repurchase": "10.9767",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "1.10",
-    "ter_ytd": "0.19",
+    "ter_ytd": "0.20",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -3489,9 +3489,9 @@
     "screener_score": 9.0,
     "dividends": [
       {
-        "date": "10.9746",
+        "date": "10.9767",
         "payout_per_unit": "Jul 28, 2011",
-        "ex_nav": "10.9746"
+        "ex_nav": "10.9767"
       }
     ]
   },
@@ -3501,15 +3501,15 @@
     "fund_name": "Pak Oman Micro Finance Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "101.8569",
+    "validity_date": "Jul 23, 2026",
+    "nav": "101.8876",
     "returns": {
       "mtd": "11.11",
       "ytd": "11.11",
       "1d": "10.99",
       "15d": "11.07",
-      "30d": "16.47",
-      "90d": "12.58",
+      "30d": "16.85",
+      "90d": "12.59",
       "180d": "11.81",
       "270d": "11.78",
       "365d": "11.59",
@@ -3518,8 +3518,8 @@
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "May 14, 2024",
-    "offer": "101.8569",
-    "repurchase": "101.8569",
+    "offer": "101.8876",
+    "repurchase": "101.8876",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3535,9 +3535,9 @@
     "screener_score": 39.4,
     "dividends": [
       {
-        "date": "101.8569",
+        "date": "101.8876",
         "payout_per_unit": "May 14, 2024",
-        "ex_nav": "101.8569"
+        "ex_nav": "101.8876"
       }
     ]
   },
@@ -3762,7 +3762,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 65.9,
+    "screener_score": 66.0,
     "dividends": [
       {
         "date": "225.0000",
@@ -3946,7 +3946,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.3,
+    "screener_score": 60.4,
     "dividends": [
       {
         "date": "80.9832",
@@ -3978,8 +3978,8 @@
     },
     "amc": "Atlas Asset Management Limited",
     "inception_date": "Feb 10, 2026",
-    "offer": "95.0179",
-    "repurchase": "95.0179",
+    "offer": "93.8232",
+    "repurchase": "93.8232",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -3995,9 +3995,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "95.0179",
+        "date": "93.8232",
         "payout_per_unit": "Feb 10, 2026",
-        "ex_nav": "95.0179"
+        "ex_nav": "93.8232"
       }
     ]
   },
@@ -4024,8 +4024,8 @@
     },
     "amc": "Atlas Asset Management Limited",
     "inception_date": "Feb 10, 2026",
-    "offer": "97.8728",
-    "repurchase": "97.8728",
+    "offer": "96.3706",
+    "repurchase": "96.3706",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -4041,9 +4041,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "97.8728",
+        "date": "96.3706",
         "payout_per_unit": "Feb 10, 2026",
-        "ex_nav": "97.8728"
+        "ex_nav": "96.3706"
       }
     ]
   },
@@ -4070,8 +4070,8 @@
     },
     "amc": "Atlas Asset Management Limited",
     "inception_date": "Nov 23, 2004",
-    "offer": "2107.6440",
-    "repurchase": "2107.6440",
+    "offer": "2071.9442",
+    "repurchase": "2071.9442",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -4087,9 +4087,9 @@
     "screener_score": 77.6,
     "dividends": [
       {
-        "date": "2107.6440",
+        "date": "2071.9442",
         "payout_per_unit": "Nov 23, 2004",
-        "ex_nav": "2107.6440"
+        "ex_nav": "2071.9442"
       }
     ]
   },
@@ -4237,25 +4237,25 @@
     "fund_name": "HBL Energy Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "34.1702",
+    "validity_date": "Jul 23, 2026",
+    "nav": "34.0080",
     "returns": {
-      "mtd": "-1.70",
-      "ytd": "-1.70",
-      "1d": "-0.31",
-      "15d": "-3.30",
-      "30d": "-4.72",
-      "90d": "-0.69",
-      "180d": "-8.99",
-      "270d": "6.45",
-      "365d": "28.83",
-      "2y": "110.42",
+      "mtd": "-2.17",
+      "ytd": "-2.17",
+      "1d": "-0.47",
+      "15d": "-1.84",
+      "30d": "-3.43",
+      "90d": "-2.88",
+      "180d": "-9.42",
+      "270d": "5.94",
+      "365d": "28.37",
+      "2y": "108.22",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Jan 20, 2006",
-    "offer": "34.9561",
-    "repurchase": "34.1702",
+    "offer": "34.7902",
+    "repurchase": "34.0080",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -4268,12 +4268,12 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 77.8,
+    "screener_score": 77.7,
     "dividends": [
       {
-        "date": "34.1702",
+        "date": "34.0080",
         "payout_per_unit": "Jan 20, 2006",
-        "ex_nav": "34.9561"
+        "ex_nav": "34.7902"
       }
     ]
   },
@@ -4513,25 +4513,25 @@
     "fund_name": "HBL Stock Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "235.3281",
+    "validity_date": "Jul 23, 2026",
+    "nav": "233.9521",
     "returns": {
-      "mtd": "3.40",
-      "ytd": "3.40",
-      "1d": "-0.30",
-      "15d": "-1.85",
-      "30d": "3.10",
-      "90d": "8.98",
-      "180d": "-4.53",
-      "270d": "6.89",
-      "365d": "30.01",
-      "2y": "94.28",
+      "mtd": "2.79",
+      "ytd": "2.79",
+      "1d": "-0.58",
+      "15d": "0.42",
+      "30d": "2.29",
+      "90d": "6.96",
+      "180d": "-5.09",
+      "270d": "6.27",
+      "365d": "28.51",
+      "2y": "90.50",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Aug 23, 2007",
-    "offer": "240.7406",
-    "repurchase": "235.3281",
+    "offer": "239.3330",
+    "repurchase": "233.9521",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -4544,12 +4544,12 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 77.3,
+    "screener_score": 77.1,
     "dividends": [
       {
-        "date": "235.3281",
+        "date": "233.9521",
         "payout_per_unit": "Aug 23, 2007",
-        "ex_nav": "240.7406"
+        "ex_nav": "239.3330"
       }
     ]
   },
@@ -5418,7 +5418,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 14.9,
+    "screener_score": 15.1,
     "dividends": [
       {
         "date": "102.9254",
@@ -5648,7 +5648,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.7,
+    "screener_score": 14.8,
     "dividends": [
       {
         "date": "100.7173",
@@ -7258,7 +7258,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.2,
+    "screener_score": 43.4,
     "dividends": [
       {
         "date": "108.2589",
@@ -7350,7 +7350,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.2,
+    "screener_score": 60.3,
     "dividends": [
       {
         "date": "55.0000",
@@ -7503,43 +7503,43 @@
     "fund_name": "Askari High Yield Scheme",
     "rating": "A(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "105.3552",
+    "validity_date": "Jul 23, 2026",
+    "nav": "105.0990",
     "returns": {
-      "mtd": "12.20",
-      "ytd": "12.20",
-      "1d": "-40.52",
-      "15d": "-1.98",
-      "30d": "9.55",
-      "90d": "46.51",
-      "180d": "26.01",
-      "270d": "19.65",
-      "365d": "16.45",
-      "2y": "14.87",
-      "3y": "18.41"
+      "mtd": "7.79",
+      "ytd": "7.79",
+      "1d": "-88.77",
+      "15d": "-26.28",
+      "30d": "6.57",
+      "90d": "45.36",
+      "180d": "25.42",
+      "270d": "19.25",
+      "365d": "16.14",
+      "2y": "14.68",
+      "3y": "18.26"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Mar 16, 2006",
-    "offer": "107.7362",
+    "offer": "107.4742",
     "repurchase": "109.1701",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "1.50",
-    "ter_ytd": "0.15",
+    "ter_ytd": "0.16",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.5,
+    "screener_score": 53.6,
     "dividends": [
       {
         "date": "109.1701",
         "payout_per_unit": "Mar 16, 2006",
-        "ex_nav": "107.7362"
+        "ex_nav": "107.4742"
       }
     ]
   },
@@ -7764,7 +7764,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.8,
+    "screener_score": 68.0,
     "dividends": [
       {
         "date": "42.3557",
@@ -7856,7 +7856,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.8,
+    "screener_score": 66.9,
     "dividends": [
       {
         "date": "413.7400",
@@ -8086,7 +8086,7 @@
     "major_category": "Assets",
     "total_load": 6.0,
     "is_ter_estimated": false,
-    "screener_score": 40.9,
+    "screener_score": 41.1,
     "dividends": [
       {
         "date": "115.6279",
@@ -8469,43 +8469,43 @@
     "fund_name": "Pak Oman Advantage Asset Allocation Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "40.6198",
+    "validity_date": "Jul 23, 2026",
+    "nav": "40.1907",
     "returns": {
-      "mtd": "-0.50",
-      "ytd": "-0.50",
-      "1d": "-0.55",
-      "15d": "-3.13",
-      "30d": "0.60",
-      "90d": "8.60",
-      "180d": "-3.58",
-      "270d": "5.89",
-      "365d": "21.03",
-      "2y": "73.26",
-      "3y": "128.27"
+      "mtd": "-1.55",
+      "ytd": "-1.55",
+      "1d": "-1.06",
+      "15d": "-2.62",
+      "30d": "-0.46",
+      "90d": "6.44",
+      "180d": "-4.61",
+      "270d": "4.78",
+      "365d": "19.84",
+      "2y": "70.04",
+      "3y": "126.00"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Oct 30, 2008",
-    "offer": "41.7673",
-    "repurchase": "40.6198",
+    "offer": "41.3260",
+    "repurchase": "40.1907",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "2.00",
-    "ter_ytd": "0.35",
+    "ter_ytd": "0.38",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "High",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.5,
+    "screener_score": 64.9,
     "dividends": [
       {
-        "date": "40.6198",
+        "date": "40.1907",
         "payout_per_unit": "Oct 30, 2008",
-        "ex_nav": "41.7673"
+        "ex_nav": "41.3260"
       }
     ]
   },
@@ -8592,7 +8592,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.2,
+    "screener_score": 70.3,
     "dividends": [
       {
         "date": "121.5998",
@@ -8684,7 +8684,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 61.2,
+    "screener_score": 61.1,
     "dividends": [
       {
         "date": "99.4297",
@@ -9604,7 +9604,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.1,
+    "screener_score": 19.2,
     "dividends": [
       {
         "date": "102.7627",
@@ -10263,20 +10263,20 @@
     "fund_name": "Pak Oman Daily Dividend Fund",
     "rating": "AA(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 23, 2026",
+    "validity_date": "Jul 24, 2026",
     "nav": "9.9691",
     "returns": {
-      "mtd": "-0.20",
-      "ytd": "-0.20",
-      "1d": "-0.37",
+      "mtd": "-0.19",
+      "ytd": "-0.19",
+      "1d": "N/A",
       "15d": "-0.19",
       "30d": "-0.19",
-      "90d": "-0.60",
-      "180d": "0.07",
-      "270d": "1.80",
-      "365d": "2.88",
-      "2y": "6.49",
-      "3y": "10.53"
+      "90d": "-0.59",
+      "180d": "0.03",
+      "270d": "1.77",
+      "365d": "2.87",
+      "2y": "6.46",
+      "3y": "10.47"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Dec 07, 2021",
@@ -10287,7 +10287,7 @@
     "contingent_load": "0",
     "trustee": "N/A",
     "management_fee": "0.10",
-    "ter_ytd": "0.35",
+    "ter_ytd": "0.37",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Low",
@@ -10616,7 +10616,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 20.5,
+    "screener_score": 20.7,
     "dividends": [
       {
         "date": "101.1247",
@@ -11214,7 +11214,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.9,
+    "screener_score": 36.0,
     "dividends": [
       {
         "date": "106.4944",
@@ -11904,7 +11904,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 14.2,
+    "screener_score": 14.1,
     "dividends": [
       {
         "date": "50.8450",
@@ -11996,7 +11996,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 15.2,
+    "screener_score": 15.4,
     "dividends": [
       {
         "date": "52.2649",
@@ -12333,31 +12333,31 @@
     "fund_name": "Pak Oman Advantage Islamic Income Fund",
     "rating": "A+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "53.7675",
+    "validity_date": "Jul 23, 2026",
+    "nav": "53.7661",
     "returns": {
-      "mtd": "6.45",
-      "ytd": "6.45",
-      "1d": "6.86",
-      "15d": "6.31",
-      "30d": "6.15",
-      "90d": "5.76",
-      "180d": "5.46",
-      "270d": "5.77",
-      "365d": "5.67",
-      "2y": "8.33",
-      "3y": "13.79"
+      "mtd": "6.12",
+      "ytd": "6.12",
+      "1d": "-0.95",
+      "15d": "5.84",
+      "30d": "6.12",
+      "90d": "5.68",
+      "180d": "5.41",
+      "270d": "5.75",
+      "365d": "5.65",
+      "2y": "8.29",
+      "3y": "13.76"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Oct 28, 2008",
-    "offer": "54.3750",
-    "repurchase": "53.7675",
+    "offer": "54.3736",
+    "repurchase": "53.7661",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "0.70",
-    "ter_ytd": "0.24",
+    "ter_ytd": "0.26",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "Medium",
@@ -12367,9 +12367,9 @@
     "screener_score": 7.0,
     "dividends": [
       {
-        "date": "53.7675",
+        "date": "53.7661",
         "payout_per_unit": "Oct 28, 2008",
-        "ex_nav": "54.3750"
+        "ex_nav": "54.3736"
       }
     ]
   },
@@ -12502,7 +12502,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.1,
+    "screener_score": 63.3,
     "dividends": [
       {
         "date": "31.8834",
@@ -12548,7 +12548,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.2,
+    "screener_score": 63.4,
     "dividends": [
       {
         "date": "107.0000",
@@ -12778,7 +12778,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 70.0,
+    "screener_score": 70.1,
     "dividends": [
       {
         "date": "71.6875",
@@ -12948,8 +12948,8 @@
     },
     "amc": "Atlas Asset Management Limited",
     "inception_date": "Apr 01, 2026",
-    "offer": "107.4814",
-    "repurchase": "107.4814",
+    "offer": "104.4879",
+    "repurchase": "104.4879",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -12965,9 +12965,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "107.4814",
+        "date": "104.4879",
         "payout_per_unit": "Apr 01, 2026",
-        "ex_nav": "107.4814"
+        "ex_nav": "104.4879"
       }
     ]
   },
@@ -13468,7 +13468,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 48.0,
+    "screener_score": 48.1,
     "dividends": [
       {
         "date": "131.3400",
@@ -13744,7 +13744,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 65.4,
+    "screener_score": 65.5,
     "dividends": [
       {
         "date": "211.5380",
@@ -15722,7 +15722,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 58.3,
+    "screener_score": 58.4,
     "dividends": [
       {
         "date": "26.9823",
@@ -15814,7 +15814,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 56.8,
+    "screener_score": 56.9,
     "dividends": [
       {
         "date": "197.9270",
@@ -15952,7 +15952,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.9,
+    "screener_score": 67.0,
     "dividends": [
       {
         "date": "213.8745",
@@ -16596,7 +16596,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.1,
+    "screener_score": 68.3,
     "dividends": [
       {
         "date": "34.2150",
@@ -16611,43 +16611,43 @@
     "fund_name": "Pak Oman Islamic Asset Allocation Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "39.1614",
+    "validity_date": "Jul 23, 2026",
+    "nav": "38.7126",
     "returns": {
-      "mtd": "-1.50",
-      "ytd": "-1.50",
-      "1d": "-0.58",
-      "15d": "-3.61",
-      "30d": "-0.18",
-      "90d": "5.53",
-      "180d": "-6.68",
-      "270d": "2.00",
-      "365d": "15.94",
-      "2y": "61.13",
-      "3y": "99.51"
+      "mtd": "-2.63",
+      "ytd": "-2.63",
+      "1d": "-1.15",
+      "15d": "-3.26",
+      "30d": "-1.32",
+      "90d": "3.36",
+      "180d": "-7.75",
+      "270d": "0.84",
+      "365d": "14.68",
+      "2y": "57.99",
+      "3y": "97.21"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Oct 28, 2008",
-    "offer": "40.2677",
-    "repurchase": "39.1614",
+    "offer": "39.8062",
+    "repurchase": "38.7126",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "DCC",
     "management_fee": "2.00",
-    "ter_ytd": "0.36",
+    "ter_ytd": "0.41",
     "sm_fee": "0.00",
     "is_shariah": true,
     "risk_level": "High",
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 59.1,
+    "screener_score": 57.7,
     "dividends": [
       {
-        "date": "39.1614",
+        "date": "38.7126",
         "payout_per_unit": "Oct 28, 2008",
-        "ex_nav": "40.2677"
+        "ex_nav": "39.8062"
       }
     ]
   },
@@ -16780,7 +16780,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.1,
+    "screener_score": 49.3,
     "dividends": [
       {
         "date": "136.7278",
@@ -17010,7 +17010,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.8,
+    "screener_score": 58.0,
     "dividends": [
       {
         "date": "112.2632",
@@ -17194,7 +17194,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 58.4,
+    "screener_score": 58.6,
     "dividends": [
       {
         "date": "942.0336",
@@ -17255,18 +17255,18 @@
     "fund_name": "Faysal Islamic Financial Planning Fund II (Faysal Priority Ascend Plan I)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "118.3639",
+    "validity_date": "Jul 22, 2026",
+    "nav": "118.0476",
     "returns": {
-      "mtd": "-0.60",
-      "ytd": "-0.60",
-      "1d": "0.02",
-      "15d": "-1.48",
-      "30d": "-0.30",
-      "90d": "1.67",
-      "180d": "2.19",
-      "270d": "9.17",
-      "365d": "18.25",
+      "mtd": "-0.86",
+      "ytd": "-0.86",
+      "1d": "-0.27",
+      "15d": "-1.49",
+      "30d": "-0.58",
+      "90d": "1.69",
+      "180d": "1.77",
+      "270d": "8.87",
+      "365d": "17.95",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -17286,7 +17286,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.3,
+    "screener_score": 45.8,
     "dividends": [
       {
         "date": "118.0476",
@@ -17301,17 +17301,17 @@
     "fund_name": "Faysal Islamic Financial Planning Fund II (Faysal Priority Ascend Plan II)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "109.2119",
+    "validity_date": "Jul 22, 2026",
+    "nav": "109.2131",
     "returns": {
       "mtd": "0.44",
       "ytd": "0.44",
-      "1d": "0.03",
-      "15d": "0.19",
-      "30d": "0.69",
-      "90d": "2.27",
-      "180d": "4.10",
-      "270d": "7.43",
+      "1d": "N/A",
+      "15d": "0.18",
+      "30d": "0.67",
+      "90d": "2.28",
+      "180d": "4.06",
+      "270d": "7.41",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
@@ -17347,17 +17347,17 @@
     "fund_name": "Faysal Islamic Financial Planning Fund II (Faysal Priority Ascend Plan III)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "110.6345",
+    "validity_date": "Jul 22, 2026",
+    "nav": "110.6603",
     "returns": {
-      "mtd": "0.51",
-      "ytd": "0.51",
+      "mtd": "0.54",
+      "ytd": "0.54",
       "1d": "0.02",
       "15d": "0.37",
-      "30d": "0.83",
+      "30d": "1.84",
       "90d": "2.25",
       "180d": "4.47",
-      "270d": "6.95",
+      "270d": "6.94",
       "365d": "9.83",
       "2y": "N/A",
       "3y": "N/A"
@@ -17393,18 +17393,18 @@
     "fund_name": "Faysal Khushal Mustaqbil Fund (Faysal Barak’ah Women Savers Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "109.5762",
+    "validity_date": "Jul 22, 2026",
+    "nav": "109.6051",
     "returns": {
-      "mtd": "0.56",
-      "ytd": "0.56",
+      "mtd": "0.58",
+      "ytd": "0.58",
       "1d": "0.03",
       "15d": "0.40",
       "30d": "0.88",
-      "90d": "2.32",
-      "180d": "4.21",
+      "90d": "2.33",
+      "180d": "4.22",
       "270d": "6.43",
-      "365d": "8.91",
+      "365d": "8.92",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -17439,17 +17439,17 @@
     "fund_name": "Faysal Khushal Mustaqbil Fund (Faysal Nu’umah Women Savers Plan)",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "109.8073",
+    "validity_date": "Jul 22, 2026",
+    "nav": "109.8380",
     "returns": {
-      "mtd": "0.59",
-      "ytd": "0.59",
+      "mtd": "0.62",
+      "ytd": "0.62",
       "1d": "0.03",
       "15d": "0.42",
       "30d": "0.95",
-      "90d": "2.50",
-      "180d": "4.43",
-      "270d": "6.68",
+      "90d": "2.51",
+      "180d": "4.44",
+      "270d": "6.69",
       "365d": "9.15",
       "2y": "N/A",
       "3y": "N/A"
@@ -17516,7 +17516,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 66.1,
+    "screener_score": 66.3,
     "dividends": [
       {
         "date": "180.6534",
@@ -17654,7 +17654,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 60.3,
+    "screener_score": 60.2,
     "dividends": [
       {
         "date": "144.7575",
@@ -17792,7 +17792,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 59.5,
+    "screener_score": 59.7,
     "dividends": [
       {
         "date": "80.0120",
@@ -18206,7 +18206,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.2,
+    "screener_score": 69.3,
     "dividends": [
       {
         "date": "118.1653",
@@ -18446,7 +18446,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.7,
+    "screener_score": 45.8,
     "dividends": [
       {
         "date": "188.0426",
@@ -18639,25 +18639,25 @@
     "fund_name": "HBL Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "374.3679",
+    "validity_date": "Jul 22, 2026",
+    "nav": "374.4433",
     "returns": {
-      "mtd": "9.85",
-      "ytd": "9.85",
-      "1d": "9.67",
-      "15d": "9.33",
-      "30d": "10.63",
-      "90d": "9.55",
-      "180d": "9.14",
-      "270d": "9.41",
+      "mtd": "9.74",
+      "ytd": "9.74",
+      "1d": "7.34",
+      "15d": "9.38",
+      "30d": "9.89",
+      "90d": "9.53",
+      "180d": "9.13",
+      "270d": "9.43",
       "365d": "9.51",
-      "2y": "12.63",
-      "3y": "17.43"
+      "2y": "12.55",
+      "3y": "17.44"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 15, 2011",
-    "offer": "374.3679",
-    "repurchase": "374.3679",
+    "offer": "374.4433",
+    "repurchase": "374.4433",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -18673,9 +18673,9 @@
     "screener_score": 22.6,
     "dividends": [
       {
-        "date": "446.7206",
+        "date": "446.5143",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "446.7206"
+        "ex_nav": "446.5143"
       },
       {
         "date": "1144.5303",
@@ -18683,9 +18683,9 @@
         "ex_nav": "1144.5303"
       },
       {
-        "date": "374.3679",
+        "date": "374.4433",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "374.3679"
+        "ex_nav": "374.4433"
       }
     ]
   },
@@ -18824,8 +18824,8 @@
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
-    "offer": "48.6834",
-    "repurchase": "48.6834",
+    "offer": "49.1542",
+    "repurchase": "49.1542",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -18856,9 +18856,9 @@
         "ex_nav": "29.6141"
       },
       {
-        "date": "48.6834",
+        "date": "49.1542",
         "payout_per_unit": "Jun 19, 2015",
-        "ex_nav": "48.6834"
+        "ex_nav": "49.1542"
       }
     ]
   },
@@ -19265,25 +19265,25 @@
     "fund_name": "HBL Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "446.7206",
+    "validity_date": "Jul 22, 2026",
+    "nav": "446.5143",
     "returns": {
-      "mtd": "10.70",
-      "ytd": "10.70",
-      "1d": "9.78",
-      "15d": "4.26",
-      "30d": "12.25",
-      "90d": "10.13",
-      "180d": "7.44",
-      "270d": "9.55",
-      "365d": "9.33",
-      "2y": "15.05",
-      "3y": "19.47"
+      "mtd": "9.45",
+      "ytd": "9.45",
+      "1d": "-16.86",
+      "15d": "2.62",
+      "30d": "10.88",
+      "90d": "9.95",
+      "180d": "7.29",
+      "270d": "9.48",
+      "365d": "9.25",
+      "2y": "14.94",
+      "3y": "19.45"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 15, 2011",
-    "offer": "374.3679",
-    "repurchase": "374.3679",
+    "offer": "374.4433",
+    "repurchase": "374.4433",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19296,12 +19296,12 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.8,
+    "screener_score": 27.1,
     "dividends": [
       {
-        "date": "446.7206",
+        "date": "446.5143",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "446.7206"
+        "ex_nav": "446.5143"
       },
       {
         "date": "1144.5303",
@@ -19309,9 +19309,9 @@
         "ex_nav": "1144.5303"
       },
       {
-        "date": "374.3679",
+        "date": "374.4433",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "374.3679"
+        "ex_nav": "374.4433"
       }
     ]
   },
@@ -19450,8 +19450,8 @@
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
-    "offer": "48.6834",
-    "repurchase": "48.6834",
+    "offer": "49.1542",
+    "repurchase": "49.1542",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19482,9 +19482,9 @@
         "ex_nav": "29.6141"
       },
       {
-        "date": "48.6834",
+        "date": "49.1542",
         "payout_per_unit": "Jun 19, 2015",
-        "ex_nav": "48.6834"
+        "ex_nav": "49.1542"
       }
     ]
   },
@@ -19611,25 +19611,25 @@
     "fund_name": "NIT Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "48.6834",
+    "validity_date": "Jul 22, 2026",
+    "nav": "49.1542",
     "returns": {
-      "mtd": "1.63",
-      "ytd": "1.63",
-      "1d": "1.30",
-      "15d": "-1.32",
-      "30d": "-0.56",
-      "90d": "-9.21",
-      "180d": "-12.81",
-      "270d": "1.90",
-      "365d": "19.15",
-      "2y": "68.47",
-      "3y": "122.80"
+      "mtd": "2.61",
+      "ytd": "2.61",
+      "1d": "0.97",
+      "15d": "0.67",
+      "30d": "-0.43",
+      "90d": "-7.62",
+      "180d": "-12.58",
+      "270d": "2.86",
+      "365d": "19.39",
+      "2y": "70.24",
+      "3y": "124.96"
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
-    "offer": "48.6834",
-    "repurchase": "48.6834",
+    "offer": "49.1542",
+    "repurchase": "49.1542",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -19642,7 +19642,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.3,
+    "screener_score": 63.5,
     "dividends": [
       {
         "date": "30.3752",
@@ -19660,9 +19660,9 @@
         "ex_nav": "29.6141"
       },
       {
-        "date": "48.6834",
+        "date": "49.1542",
         "payout_per_unit": "Jun 19, 2015",
-        "ex_nav": "48.6834"
+        "ex_nav": "49.1542"
       }
     ]
   },
@@ -19703,7 +19703,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 57.6,
+    "screener_score": 57.8,
     "dividends": [
       {
         "date": "567.6669",
@@ -20030,8 +20030,8 @@
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 15, 2011",
-    "offer": "374.3679",
-    "repurchase": "374.3679",
+    "offer": "374.4433",
+    "repurchase": "374.4433",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20047,9 +20047,9 @@
     "screener_score": 80.9,
     "dividends": [
       {
-        "date": "446.7206",
+        "date": "446.5143",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "446.7206"
+        "ex_nav": "446.5143"
       },
       {
         "date": "1144.5303",
@@ -20057,9 +20057,9 @@
         "ex_nav": "1144.5303"
       },
       {
-        "date": "374.3679",
+        "date": "374.4433",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "374.3679"
+        "ex_nav": "374.4433"
       }
     ]
   },
@@ -20198,8 +20198,8 @@
     },
     "amc": "National Investment Trust Limited",
     "inception_date": "Jun 19, 2015",
-    "offer": "48.6834",
-    "repurchase": "48.6834",
+    "offer": "49.1542",
+    "repurchase": "49.1542",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20230,9 +20230,9 @@
         "ex_nav": "29.6141"
       },
       {
-        "date": "48.6834",
+        "date": "49.1542",
         "payout_per_unit": "Jun 19, 2015",
-        "ex_nav": "48.6834"
+        "ex_nav": "49.1542"
       }
     ]
   },
@@ -20838,7 +20838,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.5,
+    "screener_score": 20.7,
     "dividends": [
       {
         "date": "183.6222",
@@ -20863,25 +20863,25 @@
     "fund_name": "HBL Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "325.0242",
+    "validity_date": "Jul 22, 2026",
+    "nav": "325.1055",
     "returns": {
-      "mtd": "9.99",
-      "ytd": "9.99",
-      "1d": "9.53",
-      "15d": "9.78",
-      "30d": "10.59",
+      "mtd": "9.95",
+      "ytd": "9.95",
+      "1d": "9.13",
+      "15d": "9.66",
+      "30d": "10.08",
       "90d": "9.21",
-      "180d": "8.60",
-      "270d": "9.08",
+      "180d": "8.57",
+      "270d": "9.12",
       "365d": "9.07",
-      "2y": "12.02",
-      "3y": "16.86"
+      "2y": "11.91",
+      "3y": "16.88"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 15, 2011",
-    "offer": "325.0242",
-    "repurchase": "325.0242",
+    "offer": "325.1055",
+    "repurchase": "325.1055",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -20894,12 +20894,12 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 16.8,
+    "screener_score": 16.9,
     "dividends": [
       {
-        "date": "343.2194",
+        "date": "343.2887",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "343.2194"
+        "ex_nav": "343.2887"
       },
       {
         "date": "1195.3170",
@@ -20907,9 +20907,9 @@
         "ex_nav": "1195.3170"
       },
       {
-        "date": "325.0242",
+        "date": "325.1055",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "325.0242"
+        "ex_nav": "325.1055"
       }
     ]
   },
@@ -21825,25 +21825,25 @@
     "fund_name": "HBL Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "343.2194",
+    "validity_date": "Jul 22, 2026",
+    "nav": "343.2887",
     "returns": {
-      "mtd": "10.43",
-      "ytd": "10.43",
-      "1d": "9.75",
-      "15d": "10.22",
-      "30d": "11.30",
-      "90d": "8.92",
-      "180d": "8.02",
-      "270d": "9.09",
-      "365d": "9.12",
-      "2y": "13.67",
-      "3y": "18.26"
+      "mtd": "10.30",
+      "ytd": "10.30",
+      "1d": "7.37",
+      "15d": "9.78",
+      "30d": "10.55",
+      "90d": "8.85",
+      "180d": "8.00",
+      "270d": "9.12",
+      "365d": "9.07",
+      "2y": "13.62",
+      "3y": "18.27"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 15, 2011",
-    "offer": "325.0242",
-    "repurchase": "325.0242",
+    "offer": "325.1055",
+    "repurchase": "325.1055",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -21859,9 +21859,9 @@
     "screener_score": 22.9,
     "dividends": [
       {
-        "date": "343.2194",
+        "date": "343.2887",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "343.2194"
+        "ex_nav": "343.2887"
       },
       {
         "date": "1195.3170",
@@ -21869,9 +21869,9 @@
         "ex_nav": "1195.3170"
       },
       {
-        "date": "325.0242",
+        "date": "325.1055",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "325.0242"
+        "ex_nav": "325.1055"
       }
     ]
   },
@@ -22146,7 +22146,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.0,
+    "screener_score": 18.1,
     "dividends": [
       {
         "date": "300.6706",
@@ -22258,7 +22258,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.4,
+    "screener_score": 41.5,
     "dividends": [
       {
         "date": "171.0299",
@@ -22772,7 +22772,7 @@
     "major_category": "Pension",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 49.0,
+    "screener_score": 49.1,
     "dividends": [
       {
         "date": "115.5125",
@@ -22926,8 +22926,8 @@
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 15, 2011",
-    "offer": "325.0242",
-    "repurchase": "325.0242",
+    "offer": "325.1055",
+    "repurchase": "325.1055",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -22943,9 +22943,9 @@
     "screener_score": 77.1,
     "dividends": [
       {
-        "date": "343.2194",
+        "date": "343.2887",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "343.2194"
+        "ex_nav": "343.2887"
       },
       {
         "date": "1195.3170",
@@ -22953,9 +22953,9 @@
         "ex_nav": "1195.3170"
       },
       {
-        "date": "325.0242",
+        "date": "325.1055",
         "payout_per_unit": "Dec 15, 2011",
-        "ex_nav": "325.0242"
+        "ex_nav": "325.1055"
       }
     ]
   },
@@ -23113,7 +23113,7 @@
     "major_category": "Pension",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 44.2,
+    "screener_score": 44.3,
     "dividends": [
       {
         "date": "11.2490",
@@ -23490,7 +23490,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 80.9,
+    "screener_score": 81.0,
     "dividends": [
       {
         "date": "26.2910",
@@ -23873,25 +23873,25 @@
     "fund_name": "HBL KPK Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "140.4268",
+    "validity_date": "Jul 22, 2026",
+    "nav": "140.4644",
     "returns": {
-      "mtd": "10.64",
-      "ytd": "10.64",
-      "1d": "10.44",
-      "15d": "10.45",
-      "30d": "11.27",
-      "90d": "10.41",
+      "mtd": "10.61",
+      "ytd": "10.61",
+      "1d": "9.78",
+      "15d": "10.42",
+      "30d": "10.59",
+      "90d": "10.42",
       "180d": "9.94",
-      "270d": "10.29",
+      "270d": "10.33",
       "365d": "10.30",
-      "2y": "12.37",
+      "2y": "12.30",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 14, 2023",
-    "offer": "140.4268",
-    "repurchase": "140.4268",
+    "offer": "140.4644",
+    "repurchase": "140.4644",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -23907,9 +23907,9 @@
     "screener_score": 28.6,
     "dividends": [
       {
-        "date": "140.4268",
+        "date": "140.4644",
         "payout_per_unit": "Dec 14, 2023",
-        "ex_nav": "140.4268"
+        "ex_nav": "140.4644"
       }
     ]
   },
@@ -24241,12 +24241,12 @@
     "fund_name": "HBL Punjab Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "102.8930",
+    "validity_date": "Jul 23, 2026",
+    "nav": "102.9149",
     "returns": {
       "mtd": "7.77",
       "ytd": "7.77",
-      "1d": "7.74",
+      "1d": "7.77",
       "15d": "7.76",
       "30d": "7.76",
       "90d": "7.91",
@@ -24258,8 +24258,8 @@
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Mar 12, 2026",
-    "offer": "102.8930",
-    "repurchase": "102.8930",
+    "offer": "102.9149",
+    "repurchase": "102.9149",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -24275,9 +24275,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "102.8930",
+        "date": "102.9149",
         "payout_per_unit": "Mar 12, 2026",
-        "ex_nav": "102.8930"
+        "ex_nav": "102.9149"
       }
     ]
   },
@@ -24793,25 +24793,25 @@
     "fund_name": "HBL KPK Islamic Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 21, 2026",
-    "nav": "136.6962",
+    "validity_date": "Jul 22, 2026",
+    "nav": "136.7255",
     "returns": {
-      "mtd": "11.06",
-      "ytd": "11.06",
-      "1d": "6.02",
-      "15d": "10.41",
-      "30d": "11.53",
-      "90d": "9.72",
-      "180d": "8.26",
-      "270d": "8.66",
+      "mtd": "10.91",
+      "ytd": "10.91",
+      "1d": "7.81",
+      "15d": "10.16",
+      "30d": "11.06",
+      "90d": "9.71",
+      "180d": "8.21",
+      "270d": "8.69",
       "365d": "8.67",
-      "2y": "11.37",
+      "2y": "11.29",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Dec 14, 2023",
-    "offer": "136.6962",
-    "repurchase": "136.6962",
+    "offer": "136.7255",
+    "repurchase": "136.7255",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -24827,9 +24827,9 @@
     "screener_score": 10.0,
     "dividends": [
       {
-        "date": "136.6962",
+        "date": "136.7255",
         "payout_per_unit": "Dec 14, 2023",
-        "ex_nav": "136.6962"
+        "ex_nav": "136.7255"
       }
     ]
   },
@@ -25253,8 +25253,8 @@
     "fund_name": "HBL Islamic Punjab Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 22, 2026",
-    "nav": "102.8925",
+    "validity_date": "Jul 23, 2026",
+    "nav": "102.9143",
     "returns": {
       "mtd": "7.77",
       "ytd": "7.77",
@@ -25270,8 +25270,8 @@
     },
     "amc": "HBL Asset Management Limited",
     "inception_date": "Mar 12, 2026",
-    "offer": "102.8925",
-    "repurchase": "102.8925",
+    "offer": "102.9143",
+    "repurchase": "102.9143",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -25287,9 +25287,9 @@
     "screener_score": 4.3,
     "dividends": [
       {
-        "date": "102.8925",
+        "date": "102.9143",
         "payout_per_unit": "Mar 12, 2026",
-        "ex_nav": "102.8925"
+        "ex_nav": "102.9143"
       }
     ]
   },

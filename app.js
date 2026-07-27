@@ -1413,6 +1413,80 @@ window.showFundDetails = function(fundName) {
         if (compSection) compSection.style.display = 'none';
     }
 
+    // --- Last 5 Business Days Official NAVs Table ---
+    const recentSection = document.getElementById('modal-recent-days-section');
+    const recentTbody = document.getElementById('modal-recent-days-tbody');
+    
+    if (recentSection && recentTbody) {
+        const archiveEntries = navArchive[fund.fund_name] || [];
+        
+        let allNavs = [...archiveEntries];
+        const todayDate = fund.validity_date || new Date().toISOString().split('T')[0];
+        const currentNavVal = parseFloat(fund.nav) || 0;
+        
+        if (currentNavVal > 0) {
+            const hasToday = allNavs.some(e => e.date === todayDate || parseFloat(e.nav) === currentNavVal);
+            if (!hasToday) {
+                allNavs.push({ date: todayDate, nav: String(currentNavVal) });
+            }
+        }
+        
+        // Filter unique dates, sort newest first
+        const uniqueNavs = [];
+        const seenDates = new Set();
+        for (let i = allNavs.length - 1; i >= 0; i--) {
+            const entry = allNavs[i];
+            if (entry.date && !seenDates.has(entry.date) && parseFloat(entry.nav) > 0) {
+                seenDates.add(entry.date);
+                uniqueNavs.push(entry);
+            }
+        }
+        
+        const last5 = uniqueNavs.slice(0, 5);
+        
+        if (last5.length > 0) {
+            recentTbody.innerHTML = last5.map((entry, idx) => {
+                const navVal = parseFloat(entry.nav);
+                const parts = entry.date.split('-');
+                let dateStr = entry.date;
+                if (parts.length === 3) {
+                    const y = parseInt(parts[0], 10);
+                    const m = parseInt(parts[1], 10) - 1;
+                    const d = parseInt(parts[2], 10);
+                    const dateObj = new Date(y, m, d);
+                    const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
+                    const monthName = dateObj.toLocaleDateString('en-US', { month: 'short' });
+                    dateStr = `${dayName}, ${monthName} ${d}`;
+                    if (idx === 0) dateStr += ' (Latest)';
+                }
+                
+                let changeStr = '--';
+                let changeColor = 'var(--text-muted)';
+                if (idx < last5.length - 1) {
+                    const prevNav = parseFloat(last5[idx + 1].nav);
+                    if (prevNav > 0) {
+                        const diff = navVal - prevNav;
+                        const diffPct = (diff / prevNav) * 100;
+                        const sign = diff >= 0 ? '+' : '';
+                        changeColor = diff >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
+                        changeStr = `${sign}${diff.toFixed(4)} (${sign}${diffPct.toFixed(2)}%)`;
+                    }
+                }
+                
+                return `
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                        <td style="padding: 6px 4px; font-weight: 600; color: var(--text-primary);">${dateStr}</td>
+                        <td style="padding: 6px 4px; text-align: right; font-weight: 700; color: var(--accent-cyan);">Rs. ${navVal.toFixed(4)}</td>
+                        <td style="padding: 6px 4px; text-align: right; font-weight: 600; color: ${changeColor};">${changeStr}</td>
+                    </tr>
+                `;
+            }).join('');
+            recentSection.style.display = 'block';
+        } else {
+            recentSection.style.display = 'none';
+        }
+    }
+
     // --- Weekday Analysis Section ---
     const weekdaySection = document.getElementById('modal-weekday-analysis-section');
     const weekdayBadge = document.getElementById('modal-best-weekday-badge');

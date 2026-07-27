@@ -837,10 +837,32 @@
                     </div>
                      <p class="chart-note" id="modal-chart-note">*Projected growth using trailing annualized returns. Years 4–5 use 3-year CAGR.</p>
 
+                     <!-- Last 5 Business Days Official NAVs Section -->
+                     <div id="modal-recent-days-section" style="margin-top: 20px; padding: 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 8px;">
+                         <h4 style="color: var(--text-primary); margin: 0 0 10px 0; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+                             <span><i class="fa-solid fa-clock-rotate-left" style="color: var(--accent-cyan);"></i> Last 5 Business Days Official NAVs</span>
+                             <span style="font-size: 0.68rem; color: var(--text-muted); font-weight: 400;">MUFAP Prices</span>
+                         </h4>
+                         <div style="overflow-x: auto;">
+                             <table style="width: 100%; border-collapse: collapse; font-size: 0.78rem;">
+                                 <thead>
+                                     <tr style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); text-align: left;">
+                                         <th style="padding: 6px 4px;">Date</th>
+                                         <th style="padding: 6px 4px; text-align: right;">Official NAV</th>
+                                         <th style="padding: 6px 4px; text-align: right;">Daily Change</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody id="modal-recent-days-tbody">
+                                     <!-- Dynamic rows -->
+                                 </tbody>
+                             </table>
+                         </div>
+                     </div>
+
                      <!-- Best Weekday to Buy Section -->
                      <div id="modal-weekday-analysis-section" style="margin-top: 20px; padding: 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 8px;">
                          <h4 style="color: var(--text-primary); margin: 0 0 12px 0; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
-                             <span><i class="fa-solid fa-calendar-day" style="color: var(--accent-cyan);"></i> Best Weekday to Buy</span>
+                             <span><i class="fa-solid fa-calendar-day" style="color: var(--accent-cyan);"></i> Multi-Week Average Entry by Weekday</span>
                              <span id="modal-best-weekday-badge" style="font-size: 0.68rem; padding: 2px 8px; border-radius: 12px; font-weight: 700; text-transform: uppercase;"></span>
                          </h4>
                          <div id="modal-weekday-bars-container" style="display: flex; flex-direction: column; gap: 8px;">

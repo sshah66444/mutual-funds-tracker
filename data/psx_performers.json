@@ -3,47 +3,47 @@
     {
       "symbol": "WTL",
       "name": "Worldcall Telecom Limited",
-      "price": "1.28",
+      "price": "1.29",
       "direction": "+",
-      "change": "0.05",
-      "percent": "4.06%",
-      "volume": "109,254,076"
+      "change": "0.06",
+      "percent": "4.88%",
+      "volume": "111,271,572"
     },
     {
       "symbol": "CNERGY",
       "name": "Cnergyico PK  Limited",
-      "price": "10.80",
+      "price": "10.77",
       "direction": "+",
-      "change": "0.51",
-      "percent": "4.96%",
-      "volume": "68,422,553"
+      "change": "0.48",
+      "percent": "4.67%",
+      "volume": "68,617,274"
     },
     {
       "symbol": "KEL",
       "name": "K-Electric Limited",
-      "price": "7.48",
+      "price": "7.45",
       "direction": "+",
-      "change": "0.34",
-      "percent": "4.76%",
-      "volume": "49,157,482"
+      "change": "0.31",
+      "percent": "4.34%",
+      "volume": "50,803,336"
     },
     {
       "symbol": "TPLP",
       "name": "TPL Properties Limited",
-      "price": "13.17",
+      "price": "13.12",
       "direction": "+",
-      "change": "0.20",
-      "percent": "1.54%",
-      "volume": "46,074,076"
+      "change": "0.15",
+      "percent": "1.16%",
+      "volume": "46,396,229"
     },
     {
       "symbol": "TSBL",
       "name": "Trust Securities &amp; Brokerage Limited",
-      "price": "2.45",
+      "price": "2.47",
       "direction": "+",
-      "change": "0.21",
-      "percent": "9.38%",
-      "volume": "42,372,818"
+      "change": "0.23",
+      "percent": "10.27%",
+      "volume": "43,623,412"
     },
     {
       "symbol": "MDTL",
@@ -52,25 +52,25 @@
       "direction": "-",
       "change": "-0.13",
       "percent": "-2.04%",
-      "volume": "26,849,728"
+      "volume": "26,896,616"
     },
     {
       "symbol": "TPL",
       "name": "TPL Corp Limited",
-      "price": "19.28",
+      "price": "19.27",
       "direction": "+",
-      "change": "0.99",
-      "percent": "5.41%",
-      "volume": "23,798,779"
+      "change": "0.98",
+      "percent": "5.36%",
+      "volume": "23,880,070"
     },
     {
       "symbol": "BOP",
       "name": "The Bank of Punjab",
-      "price": "34.22",
+      "price": "33.99",
       "direction": "+",
-      "change": "1.58",
-      "percent": "4.84%",
-      "volume": "20,373,688"
+      "change": "1.35",
+      "percent": "4.14%",
+      "volume": "21,200,283"
     },
     {
       "symbol": "MLCF",
@@ -79,19 +79,28 @@
       "direction": "+",
       "change": "6.58",
       "percent": "7.46%",
-      "volume": "16,469,398"
+      "volume": "16,525,751"
     },
     {
       "symbol": "GCIL",
       "name": "Ghani Chemical Industries Limited",
-      "price": "36.58",
+      "price": "36.50",
       "direction": "+",
-      "change": "1.20",
-      "percent": "3.39%",
-      "volume": "13,489,729"
+      "change": "1.12",
+      "percent": "3.17%",
+      "volume": "13,589,136"
     }
   ],
   "gainers": [
+    {
+      "symbol": "TSBL",
+      "name": "Trust Securities &amp; Brokerage Limited",
+      "price": "2.47",
+      "direction": "+",
+      "change": "0.23",
+      "percent": "10.27%",
+      "volume": "43,623,412"
+    },
     {
       "symbol": "WAVES",
       "name": "Waves Corporation Limited",
@@ -99,7 +108,7 @@
       "direction": "+",
       "change": "1.00",
       "percent": "10.05%",
-      "volume": "8,905,049"
+      "volume": "8,909,549"
     },
     {
       "symbol": "FIBLM",
@@ -117,7 +126,7 @@
       "direction": "+",
       "change": "1.86",
       "percent": "10.03%",
-      "volume": "1,390,280"
+      "volume": "1,390,290"
     },
     {
       "symbol": "CCM",
@@ -153,7 +162,7 @@
       "direction": "+",
       "change": "1.52",
       "percent": "10.01%",
-      "volume": "2,284,568"
+      "volume": "2,284,575"
     },
     {
       "symbol": "AATM",
@@ -171,16 +180,7 @@
       "direction": "+",
       "change": "2.42",
       "percent": "10.00%",
-      "volume": "2,686"
-    },
-    {
-      "symbol": "ELSM",
-      "name": "Ellcot Spinning Mills Limited",
-      "price": "133.38",
-      "direction": "+",
-      "change": "12.13",
-      "percent": "10.00%",
-      "volume": "56,505"
+      "volume": "2,886"
     }
   ],
   "losers": [
@@ -191,7 +191,7 @@
       "direction": "-",
       "change": "-17.33",
       "percent": "-10.00%",
-      "volume": "26,721"
+      "volume": "26,783"
     },
     {
       "symbol": "TPLI",
@@ -200,7 +200,7 @@
       "direction": "-",
       "change": "-8.92",
       "percent": "-10.00%",
-      "volume": "347,379"
+      "volume": "348,389"
     },
     {
       "symbol": "ASIC",
@@ -209,7 +209,7 @@
       "direction": "-",
       "change": "-5.49",
       "percent": "-9.99%",
-      "volume": "20,483"
+      "volume": "20,484"
     },
     {
       "symbol": "AHTM",
@@ -241,11 +241,11 @@
     {
       "symbol": "TICL",
       "name": "The Thal Industries Corporation Limited",
-      "price": "1,025.01",
+      "price": "1,025.00",
       "direction": "-",
-      "change": "-62.64",
+      "change": "-62.65",
       "percent": "-5.76%",
-      "volume": "8,907"
+      "volume": "8,935"
     },
     {
       "symbol": "IGIL",
@@ -259,11 +259,11 @@
     {
       "symbol": "SUTM",
       "name": "Sunrays Textile Mills Limited",
-      "price": "108.01",
+      "price": "108.00",
       "direction": "-",
-      "change": "-3.86",
-      "percent": "-3.45%",
-      "volume": "79"
+      "change": "-3.87",
+      "percent": "-3.46%",
+      "volume": "279"
     },
     {
       "symbol": "PIM",

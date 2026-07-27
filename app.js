@@ -1452,12 +1452,12 @@ window.showFundDetails = function(fundName) {
             dateMap.set(currentIsoDate, currentNavVal); // Overwrite with newest official NAV
         }
         
-        // 3. Sort dates descending (newest first) and take top 5
+        // 3. Sort dates descending (newest first) and take top 10
         const sortedDates = Array.from(dateMap.keys()).sort().reverse();
-        const last5Dates = sortedDates.slice(0, 5);
+        const last10Dates = sortedDates.slice(0, 10);
         
-        if (last5Dates.length > 0) {
-            recentTbody.innerHTML = last5Dates.map((isoDate, idx) => {
+        if (last10Dates.length > 0) {
+            recentTbody.innerHTML = last10Dates.map((isoDate, idx) => {
                 const navVal = dateMap.get(isoDate);
                 const parts = isoDate.split('-');
                 let dateStr = isoDate;
@@ -1474,8 +1474,8 @@ window.showFundDetails = function(fundName) {
                 
                 let changeStr = '--';
                 let changeColor = 'var(--text-muted)';
-                if (idx < last5Dates.length - 1) {
-                    const prevNav = dateMap.get(last5Dates[idx + 1]);
+                if (idx < last10Dates.length - 1) {
+                    const prevNav = dateMap.get(last10Dates[idx + 1]);
                     if (prevNav > 0) {
                         const diff = navVal - prevNav;
                         const diffPct = (diff / prevNav) * 100;

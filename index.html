@@ -835,7 +835,19 @@
                     <div class="modal-chart-container">
                         <canvas id="modal-performance-chart"></canvas>
                     </div>
-                    <p class="chart-note" id="modal-chart-note">*Projected growth using trailing annualized returns. Years 4–5 use 3-year CAGR.</p>
+                     <p class="chart-note" id="modal-chart-note">*Projected growth using trailing annualized returns. Years 4–5 use 3-year CAGR.</p>
+
+                     <!-- Best Weekday to Buy Section -->
+                     <div id="modal-weekday-analysis-section" style="margin-top: 20px; padding: 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 8px;">
+                         <h4 style="color: var(--text-primary); margin: 0 0 12px 0; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+                             <span><i class="fa-solid fa-calendar-day" style="color: var(--accent-cyan);"></i> Best Weekday to Buy</span>
+                             <span id="modal-best-weekday-badge" style="font-size: 0.68rem; padding: 2px 8px; border-radius: 12px; font-weight: 700; text-transform: uppercase;"></span>
+                         </h4>
+                         <div id="modal-weekday-bars-container" style="display: flex; flex-direction: column; gap: 8px;">
+                             <!-- Weekday bars go here -->
+                         </div>
+                         <p id="modal-weekday-analysis-disclaimer" style="margin: 8px 0 0 0; font-size: 0.68rem; color: var(--text-muted); font-style: italic; line-height: 1.2;"></p>
+                     </div>
 
                     <!-- Dividend History Section -->
                     <div id="modal-dividends-section" style="margin-top: 20px; display: none;">
@@ -849,10 +861,20 @@
                                         <th>Payout Date</th>
                                         <th>Payout / Unit (Rs.)</th>
                                         <th>Ex-NAV (Rs.)</th>
+                                        <th>Yield %</th>
                                     </tr>
                                 </thead>
                                 <tbody id="modal-dividends-tbody"></tbody>
                             </table>
+                        </div>
+                        <div id="modal-dividends-comparison" style="margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--border-color); display: none;">
+                            <h4 style="margin: 0 0 12px 0; font-size: 0.82rem; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                                <i class="fa-solid fa-chart-bar" style="color: var(--accent-green);"></i>
+                                Annual Payout Comparison
+                            </h4>
+                            <div id="dividends-comparison-bars" style="display: flex; flex-direction: column; gap: 8px;">
+                                <!-- Dynamic comparison bars -->
+                            </div>
                         </div>
                     </div>
                 </div>

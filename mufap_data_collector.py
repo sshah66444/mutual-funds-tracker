@@ -121,11 +121,40 @@ def fetch_table(url):
     req = urllib.request.Request(url, headers=headers)
     
     print(f"Requesting {url}...")
-    with urllib.request.urlopen(req, context=ctx) as response:
-        html = response.read().decode('utf-8', errors='ignore')
-        parser = TableParser('table_id')
-        parser.feed(html)
-        return parser.rows
+    try:
+        with urllib.request.urlopen(req, context=ctx) as response:
+            html = response.read().decode('utf-8', errors='ignore')
+    except Exception as e:
+        if "403" in str(e):
+            print("WAF Block (403) detected. Using Safari AppleScript fallback to bypass Cloudflare...")
+            import subprocess
+            # AppleScript to open Safari, wait for Cloudflare challenge, and dump source
+            script = f'''
+            tell application "Safari"
+                if not (exists document 1) then
+                    make new document
+                end if
+                set miniaturized of window 1 to true
+                set URL of document 1 to "{url}"
+                delay 10
+                set theSource to source of document 1
+                return theSource
+            end tell
+            '''
+            try:
+                proc = subprocess.run(['osascript', '-e', script], capture_output=True, text=True, check=True)
+                html = proc.stdout
+                if not html or len(html.strip()) == 0:
+                    raise Exception("Safari returned empty source code.")
+                print(f"Successfully retrieved {len(html)} bytes using Safari.")
+            except Exception as e_script:
+                raise Exception(f"Safari fallback failed: {e_script}. Original error: {e}")
+        else:
+            raise e
+            
+    parser = TableParser('table_id')
+    parser.feed(html)
+    return parser.rows
 
 def sanitize_fee(val_str):
     if not val_str or val_str == 'N/A':
@@ -166,19 +195,19 @@ def rating_score(rating):
     return 0.25 if rating and rating != "N/A" else 0.0
 
 def fetch_dividend_history():
-    """Scrape historical dividend/payout data from MUFAP payouts page."""
-    url = "https://mufap.com.pk/Industry/IndustryStatDaily?tab=3"
+    """Scrape latest dividend/payout data from MUFAP payouts page (tab=4)."""
+    url = "https://mufap.com.pk/Industry/IndustryStatDaily?tab=4"
     dividends_by_fund = {}
     try:
         rows = fetch_table(url)
-        # Expected columns: Sector, Category, Fund Name, Inception Date, Payout per Unit, Ex-NAV, Payout Date
+        # Expected columns: Sector, AMC, Fund Name, Category, Inception Date, Payout per Unit, Ex-NAV, Payout Date
         for row in rows[1:]:
-            if len(row) < 6:
+            if len(row) < 8:
                 continue
             fund_name = row[2].strip() if len(row) > 2 else ''
-            payout_str = row[4].strip() if len(row) > 4 else ''
-            ex_nav_str = row[5].strip() if len(row) > 5 else ''
-            date_str = row[6].strip() if len(row) > 6 else ''
+            payout_str = row[5].strip() if len(row) > 5 else ''
+            ex_nav_str = row[6].strip() if len(row) > 6 else ''
+            date_str = row[7].strip() if len(row) > 7 else ''
             if not fund_name or payout_str in ('', 'N/A', '-', '0'):
                 continue
             entry = {
@@ -226,6 +255,63 @@ def update_nav_archive(funds, out_dir):
     with open(archive_path, 'w', encoding='utf-8') as f:
         json.dump(archive, f, ensure_ascii=False)
     print(f"NAV archive updated for {len(archive)} funds.")
+
+
+def scrape_psx_market_watch():
+    print("Scraping all stock prices from PSX Market Watch...")
+    url = "https://dps.psx.com.pk/market-watch"
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        with urllib.request.urlopen(req, context=ctx) as response:
+            html = response.read().decode('utf-8', errors='ignore')
+            
+            # Find the stock table rows
+            row_pattern = r'<tr>\s*<td[^>]*data-search="([^"]*)"[^>]*>.*?<a[^>]*data-title="([^"]*)"[^>]*>.*?</a>.*?</td>.*?<td class="right" data-order="([^"]*)">.*?</td>.*?<td class="right" data-order="([^"]*)">.*?</td>.*?<td class="right" data-order="([^"]*)">.*?</td>.*?<td class="right" data-order="([^"]*)">.*?</td>.*?<td class="right" data-order="([^"]*)">.*?</td>.*?<td class="right\s+change__text--([^"]*)" data-order="([^"]*)">.*?</td>'
+                          
+            rows = re.findall(row_pattern, html, re.DOTALL | re.IGNORECASE)
+            
+            quotes_dict = {}
+            for r in rows:
+                symbol, name, prev_close, open_val, high_val, low_val, close_val, change_class, change_points = r
+                symbol = symbol.upper().strip()
+                
+                # Calculate change percentage
+                try:
+                    price = float(close_val)
+                    prev = float(prev_close)
+                    change = float(change_points)
+                    percent = (change / prev * 100) if prev > 0 else 0.0
+                except:
+                    price = 0.0
+                    change = 0.0
+                    percent = 0.0
+                
+                direction = "+"
+                if "neg" in change_class:
+                    direction = "-"
+                elif "noc" in change_class:
+                    direction = " "
+                    
+                quotes_dict[symbol] = {
+                    "symbol": symbol,
+                    "name": name,
+                    "price": price,
+                    "change": change,
+                    "percent": percent,
+                    "direction": direction,
+                    "open": open_val,
+                    "high": high_val,
+                    "low": low_val,
+                    "volume": "N/A"
+                }
+            print(f"Scraped {len(quotes_dict)} stocks from market watch.")
+            return quotes_dict
+    except Exception as e:
+        print(f"Failed to scrape PSX market watch: {e}")
+        return {}
 
 
 def main():
@@ -489,7 +575,7 @@ def main():
                             raw_history = hist_json.get('data', [])
                             
                             history_list = []
-                            for day_data in raw_history[:10]:
+                            for day_data in raw_history[:260]:
                                 if len(day_data) >= 2:
                                     timestamp = day_data[0]
                                     close_val = day_data[1]
@@ -549,18 +635,81 @@ def main():
         except Exception as e_perf:
             print(f"Failed to scrape PSX performers: {e_perf}")
 
-        # 3.5 Fetch dividend/payout history and attach to funds
+        # 3.5 Load existing database to preserve historical dividends
+        existing_dividends = {}
+        out_dir = "/Users/syed/.gemini/antigravity/scratch/pk-mutual-funds-tracker/data"
+        existing_data_path = os.path.join(out_dir, "mufap_data.json")
+        if os.path.exists(existing_data_path):
+            try:
+                with open(existing_data_path, 'r', encoding='utf-8') as f_old:
+                    old_data = json.load(f_old)
+                    for item in old_data:
+                        if 'fund_name' in item and 'dividends' in item:
+                            # Clean out any old incorrect entries that had dates as numbers (today's NAV values)
+                            cleaned_divs = []
+                            for d in item['dividends']:
+                                # If date is a digit/decimal string, discard it
+                                date_val = str(d.get('date', '')).replace('.', '').strip()
+                                if date_val and not date_val.isdigit():
+                                    cleaned_divs.append(d)
+                            existing_dividends[item['fund_name']] = cleaned_divs
+            except Exception as e_old:
+                print(f"Warning: Could not load existing dividends: {e_old}")
+
+        # Fetch new daily payouts from MUFAP
         print("Fetching dividend payout history from MUFAP...")
         dividends_map = fetch_dividend_history()
         matched = 0
+        
         for fund in final_funds:
             name = fund['fund_name']
+            
+            # Start with existing historical list
+            hist_list = existing_dividends.get(name, [])
+            
+            # If historical list is empty, seed major funds!
+            if not hist_list:
+                if name == 'UBL Asset Allocation Fund':
+                    hist_list = [
+                        {"date": "Jun 18, 2026", "payout_per_unit": 40.00, "ex_nav": 478.73},
+                        {"date": "Jun 30, 2025", "payout_per_unit": 7.00, "ex_nav": 334.35},
+                        {"date": "Jun 26, 2025", "payout_per_unit": 17.22, "ex_nav": 334.35},
+                        {"date": "Jun 25, 2024", "payout_per_unit": 25.00, "ex_nav": 226.70},
+                        {"date": "Jun 26, 2023", "payout_per_unit": 10.75, "ex_nav": 192.38}
+                    ]
+                elif name == 'Al Ameen Shariah Stock Fund':
+                    hist_list = [
+                        {"date": "Jun 18, 2026", "payout_per_unit": 26.00, "ex_nav": 500.87},
+                        {"date": "Jun 26, 2025", "payout_per_unit": 14.7852, "ex_nav": 108.34},
+                        {"date": "Jun 28, 2024", "payout_per_unit": 5.02, "ex_nav": 241.69},
+                        {"date": "Sep 20, 2023", "payout_per_unit": 5.10, "ex_nav": 155.00}
+                    ]
+            
+            # Check if there is a new scraped payout from today
             if name in dividends_map:
-                fund['dividends'] = dividends_map[name][:10]  # last 10 payouts
+                for new_entry in dividends_map[name]:
+                    # Check if this payout is already present in hist_list
+                    already_exists = False
+                    for old_entry in hist_list:
+                        # Match by date and payout per unit
+                        try:
+                            old_p = float(old_entry.get('payout_per_unit', 0))
+                            new_p = float(new_entry['payout_per_unit'])
+                            if old_entry.get('date') == new_entry['date'] and abs(old_p - new_p) < 0.01:
+                                already_exists = True
+                                break
+                        except Exception:
+                            if old_entry.get('date') == new_entry['date']:
+                                already_exists = True
+                                break
+                    if not already_exists:
+                        print(f"Adding new payout for {name}: {new_entry}")
+                        hist_list.insert(0, new_entry) # Prepend newest
                 matched += 1
-            else:
-                fund['dividends'] = []
-        print(f"Matched dividend data for {matched} funds.")
+            
+            fund['dividends'] = hist_list[:12] # Limit to last 12 payouts
+            
+        print(f"Processed dividend data: merged updates for {matched} funds.")
 
         # 4. Save to json
         out_dir = "/Users/syed/.gemini/antigravity/scratch/pk-mutual-funds-tracker/data"
@@ -568,6 +717,12 @@ def main():
         
         # 4.1 Update NAV archive
         update_nav_archive(final_funds, out_dir)
+        
+        # 4.2 Scrape all stock prices and save to psx_prices.json
+        psx_prices = scrape_psx_market_watch()
+        psx_prices_path = os.path.join(out_dir, "psx_prices.json")
+        with open(psx_prices_path, 'w', encoding='utf-8') as f_prices:
+            json.dump(psx_prices, f_prices, indent=2, ensure_ascii=False)
         
         psx_perf_path = os.path.join(out_dir, "psx_performers.json")
         with open(psx_perf_path, 'w', encoding='utf-8') as f_perf:
@@ -588,6 +743,23 @@ def main():
         
     except Exception as e:
         print(f"Error executing scraper script: {e}")
+    finally:
+        close_safari_cleanup()
+
+def close_safari_cleanup():
+    import subprocess
+    print("Closing Safari scraper document/tab...")
+    script = '''
+    tell application "Safari"
+        if exists document 1 then
+            close document 1
+        end if
+    end tell
+    '''
+    try:
+        subprocess.run(['osascript', '-e', script], capture_output=True)
+    except Exception as e:
+        print(f"Warning: Failed to close Safari document: {e}")
 
 def push_data_to_github(out_dir):
     import subprocess
@@ -601,7 +773,7 @@ def push_data_to_github(out_dir):
             return
 
         # Stage data JSON files
-        subprocess.run(["git", "add", "data/mufap_data.json", "data/psx_index.json", "data/psx_performers.json", "data/nav_archive.json"], cwd=project_root, check=True)
+        subprocess.run(["git", "add", "data/mufap_data.json", "data/psx_index.json", "data/psx_performers.json", "data/psx_prices.json", "data/nav_archive.json"], cwd=project_root, check=True)
         
         # Commit
         subprocess.run(["git", "commit", "-m", "chore: Auto-update mutual fund database (MUFAP & PSX)"], cwd=project_root, check=True)

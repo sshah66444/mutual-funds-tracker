@@ -1355,17 +1355,191 @@ window.showFundDetails = function(fundName) {
     // Populate Dividend History
     const divSection = document.getElementById('modal-dividends-section');
     const divBody = document.getElementById('modal-dividends-tbody');
+    const compSection = document.getElementById('modal-dividends-comparison');
+    const compBars = document.getElementById('dividends-comparison-bars');
     const dividends = fund.dividends || [];
+    
     if (dividends.length > 0) {
-        divBody.innerHTML = dividends.map(d => `
-            <tr>
-                <td>${d.date || 'N/A'}</td>
-                <td style="font-weight:600; color:var(--accent-cyan);">Rs. ${d.payout_per_unit}</td>
-                <td>${d.ex_nav !== 'N/A' ? 'Rs. ' + d.ex_nav : 'N/A'}</td>
-            </tr>`).join('');
+        divBody.innerHTML = dividends.map(d => {
+            const payout = parseFloat(d.payout_per_unit) || 0;
+            const exNav = parseFloat(d.ex_nav) || 0;
+            let yieldStr = '--';
+            if (exNav > 0) {
+                yieldStr = ((payout / exNav) * 100).toFixed(2) + '%';
+            }
+            return `
+                <tr>
+                    <td>${d.date || 'N/A'}</td>
+                    <td style="font-weight:600; color:var(--accent-cyan);">Rs. ${payout.toFixed(2)}</td>
+                    <td>${exNav > 0 ? 'Rs. ' + exNav.toFixed(2) : 'N/A'}</td>
+                    <td style="font-weight:600; color:var(--accent-green);">${yieldStr}</td>
+                </tr>`;
+        }).join('');
         if (divSection) divSection.style.display = 'block';
+        
+        // Group and render annual payouts comparison
+        const annualSum = {};
+        dividends.forEach(d => {
+            const yearMatch = d.date ? d.date.match(/\d{4}/) : null;
+            const year = yearMatch ? yearMatch[0] : null;
+            if (year) {
+                const val = parseFloat(d.payout_per_unit) || 0;
+                annualSum[year] = (annualSum[year] || 0) + val;
+            }
+        });
+        
+        const years = Object.keys(annualSum).sort((a, b) => b - a);
+        if (years.length > 0) {
+            const maxVal = Math.max(...Object.values(annualSum), 1);
+            compBars.innerHTML = years.map(yr => {
+                const total = annualSum[yr];
+                const pct = (total / maxVal) * 100;
+                return `
+                    <div class="comparison-row" style="display: flex; align-items: center; gap: 10px; font-size: 0.8rem; margin-bottom: 4px;">
+                        <span style="flex: 0 0 50px; font-weight: 600; color: var(--text-secondary);">${yr}</span>
+                        <div style="flex-grow: 1; background: rgba(255,255,255,0.06); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="background: var(--accent-green); height: 100%; width: ${pct}%; border-radius: 4px;"></div>
+                        </div>
+                        <span style="flex: 0 0 85px; text-align: right; font-weight: 700; color: var(--text-primary);">Rs. ${total.toFixed(2)}</span>
+                    </div>
+                `;
+            }).join('');
+            if (compSection) compSection.style.display = 'block';
+        } else {
+            if (compSection) compSection.style.display = 'none';
+        }
     } else {
         if (divSection) divSection.style.display = 'none';
+        if (compSection) compSection.style.display = 'none';
+    }
+
+    // --- Weekday Analysis Section ---
+    const weekdaySection = document.getElementById('modal-weekday-analysis-section');
+    const weekdayBadge = document.getElementById('modal-best-weekday-badge');
+    const weekdayBars = document.getElementById('modal-weekday-bars-container');
+    const weekdayDisc = document.getElementById('modal-weekday-analysis-disclaimer');
+    
+    if (weekdaySection) {
+        const archiveEntries = navArchive[fund.fund_name] || [];
+        if (archiveEntries.length < 3) {
+            if (weekdayBadge) weekdayBadge.style.display = 'none';
+            if (weekdayBars) weekdayBars.innerHTML = '';
+            if (weekdayDisc) weekdayDisc.textContent = 'Gathering more daily archive records to compute weekday entry advantages (requires at least 3 days of NAV data).';
+            weekdaySection.style.display = 'block';
+        } else {
+            // Group by weekday
+            const weekdayData = { 1: [], 2: [], 3: [], 4: [], 5: [] };
+            archiveEntries.forEach(entry => {
+                const parts = entry.date.split('-');
+                if (parts.length === 3) {
+                    const year = parseInt(parts[0], 10);
+                    const month = parseInt(parts[1], 10) - 1;
+                    const day = parseInt(parts[2], 10);
+                    const d = new Date(year, month, day);
+                    const wday = d.getDay(); // 0 = Sunday, 1 = Mon, ..., 5 = Fri, 6 = Sat
+                    if (wday >= 1 && wday <= 5) {
+                        weekdayData[wday].push(parseFloat(entry.nav) || 0);
+                    }
+                }
+            });
+            
+            const weekdayNames = { 1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday' };
+            const weekdayShortNames = { 1: 'Mon', 2: 'Tue', 3: 'Wed', 4: 'Thu', 5: 'Fri' };
+            const weekdayAverages = {};
+            
+            let minDay = null;
+            let maxDay = null;
+            let minVal = Infinity;
+            let maxVal = -Infinity;
+            let hasData = false;
+            
+            [1, 2, 3, 4, 5].forEach(day => {
+                if (weekdayData[day].length > 0) {
+                    const sum = weekdayData[day].reduce((a, b) => a + b, 0);
+                    const avg = sum / weekdayData[day].length;
+                    weekdayAverages[day] = avg;
+                    hasData = true;
+                    
+                    if (avg < minVal) {
+                        minVal = avg;
+                        minDay = day;
+                    }
+                    if (avg > maxVal) {
+                        maxVal = avg;
+                        maxDay = day;
+                    }
+                }
+            });
+            
+            if (!hasData) {
+                if (weekdayBadge) weekdayBadge.style.display = 'none';
+                if (weekdayBars) weekdayBars.innerHTML = '';
+                if (weekdayDisc) weekdayDisc.textContent = 'No trading weekday (Mon-Fri) records found in the archive.';
+            } else {
+                const savingsPct = maxVal > minVal ? ((maxVal - minVal) / maxVal) * 100 : 0;
+                
+                // Show best weekday badge
+                if (weekdayBadge) {
+                    weekdayBadge.textContent = `Best: ${weekdayShortNames[minDay]}`;
+                    weekdayBadge.style.background = 'rgba(46, 204, 113, 0.15)';
+                    weekdayBadge.style.color = 'var(--accent-green)';
+                    weekdayBadge.style.display = 'inline-block';
+                }
+                
+                // Render comparison bars (zoomed scale to highlight minor NAV differences)
+                const range = maxVal - minVal;
+                
+                if (weekdayBars) {
+                    weekdayBars.innerHTML = [1, 2, 3, 4, 5].map(day => {
+                        const avg = weekdayAverages[day];
+                        if (!avg) return '';
+                        const isCheapest = String(day) === String(minDay);
+                        const isMostExpensive = String(day) === String(maxDay);
+                        
+                        // Zoom scale: min is 40% width, max is 100% width
+                        let barWidth = 100;
+                        if (range > 0) {
+                            barWidth = 40 + ((avg - minVal) / range) * 60;
+                        }
+                        
+                        let labelColor = 'var(--text-secondary)';
+                        let barColor = 'rgba(255, 255, 255, 0.12)';
+                        let statusText = '';
+                        
+                        if (isCheapest) {
+                            labelColor = 'var(--accent-green)';
+                            barColor = 'var(--accent-green)';
+                            statusText = '<span style="color:var(--accent-green); font-weight:700; font-size:0.68rem; margin-left:6px;">Cheapest 🟢</span>';
+                        } else if (isMostExpensive) {
+                            labelColor = 'var(--accent-red)';
+                            barColor = 'var(--accent-red)';
+                            statusText = '<span style="color:var(--accent-red); font-weight:700; font-size:0.68rem; margin-left:6px;">Highest 🔴</span>';
+                        }
+                        
+                        return `
+                            <div class="weekday-row" style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; margin-bottom: 2px;">
+                                <span style="flex: 0 0 35px; font-weight: 600; color: ${labelColor};">${weekdayShortNames[day]}</span>
+                                <div style="flex-grow: 1; background: rgba(255,255,255,0.03); height: 8px; border-radius: 4px; overflow: hidden; display: flex; align-items: center;">
+                                    <div style="background: ${barColor}; height: 100%; width: ${barWidth}%; border-radius: 4px; opacity: ${isCheapest ? '1' : '0.6'}; transition: width 0.3s ease;"></div>
+                                </div>
+                                <span style="flex: 0 0 135px; text-align: right; color: var(--text-primary); font-weight: 500;">
+                                    Rs. ${avg.toFixed(4)}${statusText}
+                                </span>
+                            </div>
+                        `;
+                    }).join('');
+                }
+                
+                if (weekdayDisc) {
+                    if (savingsPct > 0) {
+                        weekdayDisc.innerHTML = `Buying on <strong>${weekdayNames[minDay]}s</strong> saves you <strong>~${savingsPct.toFixed(3)}%</strong> on average compared to ${weekdayNames[maxDay]}s (based on ${archiveEntries.length} archive days).`;
+                    } else {
+                        weekdayDisc.textContent = 'All weekdays have identical average NAVs in the current archive.';
+                    }
+                }
+            }
+            weekdaySection.style.display = 'block';
+        }
     }
 
     // Setup add-to-portfolio button click in modal

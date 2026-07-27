@@ -1413,42 +1413,54 @@ window.showFundDetails = function(fundName) {
         if (compSection) compSection.style.display = 'none';
     }
 
+    // Helper function to normalize any date string to YYYY-MM-DD
+    function normalizeISO(str) {
+        if (!str) return '';
+        str = String(str).trim();
+        if (/^\d{4}-\d{2}-\d{2}$/.test(str)) return str;
+        const d = new Date(str);
+        if (!isNaN(d.getTime())) {
+            const year = d.getFullYear();
+            const month = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+        return str;
+    }
+
     // --- Last 5 Business Days Official NAVs Table ---
     const recentSection = document.getElementById('modal-recent-days-section');
     const recentTbody = document.getElementById('modal-recent-days-tbody');
     
     if (recentSection && recentTbody) {
         const archiveEntries = navArchive[fund.fund_name] || [];
+        const dateMap = new Map();
         
-        let allNavs = [...archiveEntries];
-        const todayDate = fund.validity_date || new Date().toISOString().split('T')[0];
+        // 1. Add historical archive entries
+        archiveEntries.forEach(e => {
+            const iso = normalizeISO(e.date);
+            const val = parseFloat(e.nav) || 0;
+            if (iso && val > 0) {
+                dateMap.set(iso, val);
+            }
+        });
+        
+        // 2. Add/overwrite with latest official NAV from fund object
         const currentNavVal = parseFloat(fund.nav) || 0;
-        
-        if (currentNavVal > 0) {
-            const hasToday = allNavs.some(e => e.date === todayDate || parseFloat(e.nav) === currentNavVal);
-            if (!hasToday) {
-                allNavs.push({ date: todayDate, nav: String(currentNavVal) });
-            }
+        const currentIsoDate = normalizeISO(fund.validity_date) || normalizeISO(new Date().toISOString().split('T')[0]);
+        if (currentNavVal > 0 && currentIsoDate) {
+            dateMap.set(currentIsoDate, currentNavVal); // Overwrite with newest official NAV
         }
         
-        // Filter unique dates, sort newest first
-        const uniqueNavs = [];
-        const seenDates = new Set();
-        for (let i = allNavs.length - 1; i >= 0; i--) {
-            const entry = allNavs[i];
-            if (entry.date && !seenDates.has(entry.date) && parseFloat(entry.nav) > 0) {
-                seenDates.add(entry.date);
-                uniqueNavs.push(entry);
-            }
-        }
+        // 3. Sort dates descending (newest first) and take top 5
+        const sortedDates = Array.from(dateMap.keys()).sort().reverse();
+        const last5Dates = sortedDates.slice(0, 5);
         
-        const last5 = uniqueNavs.slice(0, 5);
-        
-        if (last5.length > 0) {
-            recentTbody.innerHTML = last5.map((entry, idx) => {
-                const navVal = parseFloat(entry.nav);
-                const parts = entry.date.split('-');
-                let dateStr = entry.date;
+        if (last5Dates.length > 0) {
+            recentTbody.innerHTML = last5Dates.map((isoDate, idx) => {
+                const navVal = dateMap.get(isoDate);
+                const parts = isoDate.split('-');
+                let dateStr = isoDate;
                 if (parts.length === 3) {
                     const y = parseInt(parts[0], 10);
                     const m = parseInt(parts[1], 10) - 1;
@@ -1462,8 +1474,8 @@ window.showFundDetails = function(fundName) {
                 
                 let changeStr = '--';
                 let changeColor = 'var(--text-muted)';
-                if (idx < last5.length - 1) {
-                    const prevNav = parseFloat(last5[idx + 1].nav);
+                if (idx < last5Dates.length - 1) {
+                    const prevNav = dateMap.get(last5Dates[idx + 1]);
                     if (prevNav > 0) {
                         const diff = navVal - prevNav;
                         const diffPct = (diff / prevNav) * 100;

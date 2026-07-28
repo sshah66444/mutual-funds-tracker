@@ -334,20 +334,31 @@ def main():
             print("Error: Could not retrieve data tables from MUFAP.")
             return
         
-        # 1. Map NAV details by fund name (from tab=3)
-        nav_map = {}
-        for row in nav_rows[1:]:
-            if len(row) >= 8:
+        # 1. Map Performance details by fund name (from tab=1)
+        perf_map = {}
+        for row in perf_rows[1:]:
+            if len(row) >= 7:
                 fund_name = row[2].strip()
-                nav_map[fund_name] = {
-                    'amc': clean_value(row[1]),
-                    'inception_date': clean_value(row[4]),
-                    'offer': clean_value(row[5]),
-                    'repurchase': clean_value(row[6]),
-                    'front_end_load': clean_value(row[9]) if len(row) > 9 else '0',
-                    'back_end_load': clean_value(row[10]) if len(row) > 10 else '0',
-                    'contingent_load': clean_value(row[11]) if len(row) > 11 else '0',
-                    'trustee': clean_value(row[13]) if len(row) > 13 else 'Unknown'
+                perf_map[fund_name] = {
+                    'sector': clean_value(row[0]),
+                    'category': row[1].strip(),
+                    'rating': clean_value(row[3]),
+                    'benchmark': clean_value(row[4]),
+                    'validity_date': clean_value(row[5]),
+                    'nav': clean_value(row[6]),
+                    'returns': {
+                        'mtd': sanitize_return(row[8]) if len(row) > 8 else 'N/A',
+                        'ytd': sanitize_return(row[7]) if len(row) > 7 else 'N/A',
+                        '1d': sanitize_return(row[9]) if len(row) > 9 else 'N/A',
+                        '15d': sanitize_return(row[10]) if len(row) > 10 else 'N/A',
+                        '30d': sanitize_return(row[11]) if len(row) > 11 else 'N/A',
+                        '90d': sanitize_return(row[12]) if len(row) > 12 else 'N/A',
+                        '180d': sanitize_return(row[13]) if len(row) > 13 else 'N/A',
+                        '270d': sanitize_return(row[14]) if len(row) > 14 else 'N/A',
+                        '365d': sanitize_return(row[15]) if len(row) > 15 else 'N/A',
+                        '2y': sanitize_return(row[16]) if len(row) > 16 else 'N/A',
+                        '3y': sanitize_return(row[17]) if len(row) > 17 else 'N/A'
+                    }
                 }
         
         # 1.5 Map Expense details by fund name (from tab=5)
@@ -362,7 +373,7 @@ def main():
                     'sm_fee': clean_value(row[9])
                 }
         
-        # 2. First pass: Collect all matched funds and pre-extract values for percentile calculations
+        # 2. First pass: Collect all 541 funds across all 25 AMCs from tab=3 (nav_rows)
         raw_funds = []
         recent_values = []
         long_values = []
@@ -376,32 +387,41 @@ def main():
             'Stock': [], 'Money Market': [], 'Income': [], 'Pension': [], 'Assets': []
         }
 
-        for row in perf_rows[1:]:
-            if len(row) >= 7:
+        for row in nav_rows[1:]:
+            if len(row) >= 8:
+                sector = clean_value(row[0])
+                amc = clean_value(row[1])
                 fund_name = row[2].strip()
-                category = row[1].strip()
-                category_lower = category.lower()
-                fund_name_lower = fund_name.lower()
+                category = clean_value(row[3])
+                inception_date = clean_value(row[4])
+                offer = clean_value(row[5])
+                repurchase = clean_value(row[6])
+                nav_val = clean_value(row[7])
+                validity_date = clean_value(row[8]) if len(row) > 8 else ''
+                front_end_load = clean_value(row[9]) if len(row) > 9 else '0'
+                back_end_load = clean_value(row[10]) if len(row) > 10 else '0'
+                contingent_load = clean_value(row[11]) if len(row) > 11 else '0'
+                trustee = clean_value(row[13]) if len(row) > 13 else 'Unknown'
                 
-                nav_info = nav_map.get(fund_name, {})
+                perf_info = perf_map.get(fund_name, {})
                 exp_info = exp_map.get(fund_name, {})
                 
                 # Loads extraction
-                f_load = to_float(nav_info.get('front_end_load', '0')) or 0.0
-                b_load = to_float(nav_info.get('back_end_load', '0')) or 0.0
-                c_load = to_float(nav_info.get('contingent_load', '0')) or 0.0
+                f_load = to_float(front_end_load) or 0.0
+                b_load = to_float(back_end_load) or 0.0
+                c_load = to_float(contingent_load) or 0.0
                 total_load = f_load + b_load + c_load
                 
-                # Shariah check
+                category_lower = category.lower()
+                fund_name_lower = fund_name.lower()
                 is_shariah = "shariah" in category_lower or "islamic" in category_lower or "shariah" in fund_name_lower or "islamic" in fund_name_lower
                 
-                # Risk & category mapping
                 risk_level = classify_risk(category_lower, fund_name_lower)
                 major_category = classify_major_category(category_lower, fund_name_lower)
                 
-                # Track other expenses for averages calculation
                 raw_ter = sanitize_fee(exp_info.get('ter_ytd', 'N/A'))
                 raw_mf = sanitize_fee(exp_info.get('management_fee', 'N/A'))
+                
                 try:
                     ter_val = float(raw_ter) if raw_ter != 'N/A' else 0.0
                     mf_val = float(raw_mf) if raw_mf != 'N/A' else 0.0
@@ -412,43 +432,34 @@ def main():
                 except ValueError:
                     pass
                 
-                # 365d return
-                recent_str = row[15] if len(row) > 15 else 'N/A'
+                recent_str = perf_info.get('returns', {}).get('365d', 'N/A')
                 recent_val = to_float(recent_str)
-                
-                # 3y return (annualized)
-                long_str = row[17] if len(row) > 17 else 'N/A'
+                long_str = perf_info.get('returns', {}).get('3y', 'N/A')
                 long_val = to_float(long_str)
                 
+                returns_dict = perf_info.get('returns', {
+                    'mtd': 'N/A', 'ytd': 'N/A', '1d': 'N/A', '15d': 'N/A',
+                    '30d': 'N/A', '90d': 'N/A', '180d': 'N/A', '270d': 'N/A',
+                    '365d': 'N/A', '2y': 'N/A', '3y': 'N/A'
+                })
+                
                 fund_data = {
-                    'sector': clean_value(row[0]),
-                    'category': category,
+                    'sector': sector or perf_info.get('sector', 'N/A'),
+                    'category': category or perf_info.get('category', 'N/A'),
                     'fund_name': fund_name,
-                    'rating': clean_value(row[3]),
-                    'benchmark': clean_value(row[4]),
-                    'validity_date': clean_value(row[5]),
-                    'nav': clean_value(row[6]),
-                    'returns': {
-                        'mtd': sanitize_return(row[8]) if len(row) > 8 else 'N/A',
-                        'ytd': sanitize_return(row[7]) if len(row) > 7 else 'N/A',
-                        '1d': sanitize_return(row[9]) if len(row) > 9 else 'N/A',
-                        '15d': sanitize_return(row[10]) if len(row) > 10 else 'N/A',
-                        '30d': sanitize_return(row[11]) if len(row) > 11 else 'N/A',
-                        '90d': sanitize_return(row[12]) if len(row) > 12 else 'N/A',
-                        '180d': sanitize_return(row[13]) if len(row) > 13 else 'N/A',
-                        '270d': sanitize_return(row[14]) if len(row) > 14 else 'N/A',
-                        '365d': sanitize_return(recent_str),
-                        '2y': sanitize_return(row[16]) if len(row) > 16 else 'N/A',
-                        '3y': sanitize_return(long_str)
-                    },
-                    'amc': nav_info.get('amc', 'Unknown'),
-                    'inception_date': nav_info.get('inception_date', 'Unknown'),
-                    'offer': nav_info.get('offer', clean_value(row[6])),
-                    'repurchase': nav_info.get('repurchase', clean_value(row[6])),
-                    'front_end_load': nav_info.get('front_end_load', '0'),
-                    'back_end_load': nav_info.get('back_end_load', '0'),
-                    'contingent_load': nav_info.get('contingent_load', '0'),
-                    'trustee': nav_info.get('trustee', 'Unknown'),
+                    'rating': perf_info.get('rating', 'N/A'),
+                    'benchmark': perf_info.get('benchmark', 'N/A'),
+                    'validity_date': validity_date or perf_info.get('validity_date', ''),
+                    'nav': nav_val or perf_info.get('nav', 'N/A'),
+                    'returns': returns_dict,
+                    'amc': amc,
+                    'inception_date': inception_date,
+                    'offer': offer,
+                    'repurchase': repurchase,
+                    'front_end_load': front_end_load,
+                    'back_end_load': back_end_load,
+                    'contingent_load': contingent_load,
+                    'trustee': trustee,
                     'management_fee': raw_mf,
                     'ter_ytd': raw_ter,
                     'sm_fee': sanitize_fee(exp_info.get('sm_fee', 'N/A')),

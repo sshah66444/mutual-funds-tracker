@@ -449,6 +449,12 @@ def main():
                         'repurchase': '490.3900',
                         'offer': '504.4900',
                         'validity_date': 'Jul 27, 2026'
+                    },
+                    'Alhamra Islamic Stock Fund': {
+                        'nav': '30.7900',
+                        'repurchase': '30.7900',
+                        'offer': '31.8500',
+                        'validity_date': 'Jul 27, 2026'
                     }
                 }
                 if fund_name in OFFICIAL_NAV_OVERRIDES:

@@ -29,6 +29,36 @@ const DATA_PATHS = {
     archive: '/data/nav_archive.json'
 };
 
+function validateRemoteData(value, path = 'root') {
+    if (typeof value === 'string') {
+        if (value.includes('<') || value.includes('>')) {
+            throw new Error(`Unsafe markup rejected in downloaded data at ${path}`);
+        }
+        return value;
+    }
+    if (Array.isArray(value)) {
+        return value.map((item, index) => validateRemoteData(item, `${path}[${index}]`));
+    }
+    if (value !== null && typeof value === 'object') {
+        const clean = Object.create(null);
+        for (const [key, item] of Object.entries(value)) {
+            if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+                throw new Error(`Unsafe key rejected in downloaded data at ${path}`);
+            }
+            clean[key] = validateRemoteData(item, `${path}.${key}`);
+        }
+        return clean;
+    }
+    if (value === null || typeof value === 'number' || typeof value === 'boolean') {
+        return value;
+    }
+    throw new Error(`Unsupported downloaded data type at ${path}`);
+}
+
+async function safeJson(response) {
+    return validateRemoteData(await response.json());
+}
+
 function getUrl(pathKey) {
     const path = DATA_PATHS[pathKey];
     return IS_LOCAL ? `.${path}` : `${REMOTE_BASE}${path}`;
@@ -69,7 +99,7 @@ async function loadData() {
         clearTimeout(timeoutId);
         
         if (response.ok) {
-            fundsData = await response.json();
+            fundsData = await safeJson(response);
             saveToCache('mufap', fundsData);
             mufapLoaded = true;
             console.log("MUFAP data loaded from online fetch");
@@ -93,7 +123,7 @@ async function loadData() {
             console.log("Fallback: loading packaged static assets...");
             const response = await fetch('./data/mufap_data.json');
             if (response.ok) {
-                fundsData = await response.json();
+                fundsData = await safeJson(response);
                 saveToCache('mufap', fundsData);
                 mufapLoaded = true;
                 console.log("MUFAP data loaded from static asset fallback");
@@ -113,7 +143,7 @@ async function loadData() {
     try {
         const response = await fetch(getUrl('psx'));
         if (response.ok) {
-            psxData = await response.json();
+            psxData = await safeJson(response);
             saveToCache('psx', psxData);
         }
     } catch (e) {
@@ -126,7 +156,7 @@ async function loadData() {
         try {
             const fallback = await fetch('./data/psx_index.json');
             if (fallback.ok) {
-                psxIndexData = await fallback.json();
+                psxIndexData = await safeJson(fallback);
                 updateKSE100Card(psxIndexData);
             }
         } catch(e) {}
@@ -137,7 +167,7 @@ async function loadData() {
     try {
         const response = await fetch(getUrl('movers'));
         if (response.ok) {
-            moversData = await response.json();
+            moversData = await safeJson(response);
             saveToCache('movers', moversData);
         }
     } catch (e) {
@@ -149,7 +179,7 @@ async function loadData() {
         try {
             const fallback = await fetch('./data/psx_performers.json');
             if (fallback.ok) {
-                const fd = await fallback.json();
+                const fd = await safeJson(fallback);
                 renderPSXMovers(fd);
             }
         } catch(e) {}
@@ -160,7 +190,7 @@ async function loadData() {
     try {
         const response = await fetch(getUrl('archive'));
         if (response.ok) {
-            archiveData = await response.json();
+            archiveData = await safeJson(response);
             saveToCache('archive', archiveData);
         }
     } catch (e) {
@@ -172,7 +202,7 @@ async function loadData() {
         try {
             const fallback = await fetch('./data/nav_archive.json');
             if (fallback.ok) {
-                navArchive = await fallback.json();
+                navArchive = await safeJson(fallback);
             }
         } catch(e) {}
     }

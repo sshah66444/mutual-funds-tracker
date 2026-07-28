@@ -1452,8 +1452,20 @@ window.showFundDetails = function(fundName) {
             dateMap.set(currentIsoDate, currentNavVal); // Overwrite with newest official NAV
         }
         
-        // 3. Sort dates descending (newest first) and take top 10
-        const sortedDates = Array.from(dateMap.keys()).sort().reverse();
+        // 3. Filter out weekend dates (Saturday & Sunday), sort descending (newest first) and take top 10
+        const sortedDates = Array.from(dateMap.keys())
+            .filter(isoDate => {
+                const parts = isoDate.split('-');
+                if (parts.length === 3) {
+                    const y = parseInt(parts[0], 10);
+                    const m = parseInt(parts[1], 10) - 1;
+                    const d = parseInt(parts[2], 10);
+                    const dayOfWeek = new Date(y, m, d).getDay();
+                    return dayOfWeek !== 0 && dayOfWeek !== 6; // Exclude Sunday (0) and Saturday (6)
+                }
+                return true;
+            })
+            .sort().reverse();
         const last10Dates = sortedDates.slice(0, 10);
         
         if (last10Dates.length > 0) {

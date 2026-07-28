@@ -784,8 +784,8 @@ function renderDirectoryTable() {
         tr.innerHTML = `
             <td><span style="font-weight:700; color:var(--accent-cyan); font-size:1.05rem;">${fund.screener_score}</span></td>
             <td>
-                <div class="fund-td-name" style="cursor:pointer; text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);" onclick="showFundDetails('${fund.fund_name.replace(/'/g, "\\'")}')">  ${fund.fund_name}</div>
-                <div class="fund-td-amc">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
+                <div class="fund-td-name" data-fund-name="${fund.fund_name.replace(/"/g, '&quot;')}" style="cursor:pointer; text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);" onclick="showFundDetails('${fund.fund_name.replace(/'/g, "\\'")}')">  ${fund.fund_name}</div>
+                <div class="fund-td-amc" data-fund-name="${fund.fund_name.replace(/"/g, '&quot;')}" style="cursor:pointer;">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
             </td>
             <td><span style="font-size:0.8rem; color:var(--text-secondary);">${fund.category}</span></td>
             <td><span class="badge-risk ${fund.risk_level.toLowerCase()}">${fund.risk_level}</span></td>
@@ -1288,6 +1288,17 @@ function calculateGrowth() {
 
 let modalChartInstance = null;
 let _currentModalFund = null;
+
+// Global Event Delegation for opening fund details modal on tap/click
+document.addEventListener('click', function(e) {
+    const el = e.target.closest('[data-fund-name]');
+    if (el) {
+        const name = el.getAttribute('data-fund-name');
+        if (name && typeof window.showFundDetails === 'function') {
+            window.showFundDetails(name);
+        }
+    }
+});
 
 window.showFundDetails = function(fundName) {
     const fund = fundsData.find(f => f.fund_name === fundName);

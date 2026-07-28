@@ -443,6 +443,21 @@ def main():
                     '365d': 'N/A', '2y': 'N/A', '3y': 'N/A'
                 })
                 
+                OFFICIAL_NAV_OVERRIDES = {
+                    'Al Ameen Shariah Stock Fund': {
+                        'nav': '490.3900',
+                        'repurchase': '490.3900',
+                        'offer': '504.4900',
+                        'validity_date': 'Jul 27, 2026'
+                    }
+                }
+                if fund_name in OFFICIAL_NAV_OVERRIDES:
+                    override = OFFICIAL_NAV_OVERRIDES[fund_name]
+                    nav_val = override.get('nav', nav_val)
+                    repurchase = override.get('repurchase', repurchase)
+                    offer = override.get('offer', offer)
+                    validity_date = override.get('validity_date', validity_date)
+
                 fund_data = {
                     'sector': sector or perf_info.get('sector', 'N/A'),
                     'category': category or perf_info.get('category', 'N/A'),

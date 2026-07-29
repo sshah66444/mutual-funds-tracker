@@ -99,10 +99,15 @@ async function loadData() {
         clearTimeout(timeoutId);
         
         if (response.ok) {
-            fundsData = await safeJson(response);
-            saveToCache('mufap', fundsData);
-            mufapLoaded = true;
-            console.log("MUFAP data loaded from online fetch");
+            const fetched = await safeJson(response);
+            if (Array.isArray(fetched) && fetched.length >= 400) {
+                fundsData = fetched;
+                saveToCache('mufap', fundsData);
+                mufapLoaded = true;
+                console.log("MUFAP data loaded from online fetch:", fundsData.length, "funds");
+            } else {
+                console.warn("Online fetch returned incomplete dataset (" + (fetched ? fetched.length : 0) + " funds). Ignoring online payload.");
+            }
         }
     } catch (err) {
         console.warn("Failed to fetch MUFAP online, falling back to cache:", err);
@@ -110,10 +115,14 @@ async function loadData() {
     
     // 2. Load from localStorage cache if online fails
     if (!mufapLoaded) {
-        fundsData = loadFromCache('mufap');
-        if (fundsData) {
+        const cached = loadFromCache('mufap');
+        if (Array.isArray(cached) && cached.length >= 400) {
+            fundsData = cached;
             mufapLoaded = true;
-            console.log("MUFAP data loaded from local storage cache");
+            console.log("MUFAP data loaded from local storage cache:", fundsData.length, "funds");
+        } else {
+            console.warn("Cached data incomplete. Clearing cache and falling back to static assets.");
+            try { localStorage.removeItem('cache_mufap'); } catch(e) {}
         }
     }
     

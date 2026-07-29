@@ -1491,7 +1491,7 @@ window.showFundDetails = function(fundName) {
         
         // 2. Add/overwrite with latest official NAV from fund object
         const currentNavVal = parseFloat(fund.nav) || 0;
-        const currentIsoDate = normalizeISO(fund.validity_date) || normalizeISO(new Date().toISOString().split('T')[0]);
+        const currentIsoDate = normalizeISO(fund.validity_date);
         if (currentNavVal > 0 && currentIsoDate) {
             dateMap.set(currentIsoDate, currentNavVal); // Overwrite with newest official NAV
         }

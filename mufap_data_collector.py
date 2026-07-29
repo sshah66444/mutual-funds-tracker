@@ -445,10 +445,10 @@ def main():
                 
                 OFFICIAL_NAV_OVERRIDES = {
                     'Al Ameen Shariah Stock Fund': {
-                        'nav': '490.3900',
-                        'repurchase': '490.3900',
-                        'offer': '504.4900',
-                        'validity_date': 'Jul 27, 2026'
+                        'nav': '489.0700',
+                        'repurchase': '489.0700',
+                        'offer': '503.1300',
+                        'validity_date': 'Jul 28, 2026'
                     },
                     'Alhamra Islamic Stock Fund': {
                         'nav': '30.7900',

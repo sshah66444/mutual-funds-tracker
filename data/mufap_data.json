@@ -36,7 +36,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.5,
+    "screener_score": 18.7,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -82,7 +82,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.7,
+    "screener_score": 30.9,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -608,7 +608,7 @@
     "major_category": "Money Market",
     "total_load": 4.0,
     "is_ter_estimated": false,
-    "screener_score": 48.3,
+    "screener_score": 44.0,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -654,7 +654,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.1,
+    "screener_score": 33.0,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -866,7 +866,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.2,
+    "screener_score": 38.1,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -912,7 +912,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.0,
+    "screener_score": 32.3,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -930,17 +930,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "10.0060",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "0.40",
+      "ytd": "0.40",
+      "1d": "0.02",
+      "15d": "0.10",
+      "30d": "0.48",
+      "90d": "1.19",
+      "180d": "0.79",
+      "270d": "1.44",
+      "365d": "2.92",
+      "2y": "7.37",
+      "3y": "30.57"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "May 31, 2018",
@@ -958,7 +958,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 24.3,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1004,7 +1004,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 43.1,
+    "screener_score": 40.0,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -1068,17 +1068,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "82.1901",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-2.92",
+      "ytd": "-2.92",
+      "1d": "-0.37",
+      "15d": "-1.33",
+      "30d": "-2.80",
+      "90d": "0.90",
+      "180d": "-7.07",
+      "270d": "0.57",
+      "365d": "12.53",
+      "2y": "69.84",
+      "3y": "137.44"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Dec 22, 2015",
@@ -1096,7 +1096,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 65.6,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1114,17 +1114,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.5349",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-0.08",
+      "ytd": "-0.08",
+      "1d": "-0.07",
+      "15d": "-0.02",
+      "30d": "-0.02",
+      "90d": "2.35",
+      "180d": "1.07",
+      "270d": "5.33",
+      "365d": "11.27",
+      "2y": "41.05",
+      "3y": "75.93"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Mar 29, 2019",
@@ -1142,7 +1142,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 59.3,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1160,17 +1160,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "116.7348",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "0.79",
+      "ytd": "0.79",
+      "1d": "0.03",
+      "15d": "0.40",
+      "30d": "0.81",
+      "90d": "2.43",
+      "180d": "4.64",
+      "270d": "7.01",
+      "365d": "9.62",
+      "2y": "23.72",
+      "3y": "50.14"
     },
     "amc": "ABL Asset Management Company Limited",
     "inception_date": "Dec 22, 2015",
@@ -1188,7 +1188,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 37.6,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1234,7 +1234,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 15.2,
+    "screener_score": 13.8,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1280,7 +1280,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.2,
+    "screener_score": 33.3,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -1326,7 +1326,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 11.1,
+    "screener_score": 10.4,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1372,7 +1372,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 47.1,
+    "screener_score": 46.0,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1418,7 +1418,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.4,
+    "screener_score": 22.5,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -1510,7 +1510,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 61.1,
+    "screener_score": 55.7,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1556,7 +1556,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.7,
+    "screener_score": 57.7,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1602,7 +1602,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.2,
+    "screener_score": 45.8,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1648,7 +1648,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 64.7,
+    "screener_score": 58.9,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1694,7 +1694,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.1,
+    "screener_score": 48.6,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1740,7 +1740,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 64.9,
+    "screener_score": 59.2,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1786,7 +1786,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.6,
+    "screener_score": 56.9,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1832,7 +1832,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.1,
+    "screener_score": 57.4,
     "dividends": [
       {
         "date": "Jun 28, 2026",
@@ -1878,7 +1878,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.9,
+    "screener_score": 65.3,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -1964,7 +1964,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.5,
+    "screener_score": 47.0,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -2010,7 +2010,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.2,
+    "screener_score": 55.7,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -2056,7 +2056,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.5,
+    "screener_score": 51.0,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -2102,7 +2102,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 26.2,
+    "screener_score": 24.1,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -2148,7 +2148,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.9,
+    "screener_score": 45.8,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -2194,7 +2194,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.0,
+    "screener_score": 54.3,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -2240,7 +2240,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.5,
+    "screener_score": 43.9,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -2606,7 +2606,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.0,
+    "screener_score": 49.9,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -2652,7 +2652,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 47.3,
+    "screener_score": 43.7,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -2698,7 +2698,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 13.6,
+    "screener_score": 12.7,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -2968,7 +2968,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.7,
+    "screener_score": 45.5,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -3014,7 +3014,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.2,
+    "screener_score": 49.9,
     "dividends": [
       {
         "date": "Jun 13, 2026",
@@ -3060,7 +3060,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.5,
+    "screener_score": 34.2,
     "dividends": [
       {
         "date": "Jun 14, 2026",
@@ -3106,7 +3106,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.9,
+    "screener_score": 19.4,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -3170,11 +3170,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.9039",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "11.78",
+      "ytd": "11.78",
+      "1d": "10.59",
+      "15d": "11.51",
+      "30d": "12.07",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -3244,7 +3244,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.4,
+    "screener_score": 21.8,
     "dividends": [
       {
         "date": "Jun 14, 2026",
@@ -3290,7 +3290,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.7,
+    "screener_score": 45.6,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -3336,7 +3336,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.3,
+    "screener_score": 45.3,
     "dividends": [
       {
         "date": "Jun 14, 2026",
@@ -3382,7 +3382,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.1,
+    "screener_score": 37.1,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -3428,7 +3428,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.6,
+    "screener_score": 36.7,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -3474,7 +3474,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.0,
+    "screener_score": 37.9,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -3520,7 +3520,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.9,
+    "screener_score": 56.3,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -3766,7 +3766,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.2,
+    "screener_score": 50.5,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -3830,16 +3830,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "116.9674",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-1.47",
+      "ytd": "-1.47",
+      "1d": "-0.05",
+      "15d": "-0.33",
+      "30d": "-1.01",
+      "90d": "6.48",
+      "180d": "-3.53",
+      "270d": "3.94",
+      "365d": "18.95",
+      "2y": "97.82",
       "3y": "N/A"
     },
     "amc": "Al Meezan Investment Management Limited",
@@ -3858,7 +3858,7 @@
     "major_category": "Assets",
     "total_load": 0.2,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 47.5,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -3876,17 +3876,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "27.4380",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "-1.09",
+      "ytd": "-1.09",
+      "1d": "-0.06",
+      "15d": "-0.24",
+      "30d": "-0.82",
+      "90d": "4.72",
       "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "270d": "5.80",
+      "365d": "16.55",
+      "2y": "63.25",
+      "3y": "120.32"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Dec 20, 2004",
@@ -3904,7 +3904,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.2,
+    "screener_score": 66.5,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -3922,12 +3922,12 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.0907",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "0.01",
+      "ytd": "0.01",
+      "1d": "-0.02",
+      "15d": "-0.17",
+      "30d": "1.09",
+      "90d": "4.48",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -3996,7 +3996,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.4,
+    "screener_score": 23.9,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -4042,7 +4042,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.6,
+    "screener_score": 21.1,
     "dividends": [
       {
         "date": "Jul 28, 2026",
@@ -4108,7 +4108,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 19.4,
+    "screener_score": 18.2,
     "dividends": [
       {
         "date": "Jul 28, 2026",
@@ -4174,7 +4174,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.0,
+    "screener_score": 23.7,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -4220,7 +4220,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.7,
+    "screener_score": 13.6,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -4266,7 +4266,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.6,
+    "screener_score": 13.9,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -4330,15 +4330,15 @@
     "validity_date": "Jul 28, 2026",
     "nav": "84.6102",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "-2.56",
+      "ytd": "-2.56",
+      "1d": "-0.36",
+      "15d": "-0.75",
+      "30d": "-1.97",
+      "90d": "4.80",
+      "180d": "-3.15",
+      "270d": "8.82",
+      "365d": "24.00",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -4358,7 +4358,7 @@
     "major_category": "Assets",
     "total_load": 2.0,
     "is_ter_estimated": false,
-    "screener_score": 3.6,
+    "screener_score": 52.9,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -4376,16 +4376,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "62.4805",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "1.22",
+      "ytd": "1.22",
+      "1d": "0.34",
+      "15d": "0.60",
+      "30d": "0.50",
+      "90d": "4.31",
+      "180d": "-4.26",
+      "270d": "4.73",
+      "365d": "25.49",
+      "2y": "102.84",
       "3y": "N/A"
     },
     "amc": "Al Meezan Investment Management Limited",
@@ -4404,7 +4404,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 54.9,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -4422,16 +4422,16 @@
     "validity_date": "Jul 27, 2026",
     "nav": "183.3872",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-1.03",
+      "ytd": "-1.03",
+      "1d": "3.33",
+      "15d": "-1.06",
+      "30d": "0.18",
+      "90d": "4.58",
+      "180d": "-2.44",
+      "270d": "7.72",
+      "365d": "20.88",
+      "2y": "85.84",
       "3y": "N/A"
     },
     "amc": "Al Meezan Investment Management Limited",
@@ -4450,7 +4450,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 49.3,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -4468,17 +4468,17 @@
     "validity_date": "Jul 27, 2026",
     "nav": "126.0080",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "0.36",
+      "ytd": "0.36",
+      "1d": "1.19",
+      "15d": "-0.01",
+      "30d": "0.85",
+      "90d": "3.68",
+      "180d": "3.11",
+      "270d": "8.08",
+      "365d": "14.02",
+      "2y": "42.38",
+      "3y": "82.43"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Apr 12, 2013",
@@ -4496,7 +4496,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 63.8,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -4514,17 +4514,17 @@
     "validity_date": "Jul 27, 2026",
     "nav": "143.1583",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-1.44",
+      "ytd": "-1.44",
+      "1d": "4.05",
+      "15d": "-1.43",
+      "30d": "0.02",
+      "90d": "5.04",
+      "180d": "-4.63",
+      "270d": "6.42",
+      "365d": "17.44",
+      "2y": "77.43",
+      "3y": "147.24"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Jul 09, 2015",
@@ -4542,7 +4542,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 70.4,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -4560,17 +4560,17 @@
     "validity_date": "Jul 27, 2026",
     "nav": "146.3988",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-0.46",
+      "ytd": "-0.46",
+      "1d": "2.39",
+      "15d": "-0.63",
+      "30d": "0.45",
+      "90d": "4.17",
+      "180d": "-0.28",
+      "270d": "7.63",
+      "365d": "17.24",
+      "2y": "63.52",
+      "3y": "123.85"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Apr 12, 2013",
@@ -4588,7 +4588,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 67.8,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -4606,16 +4606,16 @@
     "validity_date": "Jul 27, 2026",
     "nav": "52.9224",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "0.74",
+      "ytd": "0.74",
+      "1d": "0.08",
+      "15d": "0.44",
+      "30d": "0.86",
+      "90d": "2.37",
+      "180d": "4.53",
+      "270d": "6.86",
+      "365d": "9.23",
+      "2y": "20.78",
       "3y": "N/A"
     },
     "amc": "Al Meezan Investment Management Limited",
@@ -4634,7 +4634,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 14.3,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -4784,16 +4784,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "164.9907",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-3.28",
+      "ytd": "-3.28",
+      "1d": "-0.25",
+      "15d": "-1.27",
+      "30d": "-2.75",
+      "90d": "5.03",
+      "180d": "-4.05",
+      "270d": "5.22",
+      "365d": "22.73",
+      "2y": "108.54",
       "3y": "N/A"
     },
     "amc": "Al Meezan Investment Management Limited",
@@ -4812,7 +4812,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 51.1,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -4858,7 +4858,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.3,
+    "screener_score": 16.0,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -4876,12 +4876,12 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.5637",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "14.24",
+      "ytd": "14.24",
+      "1d": "14.16",
+      "15d": "14.28",
+      "30d": "14.13",
+      "90d": "11.73",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -4922,12 +4922,12 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.6730",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "17.14",
+      "ytd": "17.14",
+      "1d": "15.62",
+      "15d": "16.82",
+      "30d": "16.75",
+      "90d": "13.01",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -4968,12 +4968,12 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.6577",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "14.40",
+      "ytd": "14.40",
+      "1d": "13.91",
+      "15d": "13.94",
+      "30d": "13.94",
+      "90d": "11.76",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -5014,11 +5014,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.4160",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "10.85",
+      "ytd": "10.85",
+      "1d": "11.17",
+      "15d": "11.21",
+      "30d": "10.12",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -5054,11 +5054,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.4755",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "12.00",
+      "ytd": "12.00",
+      "1d": "10.48",
+      "15d": "12.87",
+      "30d": "11.93",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -5100,11 +5100,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.4370",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "10.98",
+      "ytd": "10.98",
+      "1d": "10.84",
+      "15d": "10.93",
+      "30d": "11.00",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -5146,11 +5146,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "50.3980",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "10.38",
+      "ytd": "10.38",
+      "1d": "10.66",
+      "15d": "11.16",
+      "30d": "9.68",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -5260,7 +5260,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.8,
+    "screener_score": 24.2,
     "dividends": [
       {
         "date": "Jul 28, 2026",
@@ -5326,7 +5326,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 13.9,
+    "screener_score": 12.7,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -5344,17 +5344,17 @@
     "validity_date": "Jul 23, 2026",
     "nav": "91.3085",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-4.84",
+      "ytd": "-4.84",
+      "1d": "-1.23",
+      "15d": "-4.24",
+      "30d": "-5.07",
+      "90d": "-1.64",
+      "180d": "-9.90",
+      "270d": "-2.41",
+      "365d": "10.67",
+      "2y": "69.10",
+      "3y": "140.02"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Oct 19, 2016",
@@ -5372,7 +5372,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.2,
+    "screener_score": 59.3,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -5390,17 +5390,17 @@
     "validity_date": "Jul 23, 2026",
     "nav": "78.4759",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-5.10",
+      "ytd": "-5.10",
+      "1d": "-1.29",
+      "15d": "-4.47",
+      "30d": "-4.45",
+      "90d": "-0.99",
+      "180d": "-9.98",
+      "270d": "-2.22",
+      "365d": "12.03",
+      "2y": "69.51",
+      "3y": "144.02"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Dec 22, 2016",
@@ -5418,7 +5418,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.2,
+    "screener_score": 65.9,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -5436,17 +5436,17 @@
     "validity_date": "Jul 23, 2026",
     "nav": "86.6260",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-4.84",
+      "ytd": "-4.84",
+      "1d": "-1.23",
+      "15d": "-4.25",
+      "30d": "-4.95",
+      "90d": "-1.51",
+      "180d": "-10.30",
+      "270d": "-2.48",
+      "365d": "11.15",
+      "2y": "66.68",
+      "3y": "136.16"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Feb 20, 2017",
@@ -5464,7 +5464,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.2,
+    "screener_score": 61.7,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -5482,17 +5482,17 @@
     "validity_date": "Jul 23, 2026",
     "nav": "91.6650",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-5.19",
+      "ytd": "-5.19",
+      "1d": "-1.31",
+      "15d": "-4.55",
+      "30d": "-5.10",
+      "90d": "-1.27",
+      "180d": "-9.53",
+      "270d": "-1.68",
+      "365d": "11.92",
+      "2y": "66.19",
+      "3y": "135.12"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Apr 24, 2017",
@@ -5510,7 +5510,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.2,
+    "screener_score": 63.9,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -5528,17 +5528,17 @@
     "validity_date": "Jul 23, 2026",
     "nav": "101.0147",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-4.89",
+      "ytd": "-4.89",
+      "1d": "-1.23",
+      "15d": "-4.27",
+      "30d": "-4.87",
+      "90d": "-2.75",
+      "180d": "-11.53",
+      "270d": "-4.05",
+      "365d": "9.55",
+      "2y": "61.77",
+      "3y": "125.58"
     },
     "amc": "Al Meezan Investment Management Limited",
     "inception_date": "Aug 17, 2017",
@@ -5556,7 +5556,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": true,
-    "screener_score": 4.2,
+    "screener_score": 40.4,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -6051,8 +6051,8 @@
     "fund_name": "Alfalah KPK Employee Pension Fund",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 24, 2026",
-    "nav": "140.0571",
+    "validity_date": "Jul 25, 2026",
+    "nav": "140.0951",
     "returns": {
       "mtd": "N/A",
       "ytd": "N/A",
@@ -6068,14 +6068,14 @@
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Dec 14, 2023",
-    "offer": "140.0571",
-    "repurchase": "140.0571",
+    "offer": "140.0951",
+    "repurchase": "140.0951",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "0.67",
+    "ter_ytd": "0.61",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Low",
@@ -6162,7 +6162,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.1,
+    "screener_score": 29.4,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -6208,7 +6208,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.1,
+    "screener_score": 45.0,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -6300,7 +6300,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.6,
+    "screener_score": 34.1,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -6346,7 +6346,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.5,
+    "screener_score": 54.9,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -6392,7 +6392,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.4,
+    "screener_score": 40.6,
     "dividends": [
       {
         "date": "Oct 24, 2023",
@@ -6438,7 +6438,7 @@
     "major_category": "Assets",
     "total_load": 6.0,
     "is_ter_estimated": false,
-    "screener_score": 42.5,
+    "screener_score": 40.3,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -6484,7 +6484,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.3,
+    "screener_score": 53.4,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -6530,7 +6530,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.7,
+    "screener_score": 31.6,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -6622,7 +6622,7 @@
     "major_category": "Income",
     "total_load": 8.0,
     "is_ter_estimated": false,
-    "screener_score": 39.4,
+    "screener_score": 35.4,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -6668,7 +6668,7 @@
     "major_category": "Income",
     "total_load": 18.0,
     "is_ter_estimated": false,
-    "screener_score": 66.2,
+    "screener_score": 61.8,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -6760,7 +6760,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.0,
+    "screener_score": 12.7,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -6778,17 +6778,17 @@
     "validity_date": "Jul 24, 2026",
     "nav": "100.5905",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-6.01",
+      "ytd": "-6.01",
+      "1d": "-1.77",
+      "15d": "-6.03",
+      "30d": "-5.78",
+      "90d": "-1.05",
+      "180d": "-7.21",
+      "270d": "0.61",
+      "365d": "10.08",
+      "2y": "63.45",
+      "3y": "145.70"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Nov 01, 2016",
@@ -6806,7 +6806,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 50.3,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -6824,17 +6824,17 @@
     "validity_date": "Jul 24, 2026",
     "nav": "102.7404",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-0.82",
+      "ytd": "-0.82",
+      "1d": "-0.36",
+      "15d": "-1.02",
+      "30d": "4.97",
+      "90d": "1.56",
+      "180d": "1.83",
+      "270d": "4.85",
+      "365d": "10.26",
+      "2y": "33.10",
+      "3y": "68.76"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Jun 11, 2016",
@@ -6852,7 +6852,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 48.1,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -6870,17 +6870,17 @@
     "validity_date": "Jul 24, 2026",
     "nav": "111.3317",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-1.95",
+      "ytd": "-1.95",
+      "1d": "-0.69",
+      "15d": "-2.14",
+      "30d": "2.38",
+      "90d": "0.91",
+      "180d": "1.61",
+      "270d": "5.34",
+      "365d": "13.94",
+      "2y": "49.32",
+      "3y": "97.94"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Jun 11, 2016",
@@ -6898,7 +6898,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 64.3,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -6944,7 +6944,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.3,
+    "screener_score": 47.2,
     "dividends": [
       {
         "date": "Jun 29, 2024",
@@ -6962,17 +6962,17 @@
     "validity_date": "Jul 24, 2026",
     "nav": "142.7048",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "0.71",
+      "ytd": "0.71",
+      "1d": "0.02",
+      "15d": "0.41",
+      "30d": "0.96",
+      "90d": "2.35",
+      "180d": "4.60",
+      "270d": "7.27",
+      "365d": "9.83",
+      "2y": "26.50",
+      "3y": "57.17"
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Oct 12, 2017",
@@ -6990,7 +6990,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 40.9,
     "dividends": [
       {
         "date": "Jun 26, 2023",
@@ -7036,7 +7036,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 45.7,
+    "screener_score": 42.1,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -7082,7 +7082,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 47.9,
+    "screener_score": 46.8,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -7128,7 +7128,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 67.8,
+    "screener_score": 63.5,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -7174,7 +7174,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.4,
+    "screener_score": 66.3,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -7220,7 +7220,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 29.4,
+    "screener_score": 25.7,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -7266,7 +7266,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.9,
+    "screener_score": 52.0,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -7312,7 +7312,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.7,
+    "screener_score": 50.9,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -7358,7 +7358,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.7,
+    "screener_score": 13.5,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -7404,7 +7404,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 11.0,
+    "screener_score": 10.0,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -7419,8 +7419,8 @@
     "fund_name": "Alfalah Government Securities Fund Plan II",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 24, 2026",
-    "nav": "106.8616",
+    "validity_date": "Jul 25, 2026",
+    "nav": "106.8893",
     "returns": {
       "mtd": "10.62",
       "ytd": "10.62",
@@ -7436,21 +7436,21 @@
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Nov 12, 2024",
-    "offer": "110.5483",
-    "repurchase": "106.8616",
+    "offer": "110.5770",
+    "repurchase": "106.8893",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "0.15",
+    "ter_ytd": "0.39",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 6.3,
+    "screener_score": 6.1,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -7496,7 +7496,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.3,
+    "screener_score": 42.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -7514,11 +7514,11 @@
     "validity_date": "Jul 24, 2026",
     "nav": "101.2896",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "0.73",
+      "ytd": "0.73",
+      "1d": "0.03",
+      "15d": "0.43",
+      "30d": "0.87",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -7560,12 +7560,12 @@
     "validity_date": "Jul 24, 2026",
     "nav": "100.9981",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "11.82",
+      "ytd": "11.82",
+      "1d": "11.72",
+      "15d": "11.73",
+      "30d": "11.76",
+      "90d": "11.45",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -7634,7 +7634,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.7,
+    "screener_score": 38.8,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -7680,7 +7680,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.6,
+    "screener_score": 19.7,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -7695,8 +7695,8 @@
     "fund_name": "Alfalah Islamic Sovereign Fund (Alfalah Islamic Sovereign Plan I)",
     "rating": "AA+(f)",
     "benchmark": "N/A",
-    "validity_date": "Jul 24, 2026",
-    "nav": "99.8629",
+    "validity_date": "Jul 25, 2026",
+    "nav": "99.8685",
     "returns": {
       "mtd": "9.87",
       "ytd": "9.87",
@@ -7712,8 +7712,8 @@
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Sep 26, 2023",
-    "offer": "103.3082",
-    "repurchase": "99.8629",
+    "offer": "103.3140",
+    "repurchase": "99.8685",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -7726,7 +7726,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 7.8,
+    "screener_score": 7.7,
     "dividends": [
       {
         "date": "Feb 11, 2026",
@@ -7772,7 +7772,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 9.3,
+    "screener_score": 8.9,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -7818,7 +7818,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.0,
+    "screener_score": 9.5,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -7836,9 +7836,9 @@
     "validity_date": "Jul 22, 2026",
     "nav": "100.0299",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
+      "mtd": "10.91",
+      "ytd": "10.91",
+      "1d": "10.91",
       "15d": "N/A",
       "30d": "N/A",
       "90d": "N/A",
@@ -7876,16 +7876,16 @@
     "validity_date": "Jul 24, 2026",
     "nav": "126.5524",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "1.20",
+      "ytd": "1.20",
+      "1d": "0.03",
+      "15d": "0.99",
+      "30d": "1.46",
+      "90d": "4.32",
+      "180d": "6.08",
+      "270d": "8.29",
+      "365d": "10.03",
+      "2y": "21.67",
       "3y": "N/A"
     },
     "amc": "Alfalah Asset Management Limited",
@@ -7904,7 +7904,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 23.9,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -7950,7 +7950,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.7,
+    "screener_score": 46.4,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -7996,7 +7996,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.1,
+    "screener_score": 50.9,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -8042,7 +8042,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.4,
+    "screener_score": 44.1,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -8088,7 +8088,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.5,
+    "screener_score": 30.9,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -8134,7 +8134,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.9,
+    "screener_score": 42.6,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -8180,7 +8180,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.9,
+    "screener_score": 8.3,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -8333,8 +8333,8 @@
     "fund_name": "Alfalah Stable Return Fund Plan XXVIII",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 24, 2026",
-    "nav": "102.6965",
+    "validity_date": "Jul 25, 2026",
+    "nav": "102.7234",
     "returns": {
       "mtd": "7.52",
       "ytd": "7.52",
@@ -8350,14 +8350,14 @@
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "May 19, 2026",
-    "offer": "102.6965",
-    "repurchase": "102.6965",
+    "offer": "102.7234",
+    "repurchase": "102.7234",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
     "trustee": "CDC",
     "management_fee": "0.00",
-    "ter_ytd": "0.39",
+    "ter_ytd": "0.52",
     "sm_fee": "0.00",
     "is_shariah": false,
     "risk_level": "Medium",
@@ -8450,7 +8450,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.9,
+    "screener_score": 65.2,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -8511,8 +8511,8 @@
     "fund_name": "Alfalah Strategic Allocation Fund Plan - I",
     "rating": "N/A",
     "benchmark": "N/A",
-    "validity_date": "Jul 23, 2026",
-    "nav": "100.7034",
+    "validity_date": "Jul 24, 2026",
+    "nav": "100.7217",
     "returns": {
       "mtd": "0.61",
       "ytd": "0.61",
@@ -8528,8 +8528,8 @@
     },
     "amc": "Alfalah Asset Management Limited",
     "inception_date": "Nov 21, 2024",
-    "offer": "104.1777",
-    "repurchase": "100.7034",
+    "offer": "104.1966",
+    "repurchase": "100.7217",
     "front_end_load": "0",
     "back_end_load": "0",
     "contingent_load": "0",
@@ -8542,7 +8542,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 52.3,
+    "screener_score": 52.4,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -9040,7 +9040,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 50.9,
+    "screener_score": 46.5,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -9132,7 +9132,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.2,
+    "screener_score": 32.4,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -9242,16 +9242,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "1454.4498",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-2.00",
+      "ytd": "-2.00",
+      "1d": "-0.18",
+      "15d": "-0.87",
+      "30d": "-1.86",
+      "90d": "3.86",
+      "180d": "-3.21",
+      "270d": "5.99",
+      "365d": "20.63",
+      "2y": "85.44",
       "3y": "N/A"
     },
     "amc": "Atlas Asset Management Limited",
@@ -9270,7 +9270,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 49.1,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -9288,17 +9288,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "949.9240",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-0.43",
+      "ytd": "-0.43",
+      "1d": "-0.07",
+      "15d": "-0.14",
+      "30d": "-0.31",
+      "90d": "3.22",
+      "180d": "1.14",
+      "270d": "7.04",
+      "365d": "15.75",
+      "2y": "51.03",
+      "3y": "92.91"
     },
     "amc": "Atlas Asset Management Limited",
     "inception_date": "Jan 07, 2019",
@@ -9316,7 +9316,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 65.0,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -9334,17 +9334,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "1237.1773",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-1.37",
+      "ytd": "-1.37",
+      "1d": "-0.14",
+      "15d": "-0.56",
+      "30d": "-1.22",
+      "90d": "3.56",
+      "180d": "-1.64",
+      "270d": "6.15",
+      "365d": "18.45",
+      "2y": "71.48",
+      "3y": "138.39"
     },
     "amc": "Atlas Asset Management Limited",
     "inception_date": "Jan 07, 2019",
@@ -9362,7 +9362,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 70.6,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -9408,7 +9408,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.8,
+    "screener_score": 28.5,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -9454,7 +9454,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.7,
+    "screener_score": 47.2,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -9500,7 +9500,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.5,
+    "screener_score": 48.7,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -9546,7 +9546,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.3,
+    "screener_score": 50.3,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -9592,7 +9592,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.7,
+    "screener_score": 51.4,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -9638,7 +9638,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.8,
+    "screener_score": 38.8,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -9684,7 +9684,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.9,
+    "screener_score": 55.5,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -9822,14 +9822,14 @@
     "validity_date": "Jul 27, 2026",
     "nav": "173.6316",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
+      "mtd": "-2.26",
+      "ytd": "-2.26",
+      "1d": "3.94",
+      "15d": "-2.04",
+      "30d": "-2.18",
+      "90d": "2.96",
+      "180d": "-7.52",
+      "270d": "8.59",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
@@ -9896,7 +9896,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.4,
+    "screener_score": 39.7,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -9942,7 +9942,7 @@
     "major_category": "Money Market",
     "total_load": 0.5,
     "is_ter_estimated": false,
-    "screener_score": 42.2,
+    "screener_score": 39.2,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -9988,7 +9988,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.5,
+    "screener_score": 48.7,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -10486,7 +10486,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.9,
+    "screener_score": 19.7,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -10532,7 +10532,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.9,
+    "screener_score": 32.7,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -10596,17 +10596,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "90.7267",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "0.58",
+      "ytd": "0.58",
+      "1d": "0.04",
+      "15d": "0.12",
+      "30d": "0.70",
+      "90d": "2.65",
+      "180d": "4.59",
+      "270d": "7.68",
+      "365d": "10.29",
+      "2y": "30.57",
+      "3y": "59.59"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Sep 09, 2015",
@@ -10624,7 +10624,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 48.4,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -10642,15 +10642,15 @@
     "validity_date": "Jul 28, 2026",
     "nav": "120.0886",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "-3.00",
+      "ytd": "-3.00",
+      "1d": "-0.40",
+      "15d": "-1.46",
+      "30d": "-2.95",
+      "90d": "5.29",
+      "180d": "-2.47",
+      "270d": "4.91",
+      "365d": "11.53",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -10670,7 +10670,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 39.6,
     "dividends": [
       {
         "date": "Jun 26, 2025",
@@ -10688,14 +10688,14 @@
     "validity_date": "Jul 28, 2026",
     "nav": "108.4102",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
+      "mtd": "0.77",
+      "ytd": "0.77",
+      "1d": "0.04",
+      "15d": "0.41",
+      "30d": "0.99",
+      "90d": "3.57",
+      "180d": "4.02",
+      "270d": "7.64",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
@@ -10734,13 +10734,13 @@
     "validity_date": "Jul 28, 2026",
     "nav": "107.0821",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
+      "mtd": "0.61",
+      "ytd": "0.61",
+      "1d": "0.01",
+      "15d": "0.31",
+      "30d": "0.78",
+      "90d": "2.68",
+      "180d": "4.47",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -10774,13 +10774,13 @@
     "validity_date": "Jul 28, 2026",
     "nav": "106.2353",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
+      "mtd": "1.03",
+      "ytd": "1.03",
+      "1d": "0.04",
+      "15d": "0.48",
+      "30d": "1.18",
+      "90d": "3.34",
+      "180d": "5.89",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -10814,11 +10814,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "102.5276",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "0.85",
+      "ytd": "0.85",
+      "1d": "0.04",
+      "15d": "0.40",
+      "30d": "1.01",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -10854,11 +10854,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "102.2089",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "0.85",
+      "ytd": "0.85",
+      "1d": "0.03",
+      "15d": "0.43",
+      "30d": "0.98",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -10900,11 +10900,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "102.4889",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "0.86",
+      "ytd": "0.86",
+      "1d": "0.04",
+      "15d": "0.41",
+      "30d": "1.01",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -10968,7 +10968,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.2,
+    "screener_score": 23.3,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -11027,22 +11027,22 @@
     "sector": "Open-End Funds",
     "category": "Shariah Compliant Aggressive Fixed Income",
     "fund_name": "Faysal Islamic Financial Growth Fund (Faysal Islamic Financial Growth Plan I)",
-    "rating": "N/A",
+    "rating": "A+(f)",
     "benchmark": "N/A",
     "validity_date": "Jul 28, 2026",
     "nav": "101.4547",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "10.10",
+      "ytd": "10.10",
+      "1d": "10.44",
+      "15d": "8.64",
+      "30d": "10.39",
+      "90d": "10.01",
+      "180d": "9.23",
+      "270d": "9.16",
+      "365d": "9.00",
+      "2y": "11.53",
+      "3y": "16.37"
     },
     "amc": "Faysal Asset Management Limited",
     "inception_date": "Jul 25, 2023",
@@ -11060,7 +11060,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 16.8,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -11078,15 +11078,15 @@
     "validity_date": "Jul 28, 2026",
     "nav": "101.1206",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "9.32",
+      "ytd": "9.32",
+      "1d": "9.02",
+      "15d": "8.88",
+      "30d": "9.35",
+      "90d": "9.54",
+      "180d": "9.17",
+      "270d": "9.25",
+      "365d": "9.46",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -11106,7 +11106,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 16.8,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -11124,13 +11124,13 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.9185",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
+      "mtd": "9.47",
+      "ytd": "9.47",
+      "1d": "9.53",
+      "15d": "9.55",
+      "30d": "9.61",
+      "90d": "10.35",
+      "180d": "10.29",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -11170,15 +11170,15 @@
     "validity_date": "Jul 27, 2026",
     "nav": "118.9793",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "-0.08",
+      "ytd": "-0.08",
+      "1d": "1.33",
+      "15d": "-0.23",
+      "30d": "-0.12",
+      "90d": "2.57",
+      "180d": "2.71",
+      "270d": "12.05",
+      "365d": "18.88",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -11198,7 +11198,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 47.4,
     "dividends": []
   },
   {
@@ -11210,14 +11210,14 @@
     "validity_date": "Jul 27, 2026",
     "nav": "109.3991",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
+      "mtd": "0.61",
+      "ytd": "0.61",
+      "1d": "0.13",
+      "15d": "0.29",
+      "30d": "0.68",
+      "90d": "2.36",
+      "180d": "4.14",
+      "270d": "7.80",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
@@ -11250,15 +11250,15 @@
     "validity_date": "Jul 27, 2026",
     "nav": "110.7792",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "0.65",
+      "ytd": "0.65",
+      "1d": "0.03",
+      "15d": "0.35",
+      "30d": "0.81",
+      "90d": "2.23",
+      "180d": "4.46",
+      "270d": "6.91",
+      "365d": "9.80",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -11278,7 +11278,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 20.5,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -11296,11 +11296,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "102.5574",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "13.05",
+      "ytd": "13.05",
+      "1d": "14.05",
+      "15d": "9.83",
+      "30d": "14.43",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -11336,11 +11336,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.9329",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "11.31",
+      "ytd": "11.31",
+      "1d": "9.02",
+      "15d": "11.17",
+      "30d": "11.35",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -11376,10 +11376,10 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.6015",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
+      "mtd": "11.56",
+      "ytd": "11.56",
+      "1d": "10.80",
+      "15d": "10.88",
       "30d": "N/A",
       "90d": "N/A",
       "180d": "N/A",
@@ -11416,10 +11416,10 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.4179",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
+      "mtd": "11.73",
+      "ytd": "11.73",
+      "1d": "10.88",
+      "15d": "10.17",
       "30d": "N/A",
       "90d": "N/A",
       "180d": "N/A",
@@ -11456,9 +11456,9 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.4117",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
+      "mtd": "12.52",
+      "ytd": "12.52",
+      "1d": "11.42",
       "15d": "N/A",
       "30d": "N/A",
       "90d": "N/A",
@@ -11524,7 +11524,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 12.6,
+    "screener_score": 11.4,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -11570,7 +11570,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 11.0,
+    "screener_score": 10.3,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -11616,7 +11616,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.3,
+    "screener_score": 8.0,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -11662,7 +11662,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.0,
+    "screener_score": 15.4,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -11708,7 +11708,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.6,
+    "screener_score": 48.0,
     "dividends": [
       {
         "date": "Jun 24, 2025",
@@ -11754,7 +11754,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.5,
+    "screener_score": 55.1,
     "dividends": []
   },
   {
@@ -11766,15 +11766,15 @@
     "validity_date": "Jul 27, 2026",
     "nav": "109.7491",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "0.71",
+      "ytd": "0.71",
+      "1d": "0.03",
+      "15d": "0.40",
+      "30d": "0.88",
+      "90d": "2.36",
+      "180d": "4.24",
+      "270d": "6.44",
+      "365d": "8.92",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -11794,7 +11794,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 2.6,
+    "screener_score": 10.7,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -11812,15 +11812,15 @@
     "validity_date": "Jul 27, 2026",
     "nav": "109.9910",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "0.76",
+      "ytd": "0.76",
+      "1d": "0.03",
+      "15d": "0.42",
+      "30d": "0.96",
+      "90d": "2.54",
+      "180d": "4.47",
+      "270d": "6.71",
+      "365d": "9.17",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -11840,7 +11840,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 2.6,
+    "screener_score": 11.9,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -11886,7 +11886,7 @@
     "major_category": "Stock",
     "total_load": 2.0,
     "is_ter_estimated": false,
-    "screener_score": 49.8,
+    "screener_score": 50.0,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -12372,7 +12372,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.9,
+    "screener_score": 35.3,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -12418,7 +12418,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.8,
+    "screener_score": 58.0,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -12464,7 +12464,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.4,
+    "screener_score": 56.7,
     "dividends": [
       {
         "date": "Jun 28, 2024",
@@ -12510,7 +12510,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.4,
+    "screener_score": 32.1,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -12556,7 +12556,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.2,
+    "screener_score": 39.2,
     "dividends": [
       {
         "date": "Jun 16, 2026",
@@ -12602,7 +12602,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.8,
+    "screener_score": 41.5,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -12648,7 +12648,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.9,
+    "screener_score": 4.8,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -12694,7 +12694,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 58.7,
+    "screener_score": 58.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -12740,7 +12740,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.9,
+    "screener_score": 25.4,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -12786,7 +12786,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.7,
+    "screener_score": 4.6,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -12850,16 +12850,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "325.1281",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-0.16",
+      "ytd": "-0.16",
+      "1d": "-0.09",
+      "15d": "1.11",
+      "30d": "-0.20",
+      "90d": "8.22",
+      "180d": "-4.49",
+      "270d": "13.31",
+      "365d": "25.43",
+      "2y": "94.77",
       "3y": "N/A"
     },
     "amc": "HBL Asset Management Limited",
@@ -12878,7 +12878,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 54.7,
     "dividends": [
       {
         "date": "Jun 20, 2025",
@@ -12924,7 +12924,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.4,
+    "screener_score": 56.7,
     "dividends": [
       {
         "date": "Jun 28, 2024",
@@ -12942,12 +12942,12 @@
     "validity_date": "Jun 02, 2026",
     "nav": "102.7672",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "13.59",
+      "ytd": "10.31",
+      "1d": "9.86",
+      "15d": "10.92",
+      "30d": "10.13",
+      "90d": "10.31",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -12982,11 +12982,11 @@
     "validity_date": "Jun 23, 2026",
     "nav": "102.4219",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "10.90",
+      "ytd": "10.78",
+      "1d": "10.37",
+      "15d": "11.10",
+      "30d": "11.56",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -13023,10 +13023,10 @@
     "nav": "101.1262",
     "returns": {
       "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "ytd": "11.42",
+      "1d": "18.29",
+      "15d": "10.91",
+      "30d": "11.09",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -13130,7 +13130,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 40.6,
+    "screener_score": 37.7,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -13176,7 +13176,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 46.0,
+    "screener_score": 42.4,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -13288,7 +13288,7 @@
     "major_category": "Money Market",
     "total_load": 2.0,
     "is_ter_estimated": true,
-    "screener_score": 3.8,
+    "screener_score": 3.7,
     "dividends": [
       {
         "date": "Jun 17, 2026",
@@ -13466,7 +13466,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.5,
+    "screener_score": 25.7,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -13512,7 +13512,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.8,
+    "screener_score": 57.3,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -13624,7 +13624,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.3,
+    "screener_score": 57.6,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -14316,7 +14316,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 40.6,
+    "screener_score": 37.4,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -14362,7 +14362,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.4,
+    "screener_score": 39.4,
     "dividends": [
       {
         "date": "Jun 24, 2025",
@@ -14648,7 +14648,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.3,
+    "screener_score": 45.7,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -14694,7 +14694,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 16.6,
+    "screener_score": 15.1,
     "dividends": [
       {
         "date": "Jul 15, 2025",
@@ -14740,7 +14740,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.0,
+    "screener_score": 48.3,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -14786,7 +14786,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 14.5,
+    "screener_score": 13.0,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -14804,10 +14804,10 @@
     "validity_date": "May 22, 2026",
     "nav": "100.5923",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
+      "mtd": "5.78",
+      "ytd": "9.01",
+      "1d": "6.35",
+      "15d": "6.87",
       "30d": "N/A",
       "90d": "N/A",
       "180d": "N/A",
@@ -14872,7 +14872,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 17.4,
+    "screener_score": 16.4,
     "dividends": [
       {
         "date": "Jun 27, 2025",
@@ -14918,7 +14918,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.9,
+    "screener_score": 8.6,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -14964,7 +14964,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.2,
+    "screener_score": 34.7,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -14982,13 +14982,13 @@
     "validity_date": "Apr 18, 2026",
     "nav": "97.1888",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
+      "mtd": "1.92",
+      "ytd": "3.94",
+      "1d": "0.02",
+      "15d": "3.16",
+      "30d": "-0.35",
+      "90d": "-7.47",
+      "180d": "-2.01",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -15028,12 +15028,12 @@
     "validity_date": "Apr 18, 2026",
     "nav": "96.8274",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "1.50",
+      "ytd": "-3.17",
+      "1d": "0.03",
+      "15d": "1.38",
+      "30d": "1.64",
+      "90d": "-3.73",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -15096,7 +15096,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.1,
+    "screener_score": 47.0,
     "dividends": [
       {
         "date": "Jun 26, 2025",
@@ -15142,7 +15142,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.0,
+    "screener_score": 56.9,
     "dividends": [
       {
         "date": "Jun 24, 2025",
@@ -15234,7 +15234,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 58.0,
+    "screener_score": 52.5,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -15280,7 +15280,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.7,
+    "screener_score": 49.5,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -15326,7 +15326,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.3,
+    "screener_score": 26.5,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -15372,7 +15372,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 53.8,
+    "screener_score": 54.2,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -15458,7 +15458,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 28.5,
+    "screener_score": 27.0,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -15476,10 +15476,10 @@
     "validity_date": "Jun 18, 2026",
     "nav": "100.8212",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
+      "mtd": "11.23",
+      "ytd": "11.49",
+      "1d": "11.17",
+      "15d": "11.22",
       "30d": "N/A",
       "90d": "N/A",
       "180d": "N/A",
@@ -15550,7 +15550,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 41.4,
+    "screener_score": 38.6,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -15568,17 +15568,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "92.2914",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-0.42",
+      "ytd": "-0.42",
+      "1d": "-0.08",
+      "15d": "-0.61",
+      "30d": "-0.25",
+      "90d": "9.53",
+      "180d": "1.03",
+      "270d": "4.26",
+      "365d": "11.98",
+      "2y": "36.89",
+      "3y": "81.86"
     },
     "amc": "Lakson Investments Limited",
     "inception_date": "Oct 10, 2011",
@@ -15596,7 +15596,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 62.1,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -15642,7 +15642,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.7,
+    "screener_score": 39.1,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -15688,7 +15688,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 77.5,
+    "screener_score": 76.2,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -15992,11 +15992,11 @@
     "validity_date": "Jul 15, 2026",
     "nav": "100.0000",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
+      "mtd": "-0.78",
+      "ytd": "-0.78",
       "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "15d": "-0.78",
+      "30d": "5.87",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -16038,11 +16038,11 @@
     "validity_date": "Jul 21, 2026",
     "nav": "100.0000",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
+      "mtd": "-0.55",
+      "ytd": "-0.55",
       "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "15d": "-5.37",
+      "30d": "3.07",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -16084,11 +16084,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.1926",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "2.09",
+      "ytd": "2.09",
+      "1d": "0.88",
+      "15d": "1.05",
+      "30d": "2.74",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -16130,9 +16130,9 @@
     "validity_date": "Jul 28, 2026",
     "nav": "100.2473",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
+      "mtd": "11.28",
+      "ytd": "11.28",
+      "1d": "11.28",
       "15d": "N/A",
       "30d": "N/A",
       "90d": "N/A",
@@ -16198,7 +16198,7 @@
     "major_category": "Income",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 32.6,
+    "screener_score": 30.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -16244,7 +16244,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.2,
+    "screener_score": 30.8,
     "dividends": [
       {
         "date": "Jun 25, 2026",
@@ -16330,7 +16330,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 49.6,
+    "screener_score": 49.8,
     "dividends": [
       {
         "date": "Jun 30, 2026",
@@ -16376,7 +16376,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.1,
+    "screener_score": 40.5,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -16868,7 +16868,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.2,
+    "screener_score": 41.7,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -16914,7 +16914,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.3,
+    "screener_score": 21.8,
     "dividends": [
       {
         "date": "Jul 29, 2026",
@@ -16985,7 +16985,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 13.6,
+    "screener_score": 12.5,
     "dividends": [
       {
         "date": "Jun 12, 2026",
@@ -17003,16 +17003,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "217.3529",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-2.31",
+      "ytd": "-2.31",
+      "1d": "-0.17",
+      "15d": "-0.84",
+      "30d": "-1.93",
+      "90d": "4.44",
+      "180d": "-4.01",
+      "270d": "5.64",
+      "365d": "19.28",
+      "2y": "103.60",
       "3y": "N/A"
     },
     "amc": "MCB Investment Management Limited",
@@ -17031,7 +17031,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 47.8,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -17117,7 +17117,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.9,
+    "screener_score": 17.1,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -17209,7 +17209,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.6,
+    "screener_score": 25.9,
     "dividends": [
       {
         "date": "Jul 29, 2026",
@@ -17280,7 +17280,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.2,
+    "screener_score": 51.4,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -17326,7 +17326,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.5,
+    "screener_score": 57.8,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -17344,17 +17344,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "174.0443",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-0.14",
+      "ytd": "-0.14",
+      "1d": "-0.02",
+      "15d": "-0.14",
+      "30d": "0.45",
+      "90d": "4.37",
+      "180d": "2.24",
+      "270d": "7.20",
+      "365d": "11.96",
+      "2y": "41.06",
+      "3y": "83.12"
     },
     "amc": "MCB Investment Management Limited",
     "inception_date": "Jun 11, 2021",
@@ -17372,7 +17372,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 62.2,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -17418,7 +17418,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.0,
+    "screener_score": 40.5,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -17464,7 +17464,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 5.4,
+    "screener_score": 5.2,
     "dividends": [
       {
         "date": "Jun 21, 2025",
@@ -17590,7 +17590,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 20.5,
+    "screener_score": 18.4,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -17676,7 +17676,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 18.9,
+    "screener_score": 17.9,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -17722,7 +17722,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.5,
+    "screener_score": 39.5,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -17814,7 +17814,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.6,
+    "screener_score": 56.1,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -17860,7 +17860,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 58.2,
+    "screener_score": 58.4,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -17906,7 +17906,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 25.2,
+    "screener_score": 22.2,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -17952,7 +17952,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 58.0,
+    "screener_score": 58.2,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -17998,7 +17998,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 52.1,
+    "screener_score": 52.2,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -18044,7 +18044,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 34.4,
+    "screener_score": 32.1,
     "dividends": [
       {
         "date": "Jul 29, 2026",
@@ -18115,7 +18115,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 68.1,
+    "screener_score": 63.1,
     "dividends": [
       {
         "date": "Jun 12, 2026",
@@ -18161,7 +18161,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 69.1,
+    "screener_score": 64.1,
     "dividends": [
       {
         "date": "Jun 12, 2026",
@@ -18527,7 +18527,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 8.7,
+    "screener_score": 8.1,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -18573,7 +18573,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.8,
+    "screener_score": 24.5,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -18619,7 +18619,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 66.6,
+    "screener_score": 61.4,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -18665,7 +18665,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 72.2,
+    "screener_score": 70.5,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -18683,16 +18683,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "19.2000",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-3.08",
+      "ytd": "-3.08",
+      "1d": "-0.36",
+      "15d": "-1.18",
+      "30d": "-2.93",
+      "90d": "4.64",
+      "180d": "-2.44",
+      "270d": "6.48",
+      "365d": "21.45",
+      "2y": "85.14",
       "3y": "N/A"
     },
     "amc": "National Investment Trust Limited",
@@ -18711,7 +18711,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 50.3,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -18757,7 +18757,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 33.7,
+    "screener_score": 31.4,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -18803,7 +18803,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.2,
+    "screener_score": 39.4,
     "dividends": [
       {
         "date": "Jun 20, 2026",
@@ -18849,7 +18849,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 57.7,
+    "screener_score": 52.4,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -18981,7 +18981,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 61.2,
+    "screener_score": 55.3,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -19473,7 +19473,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 38.4,
+    "screener_score": 35.3,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -19519,7 +19519,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.8,
+    "screener_score": 36.4,
     "dividends": [
       {
         "date": "Jul 28, 2026",
@@ -19631,7 +19631,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.9,
+    "screener_score": 49.7,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -20009,7 +20009,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.9,
+    "screener_score": 33.0,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -20055,7 +20055,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 48.1,
+    "screener_score": 43.6,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -20147,7 +20147,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 36.9,
+    "screener_score": 33.0,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -20193,7 +20193,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 60.5,
+    "screener_score": 54.4,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -20239,7 +20239,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.7,
+    "screener_score": 46.8,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -20285,7 +20285,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.0,
+    "screener_score": 44.8,
     "dividends": [
       {
         "date": "Jul 29, 2026",
@@ -20328,16 +20328,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "21.8636",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-2.30",
+      "ytd": "-2.30",
+      "1d": "4.15",
+      "15d": "-2.19",
+      "30d": "-3.89",
+      "90d": "-1.30",
+      "180d": "-9.82",
+      "270d": "12.81",
+      "365d": "27.50",
+      "2y": "116.56",
       "3y": "N/A"
     },
     "amc": "NBP Fund Management Limited",
@@ -20356,7 +20356,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 57.1,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -20377,8 +20377,8 @@
       "mtd": "N/A",
       "ytd": "N/A",
       "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "15d": "15.70",
+      "30d": "7.85",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -20574,7 +20574,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.3,
+    "screener_score": 9.4,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -20620,7 +20620,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 15.8,
+    "screener_score": 14.2,
     "dividends": [
       {
         "date": "Jun 23, 2026",
@@ -20666,7 +20666,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.8,
+    "screener_score": 21.1,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -20712,7 +20712,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.2,
+    "screener_score": 40.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -20730,14 +20730,14 @@
     "validity_date": "Jul 28, 2026",
     "nav": "10.0393",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
+      "mtd": "0.27",
+      "ytd": "0.27",
+      "1d": "0.47",
+      "15d": "0.09",
+      "30d": "0.33",
+      "90d": "2.21",
+      "180d": "-1.31",
+      "270d": "6.09",
       "365d": "N/A",
       "2y": "N/A",
       "3y": "N/A"
@@ -20776,13 +20776,13 @@
     "validity_date": "Jul 28, 2026",
     "nav": "10.0411",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
+      "mtd": "0.32",
+      "ytd": "0.32",
+      "1d": "0.46",
+      "15d": "0.16",
+      "30d": "0.42",
+      "90d": "2.06",
+      "180d": "0.47",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -20822,13 +20822,13 @@
     "validity_date": "Jul 28, 2026",
     "nav": "10.0281",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
+      "mtd": "0.18",
+      "ytd": "0.18",
+      "1d": "0.48",
+      "15d": "0.11",
+      "30d": "0.21",
+      "90d": "1.77",
+      "180d": "0.19",
       "270d": "N/A",
       "365d": "N/A",
       "2y": "N/A",
@@ -20862,12 +20862,12 @@
     "validity_date": "Jul 28, 2026",
     "nav": "10.1059",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
+      "mtd": "0.40",
+      "ytd": "0.40",
+      "1d": "0.45",
+      "15d": "0.19",
+      "30d": "0.47",
+      "90d": "2.30",
       "180d": "N/A",
       "270d": "N/A",
       "365d": "N/A",
@@ -20908,11 +20908,11 @@
     "validity_date": "Jul 28, 2026",
     "nav": "10.0479",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
+      "mtd": "0.33",
+      "ytd": "0.33",
+      "1d": "0.37",
+      "15d": "0.19",
+      "30d": "0.39",
       "90d": "N/A",
       "180d": "N/A",
       "270d": "N/A",
@@ -20948,16 +20948,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "35.0601",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-4.42",
+      "ytd": "-4.42",
+      "1d": "4.35",
+      "15d": "-2.81",
+      "30d": "-3.92",
+      "90d": "3.46",
+      "180d": "-9.40",
+      "270d": "12.01",
+      "365d": "23.88",
+      "2y": "97.29",
       "3y": "N/A"
     },
     "amc": "NBP Fund Management Limited",
@@ -20976,7 +20976,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 53.2,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -21022,7 +21022,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 22.0,
+    "screener_score": 20.5,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -21040,16 +21040,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "24.8597",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "-4.21",
+      "ytd": "-4.21",
+      "1d": "4.68",
+      "15d": "-2.81",
+      "30d": "-3.81",
+      "90d": "3.79",
+      "180d": "-10.75",
+      "270d": "11.49",
+      "365d": "24.83",
+      "2y": "120.56",
       "3y": "N/A"
     },
     "amc": "NBP Fund Management Limited",
@@ -21068,7 +21068,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 54.0,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -21114,7 +21114,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 56.7,
+    "screener_score": 51.4,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -21160,7 +21160,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.0,
+    "screener_score": 40.3,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -21292,7 +21292,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 30.7,
+    "screener_score": 28.7,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -21338,7 +21338,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 55.4,
+    "screener_score": 55.9,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -21384,7 +21384,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.4,
+    "screener_score": 45.0,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -21430,7 +21430,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 54.2,
+    "screener_score": 54.5,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -21476,7 +21476,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 23.4,
+    "screener_score": 21.7,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -21522,7 +21522,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 63.0,
+    "screener_score": 58.8,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -21568,7 +21568,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 39.0,
+    "screener_score": 35.3,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -21614,7 +21614,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 76.0,
+    "screener_score": 75.0,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -21660,7 +21660,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 7.3,
+    "screener_score": 7.0,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -21706,7 +21706,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 7.5,
+    "screener_score": 7.1,
     "dividends": [
       {
         "date": "Feb 24, 2026",
@@ -21752,7 +21752,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 10.2,
+    "screener_score": 9.4,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -21770,17 +21770,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "40.0458",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "0.73",
+      "ytd": "0.73",
+      "1d": "-0.60",
+      "15d": "0.11",
+      "30d": "0.87",
+      "90d": "11.98",
+      "180d": "-3.19",
+      "270d": "7.03",
+      "365d": "17.42",
+      "2y": "65.53",
+      "3y": "103.58"
     },
     "amc": "Pak Oman Asset Management Company Limited",
     "inception_date": "Oct 28, 2008",
@@ -21798,7 +21798,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 67.2,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -21844,7 +21844,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.7,
+    "screener_score": 39.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -21862,16 +21862,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "120.1442",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "0.32",
+      "ytd": "0.32",
+      "1d": "0.03",
+      "15d": "0.47",
+      "30d": "1.14",
+      "90d": "2.93",
+      "180d": "3.23",
+      "270d": "6.05",
+      "365d": "8.64",
+      "2y": "27.81",
       "3y": "N/A"
     },
     "amc": "Pak-Qatar Asset Management Company Limited",
@@ -21890,7 +21890,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 10.2,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -21908,16 +21908,16 @@
     "validity_date": "Jul 28, 2026",
     "nav": "116.7576",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
+      "mtd": "0.92",
+      "ytd": "0.92",
+      "1d": "0.07",
+      "15d": "0.51",
+      "30d": "0.99",
+      "90d": "2.82",
+      "180d": "4.16",
+      "270d": "7.17",
+      "365d": "9.81",
+      "2y": "26.85",
       "3y": "N/A"
     },
     "amc": "Pak-Qatar Asset Management Company Limited",
@@ -21936,7 +21936,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 20.8,
     "dividends": [
       {
         "date": "Jul 28, 2026",
@@ -21987,7 +21987,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 51.4,
+    "screener_score": 46.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -22033,7 +22033,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.9,
+    "screener_score": 45.7,
     "dividends": [
       {
         "date": "Jul 29, 2026",
@@ -22109,7 +22109,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 42.2,
+    "screener_score": 38.5,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -22127,17 +22127,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "215.1514",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-3.26",
+      "ytd": "-3.26",
+      "1d": "-0.57",
+      "15d": "-1.78",
+      "30d": "-3.05",
+      "90d": "5.18",
+      "180d": "-1.38",
+      "270d": "7.82",
+      "365d": "21.04",
+      "2y": "62.31",
+      "3y": "144.35"
     },
     "amc": "Pak-Qatar Asset Management Company Limited",
     "inception_date": "Sep 22, 2022",
@@ -22155,7 +22155,7 @@
     "major_category": "Stock",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 74.4,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -22173,15 +22173,15 @@
     "validity_date": "Jul 28, 2026",
     "nav": "138.9625",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
+      "mtd": "-3.22",
+      "ytd": "-3.22",
+      "1d": "-0.41",
+      "15d": "-1.58",
+      "30d": "-2.93",
+      "90d": "5.48",
+      "180d": "-0.86",
+      "270d": "8.35",
+      "365d": "20.42",
       "2y": "N/A",
       "3y": "N/A"
     },
@@ -22201,7 +22201,7 @@
     "major_category": "Assets",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 4.2,
+    "screener_score": 48.9,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -22854,22 +22854,22 @@
     "sector": "Open-End Funds",
     "category": "Shariah Compliant Aggressive Fixed Income",
     "fund_name": "Al Ameen Islamic Aggressive Income Fund",
-    "rating": "N/A",
+    "rating": "A+(f)",
     "benchmark": "N/A",
     "validity_date": "Jul 28, 2026",
     "nav": "102.1750",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "9.49",
+      "ytd": "9.49",
+      "1d": "24.93",
+      "15d": "3.62",
+      "30d": "12.28",
+      "90d": "10.79",
+      "180d": "8.00",
+      "270d": "9.26",
+      "365d": "8.92",
+      "2y": "17.75",
+      "3y": "22.11"
     },
     "amc": "UBL Fund Managers Limited",
     "inception_date": "Oct 20, 2007",
@@ -22887,7 +22887,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 3.9,
+    "screener_score": 30.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -22900,22 +22900,22 @@
     "sector": "Open-End Funds",
     "category": "Shariah Compliant Aggressive Fixed Income",
     "fund_name": "Al Ameen Islamic Aggressive Income Plan I",
-    "rating": "N/A",
+    "rating": "A+(f)",
     "benchmark": "N/A",
     "validity_date": "Jul 28, 2026",
     "nav": "100.8180",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "9.64",
+      "ytd": "9.64",
+      "1d": "9.34",
+      "15d": "9.48",
+      "30d": "8.93",
+      "90d": "6.58",
+      "180d": "7.02",
+      "270d": "6.85",
+      "365d": "21.22",
+      "2y": "43.18",
+      "3y": "41.52"
     },
     "amc": "UBL Fund Managers Limited",
     "inception_date": "Apr 16, 2020",
@@ -22933,7 +22933,7 @@
     "major_category": "Income",
     "total_load": 0.25,
     "is_ter_estimated": false,
-    "screener_score": 4.1,
+    "screener_score": 69.7,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -22951,17 +22951,17 @@
     "validity_date": "Jul 28, 2026",
     "nav": "199.9500",
     "returns": {
-      "mtd": "N/A",
-      "ytd": "N/A",
-      "1d": "N/A",
-      "15d": "N/A",
-      "30d": "N/A",
-      "90d": "N/A",
-      "180d": "N/A",
-      "270d": "N/A",
-      "365d": "N/A",
-      "2y": "N/A",
-      "3y": "N/A"
+      "mtd": "-0.49",
+      "ytd": "-0.49",
+      "1d": "-0.05",
+      "15d": "-0.15",
+      "30d": "-0.38",
+      "90d": "3.52",
+      "180d": "2.51",
+      "270d": "7.67",
+      "365d": "15.83",
+      "2y": "59.65",
+      "3y": "111.77"
     },
     "amc": "UBL Fund Managers Limited",
     "inception_date": "Dec 11, 2013",
@@ -22979,7 +22979,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 2.6,
+    "screener_score": 64.2,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23025,7 +23025,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 32.0,
+    "screener_score": 30.1,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -23071,7 +23071,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 49.5,
+    "screener_score": 45.3,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -23117,7 +23117,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 53.1,
+    "screener_score": 53.7,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23163,7 +23163,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 23.5,
+    "screener_score": 21.8,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -23209,7 +23209,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 14.6,
+    "screener_score": 13.2,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -23255,7 +23255,7 @@
     "major_category": "Stock",
     "total_load": 2.5,
     "is_ter_estimated": false,
-    "screener_score": 52.9,
+    "screener_score": 53.1,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23316,7 +23316,7 @@
     "major_category": "Assets",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 47.4,
+    "screener_score": 46.7,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23382,7 +23382,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 45.5,
+    "screener_score": 42.1,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -23428,7 +23428,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 56.9,
+    "screener_score": 57.0,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23474,7 +23474,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 43.6,
+    "screener_score": 41.2,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23520,7 +23520,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 37.7,
+    "screener_score": 35.2,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23566,7 +23566,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 44.8,
+    "screener_score": 43.1,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23612,7 +23612,7 @@
     "major_category": "Income",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 27.8,
+    "screener_score": 26.5,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -23658,7 +23658,7 @@
     "major_category": "Income",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 44.0,
+    "screener_score": 39.9,
     "dividends": [
       {
         "date": "Jun 24, 2026",
@@ -23704,7 +23704,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 54.7,
+    "screener_score": 49.4,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -23750,7 +23750,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 56.1,
+    "screener_score": 50.6,
     "dividends": [
       {
         "date": "Jun 19, 2026",
@@ -23842,7 +23842,7 @@
     "major_category": "Money Market",
     "total_load": 0.0,
     "is_ter_estimated": false,
-    "screener_score": 35.9,
+    "screener_score": 33.4,
     "dividends": [
       {
         "date": "Jun 29, 2026",
@@ -23888,7 +23888,7 @@
     "major_category": "Money Market",
     "total_load": 1.0,
     "is_ter_estimated": false,
-    "screener_score": 39.1,
+    "screener_score": 36.3,
     "dividends": [
       {
         "date": "Jun 22, 2026",
@@ -24020,7 +24020,7 @@
     "major_category": "Income",
     "total_load": 1.5,
     "is_ter_estimated": false,
-    "screener_score": 14.5,
+    "screener_score": 13.7,
     "dividends": [
       {
         "date": "Jun 18, 2026",
@@ -24066,7 +24066,7 @@
     "major_category": "Stock",
     "total_load": 3.0,
     "is_ter_estimated": false,
-    "screener_score": 50.0,
+    "screener_score": 50.2,
     "dividends": [
       {
         "date": "Jun 18, 2026",

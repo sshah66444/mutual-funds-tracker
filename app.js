@@ -1350,25 +1350,28 @@ window.showFundDetails = function(fundName) {
         const cat = (fund.major_category || '').toLowerCase();
         let estNav = null;
         let basisNote = '';
-        let kseChangePct = 0;
+        let indexChangePct = 0;
+        let indexName = 'KSE-100';
 
-        // Parse KSE-100 change from stored psxIndexData
-        if (psxIndexData && psxIndexData.change_percent) {
+        // Parse KMI-30 vs KSE-100 index change from stored psxIndexData
+        if (fund.is_shariah && psxIndexData && psxIndexData.kmi30 && psxIndexData.kmi30.change_percent) {
+            indexName = 'KMI-30 (Islamic)';
+            const raw = parseFloat(String(psxIndexData.kmi30.change_percent).replace('%', '').replace(/,/g, ''));
+            indexChangePct = (psxIndexData.kmi30.direction === '+' ? 1 : -1) * Math.abs(raw);
+        } else if (psxIndexData && psxIndexData.change_percent) {
+            indexName = 'KSE-100';
             const raw = parseFloat(String(psxIndexData.change_percent).replace('%', '').replace(/,/g, ''));
-            kseChangePct = (psxIndexData.direction === '+' ? 1 : -1) * Math.abs(raw);
+            indexChangePct = (psxIndexData.direction === '+' ? 1 : -1) * Math.abs(raw);
         }
 
         if (cat.includes('equity') || cat.includes('stock')) {
-            // Equity: ~85% beta to KSE-100 (typical for Pakistan equity funds)
             const beta = 0.85;
-            estNav = navNum * (1 + (kseChangePct * beta) / 100);
-            basisNote = `KSE-100 is ${kseChangePct >= 0 ? '+' : ''}${kseChangePct.toFixed(2)}% today → ~85% of that applied`;
+            estNav = navNum * (1 + (indexChangePct * beta) / 100);
+            basisNote = `${indexName} is ${indexChangePct >= 0 ? '+' : ''}${indexChangePct.toFixed(2)}% today → ~85% sensitivity applied`;
         } else if (cat.includes('balanced') || cat.includes('asset alloc')) {
-            // Balanced: ~40% equity exposure
-            estNav = navNum * (1 + (kseChangePct * 0.40) / 100);
-            basisNote = `KSE-100 is ${kseChangePct >= 0 ? '+' : ''}${kseChangePct.toFixed(2)}% today → ~40% equity exposure applied`;
+            estNav = navNum * (1 + (indexChangePct * 0.40) / 100);
+            basisNote = `${indexName} is ${indexChangePct >= 0 ? '+' : ''}${indexChangePct.toFixed(2)}% today → ~40% equity exposure applied`;
         } else if (cat.includes('money market') || cat.includes('income') || cat.includes('fixed') || cat.includes('cash')) {
-            // Fixed income: one day's yield from 1-year return
             const annualR = parseFloatReturn(fund.returns['365d']) || parseFloatReturn(fund.returns.ytd) || 10;
             const dailyR = annualR / 36500;
             estNav = navNum * (1 + dailyR);

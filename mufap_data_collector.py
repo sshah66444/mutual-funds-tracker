@@ -567,16 +567,23 @@ def main():
             fund['screener_score'] = round(score, 1)
             final_funds.append(fund)
 
-        # 3.5 Scrape KSE-100 index details from PSX
+        # 3.5 Scrape KSE-100 and KMI-30 index details from PSX
         psx_data = {
             "price": "185,372.20",
             "direction": "+",
             "change_points": "851.24",
             "change_percent": "0.46%",
-            "as_of": "Jul 3, 2026 4:50 PM"
+            "as_of": "Jul 3, 2026 4:50 PM",
+            "kmi30": {
+                "price": "124,150.80",
+                "direction": "+",
+                "change_points": "910.15",
+                "change_percent": "0.74%",
+                "as_of": "Jul 3, 2026 4:50 PM"
+            }
         }
         try:
-            print("Requesting KSE-100 index updates from PSX portal...")
+            print("Requesting KSE-100 & KMI-30 index updates from PSX portal...")
             psx_url = "https://dps.psx.com.pk/"
             psx_req = urllib.request.Request(psx_url, headers={'User-Agent': 'Mozilla/5.0'})
             ctx = ssl.create_default_context()
@@ -584,17 +591,30 @@ def main():
             ctx.verify_mode = ssl.CERT_NONE
             with urllib.request.urlopen(psx_req, context=ctx) as response:
                 psx_html = response.read().decode('utf-8', errors='ignore')
-                pattern = r'data-name="KSE100"[^>]*>\s*<h1 class="marketIndices__price">([\d,]+\.\d+)<span class="marketIndices__change\s+([a-zA-Z\-_0-9]+)">.*?([\d,]+\.\d+)\s*\(([^)]+)\)</span></h1>\s*<div class="marketIndices__date">As of\s+([^<]+)</div>'
-                match = re.search(pattern, psx_html, re.DOTALL | re.IGNORECASE)
-                if match:
+                pattern_kse = r'data-name="KSE100"[^>]*>\s*<h1 class="marketIndices__price">([\d,]+\.\d+)<span class="marketIndices__change\s+([a-zA-Z\-_0-9]+)">.*?([\d,]+\.\d+)\s*\(([^)]+)\)</span></h1>\s*<div class="marketIndices__date">As of\s+([^<]+)</div>'
+                match_kse = re.search(pattern_kse, psx_html, re.DOTALL | re.IGNORECASE)
+                if match_kse:
                     psx_data = {
-                        "price": match.group(1),
-                        "direction": "+" if "pos" in match.group(2) else "-",
-                        "change_points": match.group(3),
-                        "change_percent": match.group(4),
-                        "as_of": match.group(5).strip()
+                        "price": match_kse.group(1),
+                        "direction": "+" if "pos" in match_kse.group(2) else "-",
+                        "change_points": match_kse.group(3),
+                        "change_percent": match_kse.group(4),
+                        "as_of": match_kse.group(5).strip()
                     }
                     print(f"Parsed KSE-100: {psx_data['price']} ({psx_data['direction']}{psx_data['change_points']})")
+                    
+                    # Parse KMI-30 (Islamic Index)
+                    pattern_kmi = r'data-name="KMI30"[^>]*>\s*<h1 class="marketIndices__price">([\d,]+\.\d+)<span class="marketIndices__change\s+([a-zA-Z\-_0-9]+)">.*?([\d,]+\.\d+)\s*\(([^)]+)\)</span></h1>\s*<div class="marketIndices__date">As of\s+([^<]+)</div>'
+                    match_kmi = re.search(pattern_kmi, psx_html, re.DOTALL | re.IGNORECASE)
+                    if match_kmi:
+                        psx_data["kmi30"] = {
+                            "price": match_kmi.group(1),
+                            "direction": "+" if "pos" in match_kmi.group(2) else "-",
+                            "change_points": match_kmi.group(3),
+                            "change_percent": match_kmi.group(4),
+                            "as_of": match_kmi.group(5).strip()
+                        }
+                        print(f"Parsed KMI-30: {psx_data['kmi30']['price']} ({psx_data['kmi30']['direction']}{psx_data['kmi30']['change_points']})")
                     
                     # Fetch KSE-100 EOD timeseries history
                     try:

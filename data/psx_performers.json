@@ -1,278 +1,278 @@
 {
   "active": [
     {
-      "symbol": "TSBL",
-      "name": "Trust Securities &amp; Brokerage Limited",
-      "price": "2.51",
-      "direction": "-",
-      "change": "-0.06",
-      "percent": "-2.33%",
-      "volume": "113,317,951"
-    },
-    {
-      "symbol": "TPLP",
-      "name": "TPL Properties Limited",
-      "price": "14.71",
-      "direction": "+",
-      "change": "1.34",
-      "percent": "10.02%",
-      "volume": "83,708,377"
-    },
-    {
       "symbol": "CNERGY",
       "name": "Cnergyico PK  Limited",
-      "price": "11.10",
+      "price": "11.94",
       "direction": "+",
-      "change": "0.36",
-      "percent": "3.35%",
-      "volume": "68,958,078"
+      "change": "0.69",
+      "percent": "6.13%",
+      "volume": "161,177,862"
     },
     {
-      "symbol": "PRL",
-      "name": "Pakistan Refinery Limited",
-      "price": "63.42",
+      "symbol": "BOP",
+      "name": "The Bank of Punjab",
+      "price": "36.46",
       "direction": "+",
-      "change": "3.28",
-      "percent": "5.45%",
-      "volume": "37,789,134"
-    },
-    {
-      "symbol": "TPL",
-      "name": "TPL Corp Limited",
-      "price": "21.47",
-      "direction": "+",
-      "change": "1.14",
-      "percent": "5.61%",
-      "volume": "36,466,461"
+      "change": "0.46",
+      "percent": "1.28%",
+      "volume": "52,334,090"
     },
     {
       "symbol": "WASL",
       "name": "Wasl Mobility Modaraba",
-      "price": "6.92",
+      "price": "6.80",
+      "direction": "+",
+      "change": "0.59",
+      "percent": "9.50%",
+      "volume": "24,216,535"
+    },
+    {
+      "symbol": "PACE",
+      "name": "Pace (Pakistan) Limited",
+      "price": "11.38",
+      "direction": "+",
+      "change": "0.32",
+      "percent": "2.89%",
+      "volume": "20,061,794"
+    },
+    {
+      "symbol": "NCPL",
+      "name": "Nishat Chunian Power Limited",
+      "price": "62.62",
+      "direction": "+",
+      "change": "0.70",
+      "percent": "1.13%",
+      "volume": "18,254,792"
+    },
+    {
+      "symbol": "NPL",
+      "name": "Nishat Power Limited",
+      "price": "71.98",
       "direction": "-",
-      "change": "-1.00",
-      "percent": "-12.63%",
-      "volume": "18,639,663"
+      "change": "-0.20",
+      "percent": "-0.28%",
+      "volume": "15,207,765"
     },
     {
-      "symbol": "TPLRF1",
-      "name": "TPL REIT Fund I",
-      "price": "10.52",
-      "direction": "+",
-      "change": "0.65",
-      "percent": "6.59%",
-      "volume": "18,491,636"
+      "symbol": "UNITY",
+      "name": "Unity Foods Limited",
+      "price": "11.51",
+      "direction": "-",
+      "change": "-0.39",
+      "percent": "-3.28%",
+      "volume": "15,156,912"
     },
     {
-      "symbol": "ASL",
-      "name": "Aisha Steel Mills Limited",
-      "price": "13.62",
+      "symbol": "HASCOL",
+      "name": "Hascol Petroleum Limited",
+      "price": "20.23",
       "direction": "+",
-      "change": "0.52",
-      "percent": "3.97%",
-      "volume": "17,079,058"
+      "change": "0.35",
+      "percent": "1.76%",
+      "volume": "13,781,842"
+    },
+    {
+      "symbol": "DSIL",
+      "name": "D.S. Industries Limited",
+      "price": "13.84",
+      "direction": "+",
+      "change": "1.26",
+      "percent": "10.02%",
+      "volume": "12,582,914"
     },
     {
       "symbol": "MLCF",
       "name": "Maple Leaf Cement Factory Limited",
-      "price": "97.45",
-      "direction": "+",
-      "change": "2.58",
-      "percent": "2.72%",
-      "volume": "16,769,843"
-    },
-    {
-      "symbol": "WTL",
-      "name": "Worldcall Telecom Limited",
-      "price": "1.21",
-      "direction": "+",
-      "change": "0.02",
-      "percent": "1.68%",
-      "volume": "13,392,545"
+      "price": "102.07",
+      "direction": "-",
+      "change": "-1.02",
+      "percent": "-0.99%",
+      "volume": "12,492,335"
     }
   ],
   "gainers": [
     {
-      "symbol": "TPLP",
-      "name": "TPL Properties Limited",
-      "price": "14.71",
+      "symbol": "SLGL",
+      "name": "Secure Logistics-Trax Group Limited",
+      "price": "17.68",
       "direction": "+",
-      "change": "1.34",
+      "change": "1.61",
       "percent": "10.02%",
-      "volume": "83,708,377"
+      "volume": "10,481,454"
     },
     {
-      "symbol": "FECM",
-      "name": "First Elite Capital Modaraba",
-      "price": "19.88",
+      "symbol": "DSIL",
+      "name": "D.S. Industries Limited",
+      "price": "13.84",
       "direction": "+",
-      "change": "1.81",
+      "change": "1.26",
       "percent": "10.02%",
-      "volume": "103,323"
+      "volume": "12,582,914"
     },
     {
-      "symbol": "JATM",
-      "name": "J.A. Textile Mills Limited",
-      "price": "42.63",
+      "symbol": "FTSM",
+      "name": "First Tri-Star Modaraba",
+      "price": "46.39",
       "direction": "+",
-      "change": "3.88",
+      "change": "4.22",
       "percent": "10.01%",
-      "volume": "236,147"
+      "volume": "121,597"
     },
     {
-      "symbol": "ZAL",
-      "name": "Zarea Limited",
-      "price": "43.29",
+      "symbol": "FCEPL",
+      "name": "Frieslandcampina Engro Pakistan Limited",
+      "price": "121.30",
       "direction": "+",
-      "change": "3.94",
-      "percent": "10.01%",
-      "volume": "2,421,359"
-    },
-    {
-      "symbol": "EWIC",
-      "name": "East West Insurance Company Limited",
-      "price": "50.02",
-      "direction": "+",
-      "change": "4.55",
-      "percent": "10.01%",
-      "volume": "1,429"
+      "change": "11.03",
+      "percent": "10.00%",
+      "volume": "4,345,942"
     },
     {
       "symbol": "ASTM",
       "name": "Asim Textile Mills Limited",
-      "price": "42.22",
+      "price": "61.81",
       "direction": "+",
-      "change": "3.84",
-      "percent": "10.01%",
-      "volume": "682,024"
+      "change": "5.62",
+      "percent": "10.00%",
+      "volume": "88,700"
     },
     {
-      "symbol": "CHAS",
-      "name": "Chashma Sugar Mills Limited",
-      "price": "97.32",
+      "symbol": "BUXL",
+      "name": "Buxly Paints Limited",
+      "price": "229.52",
       "direction": "+",
-      "change": "8.85",
+      "change": "20.87",
       "percent": "10.00%",
-      "volume": "133,304"
+      "volume": "125,544"
     },
     {
-      "symbol": "GADT",
-      "name": "Gadoon Textile Mills Limited",
-      "price": "302.79",
+      "symbol": "ASLCPS",
+      "name": "Aisha Steel Convt (Pref) Right",
+      "price": "78.43",
       "direction": "+",
-      "change": "27.53",
+      "change": "7.13",
       "percent": "10.00%",
-      "volume": "37,677"
+      "volume": "9,785"
     },
     {
-      "symbol": "TSPL",
-      "name": "Tri-Star Power Limited",
-      "price": "15.29",
+      "symbol": "FASM",
+      "name": "Faisal Spinning Mills Limited",
+      "price": "358.06",
       "direction": "+",
-      "change": "1.39",
+      "change": "32.55",
       "percent": "10.00%",
-      "volume": "92,286"
+      "volume": "5,335"
     },
     {
-      "symbol": "ARCTM",
-      "name": "Arctic Textile Mills Limited",
-      "price": "41.27",
+      "symbol": "WASL",
+      "name": "Wasl Mobility Modaraba",
+      "price": "6.80",
       "direction": "+",
-      "change": "3.75",
-      "percent": "10.00%",
-      "volume": "545,857"
+      "change": "0.59",
+      "percent": "9.50%",
+      "volume": "24,216,535"
+    },
+    {
+      "symbol": "IML",
+      "name": "Imperial  Limited",
+      "price": "23.48",
+      "direction": "+",
+      "change": "1.98",
+      "percent": "9.21%",
+      "volume": "143,949"
     }
   ],
   "losers": [
     {
-      "symbol": "WASL",
-      "name": "Wasl Mobility Modaraba",
-      "price": "6.92",
+      "symbol": "FSWL",
+      "name": "Fateh Sports Wear Limited",
+      "price": "159.49",
       "direction": "-",
-      "change": "-1.00",
-      "percent": "-12.63%",
-      "volume": "18,639,663"
-    },
-    {
-      "symbol": "ASLPS",
-      "name": "Aisha Steel Convertible (Pref)",
-      "price": "35.06",
-      "direction": "-",
-      "change": "-3.90",
-      "percent": "-10.01%",
-      "volume": "16,611"
-    },
-    {
-      "symbol": "IMS",
-      "name": "Intermarket Securities Limited",
-      "price": "24.55",
-      "direction": "-",
-      "change": "-2.73",
-      "percent": "-10.01%",
-      "volume": "5,755,427"
+      "change": "-16.50",
+      "percent": "-9.38%",
+      "volume": "3,857"
     },
     {
       "symbol": "TRSM",
       "name": "Trust Modaraba",
-      "price": "21.77",
+      "price": "18.57",
       "direction": "-",
-      "change": "-2.42",
-      "percent": "-10.00%",
-      "volume": "1,615,622"
+      "change": "-1.68",
+      "percent": "-8.30%",
+      "volume": "7,576,585"
+    },
+    {
+      "symbol": "ASIC",
+      "name": "Asia Insurance Company Limited",
+      "price": "42.43",
+      "direction": "-",
+      "change": "-3.56",
+      "percent": "-7.74%",
+      "volume": "5,095"
+    },
+    {
+      "symbol": "STML",
+      "name": "Shams Textile Mills Limited",
+      "price": "52.52",
+      "direction": "-",
+      "change": "-4.29",
+      "percent": "-7.55%",
+      "volume": "16,661"
+    },
+    {
+      "symbol": "TPLL",
+      "name": "TPL Life Insurance Limited",
+      "price": "22.17",
+      "direction": "-",
+      "change": "-1.69",
+      "percent": "-7.08%",
+      "volume": "287,105"
+    },
+    {
+      "symbol": "JATM",
+      "name": "J.A. Textile Mills Limited",
+      "price": "52.77",
+      "direction": "-",
+      "change": "-3.97",
+      "percent": "-7.00%",
+      "volume": "1,129,984"
+    },
+    {
+      "symbol": "TSPL",
+      "name": "Tri-Star Power Limited",
+      "price": "17.35",
+      "direction": "-",
+      "change": "-1.25",
+      "percent": "-6.72%",
+      "volume": "521,130"
+    },
+    {
+      "symbol": "GADT",
+      "name": "Gadoon Textile Mills Limited",
+      "price": "341.05",
+      "direction": "-",
+      "change": "-21.04",
+      "percent": "-5.81%",
+      "volume": "320,772"
+    },
+    {
+      "symbol": "AKDHL",
+      "name": "AKD Hospitality Limited",
+      "price": "150.79",
+      "direction": "-",
+      "change": "-9.21",
+      "percent": "-5.76%",
+      "volume": "519"
     },
     {
       "symbol": "DBCI",
       "name": "Dadabhoy Cement Industries Limited",
-      "price": "18.36",
+      "price": "14.47",
       "direction": "-",
-      "change": "-2.04",
-      "percent": "-10.00%",
-      "volume": "393,535"
-    },
-    {
-      "symbol": "OML",
-      "name": "Olympia Mills Limited",
-      "price": "133.69",
-      "direction": "-",
-      "change": "-14.85",
-      "percent": "-10.00%",
-      "volume": "171,053"
-    },
-    {
-      "symbol": "JDMT",
-      "name": "Janana De Malucho Textile Mills Limited",
-      "price": "163.33",
-      "direction": "-",
-      "change": "-15.90",
-      "percent": "-8.87%",
-      "volume": "156,675"
-    },
-    {
-      "symbol": "OBOY",
-      "name": "Oilboy Energy Limited",
-      "price": "18.64",
-      "direction": "-",
-      "change": "-1.67",
-      "percent": "-8.22%",
-      "volume": "13,372,458"
-    },
-    {
-      "symbol": "PECO",
-      "name": "Pakistan Engineering Company Limited",
-      "price": "605.31",
-      "direction": "-",
-      "change": "-52.40",
-      "percent": "-7.97%",
-      "volume": "22,390"
-    },
-    {
-      "symbol": "GOC",
-      "name": "GOC (Pak) Limited.",
-      "price": "183.63",
-      "direction": "-",
-      "change": "-15.89",
-      "percent": "-7.96%",
-      "volume": "11,653"
+      "change": "-0.88",
+      "percent": "-5.73%",
+      "volume": "2,033,444"
     }
   ]
 }

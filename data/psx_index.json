@@ -1,17 +1,21 @@
 {
-  "price": "179,025.10",
+  "price": "177,955.50",
   "direction": "-",
-  "change_points": "1,477.34",
-  "change_percent": "-0.82%",
-  "as_of": "Aug 18, 2026 2:20 PM",
+  "change_points": "2,546.94",
+  "change_percent": "-1.41%",
+  "as_of": "Aug 18, 2026 3:50 PM",
   "kmi30": {
-    "price": "252,300.04",
+    "price": "250,423.06",
     "direction": "-",
-    "change_points": "2,317.97",
-    "change_percent": "-0.91%",
-    "as_of": "Aug 18, 2026 2:20 PM"
+    "change_points": "4,194.95",
+    "change_percent": "-1.65%",
+    "as_of": "Aug 18, 2026 3:50 PM"
   },
   "history": [
+    {
+      "date": "2026-08-18",
+      "price": 177955.5
+    },
     {
       "date": "2026-08-17",
       "price": 180502.44
@@ -1047,10 +1051,6 @@
     {
       "date": "2025-08-04",
       "price": 142052.64
-    },
-    {
-      "date": "2025-08-01",
-      "price": 141034.98
     }
   ]
 }

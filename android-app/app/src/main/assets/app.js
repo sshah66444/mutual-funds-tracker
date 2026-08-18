@@ -61,7 +61,8 @@ async function safeJson(response) {
 
 function getUrl(pathKey) {
     const path = DATA_PATHS[pathKey];
-    return IS_LOCAL ? `.${path}` : `${REMOTE_BASE}${path}`;
+    const base = IS_LOCAL ? `.${path}` : `${REMOTE_BASE}${path}`;
+    return `${base}?_cb=${Date.now()}`;
 }
 
 // Caching helpers
@@ -74,8 +75,13 @@ function saveToCache(key, data) {
     }
 }
 
-function loadFromCache(key) {
+function loadFromCache(key, maxAgeMs = 7200000) { // Default max age: 2 hours
     try {
+        const savedTime = localStorage.getItem(`cache_${key}_time`);
+        if (savedTime && (Date.now() - parseInt(savedTime, 10)) > maxAgeMs) {
+            console.log(`Cache for ${key} expired (> 2 hrs old).`);
+            return null;
+        }
         const data = localStorage.getItem(`cache_${key}`);
         return data ? JSON.parse(data) : null;
     } catch (e) {
@@ -95,7 +101,7 @@ async function loadData() {
         const mufapUrl = getUrl('mufap');
         console.log("Fetching MUFAP data from:", mufapUrl);
         
-        const response = await fetch(mufapUrl, { signal: controller.signal });
+        const response = await fetch(mufapUrl, { signal: controller.signal, cache: 'no-store' });
         clearTimeout(timeoutId);
         
         if (response.ok) {
@@ -150,7 +156,7 @@ async function loadData() {
     // Load PSX Index Details
     let psxData = null;
     try {
-        const response = await fetch(getUrl('psx'));
+        const response = await fetch(getUrl('psx'), { cache: 'no-store' });
         if (response.ok) {
             psxData = await safeJson(response);
             saveToCache('psx', psxData);
@@ -174,7 +180,7 @@ async function loadData() {
     // Load PSX Movers/Performers
     let moversData = null;
     try {
-        const response = await fetch(getUrl('movers'));
+        const response = await fetch(getUrl('movers'), { cache: 'no-store' });
         if (response.ok) {
             moversData = await safeJson(response);
             saveToCache('movers', moversData);
@@ -197,7 +203,7 @@ async function loadData() {
     // Load NAV Archive
     let archiveData = null;
     try {
-        const response = await fetch(getUrl('archive'));
+        const response = await fetch(getUrl('archive'), { cache: 'no-store' });
         if (response.ok) {
             archiveData = await safeJson(response);
             saveToCache('archive', archiveData);

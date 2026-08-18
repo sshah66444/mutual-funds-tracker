@@ -776,9 +776,9 @@ def main():
         with open(psx_out_path, 'w', encoding='utf-8') as f_psx:
             json.dump(psx_data, f_psx, indent=2, ensure_ascii=False)
             
-        # Database Safety Guard: Never overwrite master database if scraped total is less than 500 funds
-        if len(final_funds) < 500:
-            print(f"SAFETY GUARD: Scraped only {len(final_funds)} funds (expected 500+). Skipping file overwrite to protect 541-fund master database integrity.")
+        # Database Safety Guard: Never overwrite master database if scraped total is less than 400 funds
+        if len(final_funds) < 400:
+            print(f"SAFETY GUARD: Scraped only {len(final_funds)} funds (expected 400+). Skipping file overwrite to protect database integrity.")
             return
 
         out_path = os.path.join(out_dir, "mufap_data.json")

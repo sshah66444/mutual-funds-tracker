@@ -1,15 +1,15 @@
 {
-  "price": "178,886.93",
+  "price": "179,025.10",
   "direction": "-",
-  "change_points": "1,615.51",
-  "change_percent": "-0.90%",
-  "as_of": "Aug 18, 2026 1:55 PM",
+  "change_points": "1,477.34",
+  "change_percent": "-0.82%",
+  "as_of": "Aug 18, 2026 2:20 PM",
   "kmi30": {
-    "price": "252,058.75",
+    "price": "252,300.04",
     "direction": "-",
-    "change_points": "2,559.26",
-    "change_percent": "-1.01%",
-    "as_of": "Aug 18, 2026 1:55 PM"
+    "change_points": "2,317.97",
+    "change_percent": "-0.91%",
+    "as_of": "Aug 18, 2026 2:20 PM"
   },
   "history": [
     {

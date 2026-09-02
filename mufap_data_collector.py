@@ -2,6 +2,7 @@ import urllib.request
 import ssl
 import json
 import os
+import time
 from html.parser import HTMLParser
 import re
 
@@ -128,15 +129,17 @@ def fetch_table(url):
         if "403" in str(e):
             print("WAF Block (403) detected. Using Safari AppleScript fallback to bypass Cloudflare...")
             import subprocess
-            # AppleScript to open Safari, wait for Cloudflare challenge, and dump source
+            # AppleScript to open/reuse Safari document 1, miniaturize window, wait for Cloudflare challenge, and dump source
             script = f'''
             tell application "Safari"
-                if not (exists document 1) then
+                if not (exists window 1) then
                     make new document
                 end if
-                set miniaturized of window 1 to true
+                try
+                    set miniaturized of window 1 to true
+                end try
                 set URL of document 1 to "{url}"
-                delay 10
+                delay 6
                 set theSource to source of document 1
                 return theSource
             end tell

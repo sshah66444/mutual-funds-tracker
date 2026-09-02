@@ -796,9 +796,15 @@ function renderDirectoryTable() {
         return;
     }
 
-    // Render Paginated rows (show top 50 for performance, scroll loads remaining)
+    // Render Paginated rows
     filtered.slice(0, 80).forEach(fund => {
         const tr = document.createElement('tr');
+        tr.style.cursor = 'pointer';
+        tr.setAttribute('data-fund-name', fund.fund_name);
+        tr.onclick = (e) => {
+            e.stopPropagation();
+            showFundDetails(fund.fund_name);
+        };
         
         const ytd = parseFloatReturn(fund.returns.ytd);
         const y1d = parseFloatReturn(fund.returns['1d']);
@@ -813,7 +819,7 @@ function renderDirectoryTable() {
         tr.innerHTML = `
             <td><span style="font-weight:700; color:var(--accent-cyan); font-size:1.05rem;">${fund.screener_score}</span></td>
             <td>
-                <div class="fund-td-name" data-fund-name="${fund.fund_name.replace(/"/g, '&quot;')}" style="cursor:pointer; text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);" onclick="showFundDetails('${fund.fund_name.replace(/'/g, "\\'")}')">  ${fund.fund_name}</div>
+                <div class="fund-td-name" style="text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);">  ${fund.fund_name}</div>
                 <div class="fund-td-amc">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
             </td>
             <td><span style="font-size:0.8rem; color:var(--text-secondary);">${fund.category}</span></td>
@@ -1331,8 +1337,16 @@ document.addEventListener('click', function(e) {
 });
 
 window.showFundDetails = function(fundName) {
-    const fund = fundsData.find(f => f.fund_name === fundName);
-    if (!fund) return;
+    if (!fundName) return;
+    let fund = fundsData.find(f => f.fund_name === fundName);
+    if (!fund) {
+        const clean = String(fundName).replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/\\'/g, "'").trim().toLowerCase();
+        fund = fundsData.find(f => f.fund_name.toLowerCase().trim() === clean || f.fund_name.toLowerCase().replace(/[^a-z0-9]/g, '') === clean.replace(/[^a-z0-9]/g, ''));
+    }
+    if (!fund) {
+        console.warn("Fund not found for:", fundName);
+        return;
+    }
     _currentModalFund = fund;
 
     // Fill textual details

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https://sshah66444.github.io; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-src 'none'; form-action 'none'">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https://sshah66444.github.io; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-src 'none'; form-action 'none'">
     <title>Pakistan Mutual Funds Tracker & Portfolio Optimizer</title>
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Chart.js for Portfolio Allocation and Performance visualization -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -132,22 +132,68 @@
                         </div>
                     </div>
 
-                    <!-- Good Day to Invest? Signal Banner -->
+                    <!-- Evidence-based market entry context -->
                     <div id="invest-signal-banner" class="invest-signal-banner" style="display:none; margin-top: 20px;">
                         <div class="invest-signal-left">
                             <div class="invest-signal-icon" id="invest-signal-icon">📊</div>
                             <div>
-                                <div class="invest-signal-verdict" id="invest-signal-verdict">Analysing market...</div>
+                                <div class="invest-signal-verdict" id="invest-signal-verdict">Analysing market history...</div>
                                 <div class="invest-signal-sub" id="invest-signal-sub"></div>
                             </div>
                         </div>
                         <div class="invest-signal-right">
                             <div class="invest-signal-kse">
-                                <span class="invest-signal-kse-label">KSE-100 Today</span>
+                                <span class="invest-signal-kse-label">Drawdown from observed peak</span>
                                 <span class="invest-signal-kse-val" id="invest-signal-kse-val">--</span>
                             </div>
                             <div class="invest-signal-tip" id="invest-signal-tip"></div>
                         </div>
+                    </div>
+
+                    <div class="entry-planner" id="entry-planner">
+                        <div class="entry-planner-header">
+                            <div>
+                                <h3><i class="fa-solid fa-layer-group"></i> Staged Investment Planner</h3>
+                                <p>Split a planned investment into tranches. Equity amounts are adjusted only when the market-history signal has enough evidence.</p>
+                            </div>
+                            <span class="analysis-badge" id="planner-market-confidence">Market confidence: --</span>
+                        </div>
+                        <div class="entry-planner-controls">
+                            <label>Total planned amount (Rs.)
+                                <input type="number" id="planner-total" min="1000" step="1000" value="500000">
+                            </label>
+                            <label>Number of tranches
+                                <select id="planner-tranches">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5" selected>5</option>
+                                    <option value="6">6</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </label>
+                            <label>Investment horizon
+                                <select id="planner-horizon">
+                                    <option value="1">Under 1 year</option>
+                                    <option value="3">1–5 years</option>
+                                    <option value="7" selected>5–10 years</option>
+                                    <option value="12">10+ years</option>
+                                </select>
+                            </label>
+                            <label>Fund category
+                                <select id="planner-category">
+                                    <option value="equity" selected>Equity / stock</option>
+                                    <option value="mixed">Balanced / asset allocation</option>
+                                    <option value="income">Income / debt</option>
+                                    <option value="money-market">Money market / cash</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="entry-planner-result" aria-live="polite">
+                            <div><span>Regular tranche</span><strong id="planner-base">--</strong></div>
+                            <div class="planner-primary"><span>Today’s planned tranche</span><strong id="planner-today">--</strong></div>
+                            <div><span>Remaining reserve</span><strong id="planner-remaining">--</strong></div>
+                        </div>
+                        <p class="entry-planner-note" id="planner-note">Waiting for market history…</p>
                     </div>
 
                     <!-- KSE-100 Index 7-Day Performance Trend -->
@@ -811,9 +857,10 @@
                     <div class="info-row"><strong>Risk Level:</strong> <span id="modal-risk"></span></div>
                     <div class="info-row"><strong>SECP Rating:</strong> <span id="modal-rating"></span></div>
                     <div class="info-row"><strong>Current NAV:</strong> <span id="modal-nav"></span></div>
+                    <div class="info-row"><strong>Current Offer Price:</strong> <span id="modal-offer-price"></span></div>
                     <div class="info-row"><strong>Daily Change:</strong> <span id="modal-daily-change" style="font-weight:700;"></span></div>
                     <div class="info-row" style="flex-direction:column; align-items:flex-start; gap:6px;">
-                        <strong>Est. Today's NAV:</strong>
+                        <strong>Entry Context:</strong>
                         <span id="modal-est-nav" style="width:100%;"></span>
                     </div>
                     <div class="info-row"><strong>Validity Date:</strong> <span id="modal-date"></span></div>
@@ -860,16 +907,19 @@
                          </div>
                      </div>
 
-                     <!-- Best Weekday to Buy Section -->
-                     <div id="modal-weekday-analysis-section" style="margin-top: 20px; padding: 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 8px;">
+                     <!-- Historical entry evidence section -->
+                     <div id="modal-entry-analysis-section" class="fund-entry-analysis">
                          <h4 style="color: var(--text-primary); margin: 0 0 12px 0; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
-                             <span><i class="fa-solid fa-calendar-day" style="color: var(--accent-cyan);"></i> Multi-Week Average Entry by Weekday</span>
-                             <span id="modal-best-weekday-badge" style="font-size: 0.68rem; padding: 2px 8px; border-radius: 12px; font-weight: 700; text-transform: uppercase;"></span>
+                             <span><i class="fa-solid fa-chart-area" style="color: var(--accent-cyan);"></i> Historical Entry Evidence</span>
+                             <span id="modal-entry-confidence" class="analysis-badge">Confidence: --</span>
                          </h4>
-                         <div id="modal-weekday-bars-container" style="display: flex; flex-direction: column; gap: 8px;">
-                             <!-- Weekday bars go here -->
+                         <div id="modal-entry-summary" class="fund-entry-summary"></div>
+                         <div class="fund-entry-metrics">
+                             <div><span>Usable NAV records</span><strong id="modal-entry-records">--</strong></div>
+                             <div><span>Drawdown from observed high</span><strong id="modal-entry-drawdown">--</strong></div>
+                             <div><span>Offer price above NAV</span><strong id="modal-entry-offer-premium">--</strong></div>
                          </div>
-                         <p id="modal-weekday-analysis-disclaimer" style="margin: 8px 0 0 0; font-size: 0.68rem; color: var(--text-muted); font-style: italic; line-height: 1.2;"></p>
+                         <p id="modal-entry-disclaimer" class="entry-analysis-disclaimer"></p>
                      </div>
 
                     <!-- Dividend History Section -->
@@ -917,6 +967,7 @@
     </div>
 
     <!-- Main javascript file -->
+    <script src="investment-analysis.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

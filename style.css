@@ -2000,6 +2000,128 @@ body {
     .invest-signal-tip    { text-align: left; }
 }
 
+/* Evidence-based entry context and tranche planner */
+.analysis-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 4px 9px;
+    color: var(--text-secondary);
+    background: rgba(255,255,255,0.03);
+    font-size: 0.68rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.confidence-high { color: var(--accent-green); border-color: rgba(16,185,129,0.45); }
+.confidence-medium { color: var(--accent-gold); border-color: rgba(234,179,8,0.45); }
+.confidence-low { color: var(--accent-red); border-color: rgba(239,68,68,0.45); }
+
+.entry-planner {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--bg-card);
+}
+.entry-planner-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+.entry-planner-header h3 { margin: 0; color: var(--text-primary); font-size: 0.95rem; }
+.entry-planner-header h3 i { color: var(--accent-cyan); margin-right: 6px; }
+.entry-planner-header p { margin: 5px 0 0; color: var(--text-muted); font-size: 0.74rem; line-height: 1.45; max-width: 680px; }
+.entry-planner-controls {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(130px, 1fr));
+    gap: 12px;
+}
+.entry-planner-controls label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+.entry-planner-controls input,
+.entry-planner-controls select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+    padding: 10px 11px;
+    font: inherit;
+    font-size: 0.82rem;
+}
+.entry-planner-result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 14px;
+}
+.entry-planner-result > div {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.entry-planner-result span { color: var(--text-muted); font-size: 0.68rem; }
+.entry-planner-result strong { color: var(--text-primary); font-size: 1rem; }
+.entry-planner-result .planner-primary { border-color: rgba(6,182,212,0.45); background: rgba(6,182,212,0.06); }
+.entry-planner-result .planner-primary strong { color: var(--accent-cyan); }
+.entry-planner-note { margin: 10px 0 0; color: var(--text-secondary); font-size: 0.72rem; line-height: 1.45; }
+.entry-planner-note.warning { color: var(--accent-gold); }
+
+.fund-entry-analysis {
+    margin-top: 20px;
+    padding: 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+.fund-entry-summary {
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.fund-entry-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+.fund-entry-metrics > div {
+    padding: 9px;
+    border-radius: 7px;
+    background: rgba(255,255,255,0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.fund-entry-metrics span { color: var(--text-muted); font-size: 0.64rem; line-height: 1.25; }
+.fund-entry-metrics strong { color: var(--text-primary); font-size: 0.8rem; }
+.entry-analysis-disclaimer { margin: 9px 0 0; color: var(--text-muted); font-size: 0.68rem; font-style: italic; line-height: 1.35; }
+
+@media (max-width: 900px) {
+    .entry-planner-controls { grid-template-columns: repeat(2, minmax(130px, 1fr)); }
+}
+@media (max-width: 560px) {
+    .entry-planner-header { flex-direction: column; }
+    .entry-planner-controls { grid-template-columns: 1fr; }
+    .entry-planner-result { grid-template-columns: 1fr; }
+    .fund-entry-metrics { grid-template-columns: 1fr; }
+}
+
 /* ==========================================================================
    MOBILE DOCK NAV & OVERFLOW PATCHES (<= 560px)
    ========================================================================== */
@@ -2276,7 +2398,5 @@ body {
 .psx-day-card .day-change.positive {
     color: var(--accent-green);
 }
-
-
 
 

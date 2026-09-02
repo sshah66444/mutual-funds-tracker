@@ -9,7 +9,8 @@ let inflationFilterActive = false;
 let inflationThreshold = 10.0;
 let investmentEntries = [];
 let navArchive = {};
-let psxIndexData = null; // Today's KSE-100 data for NAV estimation
+let psxIndexData = null; // KSE-100 history used for market entry context
+let marketEntryAnalysis = null;
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
@@ -75,11 +76,10 @@ function saveToCache(key, data) {
     }
 }
 
-function loadFromCache(key, maxAgeMs = 7200000) { // Default max age: 2 hours
+function loadFromCache(key, maxAgeMs = 7200000) {
     try {
         const savedTime = localStorage.getItem(`cache_${key}_time`);
         if (savedTime && (Date.now() - parseInt(savedTime, 10)) > maxAgeMs) {
-            console.log(`Cache for ${key} expired (> 2 hrs old).`);
             return null;
         }
         const data = localStorage.getItem(`cache_${key}`);
@@ -96,67 +96,62 @@ async function loadData() {
         
         // 1. Try to load from online fetch
         try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 6000); // 6s timeout
-        const mufapUrl = getUrl('mufap');
-        console.log("Fetching MUFAP data from:", mufapUrl);
-        
-        const response = await fetch(mufapUrl, { signal: controller.signal, cache: 'no-store' });
-        clearTimeout(timeoutId);
-        
-        if (response.ok) {
-            const fetched = await safeJson(response);
-            if (Array.isArray(fetched) && fetched.length >= 400) {
-                fundsData = fetched;
-                saveToCache('mufap', fundsData);
-                mufapLoaded = true;
-                console.log("MUFAP data loaded from online fetch:", fundsData.length, "funds");
-            } else {
-                console.warn("Online fetch returned incomplete dataset (" + (fetched ? fetched.length : 0) + " funds). Ignoring online payload.");
-            }
-        }
-    } catch (err) {
-        console.warn("Failed to fetch MUFAP online, falling back to cache:", err);
-    }
-    
-    // 2. Load from localStorage cache if online fails
-    if (!mufapLoaded) {
-        const cached = loadFromCache('mufap');
-        if (Array.isArray(cached) && cached.length >= 400) {
-            fundsData = cached;
-            mufapLoaded = true;
-            console.log("MUFAP data loaded from local storage cache:", fundsData.length, "funds");
-        } else {
-            console.warn("Cached data incomplete. Clearing cache and falling back to static assets.");
-            try { localStorage.removeItem('cache_mufap'); } catch(e) {}
-        }
-    }
-    
-    // 3. Load from packaged static assets (first run fallback)
-    if (!mufapLoaded) {
-        try {
-            console.log("Fallback: loading packaged static assets...");
-            const response = await fetch('./data/mufap_data.json');
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 6000); // 6s timeout
+            const mufapUrl = getUrl('mufap');
+            console.log("Fetching MUFAP data from:", mufapUrl);
+            
+            const response = await fetch(mufapUrl, { signal: controller.signal, cache: 'no-store' });
+            clearTimeout(timeoutId);
+            
             if (response.ok) {
-                fundsData = await safeJson(response);
-                saveToCache('mufap', fundsData);
-                mufapLoaded = true;
-                console.log("MUFAP data loaded from static asset fallback");
+                const fetched = await safeJson(response);
+                if (Array.isArray(fetched) && fetched.length >= 400) {
+                    fundsData = fetched;
+                    saveToCache('mufap', fundsData);
+                    mufapLoaded = true;
+                    console.log("MUFAP data loaded from online fetch:", fundsData.length, "funds");
+                }
             }
-        } catch (fallbackErr) {
-            console.error("Static asset fallback failed:", fallbackErr);
+        } catch (err) {
+            console.warn("Failed to fetch MUFAP online, falling back to cache:", err);
         }
-    }
-    
-    if (!mufapLoaded) {
-        alert("Unable to load mutual fund data. Please check your internet connection.");
-        return;
-    }
+        
+        // 2. Load from localStorage cache if online fails
+        if (!mufapLoaded) {
+            const cached = loadFromCache('mufap');
+            if (Array.isArray(cached) && cached.length >= 400) {
+                fundsData = cached;
+                mufapLoaded = true;
+                console.log("MUFAP data loaded from local storage cache:", fundsData.length, "funds");
+            }
+        }
+        
+        // 3. Load from packaged static assets (first run fallback)
+        if (!mufapLoaded) {
+            try {
+                console.log("Fallback: loading packaged static assets...");
+                const response = await fetch('./data/mufap_data.json');
+                if (response.ok) {
+                    fundsData = await safeJson(response);
+                    saveToCache('mufap', fundsData);
+                    mufapLoaded = true;
+                    console.log("MUFAP data loaded from static asset fallback");
+                }
+            } catch (fallbackErr) {
+                console.error("Static asset fallback failed:", fallbackErr);
+            }
+        }
+        
+        if (!mufapLoaded) {
+            alert("Unable to load mutual fund data. Please check your internet connection.");
+            return;
+        }
 
     // Load PSX Index Details
     let psxData = null;
     try {
-        const response = await fetch(getUrl('psx'), { cache: 'no-store' });
+        const response = await fetch(getUrl('psx'));
         if (response.ok) {
             psxData = await safeJson(response);
             saveToCache('psx', psxData);
@@ -171,7 +166,7 @@ async function loadData() {
         try {
             const fallback = await fetch('./data/psx_index.json');
             if (fallback.ok) {
-                psxIndexData = await safeJson(fallback);
+                psxIndexData = await fallback.json();
                 updateKSE100Card(psxIndexData);
             }
         } catch(e) {}
@@ -180,7 +175,7 @@ async function loadData() {
     // Load PSX Movers/Performers
     let moversData = null;
     try {
-        const response = await fetch(getUrl('movers'), { cache: 'no-store' });
+        const response = await fetch(getUrl('movers'));
         if (response.ok) {
             moversData = await safeJson(response);
             saveToCache('movers', moversData);
@@ -194,7 +189,7 @@ async function loadData() {
         try {
             const fallback = await fetch('./data/psx_performers.json');
             if (fallback.ok) {
-                const fd = await safeJson(fallback);
+                const fd = await fallback.json();
                 renderPSXMovers(fd);
             }
         } catch(e) {}
@@ -203,7 +198,7 @@ async function loadData() {
     // Load NAV Archive
     let archiveData = null;
     try {
-        const response = await fetch(getUrl('archive'), { cache: 'no-store' });
+        const response = await fetch(getUrl('archive'));
         if (response.ok) {
             archiveData = await safeJson(response);
             saveToCache('archive', archiveData);
@@ -217,7 +212,7 @@ async function loadData() {
         try {
             const fallback = await fetch('./data/nav_archive.json');
             if (fallback.ok) {
-                navArchive = await safeJson(fallback);
+                navArchive = await fallback.json();
             }
         } catch(e) {}
     }
@@ -427,6 +422,14 @@ function setupEventHandlers() {
     // My Investments button
     const addInvBtn = document.getElementById('btn-add-investment');
     if (addInvBtn) addInvBtn.addEventListener('click', addInvestmentEntry);
+
+    // Staged investment planner
+    ['planner-total', 'planner-tranches', 'planner-horizon', 'planner-category'].forEach(id => {
+        const control = document.getElementById(id);
+        if (control) control.addEventListener('input', updateTranchePlanner);
+        if (control) control.addEventListener('change', updateTranchePlanner);
+    });
+    updateTranchePlanner();
 }
 
 // Parse value helper for maths
@@ -800,7 +803,7 @@ function renderDirectoryTable() {
             <td><span style="font-weight:700; color:var(--accent-cyan); font-size:1.05rem;">${fund.screener_score}</span></td>
             <td>
                 <div class="fund-td-name" data-fund-name="${fund.fund_name.replace(/"/g, '&quot;')}" style="cursor:pointer; text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);" onclick="showFundDetails('${fund.fund_name.replace(/'/g, "\\'")}')">  ${fund.fund_name}</div>
-                <div class="fund-td-amc" data-fund-name="${fund.fund_name.replace(/"/g, '&quot;')}" style="cursor:pointer;">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
+                <div class="fund-td-amc">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
             </td>
             <td><span style="font-size:0.8rem; color:var(--text-secondary);">${fund.category}</span></td>
             <td><span class="badge-risk ${fund.risk_level.toLowerCase()}">${fund.risk_level}</span></td>
@@ -1304,6 +1307,7 @@ function calculateGrowth() {
 let modalChartInstance = null;
 let _currentModalFund = null;
 
+
 // Global Event Delegation for opening fund details modal on tap/click
 document.addEventListener('click', function(e) {
     const el = e.target.closest('[data-fund-name]');
@@ -1335,6 +1339,8 @@ window.showFundDetails = function(fundName) {
     document.getElementById('modal-risk').innerHTML = `<span class="badge-risk ${fund.risk_level.toLowerCase()}">${fund.risk_level}</span>`;
     document.getElementById('modal-rating').innerText = fund.rating;
     document.getElementById('modal-nav').innerText = `Rs. ${fund.nav}`;
+    const offerPriceEl = document.getElementById('modal-offer-price');
+    if (offerPriceEl) offerPriceEl.innerText = fund.offer && fund.offer !== 'N/A' ? `Rs. ${fund.offer}` : 'N/A';
     
     // Daily Change calculation and display
     const details = getDailyChangeDetails(fund);
@@ -1358,57 +1364,17 @@ window.showFundDetails = function(fundName) {
     document.getElementById('modal-trustee').innerText = fund.trustee;
     document.getElementById('modal-score').innerText = `${fund.screener_score} / 100`;
 
-    // --- Estimated Today's NAV ---
+    // --- Category-aware entry context (no speculative NAV estimate) ---
     const estNavEl = document.getElementById('modal-est-nav');
     if (estNavEl) {
-        const navNum = parseFloat(String(fund.nav).replace(/,/g, ''));
-        const cat = (fund.major_category || '').toLowerCase();
-        let estNav = null;
-        let basisNote = '';
-        let indexChangePct = 0;
-        let indexName = 'KSE-100';
-
-        // Parse KMI-30 vs KSE-100 index change from stored psxIndexData
-        if (fund.is_shariah && psxIndexData && psxIndexData.kmi30 && psxIndexData.kmi30.change_percent) {
-            indexName = 'KMI-30 (Islamic)';
-            const raw = parseFloat(String(psxIndexData.kmi30.change_percent).replace('%', '').replace(/,/g, ''));
-            indexChangePct = (psxIndexData.kmi30.direction === '+' ? 1 : -1) * Math.abs(raw);
-        } else if (psxIndexData && psxIndexData.change_percent) {
-            indexName = 'KSE-100';
-            const raw = parseFloat(String(psxIndexData.change_percent).replace('%', '').replace(/,/g, ''));
-            indexChangePct = (psxIndexData.direction === '+' ? 1 : -1) * Math.abs(raw);
-        }
-
-        if (cat.includes('equity') || cat.includes('stock')) {
-            const beta = 0.85;
-            estNav = navNum * (1 + (indexChangePct * beta) / 100);
-            basisNote = `${indexName} is ${indexChangePct >= 0 ? '+' : ''}${indexChangePct.toFixed(2)}% today → ~85% sensitivity applied`;
-        } else if (cat.includes('balanced') || cat.includes('asset alloc')) {
-            estNav = navNum * (1 + (indexChangePct * 0.40) / 100);
-            basisNote = `${indexName} is ${indexChangePct >= 0 ? '+' : ''}${indexChangePct.toFixed(2)}% today → ~40% equity exposure applied`;
-        } else if (cat.includes('money market') || cat.includes('income') || cat.includes('fixed') || cat.includes('cash')) {
-            const annualR = parseFloatReturn(fund.returns['365d']) || parseFloatReturn(fund.returns.ytd) || 10;
-            const dailyR = annualR / 36500;
-            estNav = navNum * (1 + dailyR);
-            basisNote = `~1 day accrual on ${annualR.toFixed(1)}% annual yield`;
-        }
-
-        if (estNav !== null && !isNaN(estNav) && navNum > 0) {
-            const diff = estNav - navNum;
-            const diffPct = (diff / navNum) * 100;
-            const isUp = diff >= 0;
-            const arrow = isUp ? '▲' : '▼';
-            const colorClass = isUp ? 'est-nav-up' : 'est-nav-down';
-            estNavEl.innerHTML = `
-                <div class="est-nav-box ${colorClass}">
-                    <div class="est-nav-price">${arrow} Rs. ${estNav.toFixed(4)}</div>
-                    <div class="est-nav-delta">${isUp ? '+' : ''}${diff.toFixed(4)} (${isUp ? '+' : ''}${diffPct.toFixed(2)}%)</div>
-                    <div class="est-nav-basis">${basisNote}</div>
-                    <div class="est-nav-disclaimer">⚠ Estimate only. Place order before 3:00 PM to get today's official NAV.</div>
-                </div>`;
-        } else {
-            estNavEl.innerHTML = `<span style="color:var(--text-muted); font-size:0.8rem; font-style:italic;">Not enough data to estimate</span>`;
-        }
+        const entry = InvestmentAnalysis.analyseFund(fund, navArchive[fund.fund_name] || []);
+        const contextClass = entry.kind === 'money-market' || entry.kind === 'income' ? 'est-nav-up' : '';
+        estNavEl.innerHTML = `
+            <div class="est-nav-box ${contextClass}">
+                <div class="est-nav-price" style="font-size:0.92rem;">${entry.label}</div>
+                <div class="est-nav-basis">${entry.detail}</div>
+                <div class="est-nav-disclaimer">Use the AMC's own cut-off time and confirmed offer price before placing an order.</div>
+            </div>`;
     }
 
     // Populate Dividend History
@@ -1506,7 +1472,7 @@ window.showFundDetails = function(fundName) {
         
         // 2. Add/overwrite with latest official NAV from fund object
         const currentNavVal = parseFloat(fund.nav) || 0;
-        const currentIsoDate = normalizeISO(fund.validity_date);
+        const currentIsoDate = normalizeISO(fund.validity_date) || normalizeISO(new Date().toISOString().split('T')[0]);
         if (currentNavVal > 0 && currentIsoDate) {
             dateMap.set(currentIsoDate, currentNavVal); // Overwrite with newest official NAV
         }
@@ -1570,133 +1536,30 @@ window.showFundDetails = function(fundName) {
         }
     }
 
-    // --- Weekday Analysis Section ---
-    const weekdaySection = document.getElementById('modal-weekday-analysis-section');
-    const weekdayBadge = document.getElementById('modal-best-weekday-badge');
-    const weekdayBars = document.getElementById('modal-weekday-bars-container');
-    const weekdayDisc = document.getElementById('modal-weekday-analysis-disclaimer');
-    
-    if (weekdaySection) {
-        const archiveEntries = navArchive[fund.fund_name] || [];
-        if (archiveEntries.length < 3) {
-            if (weekdayBadge) weekdayBadge.style.display = 'none';
-            if (weekdayBars) weekdayBars.innerHTML = '';
-            if (weekdayDisc) weekdayDisc.textContent = 'Gathering more daily archive records to compute weekday entry advantages (requires at least 3 days of NAV data).';
-            weekdaySection.style.display = 'block';
-        } else {
-            // Group by weekday
-            const weekdayData = { 1: [], 2: [], 3: [], 4: [], 5: [] };
-            archiveEntries.forEach(entry => {
-                const parts = entry.date.split('-');
-                if (parts.length === 3) {
-                    const year = parseInt(parts[0], 10);
-                    const month = parseInt(parts[1], 10) - 1;
-                    const day = parseInt(parts[2], 10);
-                    const d = new Date(year, month, day);
-                    const wday = d.getDay(); // 0 = Sunday, 1 = Mon, ..., 5 = Fri, 6 = Sat
-                    if (wday >= 1 && wday <= 5) {
-                        weekdayData[wday].push(parseFloat(entry.nav) || 0);
-                    }
-                }
-            });
-            
-            const weekdayNames = { 1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday' };
-            const weekdayShortNames = { 1: 'Mon', 2: 'Tue', 3: 'Wed', 4: 'Thu', 5: 'Fri' };
-            const weekdayAverages = {};
-            
-            let minDay = null;
-            let maxDay = null;
-            let minVal = Infinity;
-            let maxVal = -Infinity;
-            let hasData = false;
-            
-            [1, 2, 3, 4, 5].forEach(day => {
-                if (weekdayData[day].length > 0) {
-                    const sum = weekdayData[day].reduce((a, b) => a + b, 0);
-                    const avg = sum / weekdayData[day].length;
-                    weekdayAverages[day] = avg;
-                    hasData = true;
-                    
-                    if (avg < minVal) {
-                        minVal = avg;
-                        minDay = day;
-                    }
-                    if (avg > maxVal) {
-                        maxVal = avg;
-                        maxDay = day;
-                    }
-                }
-            });
-            
-            if (!hasData) {
-                if (weekdayBadge) weekdayBadge.style.display = 'none';
-                if (weekdayBars) weekdayBars.innerHTML = '';
-                if (weekdayDisc) weekdayDisc.textContent = 'No trading weekday (Mon-Fri) records found in the archive.';
-            } else {
-                const savingsPct = maxVal > minVal ? ((maxVal - minVal) / maxVal) * 100 : 0;
-                
-                // Show best weekday badge
-                if (weekdayBadge) {
-                    weekdayBadge.textContent = `Best: ${weekdayShortNames[minDay]}`;
-                    weekdayBadge.style.background = 'rgba(46, 204, 113, 0.15)';
-                    weekdayBadge.style.color = 'var(--accent-green)';
-                    weekdayBadge.style.display = 'inline-block';
-                }
-                
-                // Render comparison bars (zoomed scale to highlight minor NAV differences)
-                const range = maxVal - minVal;
-                
-                if (weekdayBars) {
-                    weekdayBars.innerHTML = [1, 2, 3, 4, 5].map(day => {
-                        const avg = weekdayAverages[day];
-                        if (!avg) return '';
-                        const isCheapest = String(day) === String(minDay);
-                        const isMostExpensive = String(day) === String(maxDay);
-                        
-                        // Zoom scale: min is 40% width, max is 100% width
-                        let barWidth = 100;
-                        if (range > 0) {
-                            barWidth = 40 + ((avg - minVal) / range) * 60;
-                        }
-                        
-                        let labelColor = 'var(--text-secondary)';
-                        let barColor = 'rgba(255, 255, 255, 0.12)';
-                        let statusText = '';
-                        
-                        if (isCheapest) {
-                            labelColor = 'var(--accent-green)';
-                            barColor = 'var(--accent-green)';
-                            statusText = '<span style="color:var(--accent-green); font-weight:700; font-size:0.68rem; margin-left:6px;">Cheapest 🟢</span>';
-                        } else if (isMostExpensive) {
-                            labelColor = 'var(--accent-red)';
-                            barColor = 'var(--accent-red)';
-                            statusText = '<span style="color:var(--accent-red); font-weight:700; font-size:0.68rem; margin-left:6px;">Highest 🔴</span>';
-                        }
-                        
-                        return `
-                            <div class="weekday-row" style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; margin-bottom: 2px;">
-                                <span style="flex: 0 0 35px; font-weight: 600; color: ${labelColor};">${weekdayShortNames[day]}</span>
-                                <div style="flex-grow: 1; background: rgba(255,255,255,0.03); height: 8px; border-radius: 4px; overflow: hidden; display: flex; align-items: center;">
-                                    <div style="background: ${barColor}; height: 100%; width: ${barWidth}%; border-radius: 4px; opacity: ${isCheapest ? '1' : '0.6'}; transition: width 0.3s ease;"></div>
-                                </div>
-                                <span style="flex: 0 0 135px; text-align: right; color: var(--text-primary); font-weight: 500;">
-                                    Rs. ${avg.toFixed(4)}${statusText}
-                                </span>
-                            </div>
-                        `;
-                    }).join('');
-                }
-                
-                if (weekdayDisc) {
-                    if (savingsPct > 0) {
-                        weekdayDisc.innerHTML = `Buying on <strong>${weekdayNames[minDay]}s</strong> saves you <strong>~${savingsPct.toFixed(3)}%</strong> on average compared to ${weekdayNames[maxDay]}s (based on ${archiveEntries.length} archive days).`;
-                    } else {
-                        weekdayDisc.textContent = 'All weekdays have identical average NAVs in the current archive.';
-                    }
-                }
-            }
-            weekdaySection.style.display = 'block';
+    // --- Historical entry evidence (replaces misleading raw weekday averages) ---
+    const entrySection = document.getElementById('modal-entry-analysis-section');
+    if (entrySection) {
+        const entry = InvestmentAnalysis.analyseFund(fund, navArchive[fund.fund_name] || []);
+        const confidenceEl = document.getElementById('modal-entry-confidence');
+        const summaryEl = document.getElementById('modal-entry-summary');
+        const recordsEl = document.getElementById('modal-entry-records');
+        const drawdownEl = document.getElementById('modal-entry-drawdown');
+        const premiumEl = document.getElementById('modal-entry-offer-premium');
+        const disclaimerEl = document.getElementById('modal-entry-disclaimer');
+
+        if (confidenceEl) {
+            confidenceEl.textContent = `Confidence: ${entry.confidence.level}`;
+            confidenceEl.className = `analysis-badge ${entry.confidence.className}`;
         }
+        if (summaryEl) summaryEl.textContent = `${entry.label}. ${entry.detail}`;
+        if (recordsEl) recordsEl.textContent = `${entry.count} over ${entry.spanDays} days`;
+        if (drawdownEl) drawdownEl.textContent = entry.drawdown == null ? 'N/A' : `${entry.drawdown.toFixed(2)}%`;
+        if (premiumEl) premiumEl.textContent = entry.offerPremium == null ? 'N/A' : `${entry.offerPremium.toFixed(2)}%`;
+        if (disclaimerEl) {
+            const distributionNote = entry.hasDistribution ? ' A distribution falls inside this range, so raw NAV movement is not treated as a bargain signal.' : '';
+            disclaimerEl.textContent = `Historical context only; it does not predict a market bottom.${distributionNote}`;
+        }
+        entrySection.style.display = 'block';
     }
 
     // Setup add-to-portfolio button click in modal
@@ -1813,6 +1676,43 @@ function _renderModalChart(labels, values, label, borderColor, bgColor, tickForm
 }
 
 
+function updateTranchePlanner() {
+    const totalEl = document.getElementById('planner-total');
+    if (!totalEl || typeof InvestmentAnalysis === 'undefined') return;
+    const tranchesEl = document.getElementById('planner-tranches');
+    const horizonEl = document.getElementById('planner-horizon');
+    const categoryEl = document.getElementById('planner-category');
+    const result = InvestmentAnalysis.tranchePlan({
+        amount: totalEl.value,
+        tranches: tranchesEl ? tranchesEl.value : 5,
+        horizonYears: horizonEl ? horizonEl.value : 7,
+        kind: categoryEl ? categoryEl.value : 'equity',
+        market: marketEntryAnalysis
+    });
+    const money = value => `Rs. ${Math.max(0, Math.round(value)).toLocaleString('en-PK')}`;
+    const baseEl = document.getElementById('planner-base');
+    const todayEl = document.getElementById('planner-today');
+    const remainingEl = document.getElementById('planner-remaining');
+    const noteEl = document.getElementById('planner-note');
+    const confidenceEl = document.getElementById('planner-market-confidence');
+    if (baseEl) baseEl.textContent = money(result.base);
+    if (todayEl) todayEl.textContent = money(result.today);
+    if (remainingEl) remainingEl.textContent = money(result.remaining);
+    if (confidenceEl) {
+        const confidence = marketEntryAnalysis ? marketEntryAnalysis.confidence : { level: 'Pending', className: 'confidence-low' };
+        confidenceEl.textContent = `Market confidence: ${confidence.level}`;
+        confidenceEl.className = `analysis-badge ${confidence.className}`;
+    }
+    if (noteEl) {
+        const schedule = result.remainingCount > 0
+            ? `Then approximately ${money(result.later)} in each of ${result.remainingCount} remaining tranches.`
+            : 'This uses the entire planned amount.';
+        const context = marketEntryAnalysis ? ` Market context: ${marketEntryAnalysis.label}.` : '';
+        noteEl.textContent = `${schedule}${context}${result.warning ? ` ${result.warning}` : ''}`;
+        noteEl.classList.toggle('warning', Boolean(result.warning));
+    }
+}
+
 function updateKSE100Card(psxData) {
     if (!psxData) return;
     const priceEl = document.getElementById('kse100-price');
@@ -1824,66 +1724,35 @@ function updateKSE100Card(psxData) {
         changeEl.innerHTML = `<span style="color:${color}; font-weight:700;">${arrow} ${psxData.direction}${psxData.change_points} (${psxData.change_percent})</span> <span style="color:var(--text-muted); font-size:0.68rem; margin-left:6px;">As of ${psxData.as_of}</span>`;
     }
 
-    // --- Good Day to Invest? Signal Banner ---
+    // --- Evidence-based market entry context ---
     const banner = document.getElementById('invest-signal-banner');
     if (!banner) return;
-
-    const rawPct = parseFloat(String(psxData.change_percent).replace('%','').replace(/,/g,'')) || 0;
-    const changePct = (psxData.direction === '+' ? 1 : -1) * Math.abs(rawPct);
     const kseValEl  = document.getElementById('invest-signal-kse-val');
     const iconEl    = document.getElementById('invest-signal-icon');
     const verdictEl = document.getElementById('invest-signal-verdict');
     const subEl     = document.getElementById('invest-signal-sub');
     const tipEl     = document.getElementById('invest-signal-tip');
 
-    if (kseValEl) kseValEl.textContent = `${psxData.direction}${psxData.change_points} (${changePct >= 0 ? '+' : ''}${changePct.toFixed(2)}%)`;
-
-    let tier, icon, verdict, sub, tip, bannerClass;
-
-    if (changePct <= -2) {
-        tier = 'great';
-        icon = '🟢';
-        verdict = 'Great Day to Invest in Equity Funds';
-        sub = `KSE-100 is down ${Math.abs(changePct).toFixed(2)}% — fund NAVs will likely be significantly cheaper tonight.`;
-        tip = 'Place your order before 3:00 PM to lock in tonight\'s discounted NAV. More units for the same money.';
-        bannerClass = 'signal-great';
-    } else if (changePct <= -0.5) {
-        tier = 'good';
-        icon = '🟡';
-        verdict = 'Good Day to Invest in Equity Funds';
-        sub = `KSE-100 is down ${Math.abs(changePct).toFixed(2)}% — equity fund NAVs will be slightly lower tonight.`;
-        tip = 'A mild dip — still a favourable entry if you were planning to invest anyway. Cutoff: 3:00 PM.';
-        bannerClass = 'signal-good';
-    } else if (changePct < 0.5) {
-        tier = 'neutral';
-        icon = '⚪';
-        verdict = 'Neutral Day — No Clear Advantage';
-        sub = `KSE-100 is nearly flat (${changePct >= 0 ? '+' : ''}${changePct.toFixed(2)}%). NAVs will be close to yesterday's.`;
-        tip = 'No significant timing edge today. Good day for Money Market or Income fund investments.';
-        bannerClass = 'signal-neutral';
-    } else if (changePct < 2) {
-        tier = 'caution';
-        icon = '🟠';
-        verdict = 'Market Up — Slightly Higher Entry Today';
-        sub = `KSE-100 is up ${changePct.toFixed(2)}% — equity fund NAVs will be higher tonight than yesterday.`;
-        tip = 'Consider waiting for a dip, or invest in a Money Market fund today to park funds safely.';
-        bannerClass = 'signal-caution';
-    } else {
-        tier = 'wait';
-        icon = '🔴';
-        verdict = 'Strong Rally — Consider Waiting';
-        sub = `KSE-100 is up ${changePct.toFixed(2)}% — equity NAVs will be significantly higher tonight.`;
-        tip = 'You\'d be buying at a premium vs yesterday. Unless you\'re investing long-term and not timing, consider waiting for a pullback.';
-        bannerClass = 'signal-wait';
+    const currentDate = InvestmentAnalysis.isoDate(psxData.as_of) || new Date().toISOString().slice(0, 10);
+    marketEntryAnalysis = InvestmentAnalysis.analyseMarket(psxData.history || [], {
+        date: currentDate,
+        price: psxData.price
+    });
+    const icon = marketEntryAnalysis.drawdown != null && marketEntryAnalysis.drawdown <= -8 ? '📉' : '📊';
+    banner.className = `invest-signal-banner ${marketEntryAnalysis.className}`;
+    if (iconEl) iconEl.textContent = icon;
+    if (verdictEl) verdictEl.textContent = marketEntryAnalysis.label;
+    if (subEl) subEl.textContent = marketEntryAnalysis.detail;
+    if (kseValEl) {
+        kseValEl.textContent = marketEntryAnalysis.drawdown == null ? 'N/A' : `${marketEntryAnalysis.drawdown.toFixed(2)}%`;
+        kseValEl.style.color = marketEntryAnalysis.drawdown != null && marketEntryAnalysis.drawdown <= -4 ? 'var(--accent-green)' : 'var(--text-primary)';
     }
-
-    banner.className = `invest-signal-banner ${bannerClass}`;
-    if (iconEl)    iconEl.textContent    = icon;
-    if (verdictEl) verdictEl.textContent = verdict;
-    if (subEl)     subEl.textContent     = sub;
-    if (tipEl)     tipEl.textContent     = tip;
-    if (kseValEl)  kseValEl.style.color  = changePct >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
+    if (tipEl) {
+        const start = marketEntryAnalysis.series.length ? marketEntryAnalysis.series[0].date : 'unknown date';
+        tipEl.textContent = `${marketEntryAnalysis.count} sessions since ${start} • Confidence: ${marketEntryAnalysis.confidence.level}`;
+    }
     banner.style.display = 'flex';
+    updateTranchePlanner();
 
     // Populate KSE-100 7-Day Performance Trend
     const historyListEl = document.getElementById('kse100-weekly-list');

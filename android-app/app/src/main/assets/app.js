@@ -730,12 +730,23 @@ function renderDirectoryTable() {
             if (r === null || r <= inflationThreshold) return false;
         }
 
-        // Search Query
+        // Search Query (supporting hyphen normalization like Al-Ameen vs Al Ameen, and abbreviations like ASSF)
         if (searchQuery) {
-            const matchesName = fund.fund_name.toLowerCase().includes(searchQuery);
-            const matchesAMC = fund.amc.toLowerCase().includes(searchQuery);
-            const matchesCat = fund.category.toLowerCase().includes(searchQuery);
-            if (!matchesName && !matchesAMC && !matchesCat) return false;
+            const rawQuery = searchQuery.toLowerCase();
+            const normQuery = rawQuery.replace(/-/g, ' ').replace(/\s+/g, ' ');
+            const normName = fund.fund_name.toLowerCase().replace(/-/g, ' ').replace(/\s+/g, ' ');
+            const normAMC = fund.amc.toLowerCase().replace(/-/g, ' ').replace(/\s+/g, ' ');
+            const normCat = fund.category.toLowerCase().replace(/-/g, ' ').replace(/\s+/g, ' ');
+
+            const matchesName = normName.includes(normQuery) || fund.fund_name.toLowerCase().includes(rawQuery);
+            const matchesAMC = normAMC.includes(normQuery) || fund.amc.toLowerCase().includes(rawQuery);
+            const matchesCat = normCat.includes(normQuery) || fund.category.toLowerCase().includes(rawQuery);
+
+            // Match fund initials / abbreviations (e.g. ASSF for Al Ameen Shariah Stock Fund)
+            const initials = fund.fund_name.split(/\s+/).map(w => w[0]).join('').toLowerCase();
+            const matchesInitials = rawQuery.length >= 3 && initials.includes(rawQuery.replace(/[^a-z]/g, ''));
+
+            if (!matchesName && !matchesAMC && !matchesCat && !matchesInitials) return false;
         }
 
         return true;

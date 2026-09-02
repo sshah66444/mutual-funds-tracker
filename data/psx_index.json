@@ -3,15 +3,19 @@
   "direction": "-",
   "change_points": "1,690.40",
   "change_percent": "-0.96%",
-  "as_of": "Sep 2, 2026 3:40 PM",
+  "as_of": "Sep 2, 2026 3:50 PM",
   "kmi30": {
     "price": "249,368.78",
     "direction": "-",
     "change_points": "2,480.71",
     "change_percent": "-0.98%",
-    "as_of": "Sep 2, 2026 3:40 PM"
+    "as_of": "Sep 2, 2026 3:50 PM"
   },
   "history": [
+    {
+      "date": "2026-09-02",
+      "price": 174776.59
+    },
     {
       "date": "2026-09-01",
       "price": 176466.99
@@ -1047,10 +1051,6 @@
     {
       "date": "2025-08-19",
       "price": 149770.74
-    },
-    {
-      "date": "2025-08-18",
-      "price": 148196.42
     }
   ]
 }

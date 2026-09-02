@@ -7,7 +7,7 @@
       "direction": "-",
       "change": "-0.34",
       "percent": "-2.27%",
-      "volume": "124,819,866"
+      "volume": "124,889,531"
     },
     {
       "symbol": "WTL",
@@ -16,7 +16,7 @@
       "direction": "-",
       "change": "-0.03",
       "percent": "-2.59%",
-      "volume": "38,391,288"
+      "volume": "38,702,842"
     },
     {
       "symbol": "PRL",
@@ -25,7 +25,7 @@
       "direction": "+",
       "change": "0.51",
       "percent": "0.49%",
-      "volume": "37,584,660"
+      "volume": "37,676,122"
     },
     {
       "symbol": "BOP",
@@ -34,7 +34,7 @@
       "direction": "-",
       "change": "-0.35",
       "percent": "-1.02%",
-      "volume": "25,339,661"
+      "volume": "25,400,661"
     },
     {
       "symbol": "HASCOL",
@@ -43,7 +43,7 @@
       "direction": "+",
       "change": "0.77",
       "percent": "3.77%",
-      "volume": "24,670,129"
+      "volume": "24,742,483"
     },
     {
       "symbol": "STLR",
@@ -52,7 +52,7 @@
       "direction": "-",
       "change": "-0.73",
       "percent": "-5.65%",
-      "volume": "19,687,294"
+      "volume": "19,728,577"
     },
     {
       "symbol": "TSBL",
@@ -61,7 +61,7 @@
       "direction": "+",
       "change": "0.04",
       "percent": "1.66%",
-      "volume": "16,251,599"
+      "volume": "16,256,618"
     },
     {
       "symbol": "KEL",
@@ -70,16 +70,7 @@
       "direction": "-",
       "change": "-0.13",
       "percent": "-1.79%",
-      "volume": "14,543,808"
-    },
-    {
-      "symbol": "ZUMA",
-      "name": "Zuma Resources Limited",
-      "price": "21.95",
-      "direction": "+",
-      "change": "1.30",
-      "percent": "6.30%",
-      "volume": "14,234,439"
+      "volume": "14,549,818"
     },
     {
       "symbol": "FNEL",
@@ -88,7 +79,16 @@
       "direction": "-",
       "change": "-0.02",
       "percent": "-1.68%",
-      "volume": "14,182,674"
+      "volume": "14,247,674"
+    },
+    {
+      "symbol": "ZUMA",
+      "name": "Zuma Resources Limited",
+      "price": "21.95",
+      "direction": "+",
+      "change": "1.30",
+      "percent": "6.30%",
+      "volume": "14,242,290"
     }
   ],
   "gainers": [
@@ -108,7 +108,7 @@
       "direction": "+",
       "change": "3.41",
       "percent": "10.01%",
-      "volume": "189,247"
+      "volume": "191,247"
     },
     {
       "symbol": "PGLC",
@@ -180,7 +180,7 @@
       "direction": "+",
       "change": "14.24",
       "percent": "10.00%",
-      "volume": "567,506"
+      "volume": "568,507"
     }
   ],
   "losers": [
@@ -191,7 +191,7 @@
       "direction": "-",
       "change": "-0.07",
       "percent": "-10.45%",
-      "volume": "8,880,963"
+      "volume": "8,882,020"
     },
     {
       "symbol": "ARPAK",
@@ -209,7 +209,7 @@
       "direction": "-",
       "change": "-17.41",
       "percent": "-10.00%",
-      "volume": "2,347,246"
+      "volume": "2,349,747"
     },
     {
       "symbol": "JKSM",
@@ -227,7 +227,7 @@
       "direction": "-",
       "change": "-4.55",
       "percent": "-10.00%",
-      "volume": "76,893"
+      "volume": "76,895"
     },
     {
       "symbol": "PIM",
@@ -236,7 +236,7 @@
       "direction": "-",
       "change": "-5.24",
       "percent": "-9.99%",
-      "volume": "49,429"
+      "volume": "50,429"
     },
     {
       "symbol": "SGPLR",
@@ -263,7 +263,7 @@
       "direction": "-",
       "change": "-4.44",
       "percent": "-9.80%",
-      "volume": "3,971,619"
+      "volume": "3,976,720"
     },
     {
       "symbol": "FRCL",

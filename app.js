@@ -1378,14 +1378,23 @@ window.showFundDetails = function(fundName) {
     // --- Category-aware entry context (no speculative NAV estimate) ---
     const estNavEl = document.getElementById('modal-est-nav');
     if (estNavEl) {
-        const entry = InvestmentAnalysis.analyseFund(fund, navArchive[fund.fund_name] || []);
-        const contextClass = entry.kind === 'money-market' || entry.kind === 'income' ? 'est-nav-up' : '';
-        estNavEl.innerHTML = `
-            <div class="est-nav-box ${contextClass}">
-                <div class="est-nav-price" style="font-size:0.92rem;">${entry.label}</div>
-                <div class="est-nav-basis">${entry.detail}</div>
-                <div class="est-nav-disclaimer">Use the AMC's own cut-off time and confirmed offer price before placing an order.</div>
-            </div>`;
+        try {
+            if (typeof InvestmentAnalysis !== 'undefined') {
+                const entry = InvestmentAnalysis.analyseFund(fund, navArchive[fund.fund_name] || []);
+                const contextClass = entry.kind === 'money-market' || entry.kind === 'income' ? 'est-nav-up' : '';
+                estNavEl.innerHTML = `
+                    <div class="est-nav-box ${contextClass}">
+                        <div class="est-nav-price" style="font-size:0.92rem;">${entry.label}</div>
+                        <div class="est-nav-basis">${entry.detail}</div>
+                        <div class="est-nav-disclaimer">Use the AMC's own cut-off time and confirmed offer price before placing an order.</div>
+                    </div>`;
+            } else {
+                estNavEl.innerHTML = `<div class="est-nav-box"><div class="est-nav-basis">Category: ${fund.category}</div></div>`;
+            }
+        } catch (e) {
+            console.warn("Entry context analysis failed:", e);
+            estNavEl.innerHTML = `<div class="est-nav-box"><div class="est-nav-basis">Category: ${fund.category}</div></div>`;
+        }
     }
 
     // Populate Dividend History
@@ -1547,30 +1556,39 @@ window.showFundDetails = function(fundName) {
         }
     }
 
-    // --- Historical entry evidence (replaces misleading raw weekday averages) ---
+    // --- Historical entry evidence ---
     const entrySection = document.getElementById('modal-entry-analysis-section');
     if (entrySection) {
-        const entry = InvestmentAnalysis.analyseFund(fund, navArchive[fund.fund_name] || []);
-        const confidenceEl = document.getElementById('modal-entry-confidence');
-        const summaryEl = document.getElementById('modal-entry-summary');
-        const recordsEl = document.getElementById('modal-entry-records');
-        const drawdownEl = document.getElementById('modal-entry-drawdown');
-        const premiumEl = document.getElementById('modal-entry-offer-premium');
-        const disclaimerEl = document.getElementById('modal-entry-disclaimer');
+        try {
+            if (typeof InvestmentAnalysis !== 'undefined') {
+                const entry = InvestmentAnalysis.analyseFund(fund, navArchive[fund.fund_name] || []);
+                const confidenceEl = document.getElementById('modal-entry-confidence');
+                const summaryEl = document.getElementById('modal-entry-summary');
+                const recordsEl = document.getElementById('modal-entry-records');
+                const drawdownEl = document.getElementById('modal-entry-drawdown');
+                const premiumEl = document.getElementById('modal-entry-offer-premium');
+                const disclaimerEl = document.getElementById('modal-entry-disclaimer');
 
-        if (confidenceEl) {
-            confidenceEl.textContent = `Confidence: ${entry.confidence.level}`;
-            confidenceEl.className = `analysis-badge ${entry.confidence.className}`;
+                if (confidenceEl) {
+                    confidenceEl.textContent = `Confidence: ${entry.confidence.level}`;
+                    confidenceEl.className = `analysis-badge ${entry.confidence.className}`;
+                }
+                if (summaryEl) summaryEl.textContent = `${entry.label}. ${entry.detail}`;
+                if (recordsEl) recordsEl.textContent = `${entry.count} over ${entry.spanDays} days`;
+                if (drawdownEl) drawdownEl.textContent = entry.drawdown == null ? 'N/A' : `${entry.drawdown.toFixed(2)}%`;
+                if (premiumEl) premiumEl.textContent = entry.offerPremium == null ? 'N/A' : `${entry.offerPremium.toFixed(2)}%`;
+                if (disclaimerEl) {
+                    const distributionNote = entry.hasDistribution ? ' A distribution falls inside this range, so raw NAV movement is not treated as a bargain signal.' : '';
+                    disclaimerEl.textContent = `Historical context only; it does not predict a market bottom.${distributionNote}`;
+                }
+                entrySection.style.display = 'block';
+            } else {
+                entrySection.style.display = 'none';
+            }
+        } catch (e) {
+            console.warn("Entry analysis section error:", e);
+            entrySection.style.display = 'none';
         }
-        if (summaryEl) summaryEl.textContent = `${entry.label}. ${entry.detail}`;
-        if (recordsEl) recordsEl.textContent = `${entry.count} over ${entry.spanDays} days`;
-        if (drawdownEl) drawdownEl.textContent = entry.drawdown == null ? 'N/A' : `${entry.drawdown.toFixed(2)}%`;
-        if (premiumEl) premiumEl.textContent = entry.offerPremium == null ? 'N/A' : `${entry.offerPremium.toFixed(2)}%`;
-        if (disclaimerEl) {
-            const distributionNote = entry.hasDistribution ? ' A distribution falls inside this range, so raw NAV movement is not treated as a bargain signal.' : '';
-            disclaimerEl.textContent = `Historical context only; it does not predict a market bottom.${distributionNote}`;
-        }
-        entrySection.style.display = 'block';
     }
 
     // Setup add-to-portfolio button click in modal

@@ -1684,7 +1684,7 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 200;
+    z-index: 20000;
     left: 0;
     top: 0;
     width: 100%;
@@ -1693,6 +1693,44 @@ body {
     background-color: rgba(6, 9, 15, 0.75);
     backdrop-filter: blur(8px);
     animation: fadeInModal 0.3s ease-out;
+}
+
+.fund-open-button {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 6px 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.fund-open-button .fund-td-name {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+    text-decoration-color: rgba(6, 182, 212, 0.45);
+    text-underline-offset: 3px;
+}
+
+.fund-open-hint {
+    padding: 3px 7px;
+    border: 1px solid rgba(6, 182, 212, 0.35);
+    border-radius: 999px;
+    color: var(--accent-cyan);
+    font-size: 0.62rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.fund-open-button:focus-visible,
+tr[data-fund-name]:focus-visible {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 2px;
 }
 
 @keyframes fadeInModal {
@@ -2398,5 +2436,3 @@ body {
 .psx-day-card .day-change.positive {
     color: var(--accent-green);
 }
-
-

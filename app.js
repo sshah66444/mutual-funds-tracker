@@ -391,12 +391,15 @@ function setupEventHandlers() {
 
     // Modal Close handlers
     document.getElementById('btn-close-modal').addEventListener('click', () => {
-        document.getElementById('fund-details-modal').style.display = 'none';
+        const modal = document.getElementById('fund-details-modal');
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
     });
     window.addEventListener('click', (e) => {
         const modal = document.getElementById('fund-details-modal');
         if (e.target === modal) {
             modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
         }
     });
 
@@ -555,6 +558,35 @@ function populateSelectors() {
     }
 }
 
+// Give every fund surface the same reliable mouse, touch, and keyboard behaviour.
+function attachFundDetailsTrigger(element, fundName) {
+    if (!element || !fundName) return;
+
+    element.setAttribute('data-fund-name', fundName);
+    const isTableRow = element.tagName === 'TR';
+    if (!isTableRow) {
+        element.setAttribute('role', 'button');
+        element.setAttribute('tabindex', '0');
+    }
+
+    const openDetails = () => {
+        if (typeof window.showFundDetails === 'function') {
+            window.showFundDetails(fundName);
+        }
+    };
+
+    element.addEventListener('click', (event) => {
+        if (event.target && event.target.closest && event.target.closest('[data-fund-action]')) return;
+        openDetails();
+    });
+    element.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openDetails();
+        }
+    });
+}
+
 // Highlights panel on overview
 function renderOverviewHighlights() {
     const getTopFunds = (keywordCategory, elementId) => {
@@ -575,12 +607,7 @@ function renderOverviewHighlights() {
         funds.slice(0, 3).forEach((f, idx) => {
             const card = document.createElement('div');
             card.className = 'mini-fund-card';
-            card.onclick = () => {
-                // Navigate to directory with this fund searched
-                document.getElementById('global-search').value = f.fund_name;
-                document.getElementById('btn-directory').click();
-                renderDirectoryTable();
-            };
+            attachFundDetailsTrigger(card, f.fund_name);
 
             const ytd = parseFloatReturn(f.returns.ytd);
             
@@ -631,7 +658,7 @@ function renderMFMovers() {
         
         const card = document.createElement('div');
         card.className = 'mini-fund-card';
-        card.onclick = () => showFundDetails(f.fund_name);
+        attachFundDetailsTrigger(card, f.fund_name);
         
         const cls = details.rupee > 0 ? '' : (details.rupee < 0 ? 'negative' : '');
         
@@ -800,11 +827,7 @@ function renderDirectoryTable() {
     filtered.slice(0, 80).forEach(fund => {
         const tr = document.createElement('tr');
         tr.style.cursor = 'pointer';
-        tr.setAttribute('data-fund-name', fund.fund_name);
-        tr.onclick = (e) => {
-            e.stopPropagation();
-            showFundDetails(fund.fund_name);
-        };
+        attachFundDetailsTrigger(tr, fund.fund_name);
         
         const ytd = parseFloatReturn(fund.returns.ytd);
         const y1d = parseFloatReturn(fund.returns['1d']);
@@ -819,7 +842,10 @@ function renderDirectoryTable() {
         tr.innerHTML = `
             <td><span style="font-weight:700; color:var(--accent-cyan); font-size:1.05rem;">${fund.screener_score}</span></td>
             <td>
-                <div class="fund-td-name" style="text-decoration:underline; text-decoration-color:rgba(6, 182, 212, 0.4);">  ${fund.fund_name}</div>
+                <button type="button" class="fund-open-button" aria-label="Open fund details">
+                    <span class="fund-td-name">${fund.fund_name}</span>
+                    <span class="fund-open-hint">Open details</span>
+                </button>
                 <div class="fund-td-amc">${fund.amc} ${fund.is_shariah ? '<span class="badge-shariah-tag"><i class="fa-solid fa-mosque"></i> Shariah</span>' : ''}</div>
             </td>
             <td><span style="font-size:0.8rem; color:var(--text-secondary);">${fund.category}</span></td>
@@ -856,15 +882,23 @@ function renderDirectoryTable() {
             <td><span class="return-val ${y3yClass}">${y3y !== null ? y3y.toFixed(2) + '%' : 'N/A'}</span></td>
             <td>
                 <div style="display:flex; gap:6px;">
-                    <button class="btn-icon" title="Add to Compare" onclick="triggerCompareAddition('${fund.fund_name}')">
+                    <button type="button" class="btn-icon" data-fund-action="compare" title="Add to Compare">
                         <i class="fa-solid fa-scale-balanced"></i>
                     </button>
-                    <button class="btn-icon" title="Add to Portfolio" onclick="triggerPortfolioAddition('${fund.fund_name}')">
+                    <button type="button" class="btn-icon" data-fund-action="portfolio" title="Add to Portfolio">
                         <i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
             </td>
         `;
+        tr.querySelector('[data-fund-action="compare"]').addEventListener('click', (event) => {
+            event.stopPropagation();
+            window.triggerCompareAddition(fund.fund_name);
+        });
+        tr.querySelector('[data-fund-action="portfolio"]').addEventListener('click', (event) => {
+            event.stopPropagation();
+            window.triggerPortfolioAddition(fund.fund_name);
+        });
         tbody.appendChild(tr);
     });
 }
@@ -1325,17 +1359,6 @@ let modalChartInstance = null;
 let _currentModalFund = null;
 
 
-// Global Event Delegation for opening fund details modal on tap/click
-document.addEventListener('click', function(e) {
-    const el = e.target.closest('[data-fund-name]');
-    if (el) {
-        const name = el.getAttribute('data-fund-name');
-        if (name && typeof window.showFundDetails === 'function') {
-            window.showFundDetails(name);
-        }
-    }
-});
-
 window.showFundDetails = function(fundName) {
     if (!fundName) return;
     let fund = fundsData.find(f => f.fund_name === fundName);
@@ -1348,6 +1371,20 @@ window.showFundDetails = function(fundName) {
         return;
     }
     _currentModalFund = fund;
+
+    // Open first. Optional history/chart work must never make a tap look unresponsive.
+    const modal = document.getElementById('fund-details-modal');
+    if (!modal) {
+        console.error('Fund details modal is missing from the page');
+        return;
+    }
+    modal.style.display = 'block';
+    modal.scrollTop = 0;
+    modal.setAttribute('aria-hidden', 'false');
+    document.getElementById('modal-fund-name').innerText = fund.fund_name;
+    document.getElementById('modal-fund-amc').innerText = fund.amc;
+
+    try {
 
     // Fill textual details
     document.getElementById('modal-fund-name').innerText = fund.fund_name;
@@ -1607,16 +1644,24 @@ window.showFundDetails = function(fundName) {
 
     // Setup add-to-portfolio button click in modal
     const addBtn = document.getElementById('modal-btn-add-portfolio');
-    addBtn.onclick = () => {
-        triggerPortfolioAddition(fund.fund_name);
-        document.getElementById('fund-details-modal').style.display = 'none';
-    };
-
-    // Show modal
-    document.getElementById('fund-details-modal').style.display = 'block';
+    if (addBtn) {
+        addBtn.onclick = () => {
+            window.triggerPortfolioAddition(fund.fund_name);
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+        };
+    }
 
     // Default to projected chart
-    switchModalChart('projected');
+    window.switchModalChart('projected');
+    } catch (error) {
+        // Keep the modal usable even if an individual fund has incomplete optional data.
+        console.error(`Could not render every detail for ${fund.fund_name}:`, error);
+        const contextEl = document.getElementById('modal-est-nav');
+        if (contextEl) {
+            contextEl.innerHTML = '<div class="est-nav-box"><div class="est-nav-basis">Some optional history or chart details are unavailable for this fund. The current fund information is still shown above.</div></div>';
+        }
+    }
 };
 
 window.switchModalChart = function(mode) {

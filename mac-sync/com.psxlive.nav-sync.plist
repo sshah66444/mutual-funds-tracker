@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.psxlive.nav-sync</string>
+  <key>ProgramArguments</key><array>
+    <string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync-venv/bin/python</string>
+    <string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/scripts/mac_nav_sync.py</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed</string>
+  <key>EnvironmentVariables</key><dict>
+    <key>PATH</key><string>/Users/syed/Documents/New project/tools/github-cli/gh_2.100.0_macOS_arm64/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>PLAYWRIGHT_BROWSERS_PATH</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync-browsers</string>
+    <key>PYTHONUNBUFFERED</key><string>1</string>
+  </dict>
+  <key>StartCalendarInterval</key><dict><key>Minute</key><integer>30</integer></dict>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync/output.log</string>
+  <key>StandardErrorPath</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync/error.log</string>
+</dict></plist>

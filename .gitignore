@@ -1,3 +1,6 @@
+.mac-sync/
+.mac-sync-venv/
+.mac-sync-browsers/
 __pycache__/
 *.pyc
 .DS_Store
@@ -9,4 +12,3 @@ android-app/jdk/
 android-app/app/build/
 android-app/.gradle/
 android-app/local.properties
-

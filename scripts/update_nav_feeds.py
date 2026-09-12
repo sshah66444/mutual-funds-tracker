@@ -256,8 +256,10 @@ def collect(today: date) -> list[Observation]:
             errors.append(f"MUFAP fallback: {exc}")
 
     still_missing = {ASSF, ALHAMRA} - {item.fund_name for item in observations}
-    if still_missing:
+    if still_missing and not observations:
         raise RuntimeError(f"No verified NAV for {', '.join(sorted(still_missing))}. {'; '.join(errors)}")
+    if still_missing:
+        print(f"::warning::Retained previous NAV for {', '.join(sorted(still_missing))}; sources blocked. {'; '.join(errors)}")
     return observations
 
 

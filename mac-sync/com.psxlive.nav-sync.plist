@@ -3,17 +3,17 @@
 <plist version="1.0"><dict>
   <key>Label</key><string>com.psxlive.nav-sync</string>
   <key>ProgramArguments</key><array>
-    <string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync-venv/bin/python</string>
-    <string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/scripts/mac_nav_sync.py</string>
+    <string>/Users/syed/Library/Application Support/PSXLiveNavSync/.mac-sync-venv/bin/python</string>
+    <string>/Users/syed/Library/Application Support/PSXLiveNavSync/scripts/mac_nav_sync.py</string>
   </array>
-  <key>WorkingDirectory</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed</string>
+  <key>WorkingDirectory</key><string>/Users/syed/Library/Application Support/PSXLiveNavSync</string>
   <key>EnvironmentVariables</key><dict>
-    <key>PATH</key><string>/Users/syed/Documents/New project/tools/github-cli/gh_2.100.0_macOS_arm64/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
-    <key>PLAYWRIGHT_BROWSERS_PATH</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync-browsers</string>
+    <key>PATH</key><string>/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>PLAYWRIGHT_BROWSERS_PATH</key><string>/Users/syed/Library/Application Support/PSXLiveNavSync/.mac-sync-browsers</string>
     <key>PYTHONUNBUFFERED</key><string>1</string>
   </dict>
   <key>StartCalendarInterval</key><dict><key>Minute</key><integer>30</integer></dict>
   <key>RunAtLoad</key><true/>
-  <key>StandardOutPath</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync/output.log</string>
-  <key>StandardErrorPath</key><string>/Users/syed/Documents/New project/mutual-funds-tracker-feed/.mac-sync/error.log</string>
+  <key>StandardOutPath</key><string>/Users/syed/Library/Application Support/PSXLiveNavSync/.mac-sync/output.log</string>
+  <key>StandardErrorPath</key><string>/Users/syed/Library/Application Support/PSXLiveNavSync/.mac-sync/error.log</string>
 </dict></plist>

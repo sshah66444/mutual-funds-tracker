@@ -14,7 +14,7 @@ import json
 import re
 import sys
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Iterable
 
@@ -45,16 +45,48 @@ class Observation:
 
 
 def fetch(url: str) -> str:
-    response = requests.get(
-        url,
-        impersonate="chrome",
-        timeout=45,
-        headers={"Accept-Language": "en-GB,en;q=0.9"},
-    )
-    response.raise_for_status()
-    if len(response.content) < 5_000:
-        raise RuntimeError(f"Unexpectedly short response from {url}")
-    return response.text
+    try:
+        response = requests.get(
+            url,
+            impersonate="chrome",
+            timeout=45,
+            headers={"Accept-Language": "en-GB,en;q=0.9"},
+        )
+        response.raise_for_status()
+        if len(response.content) < 5_000:
+            raise RuntimeError(f"Unexpectedly short response from {url}")
+        return response.text
+    except Exception as http_error:
+        print(f"HTTP client failed for {url}; trying verified browser TLS: {http_error}")
+        try:
+            return fetch_browser(url)
+        except Exception as browser_error:
+            raise RuntimeError(f"HTTP: {http_error}; browser: {browser_error}") from browser_error
+
+
+def fetch_browser(url: str) -> str:
+    from playwright.sync_api import sync_playwright
+
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(headless=True)
+        try:
+            # Never ignore certificate errors. Chromium can retrieve missing
+            # certificate intermediates using its normal verified TLS stack.
+            context = browser.new_context(locale="en-GB", ignore_https_errors=False)
+            page = context.new_page()
+            response = page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+            page.wait_for_function(
+                "document.querySelector('.sell-price') || "
+                "Array.from(document.querySelectorAll('table')).some(t => "
+                "t.innerText.includes('Alhamra Islamic Stock Fund'))",
+                timeout=30_000,
+            )
+            html = page.content()
+            if len(html) < 5_000:
+                raise RuntimeError("Browser returned an incomplete page")
+            return html
+        finally:
+            browser.close()
 
 
 def parse_date(value: str) -> date:
@@ -235,7 +267,7 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        pakistan_today = datetime.utcnow().date()  # Pakistan and UTC always share the date at scheduled run times.
+        pakistan_today = datetime.now(timezone(timedelta(hours=5))).date()
         observations = collect(pakistan_today)
         for observation in observations:
             validate(observation, pakistan_today)
